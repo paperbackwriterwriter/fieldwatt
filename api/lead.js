@@ -2,14 +2,16 @@
 // emails them to you through Resend. Works on the Vercel Hobby plan.
 //
 // Env vars to set in the Vercel project:
-//   RESEND_API_KEY   - from resend.com
-//   LEAD_TO          - where submissions go (your inbox)
-//   LEAD_FROM        - optional; defaults to onboarding@resend.dev, which only
-//                      delivers to the address that owns the Resend account.
-//                      Once the site's domain is verified in Resend, set this
-//                      to e.g. "Fieldwatt <hello@fieldwatt.com>".
-//   RESEND_AUDIENCE_ID - optional; if set, email signups are also added as
-//                      contacts to that Resend audience (for newsletters).
+//   RESEND_API_KEY    - from resend.com (Full access)
+//   LEAD_TO           - where submissions go (your inbox)
+//   LEAD_FROM         - optional; defaults to onboarding@resend.dev, which
+//                       only delivers to the address that owns the Resend
+//                       account. Once the site's domain is verified in
+//                       Resend, set this to e.g.
+//                       "FieldWatt <hello@fieldwatt.com>".
+//   RESEND_SEGMENT_ID - optional; if set, email signups are also saved as
+//                       Resend contacts in that segment (for newsletters).
+//                       RESEND_AUDIENCE_ID is still accepted as a fallback.
 
 const ALLOWED_FIELDS = 40;
 
@@ -25,11 +27,17 @@ module.exports = async (req, res) => {
   res.setHeader("Access-Control-Allow-Methods", "POST, OPTIONS");
   res.setHeader("Access-Control-Allow-Headers", "Content-Type");
   if (req.method === "OPTIONS") return res.status(204).end();
-  if (req.method !== "POST") return res.status(405).json({ error: "POST only" });
+  if (req.method !== "POST") {
+    return res.status(405).json({ error: "POST only" });
+  }
 
   let body = req.body;
   if (typeof body === "string") {
-    try { body = JSON.parse(body); } catch { body = {}; }
+    try {
+      body = JSON.parse(body);
+    } catch {
+      body = {};
+    }
   }
   body = body && typeof body === "object" ? body : {};
 
@@ -44,10 +52,20 @@ module.exports = async (req, res) => {
   const site = String(body.site || "Website").slice(0, 60);
   const form = String(body.form || "form").slice(0, 60);
 
+  const skip = ["site", "form", "website"];
   const rows = Object.entries(body)
-    .filter(([k]) => !["site", "form", "website"].includes(k))
+    .filter(([k]) => !skip.includes(k))
     .slice(0, ALLOWED_FIELDS)
-    .map(([k, v]) => `<tr><td style="padding:4px 12px 4px 0;color:#666">${esc(k)}</td><td style="padding:4px 0">${esc(typeof v === "object" ? JSON.stringify(v) : v).slice(0, 4000)}</td></tr>`)
+    .map(([k, v]) => {
+      const val = typeof v === "object" ? JSON.stringify(v) : v;
+      return (
+        '<tr><td style="padding:4px 12px 4px 0;color:#666">' +
+        esc(k) +
+        '</td><td style="padding:4px 0">' +
+        esc(val).slice(0, 4000) +
+        "</td></tr>"
+      );
+    })
     .join("");
 
   const key = process.env.RESEND_API_KEY;
@@ -58,16 +76,26 @@ module.exports = async (req, res) => {
   }
   const from = process.env.LEAD_FROM || "onboarding@resend.dev";
 
-  const html = `<p><strong>${esc(site)}</strong> — ${esc(form)}</p><table>${rows}</table><p style="color:#999;font-size:12px">${new Date().toISOString()}</p>`;
+  const html =
+    "<p><strong>" + esc(site) + "</strong> - " + esc(form) + "</p>" +
+    "<table>" + rows + "</table>" +
+    '<p style="color:#999;font-size:12px">' +
+    new Date().toISOString() +
+    "</p>";
+
+  const headers = {
+    Authorization: "Bearer " + key,
+    "Content-Type": "application/json",
+  };
 
   const r = await fetch("https://api.resend.com/emails", {
     method: "POST",
-    headers: { Authorization: `Bearer ${key}`, "Content-Type": "application/json" },
+    headers,
     body: JSON.stringify({
       from,
       to: [to],
       reply_to: email || undefined,
-      subject: `[${site}] ${form}${email ? " — " + email : ""}`,
+      subject: "[" + site + "] " + form + (email ? " - " + email : ""),
       html,
     }),
   });
@@ -77,17 +105,25 @@ module.exports = async (req, res) => {
     return res.status(502).json({ error: "Email failed" });
   }
 
-  // Optional: add to a Resend audience for newsletters / alerts.
-  const aud = process.env.RESEND_AUDIENCE_ID;
-  if (aud && email) {
+  // Optional: save as a Resend contact in a segment.
+  const segment =
+    process.env.RESEND_SEGMENT_ID || process.env.RESEND_AUDIENCE_ID;
+  if (segment && email) {
     try {
-      await fetch(`https://api.resend.com/audiences/${aud}/contacts`, {
+      const c = await fetch("https://api.resend.com/contacts", {
         method: "POST",
-        headers: { Authorization: `Bearer ${key}`, "Content-Type": "application/json" },
-        body: JSON.stringify({ email, unsubscribed: false }),
+        headers,
+        body: JSON.stringify({
+          email,
+          unsubscribed: false,
+          segments: [segment],
+        }),
       });
+      if (!c.ok) {
+        console.error("contact add failed", c.status, await c.text());
+      }
     } catch (e) {
-      console.error("audience add failed", e);
+      console.error("contact add failed", e);
     }
   }
 

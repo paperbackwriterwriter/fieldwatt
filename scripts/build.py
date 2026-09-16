@@ -5,7 +5,7 @@ Run after fetch_jobs.py. Vercel serves ./site (see vercel.json).
 """
 import html, json, os, re, shutil
 from collections import Counter, defaultdict
-from datetime import datetime, timezone
+from datetime import date, datetime, timedelta, timezone
 
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 SITE = os.path.join(ROOT, "site")
@@ -15,6 +15,15 @@ CONTACT = "chowell7@gmail.com"
 MIDWEST_HUB = ["IA", "IL", "KS", "OK", "MN"]                      # /jobs/midwest
 CORRIDOR = ["IA", "NE", "KS", "OK", "SD", "ND", "MN", "IL", "MO", "TX"]  # "Wind-corridor Midwest" filter
 FAMILY_ORDER = ["Wind", "Solar", "Storage", "Grid"]
+
+# How long a job page stays valid after the build that produced it. A listing
+# still in the feed is rebuilt every night, so its validThrough rides forward
+# and it keeps its place in Google Jobs. Once the listing drops out of Adzuna
+# the page stops being regenerated and the last expiry published for it runs
+# out, which is what retires the posting. This is also the outage tolerance:
+# if the nightly build stops running for longer than this, live postings start
+# expiring too, so keep it comfortably longer than a failure takes to fix.
+FEED_WINDOW_DAYS = 14
 FROM_GUIDES = {
     "Wind": [("HVAC &amp; mechanical", "/from/hvac-mechanical"), ("Military transition", "/from/military-transition"), ("Construction &amp; general labor", "/from/construction-general-labor")],
     "Solar": [("Electricians", "/from/electricians"), ("Construction &amp; general labor", "/from/construction-general-labor"), ("Military transition", "/from/military-transition")],
@@ -136,13 +145,26 @@ def json_ld(data):
     return f'<script type="application/ld+json">{out}</script>'
 
 
+def valid_through(job):
+    """When this posting expires if the feed stops carrying it.
+
+    Anchored on the feed's own timestamp rather than on the posting date: a
+    listing can sit on the source for months, and expiring it on its age would
+    retire a role the site still shows. Never lands on or before datePosted,
+    which would publish a posting that is already expired.
+    """
+    window = UPDATED.date() + timedelta(days=FEED_WINDOW_DAYS)
+    posted = date.fromisoformat(job["posted"])
+    return max(window, posted + timedelta(days=1)).isoformat()
+
+
 def job_ld(job):
     """Google JobPosting markup for one job page.
 
-    employmentType and validThrough are left out on purpose: the feed carries
-    neither, and guessing them would put claims in the markup that the page
-    does not make. directApply is false because applying goes through the
-    source's listing, not the employer's own form.
+    employmentType is left out on purpose: the feed does not carry it, and
+    guessing would put a claim in the markup that the page does not make.
+    directApply is false because applying goes through the source's listing,
+    not the employer's own form.
     """
     address = {"@type": "PostalAddress", "addressRegion": job["state"], "addressCountry": "US"}
     if job.get("city"):
@@ -153,6 +175,7 @@ def job_ld(job):
         "title": job["title"],
         "description": description(job),
         "datePosted": job["posted"],
+        "validThrough": valid_through(job),
         "hiringOrganization": {"@type": "Organization", "name": job["company"]},
         "jobLocation": {"@type": "Place", "address": address},
         "identifier": {"@type": "PropertyValue", "name": job["company"], "value": job["id"]},

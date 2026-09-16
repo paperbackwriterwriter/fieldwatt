@@ -1,0 +1,68 @@
+[
+ {
+  "path": "/about",
+  "file": "about.html",
+  "title": "About FieldWatt | Renewable Trades Jobs",
+  "description": "FieldWatt is a focused job feed for wind, solar, storage, and grid field work."
+ },
+ {
+  "path": "/faq",
+  "file": "faq.html",
+  "title": "Frequently Asked Questions | FieldWatt",
+  "description": "How FieldWatt jobs, alerts, partner placements, and demo data work."
+ },
+ {
+  "path": "/privacy",
+  "file": "privacy.html",
+  "title": "Privacy Policy | FieldWatt",
+  "description": "FieldWatt aggregates wind, solar, storage, and grid field jobs into one daily feed and a free Tuesday email."
+ },
+ {
+  "path": "/terms",
+  "file": "terms.html",
+  "title": "Terms of Use | FieldWatt",
+  "description": "FieldWatt aggregates wind, solar, storage, and grid field jobs into one daily feed and a free Tuesday email."
+ },
+ {
+  "path": "/alerts",
+  "file": "alerts.html",
+  "title": "Free Renewable Trades Job Alerts | FieldWatt",
+  "description": "Get free email alerts for newly listed wind, solar, storage, and grid field jobs by role and state."
+ },
+ {
+  "path": "/hire",
+  "file": "hire.html",
+  "title": "Hire Renewable Trades Talent | FieldWatt",
+  "description": "Ask about FieldWatt launch placements for renewable-energy field jobs."
+ },
+ {
+  "path": "/training",
+  "file": "training.html",
+  "title": "Training Program Partnerships | FieldWatt",
+  "description": "Apply for a free FieldWatt Featured Program page for qualifying Midwest renewable-trades training programs."
+ },
+ {
+  "path": "/from/electricians",
+  "file": "from-electricians.html",
+  "title": "Renewable jobs for Electricians | FieldWatt",
+  "description": "Electrical experience maps naturally to renewable field work where systems need to be installed, commissioned, diagnosed, and maintained. Explore live renewable field roles that can fit your background."
+ },
+ {
+  "path": "/from/hvac-mechanical",
+  "file": "from-hvac-mechanical.html",
+  "title": "Renewable jobs for HVAC & mechanical | FieldWatt",
+  "description": "Mechanical troubleshooting, maintenance routines, and field service experience can translate well to equipment-heavy renewable roles. Explore live renewable field roles that can fit your background."
+ },
+ {
+  "path": "/from/military-transition",
+  "file": "from-military-transition.html",
+  "title": "Renewable jobs for Military transition | FieldWatt",
+  "description": "Field operations, maintenance, logistics, safety discipline, and team experience can be useful starting points for renewable trades careers. Explore live renewable field roles that can fit your background."
+ },
+ {
+  "path": "/from/construction-general-labor",
+  "file": "from-construction-general-labor.html",
+  "title": "Renewable jobs for Construction & general labor | FieldWatt",
+  "description": "Jobsite awareness, crew work, tool use, and a willingness to travel are foundations that many construction-side renewable roles build on. Explore live renewable field roles that can fit your background."
+ }
+]

@@ -1,0 +1,51 @@
+name: nightly-feed
+
+on:
+  schedule:
+    - cron: "15 8 * * *"   # 3:15 AM Central (8:15 UTC) every day
+  workflow_dispatch:
+    inputs:
+      skip_fetch:
+        description: "Skip the Adzuna fetch and just rebuild from data/jobs.json"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: nightly
+  cancel-in-progress: false
+
+jobs:
+  feed:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Fetch jobs from Adzuna
+        if: ${{ !inputs.skip_fetch }}
+        env:
+          ADZUNA_APP_ID: ${{ secrets.ADZUNA_APP_ID }}
+          ADZUNA_APP_KEY: ${{ secrets.ADZUNA_APP_KEY }}
+        run: python scripts/fetch_jobs.py
+
+      - name: Build static site
+        run: python scripts/build.py
+
+      - name: Commit and push
+        run: |
+          git config user.name "fieldwatt-bot"
+          git config user.email "bot@fieldwatt.com"
+          git add -A data site
+          if git diff --cached --quiet; then
+            echo "No changes."
+          else
+            git commit -m "Nightly feed update $(date -u +%Y-%m-%d)"
+            git pull --rebase
+            git push
+          fi

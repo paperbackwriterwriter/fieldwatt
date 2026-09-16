@@ -1,0 +1,28 @@
+name: tuesday-email
+
+on:
+  schedule:
+    - cron: "0 12 * * 2"   # Tuesdays 7:00 AM Central (12:00 UTC)
+  workflow_dispatch:
+    inputs:
+      test_only:
+        description: "Send only to LEAD_TO (test) instead of the audience"
+        type: boolean
+        default: true
+
+jobs:
+  send:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Send the Tuesday email
+        env:
+          RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+          RESEND_AUDIENCE_ID: ${{ secrets.RESEND_AUDIENCE_ID }}
+          LEAD_TO: ${{ secrets.LEAD_TO }}
+          LEAD_FROM: ${{ secrets.LEAD_FROM }}
+          TEST_ONLY: ${{ inputs.test_only }}
+        run: python scripts/tuesday_email.py

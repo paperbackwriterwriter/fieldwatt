@@ -15,7 +15,8 @@ Static site generated nightly from the Adzuna API (same pattern as Firmwarely).
 
 ## Setup
 GitHub secrets: `ADZUNA_APP_ID`, `ADZUNA_APP_KEY`, `RESEND_API_KEY`, `RESEND_AUDIENCE_ID`, `LEAD_TO`, `LEAD_FROM`.
-Vercel env vars: `RESEND_API_KEY`, `LEAD_TO`, `RESEND_AUDIENCE_ID`, optional `LEAD_FROM`.
+Vercel env vars: `RESEND_API_KEY`, `LEAD_TO`, `RESEND_AUDIENCE_ID`, `LEAD_FROM`.
+`LEAD_FROM` defaults to `onboarding@resend.dev`, which only delivers to the address that owns the Resend account — fine for lead notifications to `LEAD_TO`, but not for mail to anyone else. Set it to an address on a domain verified in Resend before the Tuesday email goes to real subscribers.
 Vercel: import repo, Framework "Other"; `vercel.json` sets output dir = `site`.
 Stripe: paste Payment Links into `static/site.js` (`window.FIELDWATT_STRIPE`).
 

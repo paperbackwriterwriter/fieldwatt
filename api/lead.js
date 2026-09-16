@@ -116,7 +116,7 @@ module.exports = async (req, res) => {
         body: JSON.stringify({
           email,
           unsubscribed: false,
-          segments: [segment],
+          segments: [{ id: segment }],
         }),
       });
       if (!c.ok) {

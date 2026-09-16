@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
     inputs:
       test_only:
-        description: "Send only to LEAD_TO (test) instead of the audience"
+        description: "Send only to LEAD_TO (test) instead of the segment"
         type: boolean
         default: true
 
@@ -21,7 +21,7 @@ jobs:
       - name: Send the Tuesday email
         env:
           RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
-          RESEND_AUDIENCE_ID: ${{ secrets.RESEND_AUDIENCE_ID }}
+          RESEND_SEGMENT_ID: ${{ secrets.RESEND_SEGMENT_ID }}
           LEAD_TO: ${{ secrets.LEAD_TO }}
           LEAD_FROM: ${{ secrets.LEAD_FROM }}
           TEST_ONLY: ${{ inputs.test_only }}

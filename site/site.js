@@ -24,6 +24,40 @@
     btn.setAttribute('aria-expanded', open ? 'true' : 'false');
   });
 
+  /* Linked sections land centred in the viewport. A plain anchor jump pins the
+     target to the top edge, which puts a card like #featured-job right under
+     the sticky header with the rest of the page pushed off screen. */
+  function centreOnHash(hash, smooth) {
+    if (!hash || hash.length < 2) return;
+    var el;
+    try { el = document.getElementById(decodeURIComponent(hash.slice(1))); } catch (e) { return; }
+    if (!el) return;
+    // positioned by hand rather than scrollIntoView({block:'center'}), which
+    // counts the element's scroll-margin and lands half of it off centre. The
+    // margin still earns its keep as the no-JS fallback, where the browser's
+    // own jump would otherwise tuck the card under the sticky header.
+    var box = el.getBoundingClientRect();
+    var top = box.top + window.pageYOffset - (window.innerHeight - box.height) / 2;
+    window.scrollTo({ top: Math.max(0, top), behavior: smooth ? 'smooth' : 'auto' });
+  }
+
+  centreOnHash(location.hash, false);
+  // fonts and images settle after parse and shift the page, so correct once more
+  window.addEventListener('load', function () { centreOnHash(location.hash, false); });
+  window.addEventListener('hashchange', function () { centreOnHash(location.hash, true); });
+  document.addEventListener('click', function (e) {
+    var a = e.target && e.target.closest && e.target.closest('a[href*="#"]');
+    if (!a) return;
+    var url;
+    try { url = new URL(a.href, location.href); } catch (err) { return; }
+    // only same-page links; a different page scrolls itself on arrival
+    if (url.pathname !== location.pathname || !url.hash) return;
+    if (!document.getElementById(decodeURIComponent(url.hash.slice(1)))) return;
+    e.preventDefault();
+    if (url.hash !== location.hash) history.pushState(null, '', url.hash);
+    centreOnHash(url.hash, true);
+  });
+
   /* stripe links */
   document.querySelectorAll('a[data-stripe]').forEach(function (a) {
     var u = window.FIELDWATT_STRIPE[a.dataset.stripe];

@@ -12,7 +12,7 @@
     featured_job: "https://buy.stripe.com/3cIeVd7z78aegE62q05Ne00",  // $149 / 30 days
     featured_company: "https://buy.stripe.com/7sYaEX3iRbmq4Vo6Gg5Ne01",  // $299 / month
     sponsor_slot: "https://buy.stripe.com/28EcN5g5D9ei87Ad4E5Ne02",  // $250 one-time
-    sponsored_program: "https://buy.stripe.com/5kQ8wP4mV9ei1Jc6Gg5Ne04"  // $199 / month
+    sponsored_program: "https://buy.stripe.com/dRm5kD1aJduy2Ng8Oo5Ne05"  // $199 / month
   };
 
   var SITE = 'FieldWatt';

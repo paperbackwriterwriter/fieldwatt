@@ -24,6 +24,14 @@ FAMILY_ORDER = ["Wind", "Solar", "Storage", "Grid"]
 # if the nightly build stops running for longer than this, live postings start
 # expiring too, so keep it comfortably longer than a failure takes to fix.
 FEED_WINDOW_DAYS = 14
+
+# Floor for publishing a figure as an annual baseSalary: federal minimum wage
+# ($7.25) over a 2,080-hour year. The feed states pay as a plain number without
+# a period, and some listings quote an hourly or weekly rate, or a placeholder
+# like "$1". Below this floor the number cannot be a full-time annual salary,
+# and nothing in the data says which period it is, so the page still shows what
+# the source gave while the markup makes no salary claim at all.
+MIN_ANNUAL_SALARY = 7.25 * 2080
 FROM_GUIDES = {
     "Wind": [("HVAC &amp; mechanical", "/from/hvac-mechanical"), ("Military transition", "/from/military-transition"), ("Construction &amp; general labor", "/from/construction-general-labor")],
     "Solar": [("Electricians", "/from/electricians"), ("Construction &amp; general labor", "/from/construction-general-labor"), ("Military transition", "/from/military-transition")],
@@ -120,6 +128,8 @@ def base_salary(job):
     Only listings where the employer stated pay qualify. Every other figure in
     the feed is the source's own estimate (shown as "est. …"), and publishing
     one as baseSalary would claim the employer offers a number it never named.
+    Figures too small to be an annual salary are dropped for the same reason:
+    see MIN_ANNUAL_SALARY.
     """
     if not job.get("pay_listed") or not job.get("pay"):
         return None
@@ -128,6 +138,8 @@ def base_salary(job):
         return None
     lo = int(m.group(1).replace(",", ""))
     hi = int((m.group(2) or m.group(1)).replace(",", ""))
+    if lo < MIN_ANNUAL_SALARY:
+        return None
     amount = {"@type": "QuantitativeValue", "unitText": "YEAR"}
     if lo == hi:
         amount["value"] = lo

@@ -13,6 +13,7 @@ Env:
 import json
 import os
 import sys
+import urllib.error
 import urllib.request
 from datetime import datetime, timedelta, timezone
 
@@ -34,11 +35,18 @@ def post(path, payload):
         headers={
             "Authorization": "Bearer " + KEY,
             "Content-Type": "application/json",
+            # Resend's firewall rejects Python's default User-Agent (403).
+            "User-Agent": "fieldwatt-tuesday-email/1.0",
         },
         method="POST",
     )
-    with urllib.request.urlopen(req, timeout=30) as r:
-        return json.load(r)
+    try:
+        with urllib.request.urlopen(req, timeout=30) as r:
+            return json.load(r)
+    except urllib.error.HTTPError as e:
+        detail = e.read().decode("utf-8", "replace")[:500]
+        sys.exit("Resend " + path + " failed: HTTP "
+                 + str(e.code) + " " + detail)
 
 
 def esc(s):

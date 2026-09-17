@@ -10,7 +10,7 @@
      While a value is empty the button opens an email to you instead. */
   window.FIELDWATT_STRIPE = {
     featured_job: "https://buy.stripe.com/3cIeVd7z78aegE62q05Ne00",  // $149 / 30 days
-    featured_company: "",    // $299 / month
+    featured_company: "https://buy.stripe.com/7sYaEX3iRbmq4Vo6Gg5Ne01",  // $299 / month
     sponsor_slot: "https://buy.stripe.com/28EcN5g5D9ei87Ad4E5Ne02",  // $250 one-time
     sponsored_program: "https://buy.stripe.com/5kQ8wP4mV9ei1Jc6Gg5Ne04"  // $199 / month
   };

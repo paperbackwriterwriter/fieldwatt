@@ -284,9 +284,10 @@ def main():
 
     urls = []
 
-    def add(path, content):
+    def add(path, content, sitemap=True):
         write("index.html" if path == "/" else path.strip("/") + "/index.html", content)
-        urls.append(path)
+        if sitemap:
+            urls.append(path)
 
     add("/", home_page(jobs, employers, state_counts))
     add("/jobs", listing_page("Renewable Trades Jobs | FieldWatt", "Find work that fits your tools.",
@@ -337,7 +338,10 @@ def main():
     corridor_html = "".join(f'<a class="text-sm font-semibold text-foreground underline decoration-primary/70 underline-offset-4 hover:text-primary" href="{h}">{t} ({n})</a>' for t, h, n in corridor[:8])
     for p in pages:
         body = open(os.path.join(ROOT, "content", p["file"]), encoding="utf-8").read().replace("<!--CORRIDOR_LINKS-->", corridor_html)
-        add(p["path"], layout(p["title"], p["description"], body, p["path"]))
+        # a page people only reach after paying has nothing to offer a searcher,
+        # so it stays out of the index and out of the sitemap
+        head = '<meta name="robots" content="noindex,follow"/>' if p.get("noindex") else ""
+        add(p["path"], layout(p["title"], p["description"], body, p["path"], head), sitemap=not p.get("noindex"))
 
     # assets
     shutil.copytree(os.path.join(ROOT, "static"), SITE, dirs_exist_ok=True)

@@ -146,6 +146,8 @@ def vet(job, trusted=frozenset()):
     company = job.get("company", "")
     if OFF_TRADE.search(title):
         return False, "different trade"
+    if not is_field_role(title):
+        return False, "not field work"
     if title_anchor(title):
         return True, "title"
     hits = DESC_TERM.findall(_body(company, job.get("description", "")))
@@ -156,6 +158,44 @@ def vet(job, trusted=frozenset()):
     if hits:
         return False, "single passing mention"
     return False, "no renewable evidence"
+
+
+# Roles that are never field work, whatever else the title says. Teaching a
+# lineworker course is not lineworker work.
+OFFICE_ONLY = re.compile(r"""(?xi)
+  \b(professor|instructor|faculty|lecturer|trainer|educator
+    |director|president|officer|executive
+    |estimator|analyst|planner|scheduler|architect|administrator|controller
+    |coordinator|recruiter|buyer|paralegal|auditor|underwriter
+    |compliance|procurement|payroll|bookkeep)\b
+""")
+
+# Roles that read as office work unless the title also names a trade.
+OFFICE_UNLESS_TRADE = re.compile(r"""(?xi)
+  \b(engineer|engineering|manager|management|supervisor|superintendent
+    |specialist|lead|consultant|advisor|strateg\w*|liaison)\b
+""")
+
+# Hands-on work. These win over the line above: an "Electrical Engineering
+# Technician" is a technician, and a "Substation Foreman" runs a crew on site.
+TRADE = re.compile(r"""(?xi)
+  \b(technician|tech|installer|install|foreman|lineman|linemen|lineworker
+    |line\s+work\w*|mechanic|operator|apprentice|journeyman|journeyperson
+    |laborer|labourer|crew|electrician|welder|rigger|fitter|millwright
+    |climber|splicer|groundman|groundsman|wireman|troubleshooter|roof\w*
+    |operating\s+engineer|stationary\s+engineer|field\s+service\s+engineer)\b
+""")
+
+
+def is_field_role(title):
+    """The site promises field work -- turbine techs, installers, linemen,
+    substation crews -- so office roles in the same industry do not belong."""
+    title = title or ""
+    if OFFICE_ONLY.search(title):
+        return False
+    if OFFICE_UNLESS_TRADE.search(title) and not TRADE.search(title):
+        return False
+    return True
 
 
 # Pay below federal minimum wage over a 2,080-hour year is not an annual salary:

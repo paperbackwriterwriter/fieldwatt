@@ -9,7 +9,7 @@
   /* === Config: paste Stripe Payment Links here (Stripe Dashboard -> Payment Links).
      While a value is empty the button opens an email to you instead. */
   window.FIELDWATT_STRIPE = {
-    featured_job: "",        // $149 / 30 days
+    featured_job: "https://buy.stripe.com/9B67sLe112eY3vh8FU9sk01",  // $149 / 30 days
     featured_company: "",    // $299 / month
     sponsor_slot: "",        // $250 one-time
     sponsored_program: ""    // $199 / month

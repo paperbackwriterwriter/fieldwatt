@@ -18,7 +18,7 @@
   /* === Cloudflare Turnstile site key (public; the secret goes in Vercel as
      TURNSTILE_SECRET_KEY). While this is empty no widget renders and the
      server falls back to the honeypot and the timing check. */
-  window.FIELDWATT_TURNSTILE = "";
+  window.FIELDWATT_TURNSTILE = "0x4AAAAAAFBAnC55SP40EDRw";
 
   var SITE = 'FieldWatt';
   var LOADED_AT = Date.now();

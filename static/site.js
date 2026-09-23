@@ -15,7 +15,13 @@
     sponsored_program: "https://buy.stripe.com/dRm5kD1aJduy2Ng8Oo5Ne05"  // $199 / month
   };
 
+  /* === Cloudflare Turnstile site key (public; the secret goes in Vercel as
+     TURNSTILE_SECRET_KEY). While this is empty no widget renders and the
+     server falls back to the honeypot and the timing check. */
+  window.FIELDWATT_TURNSTILE = "";
+
   var SITE = 'FieldWatt';
+  var LOADED_AT = Date.now();
 
   /* mobile menu */
   var btn = document.getElementById('menu-btn'), menu = document.getElementById('mobile-menu');
@@ -122,12 +128,53 @@
   if (roleSel && p.get('role')) roleSel.value = p.get('role');
   if (stSel && p.get('state')) stSel.value = p.get('state');
 
+  /* Turnstile. Rendered from here rather than in the page markup so the
+     widget and its script only exist once a site key is configured, and so
+     the form pages stay free of provider-specific HTML. */
+  var widgets = new WeakMap();
+  function mountTurnstile() {
+    document.querySelectorAll('form[data-form]').forEach(function (form) {
+      if (widgets.has(form)) return;
+      var holder = document.createElement('div');
+      holder.className = 'mt-5';
+      var submit = form.querySelector('button[type="submit"]');
+      (submit && submit.parentNode ? submit.parentNode : form).insertBefore(holder, submit || null);
+      widgets.set(form, window.turnstile.render(holder, {
+        sitekey: window.FIELDWATT_TURNSTILE,
+        theme: 'auto'
+      }));
+    });
+  }
+  if (window.FIELDWATT_TURNSTILE && document.querySelector('form[data-form]')) {
+    window.onTurnstileReady = mountTurnstile;
+    var ts = document.createElement('script');
+    ts.src = 'https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit&onload=onTurnstileReady';
+    ts.defer = true;
+    document.head.appendChild(ts);
+  }
+
   /* forms */
   document.querySelectorAll('form[data-form]').forEach(function (form) {
     form.addEventListener('submit', function (e) {
       e.preventDefault();
       var status = form.querySelector('[data-status]');
-      var payload = { site: SITE, form: form.dataset.form, page: location.pathname };
+      var payload = {
+        site: SITE,
+        form: form.dataset.form,
+        page: location.pathname,
+        // how long the page was open before submitting; a script fills and
+        // fires a form far faster than a person can read it
+        elapsedMs: Date.now() - LOADED_AT
+      };
+      if (window.FIELDWATT_TURNSTILE) {
+        var id = widgets.get(form);
+        var token = id !== undefined && window.turnstile ? window.turnstile.getResponse(id) : '';
+        if (!token) {
+          if (status) status.textContent = 'Please complete the verification above and try again.';
+          return;
+        }
+        payload.turnstileToken = token;
+      }
       form.querySelectorAll('input, select, textarea').forEach(function (el) {
         if (!el.name) return;
         if (el.type === 'checkbox') { payload[el.name] = el.checked ? (el.value || 'yes') : ''; return; }
@@ -148,6 +195,8 @@
             ? "You're on the list. Watch for the Tuesday email."
             : 'Thanks — we received it and will follow up by email.';
           form.reset();
+          var wid = widgets.get(form);
+          if (wid !== undefined && window.turnstile) window.turnstile.reset(wid);
         })
         .catch(function () { if (status) status.textContent = 'Something went wrong. Please try again in a moment.'; })
         .then(function () { if (submit) submit.disabled = false; });

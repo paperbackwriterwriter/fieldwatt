@@ -12,6 +12,37 @@
 //   RESEND_SEGMENT_ID - optional; if set, email signups are also saved as
 //                       Resend contacts in that segment (for newsletters).
 //                       RESEND_AUDIENCE_ID is still accepted as a fallback.
+//   TURNSTILE_SECRET_KEY - optional; when set, every submission must carry a
+//                       valid Cloudflare Turnstile token or it is rejected.
+//                       Leave unset and the endpoint keeps working on the
+//                       honeypot and timing check alone.
+
+// A person needs longer than this to read a form and fill it in. Client
+// supplied and therefore forgeable, so it is a cheap extra filter rather than
+// a control to rely on -- Turnstile is what actually holds.
+const MIN_FILL_MS = 3000;
+
+async function turnstileOk(token, ip) {
+  const secret = process.env.TURNSTILE_SECRET_KEY;
+  if (!secret) return true; // not configured: nothing to verify against
+  if (!token) return false;
+  try {
+    const form = new URLSearchParams({ secret, response: token });
+    if (ip) form.set("remoteip", ip);
+    const r = await fetch(
+      "https://challenges.cloudflare.com/turnstile/v0/siteverify",
+      { method: "POST", body: form }
+    );
+    const out = await r.json();
+    if (!out.success) console.error("turnstile rejected", out["error-codes"]);
+    return out.success === true;
+  } catch (e) {
+    // Cloudflare unreachable. Fail closed: a spam run is the likelier cause
+    // of a flood of unverifiable submissions than an outage.
+    console.error("turnstile verify failed", e);
+    return false;
+  }
+}
 
 const ALLOWED_FIELDS = 40;
 
@@ -44,6 +75,18 @@ module.exports = async (req, res) => {
   // Honeypot: real users never fill this.
   if (body.website) return res.status(200).json({ ok: true });
 
+  // Submitted faster than anyone could read the form.
+  if (Number(body.elapsedMs) >= 0 && Number(body.elapsedMs) < MIN_FILL_MS) {
+    console.warn("rejected: submitted in", body.elapsedMs, "ms");
+    return res.status(200).json({ ok: true });
+  }
+
+  const ip =
+    (req.headers["x-forwarded-for"] || "").split(",")[0].trim() || undefined;
+  if (!(await turnstileOk(body.turnstileToken, ip))) {
+    return res.status(400).json({ error: "Verification failed" });
+  }
+
   const email = String(body.email || "").trim();
   if (email && !/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email)) {
     return res.status(400).json({ error: "Invalid email" });
@@ -52,7 +95,7 @@ module.exports = async (req, res) => {
   const site = String(body.site || "Website").slice(0, 60);
   const form = String(body.form || "form").slice(0, 60);
 
-  const skip = ["site", "form", "website"];
+  const skip = ["site", "form", "website", "turnstileToken", "elapsedMs"];
   const rows = Object.entries(body)
     .filter(([k]) => !skip.includes(k))
     .slice(0, ALLOWED_FIELDS)

@@ -190,9 +190,10 @@
       if (status) status.textContent = 'Sending…';
       fetch('/api/lead', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(payload) })
         .then(function (r) { if (!r.ok) throw new Error('bad'); return r.json(); })
-        .then(function () {
-          if (status) status.textContent = form.dataset.form === 'job-alert' || form.dataset.form === 'tuesday-email'
-            ? "You're on the list. Watch for the Tuesday email."
+        .then(function (out) {
+          // subscriptions only count once the owner clicks the emailed link
+          if (status) status.textContent = out && out.confirm
+            ? 'Almost done. Check your inbox and click the link to confirm.'
             : 'Thanks — we received it and will follow up by email.';
           form.reset();
           var wid = widgets.get(form);

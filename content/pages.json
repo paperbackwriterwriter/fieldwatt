@@ -71,5 +71,12 @@
   "title": "Payment Received | FieldWatt",
   "description": "Your FieldWatt placement payment went through. Send us the job or company details and we will get it live.",
   "noindex": true
+ },
+ {
+  "path": "/confirmed",
+  "file": "confirmed.html",
+  "title": "Subscription Confirmed | FieldWatt",
+  "description": "Your FieldWatt job emails are confirmed.",
+  "noindex": true
  }
 ]

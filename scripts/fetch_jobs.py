@@ -268,6 +268,16 @@ def normalize(raw: dict):
         return None
     jid = str(raw.get("id"))
     company = ((raw.get("company") or {}).get("display_name") or "Employer").strip()
+    # Adzuna sends contract_time (full_time / part_time) and contract_type
+    # (permanent / contract) on some listings. Kept in Google's JobPosting
+    # vocabulary so the page can state them; absent means unknown, never a
+    # default.
+    employment = []
+    time_ = {"full_time": "FULL_TIME", "part_time": "PART_TIME"}.get(raw.get("contract_time"))
+    if time_:
+        employment.append(time_)
+    if raw.get("contract_type") == "contract":
+        employment.append("CONTRACTOR")
     return {
         "id": jid,
         "slug": f"{slugify(title)}--adzuna-{jid}",
@@ -284,6 +294,7 @@ def normalize(raw: dict):
         "pay_listed": bool(pay and not predicted),
         "apply_url": raw.get("redirect_url"),
         "posted": (raw.get("created") or "")[:10],
+        "employment": employment,
         "source": "adzuna",
     }
 

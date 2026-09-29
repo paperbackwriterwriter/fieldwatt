@@ -173,8 +173,11 @@ def valid_through(job):
 def job_ld(job):
     """Google JobPosting markup for one job page.
 
-    employmentType is left out on purpose: the feed does not carry it, and
-    guessing would put a claim in the markup that the page does not make.
+    employmentType appears only when the feed states it (fetch_jobs.py maps
+    Adzuna's contract fields); guessing would put a claim in the markup that
+    the listing does not make. Street address and postal code are never in
+    the feed, so Search Console keeps flagging them as missing; that is a
+    suggestion, not an error, and city plus state is what the page shows.
     directApply is false because applying goes through the source's listing,
     not the employer's own form.
     """
@@ -194,6 +197,8 @@ def job_ld(job):
         "url": f"{DOMAIN}/jobs/{job['slug']}",
         "directApply": False,
     }
+    if job.get("employment"):
+        data["employmentType"] = job["employment"]
     salary = base_salary(job)
     if salary:
         data["baseSalary"] = salary

@@ -13,9 +13,15 @@
       ]
     },
     {
-      "source": "/(style.css|site.js|logo-light.png|logo-dark.svg|fonts/(.*))",
+      "source": "/:asset(style.css|site.js|logo-light.png|logo-dark.svg)",
       "headers": [
         { "key": "Cache-Control", "value": "public, max-age=3600, stale-while-revalidate=86400" }
+      ]
+    },
+    {
+      "source": "/fonts/(.*)",
+      "headers": [
+        { "key": "Cache-Control", "value": "public, max-age=604800, immutable" }
       ]
     }
   ]

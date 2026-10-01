@@ -477,6 +477,16 @@ def main():
         head = '<meta name="robots" content="noindex,follow"/>' if p.get("noindex") else ""
         add(p["path"], layout(p["title"], p["description"], body, p["path"], head), sitemap=not p.get("noindex"))
 
+    # Vercel serves 404.html from the output root for any path that has no
+    # page, in place of its plain-text default. Jobs leave the feed every
+    # night, so this is the page an old link or search result lands on.
+    not_found = ('<section class="mx-auto max-w-3xl px-4 py-24 sm:px-6 lg:px-8"><p class="text-xs font-semibold uppercase tracking-[0.16em] text-primary">Page not found</p>'
+                 '<h1 class="mt-4 font-[family-name:var(--font-heading)] text-4xl font-bold sm:text-5xl">That page isn&#x27;t here any more.</h1>'
+                 '<p class="mt-6 text-lg leading-8 text-muted-foreground">If you followed a link to a job, the listing has probably closed or left the feed. Listings are refreshed every night, so the role may be back under a new link, or something similar is live now.</p>'
+                 f'<div class="mt-10 flex flex-wrap gap-3"><a class="inline-flex h-11 items-center bg-primary px-5 text-sm font-bold text-primary-foreground hover:bg-primary/90" href="/jobs">Browse all jobs {ICON["arrow"]}</a>'
+                 '<a class="inline-flex h-11 items-center border border-border px-5 text-sm font-bold hover:border-primary" href="/alerts">Get the Tuesday email</a></div></section>')
+    write("404.html", layout("Page Not Found | FieldWatt", "That page is not on FieldWatt.", not_found, "/404", '<meta name="robots" content="noindex"/>'))
+
     # assets
     shutil.copytree(os.path.join(ROOT, "static"), SITE, dirs_exist_ok=True)
     # search index for the in-page filter

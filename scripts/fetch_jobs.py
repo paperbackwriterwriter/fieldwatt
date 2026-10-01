@@ -85,8 +85,14 @@ OFF_TRADE = re.compile(r"""(?xi)
     |dental|nurse|phlebotom|veterinar|barista|cashier|bartender|housekeep|janitor|custodian
     |oil\s+change|lube\s+tech|tire\s+tech|automotive|collision|body\s+shop|attic\s+vent
     |distribution\s+(cent(er|re)|warehouse|associate)|warehouse|forklift|delivery\s+driver
-    |locksmith|pest\s+control|landscap|lawn\s+care|snow\s+removal|pool\s+clean)\b
+    |locksmith|pest\s+control|landscap|lawn\s+care|snow\s+removal|pool\s+clean
+    |telecom\w*|fiber\s+(optic|splic|groundman|lineman|tech)|fiber\s*-\s*joint|joint\s+use|cable\s+splic|catv|broadband
+    |communications?\s+(lineman|linemen|technician|tech|tower)
+    |window\s+(film|tint|install)|wind\s+tunnel)\b
 """)
+# Employers whose name says they are in another trade. "MasTec Communications
+# Group" posts aerial linemen, and they string fibre, not power.
+OFF_TRADE_CO = re.compile(r"(?i)\b(communications?|telecom\w*|cable\s+splicing|broadband|fiber|window|solar\s+control)\b")
 # In a description, only these specific phrases count as evidence.
 DESC_TERM = re.compile(r"""(?xi)
   wind\s+(turbine|farm|energy|power|technician|tech|site|project|hub|major|component|blade|industry|generator)
@@ -152,6 +158,10 @@ def vet(job, trusted=frozenset()):
     company = job.get("company", "")
     if OFF_TRADE.search(title):
         return False, "different trade"
+    # A utility's own fibre crew ("Substation Fiber Technician") stays; a
+    # telecom contractor's linemen do not, whatever the title calls them.
+    if OFF_TRADE_CO.search(company) and not re.search(r"(?i)substation|transmission|utility|power", title):
+        return False, "different trade"
     if not is_field_role(title):
         return False, "not field work"
     if title_anchor(title):
@@ -173,13 +183,16 @@ OFFICE_ONLY = re.compile(r"""(?xi)
     |director|president|officer|executive
     |estimator|analyst|planner|scheduler|architect|administrator|controller
     |coordinator|recruiter|buyer|paralegal|auditor|underwriter
-    |compliance|procurement|payroll|bookkeep)\b
+    |compliance|procurement|payroll|bookkeep
+    |finance|financial|accountant|accounting|marketing|human\s+resources|legal|counsel
+    |customer\s+(service|success|support)|dispatcher|drafter|drafting|cad
+    |originator|business\s+development|sales)\b
 """)
 
 # Roles that read as office work unless the title also names a trade.
 OFFICE_UNLESS_TRADE = re.compile(r"""(?xi)
-  \b(engineer|engineering|manager|management|supervisor|superintendent
-    |specialist|lead|consultant|advisor|strateg\w*|liaison)\b
+  \b(engineer|engineering|manager|mgr|management|supervisor|superintendent
+    |specialist|lead|consultant|advisor|strateg\w*|liaison|agent|associate)\b
 """)
 
 # Hands-on work. These win over the line above: an "Electrical Engineering
@@ -332,6 +345,28 @@ def carry_over(jobs, previous, today):
     return n
 
 
+# One posting syndicated to every city an employer works in: SOLV Energy's
+# "Solar Field Service Technician (Multiple Locations)" arrived as 100 copies.
+# A hundred identical pages is thin content to Google and a wall of the same
+# card to a reader. Keep a few per state so the state pages still show it.
+MAX_COPIES_PER_STATE = 2
+
+
+def cap_duplicates(jobs):
+    seen = collections.Counter()
+    out, dropped = [], 0
+    for j in jobs:
+        key = (j["title"].lower(), j["company_slug"], j["state"], j["description"][:300])
+        seen[key] += 1
+        if seen[key] > MAX_COPIES_PER_STATE:
+            dropped += 1
+            continue
+        out.append(j)
+    if dropped:
+        print(f"  dropped {dropped} duplicate copies of syndicated postings")
+    return out
+
+
 def main():
     if not APP_ID or not APP_KEY:
         sys.exit("Set ADZUNA_APP_ID and ADZUNA_APP_KEY")
@@ -376,6 +411,7 @@ def main():
     for why, n in rejected.most_common():
         print(f"  vetting dropped {n}: {why}")
     print(f"  vetting kept {len(kept)} of {len(candidates)}")
+    kept = cap_duplicates(kept)
 
     out = {
         "updated": datetime.now(timezone.utc).isoformat(),

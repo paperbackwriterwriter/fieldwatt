@@ -9,19 +9,19 @@
   "path": "/faq",
   "file": "faq.html",
   "title": "Frequently Asked Questions | FieldWatt",
-  "description": "How FieldWatt jobs, alerts, partner placements, and demo data work."
+  "description": "Where FieldWatt's jobs come from, how alerts work, and what featured and sponsored placements mean."
  },
  {
   "path": "/privacy",
   "file": "privacy.html",
   "title": "Privacy Policy | FieldWatt",
-  "description": "FieldWatt aggregates wind, solar, storage, and grid field jobs into one daily feed and a free Tuesday email."
+  "description": "What FieldWatt collects from its forms and the Tuesday email list, how it is used, and how to ask for deletion."
  },
  {
   "path": "/terms",
   "file": "terms.html",
   "title": "Terms of Use | FieldWatt",
-  "description": "FieldWatt aggregates wind, solar, storage, and grid field jobs into one daily feed and a free Tuesday email."
+  "description": "The terms for using the FieldWatt job feed, email alerts and paid placements."
  },
  {
   "path": "/alerts",

@@ -145,11 +145,15 @@
       }));
     });
   }
+  var turnstileFailed = false;
   if (window.FIELDWATT_TURNSTILE && document.querySelector('form[data-form]')) {
     window.onTurnstileReady = mountTurnstile;
     var ts = document.createElement('script');
     ts.src = 'https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit&onload=onTurnstileReady';
     ts.defer = true;
+    // a content blocker that stops the script would otherwise leave people
+    // told to "complete the verification above" with nothing above to complete
+    ts.onerror = function () { turnstileFailed = true; };
     document.head.appendChild(ts);
   }
 
@@ -170,7 +174,9 @@
         var id = widgets.get(form);
         var token = id !== undefined && window.turnstile ? window.turnstile.getResponse(id) : '';
         if (!token) {
-          if (status) status.textContent = 'Please complete the verification above and try again.';
+          if (status) status.textContent = turnstileFailed || !window.turnstile
+            ? 'The verification check could not load, usually because of an ad blocker. Allow challenges.cloudflare.com and reload, or email jobs@fieldwatt.com.'
+            : 'Please complete the verification above and try again.';
           return;
         }
         payload.turnstileToken = token;

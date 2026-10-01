@@ -8,7 +8,7 @@ Run:  python scripts/fetch_jobs.py
 Then: python scripts/build.py
 """
 import collections, json, os, re, sys, time, urllib.parse, urllib.request
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 
 APP_ID = os.environ.get("ADZUNA_APP_ID")
 APP_KEY = os.environ.get("ADZUNA_APP_KEY")
@@ -25,9 +25,15 @@ QUERIES = [
     "transmission line", "distribution lineman", "relay technician", "grid technician",
     "renewable energy technician", "wind farm", "solar farm",
 ]
-PAGES = 3
+# Each query returns its newest PAGES*50 listings. Busy terms ("wind farm",
+# "solar installer") have more live ads than that inside MAX_DAYS_OLD, so a
+# listing a week old can drop off the back of a search while still open. The
+# carry-over in main() keeps such listings until they age out; more pages
+# just means fewer need carrying.
+PAGES = 5
 MAX_DAYS_OLD = 30
 PAUSE = 0.6  # seconds between calls (Adzuna free tier is rate limited)
+RETRIES = 2  # Adzuna answers 503 now and then; one retry usually clears it
 
 # Titles that are clearly not field/trades work.
 EXCLUDE = re.compile(
@@ -299,6 +305,33 @@ def normalize(raw: dict):
     }
 
 
+def load_previous():
+    """Last night's feed, so listings that fell off the back of a search are
+    not mistaken for closed ones."""
+    try:
+        with open(OUT, encoding="utf-8") as f:
+            return json.load(f).get("jobs") or []
+    except (OSError, ValueError):
+        return []
+
+
+def carry_over(jobs, previous, today):
+    """Add listings from the previous feed that this fetch did not return and
+    that are still younger than MAX_DAYS_OLD, the same window the search
+    itself uses. A listing the employer has closed can linger until it ages
+    out, but that is no worse than what Adzuna's own window already allows,
+    and far better than open jobs vanishing because a busy search term pushed
+    them past the last page. They go through vetting again like everything
+    else. Returns how many were added."""
+    cutoff = (today - timedelta(days=MAX_DAYS_OLD)).isoformat()
+    n = 0
+    for j in previous:
+        if j.get("source") == "adzuna" and j["id"] not in jobs and j.get("posted", "") >= cutoff:
+            jobs[j["id"]] = j
+            n += 1
+    return n
+
+
 def main():
     if not APP_ID or not APP_KEY:
         sys.exit("Set ADZUNA_APP_ID and ADZUNA_APP_KEY")
@@ -306,10 +339,15 @@ def main():
     calls = 0
     for q in QUERIES:
         for page in range(1, PAGES + 1):
-            try:
-                data = api(q, page)
-            except Exception as e:  # noqa
-                print(f"  ! {q} p{page}: {e}")
+            data = None
+            for attempt in range(1, RETRIES + 2):
+                try:
+                    data = api(q, page)
+                    break
+                except Exception as e:  # noqa
+                    print(f"  ! {q} p{page} (try {attempt}): {e}")
+                    time.sleep(3 * attempt)
+            if data is None:
                 break
             calls += 1
             results = data.get("results") or []
@@ -321,6 +359,9 @@ def main():
             if len(results) < 50:
                 break
             time.sleep(PAUSE)
+    carried = carry_over(jobs, load_previous(), datetime.now(timezone.utc).date())
+    print(f"  carried over {carried} listings not in this fetch but still inside {MAX_DAYS_OLD} days")
+
     # Vetting runs once over the whole batch, because whether an employer is a
     # renewable outfit is read off its other listings.
     candidates = list(jobs.values())

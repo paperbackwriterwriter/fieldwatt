@@ -70,6 +70,18 @@ def job_row(j):
 
 def build_html(jobs, new):
     sections = ""
+    # Placements go first, labeled, whatever week they were posted.
+    featured = [j for j in jobs if j.get("featured") == "job"]
+    if featured:
+        sections += (
+            '<h2 style="font-size:18px;margin:28px 0 4px">Featured</h2>'
+            '<p style="color:#777;font-size:12px;margin:0 0 10px">'
+            "Featured placements, shown ahead of the feed.</p>"
+            '<ul style="padding-left:18px;margin:0">'
+            + "".join(job_row(j) for j in featured)
+            + "</ul>"
+        )
+        new = [j for j in new if not j.get("featured")]
     for fam in ["Wind", "Solar", "Storage", "Grid"]:
         fj = [j for j in new if fam in j["families"]][:10]
         if not fj:
@@ -114,7 +126,13 @@ def main():
         sys.exit("RESEND_API_KEY not set")
     path = os.path.join(ROOT, "data", "jobs.json")
     with open(path, encoding="utf-8") as f:
-        jobs = json.load(f)["jobs"]
+        data = json.load(f)
+    jobs = data["jobs"]
+    # Same placements, same order, as the site built from this feed.
+    sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+    import build
+    build.UPDATED = datetime.now(timezone.utc)
+    jobs = build.load_featured(jobs)
     cutoff = datetime.now(timezone.utc) - timedelta(days=7)
     week_ago = cutoff.strftime("%Y-%m-%d")
     new = [j for j in jobs if j.get("posted", "") >= week_ago]

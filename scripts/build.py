@@ -43,6 +43,121 @@ from fetch_jobs import STATES, slugify  # noqa: E402
 
 e = lambda s: html.escape(str(s), quote=True)
 
+# --------------------------------------------------------------------------- featured placements
+# data/featured.json is what a sold (or pilot) placement looks like to the
+# build. Each entry runs until its "until" date, inclusive, and disappears
+# from the next nightly build after that, so nothing has to be remembered.
+#
+#   {"jobs": [
+#      {"id": "5897993711", "until": "2026-11-01",
+#       "apply_url": "https://careers.example.com/123"},
+#      {"until": "2026-11-01", "title": "Wind Technician II",
+#       "company": "Example Energy", "location": "Big Spring, Texas",
+#       "state": "TX", "families": ["Wind"], "pay": "$68,000–$82,000",
+#       "description": "...", "apply_url": "https://careers.example.com/456"}],
+#    "companies": [{"slug": "example-energy", "until": "2026-11-01"}]}
+#
+# A job entry with an "id" features that listing from the feed; any other
+# field on the entry overrides the feed's, which is how a placement links to
+# the employer's own careers page instead of the aggregator. An entry without
+# an id is a listing the employer gave us directly and needs title, company,
+# location, state, families and apply_url. A featured company gets a label on
+# its page and every one of its feed listings moved to the top.
+#
+# Mistakes fail the build with a message rather than quietly dropping a
+# placement someone paid for; run the nightly workflow by hand after editing
+# the file to see it build.
+FEATURED_FILE = os.path.join(ROOT, "data", "featured.json")
+FEATURED_COMPANIES = {}   # slug -> entry, set by load_featured()
+
+
+def _active(entry, today):
+    start = entry.get("from")
+    return entry["until"] >= today.isoformat() and (not start or start <= today.isoformat())
+
+
+def _manual_job(entry, n):
+    for k in ("title", "company", "location", "state", "families", "apply_url"):
+        if not entry.get(k):
+            raise SystemExit(f"featured.json job {n}: missing {k!r}")
+    if entry["state"] not in STATES:
+        raise SystemExit(f"featured.json job {n}: unknown state {entry['state']!r}")
+    bad = [f for f in entry["families"] if f not in FAMILY_ORDER]
+    if bad:
+        raise SystemExit(f"featured.json job {n}: unknown family {bad[0]!r} (use {', '.join(FAMILY_ORDER)})")
+    city = entry["location"].split(",")[0].strip() if "," in entry["location"] else ""
+    pay = entry.get("pay")
+    return {
+        "id": f"featured-{n}",
+        "slug": f"{slugify(entry['title'])}--{slugify(entry['company'])}-featured",
+        "title": entry["title"],
+        "company": entry["company"],
+        "company_slug": slugify(entry["company"]),
+        "city": city,
+        "state": entry["state"],
+        "state_name": STATES[entry["state"]],
+        "location": entry["location"],
+        "families": entry["families"],
+        "description": re.sub(r"\s+", " ", entry.get("description") or "").strip()[:1200]
+                       or f"{entry['title']} with {entry['company']} in {entry['location']}. Full details and the application are on the employer's listing.",
+        "pay": pay,
+        "pay_listed": bool(pay and not str(pay).startswith("est.")),
+        "apply_url": entry["apply_url"],
+        "posted": entry.get("from") or entry.get("posted") or UPDATED.date().isoformat(),
+        "employment": entry.get("employment", []),
+        "source": "featured",
+    }
+
+
+def load_featured(jobs):
+    """Return the feed with placements applied: featured jobs first, flagged,
+    then featured companies' jobs, then the rest in feed order."""
+    if not os.path.exists(FEATURED_FILE):
+        return jobs
+    spec = json.load(open(FEATURED_FILE, encoding="utf-8"))
+    today = UPDATED.date()
+    by_id = {j["id"]: j for j in jobs}
+    featured, used = [], set()
+    for n, entry in enumerate(spec.get("jobs", []), 1):
+        if not entry.get("until"):
+            raise SystemExit(f"featured.json job {n}: missing 'until' date")
+        if not _active(entry, today):
+            continue
+        if entry.get("id"):
+            job = by_id.get(str(entry["id"]))
+            if not job:
+                # the listing left the feed; nothing to feature, but say so
+                print(f"featured.json job {n}: id {entry['id']} is no longer in the feed, skipped")
+                continue
+            job = dict(job, **{k: v for k, v in entry.items() if k not in ("id", "from", "until")})
+            used.add(job["id"])
+        else:
+            job = _manual_job(entry, n)
+        job["featured"] = "job"
+        featured.append(job)
+
+    FEATURED_COMPANIES.clear()
+    for n, entry in enumerate(spec.get("companies", []), 1):
+        if not entry.get("slug") or not entry.get("until"):
+            raise SystemExit(f"featured.json company {n}: needs 'slug' and 'until'")
+        if _active(entry, today):
+            FEATURED_COMPANIES[entry["slug"]] = entry
+
+    rest = [j for j in jobs if j["id"] not in used]
+    company_jobs = [dict(j, featured="company") for j in rest if j["company_slug"] in FEATURED_COMPANIES]
+    others = [j for j in rest if j["company_slug"] not in FEATURED_COMPANIES]
+    if featured or company_jobs:
+        print(f"featured: {len(featured)} jobs, {len(FEATURED_COMPANIES)} companies ({len(company_jobs)} listings)")
+    return featured + company_jobs + others
+
+
+def featured_badge(job, cls="bg-foreground text-background"):
+    """The label every paid placement carries, on cards and the job page."""
+    if not job.get("featured"):
+        return ""
+    text = "Featured" if job["featured"] == "job" else "Featured company"
+    return f'<span class="{cls} px-2 py-1">{text}</span>'
+
 # --------------------------------------------------------------------------- icons
 ICON = {
     "arrow": '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>',
@@ -71,13 +186,14 @@ def layout(title, desc, body, path, extra_head=""):
 
 # --------------------------------------------------------------------------- pieces
 def tags(job):
-    return '<p class="flex flex-wrap gap-2 text-xs font-semibold uppercase tracking-[0.14em] text-primary-foreground">' + "".join(f'<span class="bg-primary px-2 py-1">{f}</span>' for f in job["families"]) + "</p>"
+    return '<p class="flex flex-wrap gap-2 text-xs font-semibold uppercase tracking-[0.14em] text-primary-foreground">' + featured_badge(job) + "".join(f'<span class="bg-primary px-2 py-1">{f}</span>' for f in job["families"]) + "</p>"
 
 
 def card(job):
     snippet = job["description"][:260].rstrip() + ("…" if len(job["description"]) > 260 else "")
     pay = f'<p class="font-semibold text-foreground">{e(job["pay"])}</p>' if job.get("pay") else '<p class="text-sm text-muted-foreground">Pay not listed</p>'
-    return (f'<article class="grid gap-3 py-5 sm:grid-cols-[1fr_auto] sm:items-center" data-job data-state="{job["state"]}" data-fam="{" ".join(job["families"])}">'
+    featured = ' data-featured' if job.get("featured") else ""
+    return (f'<article class="grid gap-3 py-5 sm:grid-cols-[1fr_auto] sm:items-center" data-job{featured} data-state="{job["state"]}" data-fam="{" ".join(job["families"])}">'
             f'<div>{tags(job)}<h3 class="mt-3 font-[family-name:var(--font-heading)] text-lg font-bold"><a class="hover:text-primary" href="/jobs/{job["slug"]}">{e(job["title"])}</a></h3>'
             f'<p class="mt-1 text-sm text-muted-foreground"><a class="font-medium text-foreground underline decoration-primary/60 underline-offset-4 hover:text-primary" href="/employers/{job["company_slug"]}">{e(job["company"])}</a> · {ICON["pin"]} {e(job["location"])}</p>'
             f'<p class="mt-2 max-w-2xl text-sm leading-6 text-muted-foreground">{e(snippet)}</p></div>'
@@ -210,25 +326,37 @@ def description(job):
     return job["description"] + ("…" if len(job["description"]) >= 1200 else "")
 
 
+def placement_note(job):
+    """Why this listing sits where it does. Every placement says so on its page."""
+    if not job.get("featured"):
+        return ""
+    what = "This job is a featured placement" if job["featured"] == "job" else f"{e(job['company'])} is a featured company on FieldWatt"
+    return f'<p class="mt-3 text-sm text-muted-foreground">{what}: it is shown ahead of other listings. Placement does not change how FieldWatt reviews a role or where you apply.</p>'
+
+
 def job_page(job):
     fam = job["families"][0]
     guides = "".join(f'<a class="border border-border bg-card px-4 py-3 text-sm font-semibold hover:border-primary hover:text-primary" href="{h}">{t}</a>' for t, h in FROM_GUIDES[fam])
     pay = e(job["pay"]) if job.get("pay") else "Not listed"
     hire_q = "company=" + e(job["company"]).replace(" ", "+") + "&amp;jobTitle=" + e(job["title"]).replace(" ", "+")
-    body = f'''<section class="field-grid border-b border-border bg-secondary text-secondary-foreground"><div class="mx-auto max-w-7xl px-4 py-12 sm:px-6 sm:py-16 lg:px-8"><a class="text-xs font-semibold uppercase tracking-[0.16em] text-primary hover:text-secondary-foreground" href="/jobs">All jobs</a><div class="mt-6 grid gap-7 lg:grid-cols-[minmax(0,1fr)_260px] lg:items-end"><div><p class="flex flex-wrap gap-2 text-xs font-semibold uppercase tracking-[0.16em] text-primary">{"".join(f"<span>{f}</span>" for f in job["families"])}<span>field role</span></p><h1 class="mt-4 max-w-4xl font-[family-name:var(--font-heading)] text-4xl font-bold leading-tight sm:text-6xl">{e(job["title"])}</h1><p class="mt-5 flex flex-wrap items-center gap-x-2 gap-y-1 text-lg text-secondary-foreground/80">{ICON["building"]} <a class="font-semibold text-secondary-foreground underline decoration-primary underline-offset-4" href="/employers/{job["company_slug"]}">{e(job["company"])}</a><span aria-hidden="true">·</span>{ICON["pin5"]} {e(job["location"])}</p></div><div class="space-y-4"><a href="{e(job["apply_url"])}" target="_blank" rel="noreferrer noopener" class="inline-flex min-h-12 w-full items-center justify-center gap-2 bg-primary px-5 py-3 text-sm font-bold text-primary-foreground hover:bg-primary/90">View application source {ICON["external"]}</a><div class="border-l-4 border-primary bg-background/10 px-4 py-4 text-left"><p class="text-xs font-semibold uppercase tracking-[0.14em] text-primary">Hiring for this role?</p><p class="mt-2 text-sm leading-6 text-secondary-foreground/80">Highlight a live field opening to the FieldWatt renewable-trades audience. Paid placements are labeled.</p><a class="mt-3 inline-flex items-center gap-2 text-sm font-bold text-secondary-foreground underline decoration-primary decoration-2 underline-offset-4 hover:text-primary" href="/hire?{hire_q}#featured-job-intake">Feature this job {ICON["arrow"]}</a></div></div></div></div></section><section class="mx-auto grid max-w-7xl gap-10 px-4 py-12 sm:px-6 lg:grid-cols-[minmax(0,1fr)_300px] lg:px-8 lg:py-16"><article><div class="grid gap-px border border-border bg-border sm:grid-cols-3"><div class="bg-card p-5"><p class="text-xs font-semibold uppercase tracking-[0.14em] text-muted-foreground">Location</p><p class="mt-2 font-semibold">{e(job["location"])}</p></div><div class="bg-card p-5"><p class="text-xs font-semibold uppercase tracking-[0.14em] text-muted-foreground">Pay</p><p class="mt-2 font-semibold">{pay}</p></div><div class="bg-card p-5"><p class="text-xs font-semibold uppercase tracking-[0.14em] text-muted-foreground">Source freshness</p><p class="mt-2 font-semibold">Updated {UPDATED.strftime("%B %-d, %Y")}</p></div></div><div class="mt-10"><p class="text-xs font-semibold uppercase tracking-[0.16em] text-primary">Role overview</p><h2 class="mt-3 font-[family-name:var(--font-heading)] text-3xl font-bold">What the employer shared</h2><p class="mt-5 max-w-3xl text-lg leading-8 text-muted-foreground">{e(description(job))}</p><p class="mt-4 text-sm text-muted-foreground">Listed {e(job["posted"])}. Full details, requirements, and the application are on the employer&#x27;s listing.</p></div><div class="mt-10 border-t border-border pt-10"><div class="flex items-center gap-2">{ICON["hardhat"]}<p class="text-xs font-semibold uppercase tracking-[0.16em] text-primary">Background fit</p></div><h2 class="mt-3 font-[family-name:var(--font-heading)] text-3xl font-bold">Your current experience can transfer.</h2><p class="mt-4 max-w-3xl leading-7 text-muted-foreground">This {fam.lower()} role can draw on the experience you already have. These FieldWatt guides can help you compare the role before you apply.</p><div class="mt-6 flex flex-wrap gap-3">{guides}</div></div></article><aside class="space-y-6"><div class="border border-border bg-accent p-6"><p class="text-xs font-semibold uppercase tracking-[0.16em] text-muted-foreground">More like this</p><div class="mt-4 space-y-3"><a class="flex items-center justify-between border-b border-border pb-3 text-sm font-bold text-foreground hover:text-primary" href="/jobs/{slugify(job["state_name"])}">{e(job["state_name"])} jobs {ICON["arrow"]}</a><a class="flex items-center justify-between border-b border-border pb-3 text-sm font-bold text-foreground hover:text-primary" href="/jobs/{fam.lower()}">{fam} jobs {ICON["arrow"]}</a><a class="flex items-center justify-between border-b border-border pb-3 text-sm font-bold text-foreground hover:text-primary" href="/jobs/{slugify(job["state_name"])}/{fam.lower()}">{fam} jobs in {e(job["state_name"])} {ICON["arrow"]}</a></div></div><div class="border border-border bg-card p-6"><p class="text-sm font-semibold text-foreground">Want new matches by email?</p><p class="mt-2 text-sm leading-6 text-muted-foreground">The Tuesday email is free and keeps you close to new field roles.</p><a class="mt-4 inline-flex h-10 items-center bg-primary px-4 text-sm font-medium text-primary-foreground" href="/alerts?role={fam}&amp;state={job["state"]}">Get free alerts</a></div></aside></section>'''
+    body = f'''<section class="field-grid border-b border-border bg-secondary text-secondary-foreground"><div class="mx-auto max-w-7xl px-4 py-12 sm:px-6 sm:py-16 lg:px-8"><a class="text-xs font-semibold uppercase tracking-[0.16em] text-primary hover:text-secondary-foreground" href="/jobs">All jobs</a><div class="mt-6 grid gap-7 lg:grid-cols-[minmax(0,1fr)_260px] lg:items-end"><div><p class="flex flex-wrap gap-2 text-xs font-semibold uppercase tracking-[0.16em] text-primary">{featured_badge(job, "bg-primary text-primary-foreground")}{"".join(f"<span>{f}</span>" for f in job["families"])}<span>field role</span></p><h1 class="mt-4 max-w-4xl font-[family-name:var(--font-heading)] text-4xl font-bold leading-tight sm:text-6xl">{e(job["title"])}</h1><p class="mt-5 flex flex-wrap items-center gap-x-2 gap-y-1 text-lg text-secondary-foreground/80">{ICON["building"]} <a class="font-semibold text-secondary-foreground underline decoration-primary underline-offset-4" href="/employers/{job["company_slug"]}">{e(job["company"])}</a><span aria-hidden="true">·</span>{ICON["pin5"]} {e(job["location"])}</p></div><div class="space-y-4"><a href="{e(job["apply_url"])}" target="_blank" rel="noreferrer noopener" class="inline-flex min-h-12 w-full items-center justify-center gap-2 bg-primary px-5 py-3 text-sm font-bold text-primary-foreground hover:bg-primary/90">View application source {ICON["external"]}</a><div class="border-l-4 border-primary bg-background/10 px-4 py-4 text-left"><p class="text-xs font-semibold uppercase tracking-[0.14em] text-primary">Hiring for this role?</p><p class="mt-2 text-sm leading-6 text-secondary-foreground/80">Highlight a live field opening to the FieldWatt renewable-trades audience. Paid placements are labeled.</p><a class="mt-3 inline-flex items-center gap-2 text-sm font-bold text-secondary-foreground underline decoration-primary decoration-2 underline-offset-4 hover:text-primary" href="/hire?{hire_q}#featured-job-intake">Feature this job {ICON["arrow"]}</a></div></div></div></div></section><section class="mx-auto grid max-w-7xl gap-10 px-4 py-12 sm:px-6 lg:grid-cols-[minmax(0,1fr)_300px] lg:px-8 lg:py-16"><article><div class="grid gap-px border border-border bg-border sm:grid-cols-3"><div class="bg-card p-5"><p class="text-xs font-semibold uppercase tracking-[0.14em] text-muted-foreground">Location</p><p class="mt-2 font-semibold">{e(job["location"])}</p></div><div class="bg-card p-5"><p class="text-xs font-semibold uppercase tracking-[0.14em] text-muted-foreground">Pay</p><p class="mt-2 font-semibold">{pay}</p></div><div class="bg-card p-5"><p class="text-xs font-semibold uppercase tracking-[0.14em] text-muted-foreground">Source freshness</p><p class="mt-2 font-semibold">Updated {UPDATED.strftime("%B %-d, %Y")}</p></div></div><div class="mt-10"><p class="text-xs font-semibold uppercase tracking-[0.16em] text-primary">Role overview</p><h2 class="mt-3 font-[family-name:var(--font-heading)] text-3xl font-bold">What the employer shared</h2><p class="mt-5 max-w-3xl text-lg leading-8 text-muted-foreground">{e(description(job))}</p><p class="mt-4 text-sm text-muted-foreground">Listed {e(job["posted"])}. Full details, requirements, and the application are on the employer&#x27;s listing.</p>{placement_note(job)}</div><div class="mt-10 border-t border-border pt-10"><div class="flex items-center gap-2">{ICON["hardhat"]}<p class="text-xs font-semibold uppercase tracking-[0.16em] text-primary">Background fit</p></div><h2 class="mt-3 font-[family-name:var(--font-heading)] text-3xl font-bold">Your current experience can transfer.</h2><p class="mt-4 max-w-3xl leading-7 text-muted-foreground">This {fam.lower()} role can draw on the experience you already have. These FieldWatt guides can help you compare the role before you apply.</p><div class="mt-6 flex flex-wrap gap-3">{guides}</div></div></article><aside class="space-y-6"><div class="border border-border bg-accent p-6"><p class="text-xs font-semibold uppercase tracking-[0.16em] text-muted-foreground">More like this</p><div class="mt-4 space-y-3"><a class="flex items-center justify-between border-b border-border pb-3 text-sm font-bold text-foreground hover:text-primary" href="/jobs/{slugify(job["state_name"])}">{e(job["state_name"])} jobs {ICON["arrow"]}</a><a class="flex items-center justify-between border-b border-border pb-3 text-sm font-bold text-foreground hover:text-primary" href="/jobs/{fam.lower()}">{fam} jobs {ICON["arrow"]}</a><a class="flex items-center justify-between border-b border-border pb-3 text-sm font-bold text-foreground hover:text-primary" href="/jobs/{slugify(job["state_name"])}/{fam.lower()}">{fam} jobs in {e(job["state_name"])} {ICON["arrow"]}</a></div></div><div class="border border-border bg-card p-6"><p class="text-sm font-semibold text-foreground">Want new matches by email?</p><p class="mt-2 text-sm leading-6 text-muted-foreground">The Tuesday email is free and keeps you close to new field roles.</p><a class="mt-4 inline-flex h-10 items-center bg-primary px-4 text-sm font-medium text-primary-foreground" href="/alerts?role={fam}&amp;state={job["state"]}">Get free alerts</a></div></aside></section>'''
     title = f'{job["title"]} at {job["company"]} in {job["location"]} | FieldWatt'
     return layout(title, job["description"][:300], body, f'/jobs/{job["slug"]}', job_ld(job))
 
 
 def employer_page(name, slug, jobs):
-    body = f'''<section class="field-grid border-b border-border bg-secondary text-secondary-foreground"><div class="mx-auto max-w-7xl px-4 py-12 sm:px-6 sm:py-16 lg:px-8"><a class="text-xs font-semibold uppercase tracking-[0.16em] text-primary hover:text-secondary-foreground" href="/employers">Employer directory</a><h1 class="mt-4 max-w-4xl font-[family-name:var(--font-heading)] text-4xl font-bold leading-tight sm:text-6xl">{e(name)}</h1><p class="mt-5 max-w-2xl text-lg leading-8 text-secondary-foreground/80">FieldWatt links applicants to the employer&#x27;s own application page. We do not take applications or represent employers in the hiring process.</p><p class="mt-4 text-sm font-semibold text-secondary-foreground/80">{len(jobs)} current relevant listing{"s" if len(jobs) != 1 else ""}</p></div></section><section class="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8"><p class="text-xs font-semibold uppercase tracking-[0.16em] text-muted-foreground">Jobs from this employer</p>{cards(jobs)}<a class="mt-8 inline-flex items-center gap-2 text-sm font-bold underline decoration-primary decoration-2 underline-offset-4" href="/jobs">Browse all jobs {ICON["arrow"]}</a></section><section class="border-t border-border bg-muted/40"><div class="mx-auto grid max-w-7xl gap-8 px-4 py-12 sm:px-6 lg:grid-cols-2 lg:px-8"><div class="border border-border bg-card p-6"><p class="text-xs font-semibold uppercase tracking-[0.16em] text-primary">Free page claim</p><h2 class="mt-3 font-[family-name:var(--font-heading)] text-2xl font-bold">Is this your page?</h2><p class="mt-3 text-sm leading-6 text-muted-foreground">Verify control of a company work inbox to request this page. Verification does not automatically establish ownership; FieldWatt may review mismatches or abuse.</p><form class="mt-5 grid gap-3" data-form="employer-claim"><input type="hidden" name="company" value="{e(name)}"/><input type="hidden" name="website" value=""/><label class="text-sm font-semibold text-foreground">Work email<input class="mt-2 w-full border border-input bg-background px-3 py-2.5 text-sm text-foreground outline-none ring-ring focus:ring-2" type="email" name="email" required="" placeholder="you@company.com"/></label><button class="inline-flex h-10 items-center justify-center bg-primary px-4 text-sm font-medium text-primary-foreground hover:bg-primary/90" type="submit">Claim this page free</button><p class="text-xs text-muted-foreground" data-status aria-live="polite"></p></form></div><div class="border border-border bg-card p-6"><p class="text-xs font-semibold uppercase tracking-[0.16em] text-primary">Paid placement options</p><h2 class="mt-3 font-[family-name:var(--font-heading)] text-2xl font-bold">Feature active field work.</h2><p class="mt-3 text-sm leading-6 text-muted-foreground">Choose a labeled placement through self-serve checkout. These options are separate from claiming this free directory page.</p><div class="mt-5 flex flex-col gap-3 sm:flex-row"><a class="inline-flex h-10 items-center justify-center border border-border px-4 text-sm font-medium hover:border-primary" href="/hire#featured-job">Feature a job — $149</a><a class="inline-flex h-10 items-center justify-center border border-border px-4 text-sm font-medium hover:border-primary" href="/hire#featured-company">Featured Company — $299/month</a></div></div></div></section>'''
+    body = f'''<section class="field-grid border-b border-border bg-secondary text-secondary-foreground"><div class="mx-auto max-w-7xl px-4 py-12 sm:px-6 sm:py-16 lg:px-8"><a class="text-xs font-semibold uppercase tracking-[0.16em] text-primary hover:text-secondary-foreground" href="/employers">Employer directory</a>{'<p class="mt-4 inline-flex bg-primary px-2 py-1 text-xs font-semibold uppercase tracking-[0.16em] text-primary-foreground">Featured company</p>' if slug in FEATURED_COMPANIES else ""}<h1 class="mt-4 max-w-4xl font-[family-name:var(--font-heading)] text-4xl font-bold leading-tight sm:text-6xl">{e(name)}</h1><p class="mt-5 max-w-2xl text-lg leading-8 text-secondary-foreground/80">FieldWatt links applicants to the employer&#x27;s own application page. We do not take applications or represent employers in the hiring process.</p><p class="mt-4 text-sm font-semibold text-secondary-foreground/80">{len(jobs)} current relevant listing{"s" if len(jobs) != 1 else ""}</p></div></section><section class="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8"><p class="text-xs font-semibold uppercase tracking-[0.16em] text-muted-foreground">Jobs from this employer</p>{cards(jobs)}<a class="mt-8 inline-flex items-center gap-2 text-sm font-bold underline decoration-primary decoration-2 underline-offset-4" href="/jobs">Browse all jobs {ICON["arrow"]}</a></section><section class="border-t border-border bg-muted/40"><div class="mx-auto grid max-w-7xl gap-8 px-4 py-12 sm:px-6 lg:grid-cols-2 lg:px-8"><div class="border border-border bg-card p-6"><p class="text-xs font-semibold uppercase tracking-[0.16em] text-primary">Free page claim</p><h2 class="mt-3 font-[family-name:var(--font-heading)] text-2xl font-bold">Is this your page?</h2><p class="mt-3 text-sm leading-6 text-muted-foreground">Verify control of a company work inbox to request this page. Verification does not automatically establish ownership; FieldWatt may review mismatches or abuse.</p><form class="mt-5 grid gap-3" data-form="employer-claim"><input type="hidden" name="company" value="{e(name)}"/><input type="hidden" name="website" value=""/><label class="text-sm font-semibold text-foreground">Work email<input class="mt-2 w-full border border-input bg-background px-3 py-2.5 text-sm text-foreground outline-none ring-ring focus:ring-2" type="email" name="email" required="" placeholder="you@company.com"/></label><button class="inline-flex h-10 items-center justify-center bg-primary px-4 text-sm font-medium text-primary-foreground hover:bg-primary/90" type="submit">Claim this page free</button><p class="text-xs text-muted-foreground" data-status aria-live="polite"></p></form></div><div class="border border-border bg-card p-6"><p class="text-xs font-semibold uppercase tracking-[0.16em] text-primary">Paid placement options</p><h2 class="mt-3 font-[family-name:var(--font-heading)] text-2xl font-bold">Feature active field work.</h2><p class="mt-3 text-sm leading-6 text-muted-foreground">Choose a labeled placement through self-serve checkout. These options are separate from claiming this free directory page.</p><div class="mt-5 flex flex-col gap-3 sm:flex-row"><a class="inline-flex h-10 items-center justify-center border border-border px-4 text-sm font-medium hover:border-primary" href="/hire#featured-job">Feature a job — $149</a><a class="inline-flex h-10 items-center justify-center border border-border px-4 text-sm font-medium hover:border-primary" href="/hire#featured-company">Featured Company — $299/month</a></div></div></div></section>'''
     return layout(f"{name} Jobs | FieldWatt", f"Current renewable trades listings from {name}, with links to the employer's own application page.", body, f"/employers/{slug}")
+
+
+def company_badge(slug):
+    return ' <span class="shrink-0 bg-primary px-2 py-1 text-xs font-semibold uppercase tracking-[0.14em] text-primary-foreground">Featured</span>' if slug in FEATURED_COMPANIES else ""
 
 
 def employers_index(employers):
     rows = "".join(
-        f'<a class="group flex items-center justify-between gap-5 py-5" href="/employers/{slug}"><span class="flex min-w-0 items-center gap-3 font-[family-name:var(--font-heading)] text-xl font-bold text-foreground group-hover:text-primary"><span class="flex shrink-0 items-center justify-center border border-border bg-card p-2 h-10 w-10">{ICON["building_sm"]}</span> <span class="truncate">{e(name)}</span></span><span class="flex items-center gap-3 text-sm text-muted-foreground">{n} job{"s" if n != 1 else ""} {ICON["chevron"]}</span></a>'
-        for name, slug, n in employers)
+        f'<a class="group flex items-center justify-between gap-5 py-5" href="/employers/{slug}"><span class="flex min-w-0 items-center gap-3 font-[family-name:var(--font-heading)] text-xl font-bold text-foreground group-hover:text-primary"><span class="flex shrink-0 items-center justify-center border border-border bg-card p-2 h-10 w-10">{ICON["building_sm"]}</span> <span class="truncate">{e(name)}</span>{company_badge(slug)}</span><span class="flex items-center gap-3 text-sm text-muted-foreground">{n} job{"s" if n != 1 else ""} {ICON["chevron"]}</span></a>'
+        for name, slug, n in sorted(employers, key=lambda t: t[1] not in FEATURED_COMPANIES))
     body = f'''<section class="field-grid border-b border-border bg-secondary text-secondary-foreground"><div class="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8"><p class="text-xs font-semibold uppercase tracking-[0.16em] text-primary">Employer directory</p><h1 class="mt-4 max-w-3xl font-[family-name:var(--font-heading)] text-4xl font-bold leading-tight sm:text-6xl">Renewable field employers, in one place.</h1><p class="mt-6 max-w-2xl text-lg leading-8 text-secondary-foreground/80">Review relevant jobs by employer, then apply through the employer&#x27;s own application site.</p></div></section><section class="mx-auto max-w-7xl px-4 py-14 sm:px-6 lg:px-8"><p class="max-w-3xl border-l-2 border-primary pl-4 text-sm leading-6 text-muted-foreground">This directory is generated from current active listings. Employer pages link back to the original application source.</p><input id="employer-search" placeholder="Search {len(employers)} companies" class="mt-8 h-11 w-full max-w-md border border-input bg-background px-3 text-sm outline-none ring-ring focus:ring-2"/><div class="mt-6 divide-y divide-border border-y border-border" id="employer-list">{rows}</div></section>'''
     return layout("Employer Directory | FieldWatt", "Renewable field employers with current wind, solar, storage and grid listings.", body, "/employers")
 
@@ -268,6 +396,7 @@ def main():
     data = json.load(open(os.path.join(ROOT, "data", "jobs.json"), encoding="utf-8"))
     jobs = data["jobs"]
     UPDATED = datetime.fromisoformat(data["updated"].replace("Z", "+00:00")) if data.get("updated") else datetime.now(timezone.utc)
+    jobs = load_featured(jobs)
 
     if os.path.exists(SITE):
         shutil.rmtree(SITE)

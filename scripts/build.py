@@ -10,7 +10,7 @@ from datetime import date, datetime, timedelta, timezone
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 SITE = os.path.join(ROOT, "site")
 DOMAIN = "https://fieldwatt.com"
-CONTACT = "christian@fieldwatt.com"
+CONTACT = "jobs@fieldwatt.com"
 
 MIDWEST_HUB = ["IA", "IL", "KS", "OK", "MN"]                      # /jobs/midwest
 CORRIDOR = ["IA", "NE", "KS", "OK", "SD", "ND", "MN", "IL", "MO", "TX"]  # "Wind-corridor Midwest" filter

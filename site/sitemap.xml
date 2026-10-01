@@ -6,14 +6,16 @@
   <url><loc>https://fieldwatt.com/jobs/alabama</loc></url>
   <url><loc>https://fieldwatt.com/jobs/alabama/wind</loc></url>
   <url><loc>https://fieldwatt.com/jobs/alabama/solar</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/alabama/storage</loc></url>
   <url><loc>https://fieldwatt.com/jobs/alabama/grid</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/alaska</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/alaska/grid</loc></url>
   <url><loc>https://fieldwatt.com/jobs/arizona</loc></url>
   <url><loc>https://fieldwatt.com/jobs/arizona/solar</loc></url>
   <url><loc>https://fieldwatt.com/jobs/arizona/storage</loc></url>
   <url><loc>https://fieldwatt.com/jobs/arizona/grid</loc></url>
   <url><loc>https://fieldwatt.com/jobs/arkansas</loc></url>
   <url><loc>https://fieldwatt.com/jobs/arkansas/solar</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/arkansas/storage</loc></url>
   <url><loc>https://fieldwatt.com/jobs/arkansas/grid</loc></url>
   <url><loc>https://fieldwatt.com/jobs/california</loc></url>
   <url><loc>https://fieldwatt.com/jobs/california/wind</loc></url>
@@ -28,6 +30,7 @@
   <url><loc>https://fieldwatt.com/jobs/connecticut</loc></url>
   <url><loc>https://fieldwatt.com/jobs/connecticut/wind</loc></url>
   <url><loc>https://fieldwatt.com/jobs/connecticut/solar</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/connecticut/grid</loc></url>
   <url><loc>https://fieldwatt.com/jobs/florida</loc></url>
   <url><loc>https://fieldwatt.com/jobs/florida/wind</loc></url>
   <url><loc>https://fieldwatt.com/jobs/florida/solar</loc></url>
@@ -39,7 +42,6 @@
   <url><loc>https://fieldwatt.com/jobs/georgia/grid</loc></url>
   <url><loc>https://fieldwatt.com/jobs/hawaii</loc></url>
   <url><loc>https://fieldwatt.com/jobs/hawaii/solar</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/hawaii/grid</loc></url>
   <url><loc>https://fieldwatt.com/jobs/idaho</loc></url>
   <url><loc>https://fieldwatt.com/jobs/idaho/wind</loc></url>
   <url><loc>https://fieldwatt.com/jobs/idaho/solar</loc></url>
@@ -70,16 +72,16 @@
   <url><loc>https://fieldwatt.com/jobs/louisiana/grid</loc></url>
   <url><loc>https://fieldwatt.com/jobs/maine</loc></url>
   <url><loc>https://fieldwatt.com/jobs/maine/solar</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/maine/storage</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/maine/grid</loc></url>
   <url><loc>https://fieldwatt.com/jobs/maryland</loc></url>
   <url><loc>https://fieldwatt.com/jobs/maryland/solar</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/maryland/storage</loc></url>
   <url><loc>https://fieldwatt.com/jobs/maryland/grid</loc></url>
   <url><loc>https://fieldwatt.com/jobs/massachusetts</loc></url>
   <url><loc>https://fieldwatt.com/jobs/massachusetts/solar</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/massachusetts/grid</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/massachusetts/storage</loc></url>
   <url><loc>https://fieldwatt.com/jobs/michigan</loc></url>
   <url><loc>https://fieldwatt.com/jobs/michigan/solar</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/michigan/storage</loc></url>
   <url><loc>https://fieldwatt.com/jobs/michigan/grid</loc></url>
   <url><loc>https://fieldwatt.com/jobs/minnesota</loc></url>
   <url><loc>https://fieldwatt.com/jobs/minnesota/wind</loc></url>
@@ -92,19 +94,15 @@
   <url><loc>https://fieldwatt.com/jobs/mississippi/storage</loc></url>
   <url><loc>https://fieldwatt.com/jobs/mississippi/grid</loc></url>
   <url><loc>https://fieldwatt.com/jobs/missouri</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/missouri/wind</loc></url>
   <url><loc>https://fieldwatt.com/jobs/missouri/solar</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/missouri/storage</loc></url>
   <url><loc>https://fieldwatt.com/jobs/missouri/grid</loc></url>
   <url><loc>https://fieldwatt.com/jobs/montana</loc></url>
   <url><loc>https://fieldwatt.com/jobs/montana/wind</loc></url>
   <url><loc>https://fieldwatt.com/jobs/montana/solar</loc></url>
   <url><loc>https://fieldwatt.com/jobs/montana/storage</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/montana/grid</loc></url>
   <url><loc>https://fieldwatt.com/jobs/nebraska</loc></url>
   <url><loc>https://fieldwatt.com/jobs/nebraska/wind</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/nebraska/solar</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/nebraska/storage</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/nebraska/grid</loc></url>
   <url><loc>https://fieldwatt.com/jobs/nevada</loc></url>
   <url><loc>https://fieldwatt.com/jobs/nevada/solar</loc></url>
   <url><loc>https://fieldwatt.com/jobs/nevada/storage</loc></url>
@@ -114,7 +112,6 @@
   <url><loc>https://fieldwatt.com/jobs/new-hampshire/grid</loc></url>
   <url><loc>https://fieldwatt.com/jobs/new-jersey</loc></url>
   <url><loc>https://fieldwatt.com/jobs/new-jersey/solar</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/new-jersey/storage</loc></url>
   <url><loc>https://fieldwatt.com/jobs/new-jersey/grid</loc></url>
   <url><loc>https://fieldwatt.com/jobs/new-mexico</loc></url>
   <url><loc>https://fieldwatt.com/jobs/new-mexico/wind</loc></url>
@@ -127,17 +124,16 @@
   <url><loc>https://fieldwatt.com/jobs/new-york/storage</loc></url>
   <url><loc>https://fieldwatt.com/jobs/new-york/grid</loc></url>
   <url><loc>https://fieldwatt.com/jobs/north-carolina</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/north-carolina/wind</loc></url>
   <url><loc>https://fieldwatt.com/jobs/north-carolina/solar</loc></url>
   <url><loc>https://fieldwatt.com/jobs/north-carolina/storage</loc></url>
   <url><loc>https://fieldwatt.com/jobs/north-carolina/grid</loc></url>
   <url><loc>https://fieldwatt.com/jobs/north-dakota</loc></url>
   <url><loc>https://fieldwatt.com/jobs/north-dakota/wind</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/north-dakota/solar</loc></url>
   <url><loc>https://fieldwatt.com/jobs/north-dakota/grid</loc></url>
   <url><loc>https://fieldwatt.com/jobs/ohio</loc></url>
   <url><loc>https://fieldwatt.com/jobs/ohio/wind</loc></url>
   <url><loc>https://fieldwatt.com/jobs/ohio/solar</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/ohio/storage</loc></url>
   <url><loc>https://fieldwatt.com/jobs/ohio/grid</loc></url>
   <url><loc>https://fieldwatt.com/jobs/oklahoma</loc></url>
   <url><loc>https://fieldwatt.com/jobs/oklahoma/wind</loc></url>
@@ -153,16 +149,12 @@
   <url><loc>https://fieldwatt.com/jobs/pennsylvania/grid</loc></url>
   <url><loc>https://fieldwatt.com/jobs/rhode-island</loc></url>
   <url><loc>https://fieldwatt.com/jobs/rhode-island/solar</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/rhode-island/storage</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/rhode-island/grid</loc></url>
   <url><loc>https://fieldwatt.com/jobs/south-carolina</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/south-carolina/wind</loc></url>
   <url><loc>https://fieldwatt.com/jobs/south-carolina/solar</loc></url>
   <url><loc>https://fieldwatt.com/jobs/south-carolina/storage</loc></url>
   <url><loc>https://fieldwatt.com/jobs/south-carolina/grid</loc></url>
   <url><loc>https://fieldwatt.com/jobs/south-dakota</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/south-dakota/wind</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/south-dakota/solar</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/south-dakota/storage</loc></url>
   <url><loc>https://fieldwatt.com/jobs/south-dakota/grid</loc></url>
   <url><loc>https://fieldwatt.com/jobs/tennessee</loc></url>
   <url><loc>https://fieldwatt.com/jobs/tennessee/solar</loc></url>
@@ -179,61 +171,349 @@
   <url><loc>https://fieldwatt.com/jobs/utah/grid</loc></url>
   <url><loc>https://fieldwatt.com/jobs/vermont</loc></url>
   <url><loc>https://fieldwatt.com/jobs/vermont/solar</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/vermont/storage</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/vermont/grid</loc></url>
   <url><loc>https://fieldwatt.com/jobs/virginia</loc></url>
   <url><loc>https://fieldwatt.com/jobs/virginia/solar</loc></url>
   <url><loc>https://fieldwatt.com/jobs/virginia/storage</loc></url>
   <url><loc>https://fieldwatt.com/jobs/virginia/grid</loc></url>
   <url><loc>https://fieldwatt.com/jobs/washington</loc></url>
   <url><loc>https://fieldwatt.com/jobs/washington/wind</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/washington/solar</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/washington/storage</loc></url>
   <url><loc>https://fieldwatt.com/jobs/washington/grid</loc></url>
   <url><loc>https://fieldwatt.com/jobs/west-virginia</loc></url>
   <url><loc>https://fieldwatt.com/jobs/west-virginia/wind</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/west-virginia/solar</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/west-virginia/storage</loc></url>
   <url><loc>https://fieldwatt.com/jobs/west-virginia/grid</loc></url>
   <url><loc>https://fieldwatt.com/jobs/wisconsin</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/wisconsin/wind</loc></url>
   <url><loc>https://fieldwatt.com/jobs/wisconsin/solar</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/wisconsin/storage</loc></url>
   <url><loc>https://fieldwatt.com/jobs/wisconsin/grid</loc></url>
   <url><loc>https://fieldwatt.com/jobs/wyoming</loc></url>
   <url><loc>https://fieldwatt.com/jobs/wyoming/wind</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/wyoming/solar</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/wyoming/storage</loc></url>
   <url><loc>https://fieldwatt.com/jobs/wyoming/grid</loc></url>
   <url><loc>https://fieldwatt.com/jobs/wind</loc></url>
   <url><loc>https://fieldwatt.com/jobs/solar</loc></url>
   <url><loc>https://fieldwatt.com/jobs/storage</loc></url>
   <url><loc>https://fieldwatt.com/jobs/grid</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/senior-technician-siemens-2-3--adzuna-5904806232</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/wind-site-technician-iii-moriarty-nm--adzuna-5905056377</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/wind-technician--adzuna-5904787138</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/cnc-maintenance-technician--adzuna-5905183526</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/solar-field-service-technician-multiple-locations--adzuna-5905191821</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/solar-field-service-technician-multiple-locations--adzuna-5905191180</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/solar-field-service-technician-multiple-locations--adzuna-5905189981</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/solar-field-service-technician-multiple-locations--adzuna-5905185219</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/solar-field-service-technician-multiple-locations--adzuna-5905173036</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/solar-field-service-technician-multiple-locations--adzuna-5905155441</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/solar-field-service-technician-multiple-locations--adzuna-5905153983</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/solar-field-service-technician-multiple-locations--adzuna-5905132399</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/solar-field-service-technician-multiple-locations--adzuna-5905131851</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/solar-field-service-technician-multiple-locations--adzuna-5905131759</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/solar-field-service-technician-multiple-locations--adzuna-5905108723</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/solar-field-service-technician-multiple-locations--adzuna-5905107939</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/solar-field-service-technician-multiple-locations--adzuna-5905107735</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/solar-field-service-technician-multiple-locations--adzuna-5905086838</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/solar-field-service-technician-multiple-locations--adzuna-5905074725</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/solar-field-service-technician-multiple-locations--adzuna-5905068403</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/solar-field-service-technician-multiple-locations--adzuna-5905068279</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/solar-field-service-technician-multiple-locations--adzuna-5905068273</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/solar-field-service-technician-multiple-locations--adzuna-5905067050</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/solar-field-service-technician-kermit-tx--adzuna-5905062035</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/solar-field-service-technician-multiple-locations--adzuna-5905060268</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/solar-field-service-technician-multiple-locations--adzuna-5905060096</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/solar-field-service-technician-multiple-locations--adzuna-5905059914</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/solar-crew-lead--adzuna-5905057033</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/solar-field-service-technician-multiple-locations--adzuna-5905056810</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/solar-field-service-technician-multiple-locations--adzuna-5905056578</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/solar-field-service-technician-multiple-locations--adzuna-5905056417</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/solar-field-service-technician-multiple-locations--adzuna-5905055303</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/solar-field-service-technician-multiple-locations--adzuna-5905055165</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/solar-field-service-technician-multiple-locations--adzuna-5905055104</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/solar-field-service-technician-multiple-locations--adzuna-5905055090</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/solar-field-service-technician-multiple-locations--adzuna-5905054982</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/solar-field-service-technician-multiple-locations--adzuna-5905051327</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/solar-field-service-technician-multiple-locations--adzuna-5905047267</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/solar-field-service-technician-multiple-locations--adzuna-5905046880</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/solar-field-service-technician-multiple-locations--adzuna-5905046718</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/electrical-technician--adzuna-5905046772</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/solar-field-service-technician-multiple-locations--adzuna-5905046574</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/solar-field-service-technician-multiple-locations--adzuna-5905046227</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/solar-field-service-technician-multiple-locations--adzuna-5905046215</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/solar-field-service-technician-multiple-locations--adzuna-5905045200</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/solar-installer--adzuna-5905031948</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/expirenced-window-installers--adzuna-5904812824</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/solar-field-tech--adzuna-5904811952</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/mechanical-solar-installer--adzuna-5904805904</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/solar-technician-santa-clara-california--adzuna-5904805042</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/solar-technician-3--adzuna-5904803518</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/solar-technician-salinas-california--adzuna-5904802171</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/solar-technician-hayward-california--adzuna-5904801474</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/expirenced-window-film-installers--adzuna-5904798581</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/commercial-electrical-technician--adzuna-5904797771</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/lead-solar-installer--adzuna-5904796510</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/detach-and-reset-solar-installer--adzuna-5904793174</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/solar-technician--adzuna-5904792214</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/equipment-operator-light-renewables-paloma-solar-site-tx--adzuna-5904789227</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/installer-1-hec--adzuna-5904789185</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/solar-installer--adzuna-5904785070</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/journeyman-electrician-commercial-solar-service-construction--adzuna-5904784259</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/solar-field-service-technician-multiple-locations--adzuna-5904758364</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/solar-field-service-technician-multiple-locations--adzuna-5904749933</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/solar-field-service-technician-multiple-locations--adzuna-5904749883</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/solar-field-service-technician-multiple-locations--adzuna-5905203284</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/solar-field-service-technician-multiple-locations--adzuna-5905200132</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/solar-field-service-technician-multiple-locations--adzuna-5905199894</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/solar-field-service-technician-multiple-locations--adzuna-5905199819</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/solar-field-service-technician-multiple-locations--adzuna-5905199671</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/maintenance-quality-engineer-tech-lead-super-solar-torque-tube-mill--adzuna-5905113030</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/lead-solar-technician--adzuna-5905086939</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/lead-solar-technician--adzuna-5904844420</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/utility-solar-technician-ii-tuscan-az--adzuna-5904790873</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/utility-solar-technician-iii-boulder-city-nv--adzuna-5904789958</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/avionics-solar-technician--adzuna-5904783797</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/senior-solar-technician--adzuna-5904767717</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/commercial-pv-journeyman-electrician-ca-blue-card-skilled-trained--adzuna-5904808038</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/electrician--adzuna-5904806982</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/desert-pine-bess-cdl-water-truck-driver--adzuna-5904959682</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/wind-turbine-technician-power--adzuna-5905200079</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/hvac-o-m-technician-entry-level--adzuna-5904787406</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/overhead-distribution-journeyman-lineman--adzuna-5904787537</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/line-mechanic-c-a--adzuna-5905076808</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/line-mechanic-d-a--adzuna-5905046537</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/apprentice-telecom-lineman--adzuna-5905037403</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/line-mechanic-d-a--adzuna-5904847838</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/line-mechanic-c-a--adzuna-5904755146</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/a-lineman-overhead-aep--adzuna-5905198586</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/underground-lineman-foreman--adzuna-5904908302</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/a-lineman-transmission-gtc--adzuna-5904884304</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/utility-construction-lineman-positions-available--adzuna-5904813750</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/aerial-lineman--adzuna-5904813453</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/communications-lineman--adzuna-5904799845</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/aerial-lineman-w-coax-splicing-exp--adzuna-5904799073</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/aerial-lineman-local-work--adzuna-5904798085</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/aerial-lineman-local-work--adzuna-5904797457</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/b-tech-substation--adzuna-5904794666</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/aerial-telecommunications-lineman-foreman--adzuna-5904792708</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/aerial-lineman--adzuna-5904790227</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/a-lineman-transmission--adzuna-5904781818</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/sr-substation-technician--adzuna-5904791204</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/substation-electrician--adzuna-5905183559</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/structural-associate-engineering-technician-overhead-transmission--adzuna-5905191954</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/structural-associate-engineering-technician-overhead-transmission--adzuna-5905155554</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/structural-associate-engineering-technician-overhead-transmission--adzuna-5905108540</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/structural-associate-engineering-technician-overhead-transmission--adzuna-5905056763</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/structural-associate-engineering-technician-overhead-transmission--adzuna-5905049504</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/structural-associate-engineering-technician-overhead-transmission--adzuna-5905046682</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/technician-protective-relay-a-with-degree--adzuna-5904849166</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/protection-and-control-relay-technician-p-c--adzuna-5904786712</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/relay-wiring-technician-1st-shift--adzuna-5904785663</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/integration-technician--adzuna-5905075051</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/wind-turbine-technician-power--adzuna-5904286289</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/technician-wind-turbine-maintenance--adzuna-5904253282</loc></url>
   <url><loc>https://fieldwatt.com/jobs/technician-wind-turbine-maintenance--adzuna-5903607942</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/wind-site-technician-iii-moriarty-nm--adzuna-5904637874</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/wind-technician--adzuna-5904601018</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/wind-site-technician-iii-moriarty-nm--adzuna-5904571402</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/wind-technician-i-advanced-to-senior-level-at-golden-hills-wind-in-livermore-ca--adzuna-5904570958</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/wind-technician-associate-wind-technician-sr-rock-falls--adzuna-5904555397</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/wind-technician-wind-technician-prin-maverick--adzuna-5904471985</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/technician-ii--adzuna-5904468192</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/pv-solar-field-technician-iii-entry-level-at-dry-land-prairie-bess-in-cheyenne-w--adzuna-5904290043</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/wind-technician-i-advanced-to-senior-level-at-golden-hills-wind-in-livermore-ca--adzuna-5904273848</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/technician-ii--adzuna-5904258295</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/wind-technician-iii-entry-level-at-north-sky-river-in-tehachapi-ca--adzuna-5904255269</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/wind-technician--adzuna-5904229701</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/wind-technician--adzuna-5904227898</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/technician-ii-horse-butte-id--adzuna-5904225792</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/wind-technician-ii-panther-grove-ii-gridley-il--adzuna-5904225572</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/technician-ii--adzuna-5904216134</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/wind-technician-ii-intermediate-level-at-monarch-creek-wind-in-haskell-tx--adzuna-5904024715</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/technician-ii--adzuna-5903845209</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/100-travel-mce-wind-technician-ii-midwest--adzuna-5903845206</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/wind-site-technician-iii-mojave-ca-oak--adzuna-5903845125</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/wind-site-technician-ii-mojave-ca-oak--adzuna-5903845126</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/wind-technician-ii-shady-oaks-paw-paw-il--adzuna-5903845127</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/wind-technician-ii-timber-road-payne-oh--adzuna-5903844976</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/wind-technician-any-level-crystal-lake-britt-ia--adzuna-5903803479</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/wind-technician-i-advanced-to-senior-level-at-golden-hills-wind-in-livermore-ca--adzuna-5903794566</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/wind-technician-iii-entry-level-at-north-sky-river-in-tehachapi-ca--adzuna-5903698259</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/wind-technician-iii-entry-level-roadrunner-wind-in-cisco-tx--adzuna-5903698252</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/pv-solar-field-technician-iii-entry-level-at-dry-land-prairie-bess-in-che--adzuna-5903698256</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/wind-technician-i-all-levels-at-young-wind-in-graham-tx--adzuna-5903698222</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/wind-technician-iii-clearwater-wind-east-miles-city-mt--adzuna-5903698209</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/wind-technician-iii-all-levels-high-lonesome-wind-willard-nm--adzuna-5903698213</loc></url>
   <url><loc>https://fieldwatt.com/jobs/local-wind-technician-adair-ia--adzuna-5903587878</loc></url>
   <url><loc>https://fieldwatt.com/jobs/blade-technician--adzuna-5903486497</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/solar-commissioning-technician--adzuna-5903466595</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/residential-electrician--adzuna-5903464669</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/seeking-experienced-roofers-interested-in-a-career-in-solar--adzuna-5903461745</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/solar-electrician--adzuna-5903460858</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/mechanical-solar-installer-2-field-services--adzuna-5903457140</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/solar-service-technician--adzuna-5903454641</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/solar-technician-lubbock-texas--adzuna-5903453493</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/licensed-journeyman-electrician--adzuna-5903445553</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/development-engineer-technician-iii--adzuna-5903572936</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/solar-technician-i-or-ii-at-east-blackland-solar--adzuna-5903504247</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/solar-site-monitor--adzuna-5903447127</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/concrete-form-setter--adzuna-5903478116</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/solar-closer--adzuna-5903460837</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/solar-electrical-inspector--adzuna-5903446743</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/advanced-bess-technician--adzuna-5903445355</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/transmission-line-inspector--adzuna-5903464795</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/journeyman-linemen--adzuna-5903461789</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/journeyman-lineman--adzuna-5903458731</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/groundman--adzuna-5903458421</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/journeyman-lineman-hobbs-carlsbad--adzuna-5903457790</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/solar-field-service-technician-multiple-locations--adzuna-5904733309</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/solar-field-service-technician-multiple-locations--adzuna-5904730357</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/solar-field-service-technician-multiple-locations--adzuna-5904724413</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/solar-service-technician--adzuna-5904724200</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/solar-field-service-technician-multiple-locations--adzuna-5904723818</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/solar-field-service-technician-multiple-locations--adzuna-5904707198</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/solar-field-service-technician-multiple-locations--adzuna-5904687013</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/solar-field-service-technician-multiple-locations--adzuna-5904686165</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/solar-field-service-technician-multiple-locations--adzuna-5904685075</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/solar-field-service-technician-multiple-locations--adzuna-5904680582</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/solar-field-service-technician-multiple-locations--adzuna-5904640777</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/solar-field-service-technician-multiple-locations--adzuna-5904608497</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/solar-field-service-technician-multiple-locations--adzuna-5904605701</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/solar-field-service-technician-multiple-locations--adzuna-5904605634</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/solar-field-service-technician-multiple-locations--adzuna-5904585219</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/solar-field-service-technician-multiple-locations--adzuna-5904585259</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/solar-field-service-technician-multiple-locations--adzuna-5904585240</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/solar-field-service-technician-multiple-locations--adzuna-5904577574</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/solar-field-service-technician-multiple-locations--adzuna-5904577554</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/solar-field-service-technician-multiple-locations--adzuna-5904576762</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/solar-field-service-technician-multiple-locations--adzuna-5904575941</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/electrical-technician--adzuna-5904573679</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/solar-field-service-technician-multiple-locations--adzuna-5904573462</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/solar-technician--adzuna-5904571636</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/solar-field-service-technician-multiple-locations--adzuna-5904571598</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/solar-field-service-technician-multiple-locations--adzuna-5904571289</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/solar-field-service-technician-multiple-locations--adzuna-5904569375</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/solar-field-service-technician-multiple-locations--adzuna-5904567395</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/solar-field-service-technician-multiple-locations--adzuna-5904566838</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/solar-field-service-technician-multiple-locations--adzuna-5904556024</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/solar-field-service-technician-multiple-locations--adzuna-5904555799</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/solar-field-service-technician-multiple-locations--adzuna-5904555817</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/solar-field-service-technician-multiple-locations--adzuna-5904555288</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/solar-field-service-technician-multiple-locations--adzuna-5904551658</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/solar-field-service-technician-multiple-locations--adzuna-5904550888</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/solar-field-service-technician-multiple-locations--adzuna-5904538458</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/solar-field-service-technician-multiple-locations--adzuna-5904532471</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/solar-field-service-technician-multiple-locations--adzuna-5904531329</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/solar-field-service-technician-multiple-locations--adzuna-5904529717</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/solar-field-service-technician-multiple-locations--adzuna-5904529320</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/solar-field-service-technician-multiple-locations--adzuna-5904522062</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/solar-technician--adzuna-5904521825</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/solar-field-service-technician-multiple-locations--adzuna-5904521728</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/solar-field-service-technician-multiple-locations--adzuna-5904513711</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/solar-field-service-technician-multiple-locations--adzuna-5904513548</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/solar-field-service-technician-multiple-locations--adzuna-5904474363</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/solar-field-service-technician-multiple-locations--adzuna-5904473372</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/solar-field-service-technician-multiple-locations--adzuna-5904471980</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/solar-field-service-technician-multiple-locations--adzuna-5904471440</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/solar-crew-lead--adzuna-5904468994</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/solar-installation-technician--adzuna-5904468104</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/solar-field-service-technician-multiple-locations--adzuna-5904468037</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/roof-lead--adzuna-5904467739</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/solar-field-service-technician-multiple-locations--adzuna-5904466833</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/solar-field-service-technician-multiple-locations--adzuna-5904466039</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/solar-field-service-technician-multiple-locations--adzuna-5904464557</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/solar-field-service-technician-multiple-locations--adzuna-5904464514</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/solar-field-service-technician-multiple-locations--adzuna-5904464438</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/solar-field-service-technician-multiple-locations--adzuna-5904462923</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/solar-field-service-technician-multiple-locations--adzuna-5904291598</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/electricien-installation-photovoltaique-h-f--adzuna-5904287961</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/solar-technician--adzuna-5904270872</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/solar-installer-electrical--adzuna-5904267105</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/solar-field-service-technician-multiple-locations--adzuna-5904264104</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/technician-maintenance-i-usa-c-crew--adzuna-5904253669</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/solar-power-technician--adzuna-5904251079</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/solar-technician-noble-solar-storage--adzuna-5904244281</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/solar-installation-technician--adzuna-5904240854</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/supervisor-technical-i-usa-crew-a--adzuna-5904204854</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/outside-solar-field-technician--adzuna-5904106806</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/solar-tech-ii-boulder-city-nv--adzuna-5904102655</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/senior-solar-technician--adzuna-5903909013</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/development-engineer-technician-ii-2nd-shift-s-t-12-00-pm-8-30-pm--adzuna-5903862954</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/solar-technician-vista-california--adzuna-5903816588</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/solar-technician-indio-california--adzuna-5903816569</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/solar-technician-inglewood-california--adzuna-5903816517</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/solar-technician-norwalk-california--adzuna-5903816590</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/residential-service-apprentice--adzuna-5904349132</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/electrical-technician--adzuna-5904280286</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/roof-lead--adzuna-5904236826</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/electrical-technician-nights--adzuna-5904214147</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/service-electrician--adzuna-5904093978</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/solar-installer--adzuna-5903655193</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/solar-site-superintendent-mechanical-foreman--adzuna-5904588377</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/associate-project-finance--adzuna-5904524996</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/associate-project-finance--adzuna-5904524997</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/associate-project-finance--adzuna-5904524980</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/associate-project-finance--adzuna-5904524983</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/head-of-manufacturing--adzuna-5904589915</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/solar-installer--adzuna-5904436352</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/solar-installer--adzuna-5904434822</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/solar-installer--adzuna-5904433659</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/traveling-journeyman-electrician--adzuna-5904364324</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/traveling-journeyman-electrician--adzuna-5904363816</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/head-of-manufacturing--adzuna-5904271472</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/solar-installer--adzuna-5904266439</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/solar-installation-installer--adzuna-5904255757</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/robotic-factory-operator--adzuna-5904214516</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/field-service-technician--adzuna-5904613224</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/apprentice-lineman--adzuna-5904725859</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/apprentice-lineman--adzuna-5904680139</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/apprentice-lineman-electric-journeyman-lineman--adzuna-5904589919</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/journeyman-lineman--adzuna-5904537636</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/journeyman-lineman--adzuna-5904530060</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/journeyman-lineman--adzuna-5904517611</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/journeyman-lineman--adzuna-5904349059</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/journeyman-lineman--adzuna-5904314596</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/journeyman-lineman--adzuna-5904304998</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/apprentice-lineman--adzuna-5904272334</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/apprentice-lineman--adzuna-5904266751</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/utility-class-a-lineman--adzuna-5904266684</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/apprentice-lineman-electric-journeyman-lineman--adzuna-5904263977</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/journeyman-lineman-md-line-services-augusta-service-center--adzuna-5904260178</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/apprentice-lineman--adzuna-5904254332</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/utility-class-a-lineman--adzuna-5904247859</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/journeyman-lineman--adzuna-5904238265</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/apprentice-lineman--adzuna-5904237134</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/journeyman-lineman--adzuna-5904231745</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/journeyman-lineman--adzuna-5904226067</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/journeyman-lineman--adzuna-5904224728</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/apprentice-lineman--adzuna-5904214631</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/apprentice-lineman--adzuna-5904214023</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/journeyman-lineman-la-crosse-wi--adzuna-5904213550</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/journeyman-lineman--adzuna-5904208134</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/overhead-journeyman-lineman-inverness-fl--adzuna-5903947339</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/journeyman-lineman-la-crosse-wi--adzuna-5903881691</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/transmission-apprentice-step-7--adzuna-5903835548</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/transmission-journeyman-lineman--adzuna-5903835551</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/transmission-journeyman-lineman--adzuna-5903830321</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/transmission-apprentice-lineman--adzuna-5903830320</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/transmission-line-mechanic-c-a--adzuna-5904552156</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/lineman-electrician--adzuna-5904434048</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/transmission-line-mechanic-c-a--adzuna-5904270317</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/line-mechanic-c-a--adzuna-5904259004</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/line-mechanic-d-a--adzuna-5904243650</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/utility-class-a-lineman--adzuna-5904242244</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/apprentice-mechanic-immediate-hire--adzuna-5904219018</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/electrical-lineworker-apprentice--adzuna-5904213488</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/structures-mechanics-needed-asap--adzuna-5904211748</loc></url>
   <url><loc>https://fieldwatt.com/jobs/apprentice-lineman-a-apa-mp--adzuna-5903631490</loc></url>
   <url><loc>https://fieldwatt.com/jobs/class-b-lineman-columbus-oh--adzuna-5903577914</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/apprentice-lineman-a-apa-ap--adzuna-5903513337</loc></url>
   <url><loc>https://fieldwatt.com/jobs/apprentice-lineman-i-mansfield--adzuna-5903461891</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/journeyman-powerline-technician--adzuna-5904613390</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/line-mechanic-1-c-2-c-acceptable--adzuna-5904464255</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/aerial-construction-lineman--adzuna-5904455066</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/aerial-construction-lineman-traveling--adzuna-5904451762</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/aerial-construction-lineman-traveling--adzuna-5904451648</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/aerial-construction-lineman-traveling--adzuna-5904451645</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/aerial-construction-lineman--adzuna-5904448351</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/lineman--adzuna-5904447697</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/lineman--adzuna-5904446769</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/aerial-construction-lineman--adzuna-5904442148</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/lineman--adzuna-5904431142</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/aerial-construction-lineman--adzuna-5904430884</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/construction-and-maintenance-person--adzuna-5904235216</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/distribution-maintenance-person--adzuna-5904235215</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/line-servicer--adzuna-5904203599</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/lineman-i-telecom--adzuna-5904028866</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/lineman-i-telecom--adzuna-5904028862</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/telecom-aerial-construction-lineman--adzuna-5903963987</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/aerial-lineman-local-work--adzuna-5903956455</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/aerial-lineman-local-work--adzuna-5903948258</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/a-lineman-overhead-duke--adzuna-5903922680</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/aerial-lineman-local-work--adzuna-5903919296</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/aerial-lineman-local-work--adzuna-5903868831</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/b-lineman-overhead-lafollette-utilities--adzuna-5903852487</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/lineman-5th-class-non-union--adzuna-5903826930</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/lineman-c-pole-pulling--adzuna-5903820082</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/lineman-a-tr--adzuna-5903793236</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/a-lineman-overhead-oncor--adzuna-5903776077</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/b-lineman-overhead-seco--adzuna-5903771681</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/a-lineman-overhead-sawnee-emc--adzuna-5903652296</loc></url>
   <url><loc>https://fieldwatt.com/jobs/a-lineman-overhead-duke--adzuna-5903625342</loc></url>
   <url><loc>https://fieldwatt.com/jobs/c-lineman-overhead-blue-ridge-co-op--adzuna-5903618968</loc></url>
   <url><loc>https://fieldwatt.com/jobs/a-lineman-overhead-clay-electric--adzuna-5903586301</loc></url>
@@ -249,87 +529,35 @@
   <url><loc>https://fieldwatt.com/jobs/truck-driver-transmission-apc--adzuna-5903474639</loc></url>
   <url><loc>https://fieldwatt.com/jobs/lineman-class-b-journey-level--adzuna-5903467164</loc></url>
   <url><loc>https://fieldwatt.com/jobs/lineman-class-b-journey-level--adzuna-5903466547</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/utility-lineman--adzuna-5903452931</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/aerial-lineman--adzuna-5903450580</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/class-1-lineman--adzuna-5903448344</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/transmission-power-lineman--adzuna-5903447669</loc></url>
   <url><loc>https://fieldwatt.com/jobs/aerial-lineman-local-work--adzuna-5903424872</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/transmission-line-mechanic-d-nonrep-aep-tx-not-merit--adzuna-5903611858</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/distribution-system-operator-i-trainee--adzuna-5903566977</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/relay-technicianminimum-of-7-years-of-experience-10-years-preferred--adzuna-5903462504</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/relay-panel-wiring-tech--adzuna-5903459975</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/wind-turbine-technician--adzuna-5903165649</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/rope-access-technician-wind-turbines--adzuna-5902927773</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/line-electrician-substation-maintenance--adzuna-5904603834</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/line-electrician-substation-maintenance--adzuna-5904222145</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/technician-protective-relay-a-with-degree--adzuna-5904571958</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/technician-protective-relay-a-with-degree--adzuna-5904271351</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/technician-protective-relay-a-with-degree--adzuna-5904251991</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/relay-technician--adzuna-5903669769</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/maintenance-technician-lenox-at-the-grid--adzuna-5904248648</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/integration-technician--adzuna-5904028954</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/solar-technician-i-or-ii-at-east-blackland-solar--adzuna-5903504247</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/traveling-construction-materials-testing-cmt-technician-renewables-remote-projec--adzuna-5904290403</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/traveling-construction-materials-testing-cmt-technician-renewables-remote-projec--adzuna-5904282680</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/traveling-construction-materials-testing-cmt-technician-renewables-remote-projec--adzuna-5904243092</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/traveling-construction-materials-testing-cmt-technician-renewables-remote-projec--adzuna-5904220284</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/site-solar-technician--adzuna-5903672689</loc></url>
   <url><loc>https://fieldwatt.com/jobs/wind-turbine-technician-tech-one-program--adzuna-5902871354</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/wind-turbine-technician-tech-one-program--adzuna-5902871359</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/technician-ii--adzuna-5902699430</loc></url>
   <url><loc>https://fieldwatt.com/jobs/technician-ii-horse-butte-id--adzuna-5902699442</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/technician-ii--adzuna-5902699430</loc></url>
   <url><loc>https://fieldwatt.com/jobs/technician-ii--adzuna-5902699397</loc></url>
   <url><loc>https://fieldwatt.com/jobs/wind-technician-ii-panther-grove-ii-gridley-il--adzuna-5902699365</loc></url>
   <url><loc>https://fieldwatt.com/jobs/wind-technician-any-level-crystal-lake-britt-ia--adzuna-5902676521</loc></url>
   <url><loc>https://fieldwatt.com/jobs/blade-technician--adzuna-5902973889</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/solar-installer--adzuna-5903416184</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/mechanical-solar-installers-journeyworker-apprentice--adzuna-5903399136</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/mechanical-solar-installers-journeyworker-apprentice--adzuna-5903280571</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/mechanical-foreman--adzuna-5903280477</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/solar-installer--adzuna-5903248026</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/solar-installer--adzuna-5903246149</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/solar-installer--adzuna-5903244941</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/traveling-journeyman-electrician--adzuna-5903184353</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/traveling-journeyman-electrician--adzuna-5903184329</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/traveling-journeyman-electrician--adzuna-5903184326</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/traveling-journeyman-electrician--adzuna-5903184330</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/traveling-journeyman-electrician--adzuna-5903184311</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/traveling-journeyman-electrician--adzuna-5903184308</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/traveling-journeyman-electrician--adzuna-5903184310</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/solar-tech-utility-scale--adzuna-5903092528</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/traveling-journeyman-electrician--adzuna-5902807564</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/solar-technician-rialto-california--adzuna-5902743257</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/solar-technician-jurupa-valley-california--adzuna-5902743242</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/solar-technician-tracy-california--adzuna-5902743277</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/solar-technician-san-mateo-california--adzuna-5902743245</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/solar-technician-vacaville-california--adzuna-5902743230</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/solar-technician-west-covina-california--adzuna-5902743229</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/yuma-solar-general-laborer--adzuna-5902740228</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/solar-installation-technician--adzuna-5902731296</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/solar-general-laborer--adzuna-5902728031</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/solar-technician-utility-scale-repair--adzuna-5902728100</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/solar-general-laborer--adzuna-5902727920</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/logistics-associate--adzuna-5902727880</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/roof-lead--adzuna-5902609826</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/master-electrician--adzuna-5903416376</loc></url>
   <url><loc>https://fieldwatt.com/jobs/electrician-solar--adzuna-5903019908</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/associate-project-finance--adzuna-5903309877</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/paris-tx-skid-steer-operator--adzuna-5903280436</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/commercial-analytics-associate--adzuna-5903168501</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/traveling-medium-voltage-service-technician--adzuna-5902973791</loc></url>
   <url><loc>https://fieldwatt.com/jobs/journeyman-lineman-md-line-services-augusta-service-center--adzuna-5903315887</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/journeyman-lineman-line-foreman--adzuna-5903164711</loc></url>
   <url><loc>https://fieldwatt.com/jobs/overhead-distribution-lineman-a--adzuna-5902901583</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/class-a-journeyman-lineman-energy-services--adzuna-5902760829</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/lineman-electrician--adzuna-5903245563</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/transmission-line-mechanic-c-a--adzuna-5902891895</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/apprentice-ground-hand--adzuna-5902544513</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/aerial-construction-lineman--adzuna-5903265763</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/aerial-construction-lineman-traveling--adzuna-5903261746</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/aerial-construction-lineman-traveling--adzuna-5903261591</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/aerial-construction-lineman-traveling--adzuna-5903261548</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/aerial-construction-lineman--adzuna-5903258227</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/lineman--adzuna-5903258006</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/lineman--adzuna-5903257372</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/aerial-construction-lineman--adzuna-5903254039</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/lineman--adzuna-5903241692</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/aerial-construction-lineman--adzuna-5903241438</loc></url>
   <url><loc>https://fieldwatt.com/jobs/c-lineman-overhead-rappahannock-emc--adzuna-5902846003</loc></url>
   <url><loc>https://fieldwatt.com/jobs/b-lineman-transmission-aep--adzuna-5902671536</loc></url>
   <url><loc>https://fieldwatt.com/jobs/a-lineman-overhead-duke--adzuna-5902662553</loc></url>
   <url><loc>https://fieldwatt.com/jobs/c-lineman-overhead-aep--adzuna-5902606656</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/neta-substation-technician--adzuna-5903164771</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/hr-representative-i-hr-employee-relations-akron-firstenergy-headquarters--adzuna-5903315884</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/cr-334-dis-jc3-distribution-collection-op-np--adzuna-5903309808</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/transmission-line-mechanic-d-nonrep-aep-tx-not-merit--adzuna-5902891890</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/transmission-line-engineers--adzuna-5902868068</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/relay-technician--adzuna-5903170798</loc></url>
   <url><loc>https://fieldwatt.com/jobs/relay-wiring-technician-1st-shift--adzuna-5903102757</loc></url>
   <url><loc>https://fieldwatt.com/jobs/wind-turbine-technician-ii-medicine-bow-wy--adzuna-5901471489</loc></url>
   <url><loc>https://fieldwatt.com/jobs/wind-turbine-traveling-blade-technician-usa--adzuna-5901296919</loc></url>
@@ -341,110 +569,74 @@
   <url><loc>https://fieldwatt.com/jobs/wind-turbine-traveling-blade-technician-usa--adzuna-5901296920</loc></url>
   <url><loc>https://fieldwatt.com/jobs/wind-turbine-traveling-blade-technician-usa--adzuna-5901296922</loc></url>
   <url><loc>https://fieldwatt.com/jobs/wind-turbine-traveling-blade-technician-usa--adzuna-5901296926</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/maintenance-technician-summer-wind--adzuna-5902366931</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/maintenance-technician-summer-wind--adzuna-5902228793</loc></url>
   <url><loc>https://fieldwatt.com/jobs/wind-technician-i-advanced-to-senior-level-at-golden-hills-wind-in-liverm--adzuna-5901454919</loc></url>
   <url><loc>https://fieldwatt.com/jobs/pv-solar-field-tech-principal-travel-position--adzuna-5901454711</loc></url>
   <url><loc>https://fieldwatt.com/jobs/wind-field-blade-repair-tech-ii-wolf-ridge-muenster-tx--adzuna-5901454702</loc></url>
   <url><loc>https://fieldwatt.com/jobs/pv-solar-field-tech-principal-travel-position--adzuna-5901454712</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/journeyman-electrician--adzuna-5902448410</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/traveling-journeyman-electrician--adzuna-5902266606</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/traveling-journeyman-electrician--adzuna-5902266603</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/electrician-or-journeyman-electrician--adzuna-5901913487</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/window-film-installer--adzuna-5901777983</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/solar-construction-manager-general-foreman--adzuna-5901674056</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/construction-laborer--adzuna-5901674072</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/heavy-equipment-field-mechanic-traveling--adzuna-5901674031</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/rough-and-finish-racking-foreman-solar--adzuna-5901674046</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/construction-laborer-mechanical-installer-solar-construction--adzuna-5901673924</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/solar-general-labor--adzuna-5901673969</loc></url>
   <url><loc>https://fieldwatt.com/jobs/solar-technician--adzuna-5901636548</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/solar-technician-san-buenaventura-ventura-california--adzuna-5901496531</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/solar-technician-menifee-california--adzuna-5901496554</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/solar-technician-temecula-california--adzuna-5901496537</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/solar-technician-antioch-california--adzuna-5901496534</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/solar-technician-costa-mesa-california--adzuna-5901496518</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/solar-technician-murrieta-california--adzuna-5901496549</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/solar-technician-carlsbad-california--adzuna-5901496529</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/solar-technician-santa-maria-california--adzuna-5901496548</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/electrician-or-journeyman-electrician--adzuna-5901913487</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/solar-journeyman-electrician--adzuna-5901781920</loc></url>
   <url><loc>https://fieldwatt.com/jobs/solar-construction-manager-general-foreman--adzuna-5901492348</loc></url>
   <url><loc>https://fieldwatt.com/jobs/solar-construction-manager-general-foreman--adzuna-5901491291</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/solar-general-laborer--adzuna-5901491212</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/solar-general-laborer--adzuna-5901491181</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/associate-project-finance--adzuna-5902306037</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/associate-project-finance--adzuna-5902306017</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/associate-project-finance--adzuna-5902306045</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/associate-project-finance--adzuna-5902306028</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/associate-project-finance--adzuna-5902305958</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/associate-project-finance--adzuna-5902305991</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/associate-project-finance--adzuna-5902305974</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/associate-project-finance--adzuna-5902305972</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/associate-project-finance--adzuna-5902305965</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/associate-project-finance--adzuna-5902305968</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/associate-project-finance--adzuna-5902305992</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/associate-project-finance--adzuna-5902305999</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/associate-project-finance--adzuna-5902305983</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/regional-solar-site-mgr-es-i-central-region-springfield-co--adzuna-5901736576</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/qa-qc-technician--adzuna-5901483115</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/electrical-journeyman-renewables-gum-swamp-solar-project--adzuna-5901257897</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/solar-field-service-technician-tulia-tx-temp-to-hire--adzuna-5902412202</loc></url>
   <url><loc>https://fieldwatt.com/jobs/bess-technician--adzuna-5901234768</loc></url>
   <url><loc>https://fieldwatt.com/jobs/apprentice-lineman-i-stephenville--adzuna-5901705288</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/electrician-high-voltage-lineman--adzuna-5901783598</loc></url>
   <url><loc>https://fieldwatt.com/jobs/aerial-lineman-local-work--adzuna-5901634828</loc></url>
   <url><loc>https://fieldwatt.com/jobs/aerial-lineman-dayton-oh--adzuna-5901541189</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/aerial-lineman--adzuna-5901539283</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/aerial-lineman--adzuna-5901512612</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/lineman-i-telecom--adzuna-5901503018</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/aerial-lineman--adzuna-5901334416</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/fiber-groundman-truck-driver--adzuna-5901293777</loc></url>
   <url><loc>https://fieldwatt.com/jobs/substation-lead-technician-electrical-utility-projects--adzuna-5902448411</loc></url>
   <url><loc>https://fieldwatt.com/jobs/lead-substation-wireman--adzuna-5902041095</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/relay-protection-electrical-technician-ibew--adzuna-5901447496</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/relay-protection-electrical-technician-ibew--adzuna-5901207882</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/relay-protection-electrical-technician-ibew--adzuna-5901207691</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/relay-protection-electrical-technician-ibew--adzuna-5901207403</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/substation-electrician--adzuna-5901673999</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/traveling-construction-materials-testing-cmt-technician-renewables-remote-projec--adzuna-5902504466</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/traveling-construction-materials-testing-cmt-technician-renewables-remote-projec--adzuna-5902502607</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/traveling-construction-materials-testing-cmt-technician-renewables-remote-projec--adzuna-5902493880</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/traveling-construction-materials-testing-cmt-technician-renewables-remote-projec--adzuna-5902482414</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/traveling-construction-materials-testing-cmt-technician-renewables-remote-projec--adzuna-5902481081</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/traveling-construction-materials-testing-cmt-technician-renewables-remote-projec--adzuna-5902469203</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/traveling-construction-materials-testing-cmt-technician-renewables-remote-projec--adzuna-5902462565</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/traveling-construction-materials-testing-cmt-technician-renewables-remote-projec--adzuna-5902462106</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/traveling-construction-materials-testing-cmt-technician-renewables-remote-projec--adzuna-5902457273</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/traveling-construction-materials-testing-cmt-technician-renewables-remote-projec--adzuna-5902455863</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/traveling-construction-materials-testing-cmt-technician-renewables-remote-projec--adzuna-5902439637</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/traveling-construction-materials-testing-cmt-technician-renewables-remote-projec--adzuna-5902434238</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/traveling-construction-materials-testing-cmt-technician-renewables-remote-projec--adzuna-5902432363</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/traveling-construction-materials-testing-cmt-technician-renewables-remote-projec--adzuna-5902423573</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/traveling-construction-materials-testing-cmt-technician-renewables-remote-projec--adzuna-5902422027</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/traveling-construction-materials-testing-cmt-technician-renewables-remote-projec--adzuna-5902415803</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/traveling-construction-materials-testing-cmt-technician-renewables-remote-projec--adzuna-5902407869</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/traveling-construction-materials-testing-cmt-technician-renewables-remote-projec--adzuna-5902403491</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/traveling-construction-materials-testing-cmt-technician-renewables-remote-projec--adzuna-5902403301</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/traveling-construction-materials-testing-cmt-technician-renewables-remote-projec--adzuna-5902392470</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/traveling-construction-materials-testing-cmt-technician-renewables-remote-projec--adzuna-5902378817</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/traveling-construction-materials-testing-cmt-technician-renewables-remote-projec--adzuna-5902369455</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/traveling-construction-materials-testing-cmt-technician-renewables-remote-projec--adzuna-5902368434</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/traveling-construction-materials-testing-cmt-technician-renewables-remote-projec--adzuna-5902344692</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/traveling-construction-materials-testing-cmt-technician-renewables-remote-projec--adzuna-5902335019</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/traveling-construction-materials-testing-cmt-technician-renewables-remote-projec--adzuna-5902334457</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/traveling-construction-materials-testing-cmt-technician-renewables-remote-projec--adzuna-5902326338</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/traveling-construction-materials-testing-cmt-technician-renewables-remote-projec--adzuna-5902304715</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/traveling-construction-materials-testing-cmt-technician-renewables-remote-projec--adzuna-5902252682</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/traveling-construction-materials-testing-cmt-technician-renewables-remote-projec--adzuna-5902247210</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/traveling-construction-materials-testing-cmt-technician-renewables-remote-projec--adzuna-5902245946</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/traveling-construction-materials-testing-cmt-technician-renewables-remote-projec--adzuna-5902242914</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/traveling-construction-materials-testing-cmt-technician-renewables-remote-projec--adzuna-5902240037</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/traveling-construction-materials-testing-cmt-technician-renewables-remote-projec--adzuna-5902236646</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/traveling-construction-materials-testing-cmt-technician-renewables-remote-projec--adzuna-5902236153</loc></url>
   <url><loc>https://fieldwatt.com/jobs/wind-turbine-technician-traveling-troubleshooter--adzuna-5900584263</loc></url>
   <url><loc>https://fieldwatt.com/jobs/traveling-wind-turbine-technician-ii-100-travel--adzuna-5900513677</loc></url>
   <url><loc>https://fieldwatt.com/jobs/lead-technician--adzuna-5900588502</loc></url>
   <url><loc>https://fieldwatt.com/jobs/wind-technician-entry-level-bluff-point-wind-portland-in--adzuna-5900572949</loc></url>
   <url><loc>https://fieldwatt.com/jobs/wind-technician-ii-otter-creek-ransom-il--adzuna-5900513678</loc></url>
   <url><loc>https://fieldwatt.com/jobs/pv-solar-field-technician-ii-wilmot-energy-center-tucson-az--adzuna-5900487979</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/solar-technician-fairfield-california--adzuna-5900550746</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/solar-technician-concord-california--adzuna-5900550706</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/solar-technician-pasadena-california--adzuna-5900550708</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/solar-technician-simi-valley-california--adzuna-5900550740</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/solar-technician-vallejo-california--adzuna-5900550739</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/solar-technician-thousand-oaks-california--adzuna-5900550737</loc></url>
   <url><loc>https://fieldwatt.com/jobs/solar-installer-residential-rooftop-solar--adzuna-5900411300</loc></url>
   <url><loc>https://fieldwatt.com/jobs/senior-solar-crew-leader--adzuna-5900369840</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/solar-array-technician-harnessing--adzuna-5900334807</loc></url>
   <url><loc>https://fieldwatt.com/jobs/journeyman-electrician-commercial-solar-service-construction--adzuna-5900333391</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/service-technician-solar-test-and-inspection-machines--adzuna-5900645088</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/utility-solar-technician-ii-tuscan-az--adzuna-5900459232</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/solar-site-survey-technician--adzuna-5900408001</loc></url>
   <url><loc>https://fieldwatt.com/jobs/commercial-electrician--adzuna-5900344134</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/associate-project-finance--adzuna-5901140906</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/associate-project-finance--adzuna-5901140897</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/associate-project-finance--adzuna-5901140895</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/associate-project-finance--adzuna-5901140883</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/associate-project-finance--adzuna-5901140889</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/substation-general-foreman-project-site--adzuna-5900399416</loc></url>
   <url><loc>https://fieldwatt.com/jobs/journeyman-lineman--adzuna-5900932748</loc></url>
   <url><loc>https://fieldwatt.com/jobs/journeyman-lineman--adzuna-5900821403</loc></url>
   <url><loc>https://fieldwatt.com/jobs/lineman-c-tr--adzuna-5900810385</loc></url>
   <url><loc>https://fieldwatt.com/jobs/journeyman-lineman-dynetek-tulsa--adzuna-5900505233</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/lineman-c-lineman-a--adzuna-5900688557</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/lineman-b-oh--adzuna-5900504742</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/lineman-a-tr--adzuna-5900866208</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/lineman-a-oh--adzuna-5900862547</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/aerial-lineman--adzuna-5900478695</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/aerial-lineman-local-work--adzuna-5900417963</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/aerial-lineman-local-work--adzuna-5900417953</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/aerial-lineman-local-work--adzuna-5900404356</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/aerial-lineman-local-work--adzuna-5900400484</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/aerial-lineman-local-work--adzuna-5900337665</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/groundman-transmission--adzuna-5900336976</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/aerial-lineman-local-work--adzuna-5900325803</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/aerial-lineman-local-work--adzuna-5900310522</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/civil-substation-engineering-technician--adzuna-5900581317</loc></url>
   <url><loc>https://fieldwatt.com/jobs/associate-electrical-engineering-technician-substation-job-details-black-veatch---adzuna-5900542879</loc></url>
   <url><loc>https://fieldwatt.com/jobs/substation-maintenance-electrician--adzuna-5900932506</loc></url>
   <url><loc>https://fieldwatt.com/jobs/lead-protection-controls-relay-technician-hv--adzuna-5900857004</loc></url>
@@ -464,44 +656,19 @@
   <url><loc>https://fieldwatt.com/jobs/solar-installer--adzuna-5900242951</loc></url>
   <url><loc>https://fieldwatt.com/jobs/solar-installer-residential-rooftop-solar--adzuna-5900235531</loc></url>
   <url><loc>https://fieldwatt.com/jobs/electrical-subcontractor-solar-installation-crew-partner-1099--adzuna-5900235503</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/journeyman-electrician--adzuna-5899760519</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/solar-technician-utility-scale-repair--adzuna-5899680535</loc></url>
   <url><loc>https://fieldwatt.com/jobs/electrical-technician--adzuna-5899649626</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/solar-technician-corona-california--adzuna-5899578029</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/solar-technician-torrance-california--adzuna-5899578014</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/solar-technician-fullerton-california--adzuna-5899578065</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/solar-site-survey-technician--adzuna-5900235508</loc></url>
   <url><loc>https://fieldwatt.com/jobs/solar-tech-ii-morris-il--adzuna-5899635956</loc></url>
   <url><loc>https://fieldwatt.com/jobs/solar-tech-ii-tonopah-az--adzuna-5899623756</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/sr-solar-tech-cantua-creek-ca--adzuna-5899608807</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/solar-tech-i-wynne-ar--adzuna-5899572699</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/solar-journeyman-electrician--adzuna-5899522827</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/solar-technician-iii--adzuna-5899404271</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/solar-photovoltaic-service-technician--adzuna-5899381346</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/solar-technician-i--adzuna-5899370164</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/solar-photovoltaic-senior-service-technician--adzuna-5899275763</loc></url>
   <url><loc>https://fieldwatt.com/jobs/subcontract-electrician-residential-solar-energy-storage--adzuna-5899534810</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/solar-photovoltaic-service-technician--adzuna-5899381346</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/solar-photovoltaic-senior-service-technician--adzuna-5899275763</loc></url>
   <url><loc>https://fieldwatt.com/jobs/residential-electrician-solar-energy-storage-will-train-high-performers--adzuna-5899761237</loc></url>
   <url><loc>https://fieldwatt.com/jobs/electrician-solar-journeyman-mulberry-florida--adzuna-5899564093</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/associate-project-finance--adzuna-5900188310</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/associate-project-finance--adzuna-5900188311</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/associate-project-finance--adzuna-5900188299</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/associate-project-finance--adzuna-5900188301</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/solar-journeyman-electrician--adzuna-5899522827</loc></url>
   <url><loc>https://fieldwatt.com/jobs/advanced-step-apprentice-3rd-step-or-above-journeyman-lineman-minot-nd--adzuna-5899746729</loc></url>
   <url><loc>https://fieldwatt.com/jobs/apprentice-lineman--adzuna-5899661227</loc></url>
   <url><loc>https://fieldwatt.com/jobs/foreman-transmission--adzuna-5899392440</loc></url>
   <url><loc>https://fieldwatt.com/jobs/advanced-step-apprentice-3rd-step-or-above-journeyman-lineman-minot-nd--adzuna-5899267650</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/lineman-om26-22-b-operations-maintenance--adzuna-5899725546</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/line-mechanic-d-a--adzuna-5899576804</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/line-mechanic-d-a--adzuna-5899576389</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/equipment-operator-transmission-lcr--adzuna-5899707841</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/aerial-lineman--adzuna-5899671746</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/aerial-lineman-cdl-preferred--adzuna-5899625081</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/uge-foreman--adzuna-5899613428</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/aerial-lineman--adzuna-5899613369</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/b-lineman-overhead-fpu--adzuna-5899373056</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/a-lineman-transmission-lcr--adzuna-5899337438</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/aerial-lineman--adzuna-5899259012</loc></url>
   <url><loc>https://fieldwatt.com/jobs/associate-electrical-engineering-technician-substation--adzuna-5900126836</loc></url>
   <url><loc>https://fieldwatt.com/jobs/substation-relay-scada-technician--adzuna-5899641530</loc></url>
   <url><loc>https://fieldwatt.com/jobs/civil-staff-engineering-technician-substation-job-details-black-veatch-family-of--adzuna-5899571511</loc></url>
@@ -514,17 +681,20 @@
   <url><loc>https://fieldwatt.com/jobs/substation-electrician-1-c-2-c-apprentice-acceptable--adzuna-5899393040</loc></url>
   <url><loc>https://fieldwatt.com/jobs/sr-relay-technician--adzuna-5899769582</loc></url>
   <url><loc>https://fieldwatt.com/jobs/control-technician-class-c-b-or-a-local-2357--adzuna-5900188424</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/sr-solar-tech-cantua-creek-ca--adzuna-5899608807</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/solar-tech-i-wynne-ar--adzuna-5899572699</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/solar-technician-iii--adzuna-5899404271</loc></url>
   <url><loc>https://fieldwatt.com/jobs/general-laborer--adzuna-5899341363</loc></url>
   <url><loc>https://fieldwatt.com/jobs/renewable-energy-field-service-technician--adzuna-5899011510</loc></url>
   <url><loc>https://fieldwatt.com/jobs/tiger-team-technician-wind-tech-multiple-locations-il-in-tx--adzuna-5898458509</loc></url>
   <url><loc>https://fieldwatt.com/jobs/wind-tech-associate-big-springs-tx--adzuna-5898458525</loc></url>
   <url><loc>https://fieldwatt.com/jobs/wind-technician-ii-sandy-ridge-ii-pa--adzuna-5898272296</loc></url>
   <url><loc>https://fieldwatt.com/jobs/technician-ii--adzuna-5898272269</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/100-travel-mce-wind-technician-ii-midwest--adzuna-5898272253</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/100-travel-mce-wind-technician-ii-west-us--adzuna-5898272258</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/100-travel-mce-wind-technician-ii-west-us--adzuna-5898272254</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/technician-ii--adzuna-5898272255</loc></url>
   <url><loc>https://fieldwatt.com/jobs/technician-ii-walsenburg-co--adzuna-5898272256</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/100-travel-mce-wind-technician-ii-west-us--adzuna-5898272258</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/100-travel-mce-wind-technician-ii-midwest--adzuna-5898272253</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/technician-ii--adzuna-5898272255</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/100-travel-mce-wind-technician-ii-west-us--adzuna-5898272254</loc></url>
   <url><loc>https://fieldwatt.com/jobs/wind-site-technician-ii-eden-tx--adzuna-5898272240</loc></url>
   <url><loc>https://fieldwatt.com/jobs/pv-solar-field-technician-ii--adzuna-5898209246</loc></url>
   <url><loc>https://fieldwatt.com/jobs/field-operations-hv-technician-ii-greer-solar-hallandale-ms--adzuna-5898208457</loc></url>
@@ -532,18 +702,10 @@
   <url><loc>https://fieldwatt.com/jobs/wind-technician-i-advanced-level-at-northern-colorado-wind-in-peetz-co--adzuna-5898193719</loc></url>
   <url><loc>https://fieldwatt.com/jobs/wind-technician-iii-entry-level-at-northern-colorado-wind-in-peetz-co--adzuna-5898193716</loc></url>
   <url><loc>https://fieldwatt.com/jobs/wind-technician-entry-level-bluff-point-wind-portland-in--adzuna-5898096466</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/renewable-energy-solar-technician-multiple-levels-on-site--adzuna-5898400691</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/technician-water-jet-i-usa--adzuna-5898361805</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/solar-electrician-technician--adzuna-5898355835</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/solar-technician-iii--adzuna-5898293137</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/solar-technician-lancaster-california--adzuna-5898202479</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/solar-technician-palmdale-california--adzuna-5898202467</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/solar-technician-roseville-california--adzuna-5898202490</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/solar-technician-elk-grove-california--adzuna-5898202557</loc></url>
   <url><loc>https://fieldwatt.com/jobs/subcontract-electrician-residential-solar-energy-storage--adzuna-5899181831</loc></url>
   <url><loc>https://fieldwatt.com/jobs/solar-installer--adzuna-5898364773</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/solar-worker--adzuna-5897958718</loc></url>
   <url><loc>https://fieldwatt.com/jobs/residential-electrician-solar-energy-storage-will-train-high-performers--adzuna-5899185332</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/solar-electrician-technician--adzuna-5898355835</loc></url>
   <url><loc>https://fieldwatt.com/jobs/journeyman-electrician-solar-pv-battery-storage--adzuna-5897993711</loc></url>
   <url><loc>https://fieldwatt.com/jobs/journeyman-lineman-pa-line-services-montrose--adzuna-5899067425</loc></url>
   <url><loc>https://fieldwatt.com/jobs/1st-class-power-line-technician--adzuna-5898893443</loc></url>
@@ -554,82 +716,50 @@
   <url><loc>https://fieldwatt.com/jobs/ohe-lineman-a--adzuna-5898232191</loc></url>
   <url><loc>https://fieldwatt.com/jobs/ohe-lineman-a--adzuna-5898232196</loc></url>
   <url><loc>https://fieldwatt.com/jobs/substation-inspector--adzuna-5898155341</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/class-a-oh-distribution-lineman-shelbyville-ky--adzuna-5898269178</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/class-c-lineman-dfw-tx--adzuna-5898116094</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/class-a-lineman-athens-oh--adzuna-5898006436</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/class-b-lineman-louisville-ky--adzuna-5898003398</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/class-b-lineman-dfw-tx--adzuna-5898003187</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/internal-only-construction-lineman--adzuna-5898381330</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/b-lineman-underground--adzuna-5898353999</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/c-lineman-underground--adzuna-5898272056</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/lineman-5th-class-non-union--adzuna-5898259797</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/uge-lineman-a--adzuna-5898256017</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/aerial-lineman--adzuna-5898255884</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/aerial-lineman--adzuna-5898255902</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/lineman-i-telecom--adzuna-5898203144</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/b-lineman-transmission-duke--adzuna-5898124374</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/b-lineman-transmission-duke--adzuna-5898115552</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/a-lineman-transmission--adzuna-5898075688</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/low-tension-line-worker--adzuna-5898073821</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/equipment-operator-overhead-cobb-emc--adzuna-5898063195</loc></url>
   <url><loc>https://fieldwatt.com/jobs/substation-technician-journeyman-ht5s--adzuna-5898460183</loc></url>
   <url><loc>https://fieldwatt.com/jobs/substation-apprentice-3rd-yr-t--adzuna-5898456311</loc></url>
   <url><loc>https://fieldwatt.com/jobs/high-voltage-balance-of-plant-substation-technician-sunzia--adzuna-5898395732</loc></url>
   <url><loc>https://fieldwatt.com/jobs/substation-technician--adzuna-5898150667</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/class-a-oh-distribution-lineman-shelbyville-ky--adzuna-5898269178</loc></url>
   <url><loc>https://fieldwatt.com/jobs/lead-protection-controls-relay-technician-hv--adzuna-5898657533</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/renewable-energy-solar-technician-multiple-levels-on-site--adzuna-5898400691</loc></url>
   <url><loc>https://fieldwatt.com/jobs/wind-tech--adzuna-5897960048</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/millwright-superintendent-power--adzuna-5898460160</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/solar-technician-iii--adzuna-5898721241</loc></url>
   <url><loc>https://fieldwatt.com/jobs/millwright-superintendent-power--adzuna-5898460123</loc></url>
   <url><loc>https://fieldwatt.com/jobs/wind-turbine-technician-tech-one-program--adzuna-5896939995</loc></url>
   <url><loc>https://fieldwatt.com/jobs/wind-turbine-technician-ii-hebron-nd--adzuna-5896721528</loc></url>
   <url><loc>https://fieldwatt.com/jobs/local-wind-site-o-m-technician-hoffman-minnesota--adzuna-5896269260</loc></url>
   <url><loc>https://fieldwatt.com/jobs/wind-technician-level-ii--adzuna-5896780099</loc></url>
   <url><loc>https://fieldwatt.com/jobs/technician-ii--adzuna-5896722156</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/wind-technician-ii-bent-tree-mn--adzuna-5896722139</loc></url>
   <url><loc>https://fieldwatt.com/jobs/technician-ii--adzuna-5896722141</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/wind-technician-ii-bent-tree-mn--adzuna-5896722139</loc></url>
   <url><loc>https://fieldwatt.com/jobs/technician-ii--adzuna-5896721886</loc></url>
   <url><loc>https://fieldwatt.com/jobs/wind-site-technician-ii-anadarko-ok--adzuna-5896721847</loc></url>
   <url><loc>https://fieldwatt.com/jobs/technician-ii--adzuna-5896721654</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/wind-technician-i-advanced-level-at-northern-colorado-wind-in-peetz-co--adzuna-5896620032</loc></url>
   <url><loc>https://fieldwatt.com/jobs/pv-solar-field-tech-principal-north-region--adzuna-5896620039</loc></url>
   <url><loc>https://fieldwatt.com/jobs/wind-technician-iii-entry-level-at-northern-colorado-wind-in-peetz-co--adzuna-5896620029</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/wind-technician-i-advanced-level-at-northern-colorado-wind-in-peetz-co--adzuna-5896620032</loc></url>
   <url><loc>https://fieldwatt.com/jobs/pv-solar-field-technician-ii--adzuna-5896619989</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/pv-solar-field-technician-ii-intermediate-dodge-flats-energy-storage--adzuna-5896619982</loc></url>
   <url><loc>https://fieldwatt.com/jobs/pv-solar-field-technician-iii-entry-level-at-dodge-flats-energy-storage-i--adzuna-5896619986</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/pv-solar-field-technician-ii-intermediate-dodge-flats-energy-storage--adzuna-5896619982</loc></url>
   <url><loc>https://fieldwatt.com/jobs/pv-solar-field-technician-i-advanced-at-dodge-flats-energy-storage-in-wad--adzuna-5896619988</loc></url>
   <url><loc>https://fieldwatt.com/jobs/lead-wind-technician--adzuna-5896523453</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/solar-pv-bess-technician--adzuna-5897706201</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/field-quality-technician-solar-construction-project--adzuna-5897220707</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/solar-technician-3--adzuna-5896927387</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/solar-technician-3--adzuna-5896911836</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/maintenance-quality-engineer-tech-lead-super-solar-torque-tube-mill--adzuna-5896820277</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/solar-technician-ii--adzuna-5896785961</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/electrical-solar-technician--adzuna-5896758134</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/solar-technician-fremont-california--adzuna-5896679640</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/solar-technician-fontana-california--adzuna-5896679569</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/solar-technician-chula-vista-california--adzuna-5896679380</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/solar-technician-santa-clarita-california--adzuna-5896679340</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/solar-technician-riverside-california--adzuna-5896679046</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/solar-technician-bakersfield-california--adzuna-5896678934</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/solar-technician-anaheim-california--adzuna-5896679002</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/solar-technician-fresno-california--adzuna-5896678387</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/solar-technician-san-francisco-california--adzuna-5896678402</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/solar-technician-sacramento-california--adzuna-5896678360</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/solar-technician-i--adzuna-5896642368</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/commercial-solar-install-technician--adzuna-5896639432</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/field-service-technician-ii-solar-bess--adzuna-5896543801</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/solar-technician-2--adzuna-5896501344</loc></url>
   <url><loc>https://fieldwatt.com/jobs/licensed-electrician--adzuna-5896877896</loc></url>
   <url><loc>https://fieldwatt.com/jobs/journeyman-master-electrician--adzuna-5896829107</loc></url>
   <url><loc>https://fieldwatt.com/jobs/journeyman-master-electrician--adzuna-5896813835</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/commercial-solar-install-technician--adzuna-5896639432</loc></url>
   <url><loc>https://fieldwatt.com/jobs/journeyman-electrician-austin-tx--adzuna-5896612750</loc></url>
   <url><loc>https://fieldwatt.com/jobs/non-licensed-journeyman-electrician--adzuna-5896510021</loc></url>
   <url><loc>https://fieldwatt.com/jobs/solar-installer-temp--adzuna-5896447021</loc></url>
   <url><loc>https://fieldwatt.com/jobs/solar-installer--adzuna-5896394153</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/commercial-solar-electrician--adzuna-5896388890</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/solar-installer-temp--adzuna-5896371268</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/solar-electrician-urgent-need--adzuna-5896387850</loc></url>
   <url><loc>https://fieldwatt.com/jobs/commercial-solar-o-m-apprentice-electrician--adzuna-5897469201</loc></url>
   <url><loc>https://fieldwatt.com/jobs/solar-electrician--adzuna-5897263012</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/solar-technician-3--adzuna-5896927387</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/solar-technician-3--adzuna-5896911836</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/field-service-technician-ii-solar-bess--adzuna-5896543801</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/solar-technician-2--adzuna-5896501344</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/solar-pv-bess-technician--adzuna-5897706201</loc></url>
   <url><loc>https://fieldwatt.com/jobs/field-service-technician-bess--adzuna-5896498214</loc></url>
   <url><loc>https://fieldwatt.com/jobs/journeyman-lineman--adzuna-5896826941</loc></url>
   <url><loc>https://fieldwatt.com/jobs/journeyman-lineman--adzuna-5896813916</loc></url>
@@ -639,23 +769,17 @@
   <url><loc>https://fieldwatt.com/jobs/lineman--adzuna-5896683357</loc></url>
   <url><loc>https://fieldwatt.com/jobs/journeyman-electrician-substation-construction-maple-grove-mn--adzuna-5896611118</loc></url>
   <url><loc>https://fieldwatt.com/jobs/advanced-step-apprentice-journeyman-lineman-ironwood-mi--adzuna-5896442686</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/kgi-utility-solutions-journeyman-lineman--adzuna-5896403209</loc></url>
   <url><loc>https://fieldwatt.com/jobs/journeyman-lineman-dynetek-ohio--adzuna-5896352239</loc></url>
   <url><loc>https://fieldwatt.com/jobs/electric-powerline-inspector--adzuna-5896263863</loc></url>
   <url><loc>https://fieldwatt.com/jobs/hotstick-lineman-apprentice--adzuna-5897460212</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/lineman-apprentice--adzuna-5896715935</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/lineman-c-a--adzuna-5896672156</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/underground-distribution-lineman-a--adzuna-5896637245</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/apprentice-lineman-class-c--adzuna-5896604566</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/b-lineman-overhead-jefferson-emc--adzuna-5896979866</loc></url>
   <url><loc>https://fieldwatt.com/jobs/substation-technician-va--adzuna-5896778359</loc></url>
   <url><loc>https://fieldwatt.com/jobs/trans-substation-tech-ii--adzuna-5896639632</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/substation-electrician-tech-construction-epc--adzuna-5896395307</loc></url>
   <url><loc>https://fieldwatt.com/jobs/civil-substation-engineering-technician--adzuna-5896355187</loc></url>
   <url><loc>https://fieldwatt.com/jobs/electrician-substation-trainee-90414929-lancaster--adzuna-5896354834</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/relay-technicianminimum-of-7-years-of-experience-10-years-preferred--adzuna-5897216951</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/underground-distribution-lineman-a--adzuna-5896637245</loc></url>
   <url><loc>https://fieldwatt.com/jobs/relay-apprentice-technician-1--adzuna-5896711649</loc></url>
   <url><loc>https://fieldwatt.com/jobs/trans-relay-tech-i-ii--adzuna-5896597513</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/electrician--adzuna-5897190409</loc></url>
   <url><loc>https://fieldwatt.com/jobs/general-laborer--adzuna-5896676755</loc></url>
   <url><loc>https://fieldwatt.com/jobs/qa-qc-technician--adzuna-5896676773</loc></url>
   <url><loc>https://fieldwatt.com/jobs/lead-wind-technician-mce--adzuna-5896117743</loc></url>
@@ -665,139 +789,97 @@
   <url><loc>https://fieldwatt.com/jobs/lc-traveling-wind-technician-onshore--adzuna-5895118591</loc></url>
   <url><loc>https://fieldwatt.com/jobs/wind-site-technician-iii-bay-city-tx--adzuna-5895060388</loc></url>
   <url><loc>https://fieldwatt.com/jobs/wind-site-technician-ii-bay-city-tx--adzuna-5895060395</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/wind-site-technician-iii-seymour-tx--adzuna-5895060088</loc></url>
   <url><loc>https://fieldwatt.com/jobs/wind-site-technician-iii-lead-seymour-tx--adzuna-5895060087</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/wind-site-technician-iii-seymour-tx--adzuna-5895060088</loc></url>
   <url><loc>https://fieldwatt.com/jobs/technician-iii--adzuna-5895059932</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/100-travel-mce-wind-technician-ii-west-us--adzuna-5895059561</loc></url>
   <url><loc>https://fieldwatt.com/jobs/wind-field-blade-repair-tech-ii-wold-ridge-muenster-tx--adzuna-5895018407</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/solar-technician-apprentice--adzuna-5895220948</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/solar-technician-long-beach-california--adzuna-5895083015</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/solar-installer--adzuna-5894912793</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/solar-technician-all-levels--adzuna-5894800352</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/pv-solar-installer--adzuna-5895369365</loc></url>
   <url><loc>https://fieldwatt.com/jobs/solar-roof-lead--adzuna-5895248346</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/solar-foreman--adzuna-5895225638</loc></url>
   <url><loc>https://fieldwatt.com/jobs/solar-installer--adzuna-5895194516</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/solar-installer--adzuna-5894912793</loc></url>
   <url><loc>https://fieldwatt.com/jobs/solar-journeyman-electrician--adzuna-5896062742</loc></url>
   <url><loc>https://fieldwatt.com/jobs/journeyman-electrician--adzuna-5894902062</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/electrician--adzuna-5894852308</loc></url>
   <url><loc>https://fieldwatt.com/jobs/field-service-technician-bess--adzuna-5895233524</loc></url>
   <url><loc>https://fieldwatt.com/jobs/journeyworker-dol-journeyman-lineman--adzuna-5895739192</loc></url>
   <url><loc>https://fieldwatt.com/jobs/transmission-line-inspector--adzuna-5895135278</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/class-a-journeyman-lineman--adzuna-5895112018</loc></url>
   <url><loc>https://fieldwatt.com/jobs/journeyman-lineman--adzuna-5895092569</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/class-a-journeyman-lineman-energy-services--adzuna-5895043032</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/class-a-journeyman-lineman-energy-services--adzuna-5895042858</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/class-a-journeyman-lineman--adzuna-5895032860</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/class-a-journeyman-lineman--adzuna-5895026683</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/class-a-journeyman-lineman-energy-services--adzuna-5894812999</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/class-a-journeyman-lineman-energy-services--adzuna-5894811196</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/overhead-distribution-foreman--adzuna-5894835815</loc></url>
   <url><loc>https://fieldwatt.com/jobs/bid-069-journeyman-lineman-3492-local-125-keys-rd-office-req-114975--adzuna-5894801143</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/journey-lineworker--adzuna-5895175030</loc></url>
   <url><loc>https://fieldwatt.com/jobs/civil-technician-substation--adzuna-5895122769</loc></url>
   <url><loc>https://fieldwatt.com/jobs/line-technician-apprentice-i-journey--adzuna-5894912364</loc></url>
   <url><loc>https://fieldwatt.com/jobs/hollis-creek-laborer-driver--adzuna-5895040514</loc></url>
   <url><loc>https://fieldwatt.com/jobs/wind-turbine-technician-power--adzuna-5893908147</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/associate-technician-siemens-2-3--adzuna-5894444380</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/wind-farm-technician-associate-forest-creek-repower--adzuna-5894063397</loc></url>
   <url><loc>https://fieldwatt.com/jobs/wind-site-technician-iii-deming-nm--adzuna-5893818144</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/100-travel-mce-technician-northeast--adzuna-5893818130</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/wind-technician-ii-intermediate-level-lubbock-tx--adzuna-5893790334</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/wind-technician-iii-entry-level-in-mccamey-tx--adzuna-5893790340</loc></url>
   <url><loc>https://fieldwatt.com/jobs/blade-repair-services-technician-ii--adzuna-5894063387</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/thin-film-solar-sputter-operator-technician--adzuna-5894704223</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/solar-service-technician--adzuna-5894365499</loc></url>
   <url><loc>https://fieldwatt.com/jobs/electrical-and-solar-installation-technician--adzuna-5893986478</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/development-engineering-technician-ii--adzuna-5893981947</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/solar-technician-san-jose-california--adzuna-5893849711</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/solar-service-technician--adzuna-5893775702</loc></url>
   <url><loc>https://fieldwatt.com/jobs/solar-electrician-foreman--adzuna-5894619484</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/journeyman-lineman--adzuna-5894341221</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/journeyman-lineman--adzuna-5893969532</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/solar-installer-electrician-all-experience-levels--adzuna-5894188336</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/solar-battery-electrician--adzuna-5894185310</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/solar-field-service-technician-iii--adzuna-5894189253</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/advanced-bess-technician--adzuna-5893619600</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/journeyman-lineman--adzuna-5894672165</loc></url>
   <url><loc>https://fieldwatt.com/jobs/journeyman-lineman--adzuna-5893602768</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/mesquite-star-service-technician--adzuna-5894064799</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/wind-technician-welding-specialist--adzuna-5893017545</loc></url>
   <url><loc>https://fieldwatt.com/jobs/pv-solar-field-technician-i-advanced-at-yellow-pine-solar-in-enterprise--adzuna-5892653883</loc></url>
   <url><loc>https://fieldwatt.com/jobs/pv-solar-field-technician-ii-intermediate-level-at-yellow-pine-solar-in-e--adzuna-5892653879</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/solar-technician-los-angeles-california--adzuna-5892706005</loc></url>
   <url><loc>https://fieldwatt.com/jobs/solar-bess-operations-maintenance-o-m-technician--adzuna-5892382334</loc></url>
   <url><loc>https://fieldwatt.com/jobs/journeyman-lineman--adzuna-5892926220</loc></url>
   <url><loc>https://fieldwatt.com/jobs/journeyman-lineman--adzuna-5892926221</loc></url>
   <url><loc>https://fieldwatt.com/jobs/journeyman-lineman--adzuna-5892926219</loc></url>
   <url><loc>https://fieldwatt.com/jobs/overhead-distribution-a-lineman-journeyman--adzuna-5892718212</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/overhead-distribution-c-lineman-apprentice--adzuna-5892718175</loc></url>
   <url><loc>https://fieldwatt.com/jobs/substation-technician-a-b-or-trainee-lexington--adzuna-5892719560</loc></url>
   <url><loc>https://fieldwatt.com/jobs/substation-tech-a-b-or-trainee-danville--adzuna-5892719307</loc></url>
   <url><loc>https://fieldwatt.com/jobs/overhead-distribution-lineman-5th-class--adzuna-5892718172</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/overhead-distribution-c-lineman-apprentice--adzuna-5892718175</loc></url>
   <url><loc>https://fieldwatt.com/jobs/local-wind-technician-reading-reading-ks--adzuna-5891444126</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/technician-ii-wind--adzuna-5891778076</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/wind-technician-1--adzuna-5891647581</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/pv-solar-field-technician-i-sonoran-solar-buckeye-az--adzuna-5891644023</loc></url>
   <url><loc>https://fieldwatt.com/jobs/blade-lead-technician-1-larned-ks--adzuna-5891611068</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/qa-qc-technician--adzuna-5891844902</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/solar-technician--adzuna-5891789158</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/production-technician-iii-genesis-solar-blythe-ca--adzuna-5891623296</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/solar-technician-san-diego-california--adzuna-5891611442</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/solar-technician--adzuna-5891514066</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/solar-service-technician--adzuna-5891452314</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/solar-crew-lead-installer--adzuna-5891451472</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/solar-o-m-technician--adzuna-5891444124</loc></url>
   <url><loc>https://fieldwatt.com/jobs/solar-install-foreman--adzuna-5892077417</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/laborer-el-patrimonio--adzuna-5891844851</loc></url>
   <url><loc>https://fieldwatt.com/jobs/solar-installer-urgent-need--adzuna-5891802839</loc></url>
   <url><loc>https://fieldwatt.com/jobs/electrician-non-driver-desert-pine-pv--adzuna-5891797022</loc></url>
   <url><loc>https://fieldwatt.com/jobs/solar-electrician-urgent-need--adzuna-5891792439</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/solar-crew-lead-installer--adzuna-5891451472</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/journeyman-electrician--adzuna-5891837999</loc></url>
   <url><loc>https://fieldwatt.com/jobs/licensed-electrician-solar-division--adzuna-5891789944</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/pv-solar-field-technician-i-sonoran-solar-buckeye-az--adzuna-5891644023</loc></url>
   <url><loc>https://fieldwatt.com/jobs/journeyman-lineman-troubleshooter--adzuna-5891811798</loc></url>
   <url><loc>https://fieldwatt.com/jobs/journeyman-lineman-fiber-joint-use--adzuna-5891777208</loc></url>
   <url><loc>https://fieldwatt.com/jobs/journeyman-lineman--adzuna-5891623103</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/apprentice-3--adzuna-5891444784</loc></url>
   <url><loc>https://fieldwatt.com/jobs/substation-commissioning-technician-minnesota-job-details-black-veatch-family-of--adzuna-5891601508</loc></url>
   <url><loc>https://fieldwatt.com/jobs/senior-relay-field-technician--adzuna-5891627004</loc></url>
   <url><loc>https://fieldwatt.com/jobs/lead-relay-field-technician--adzuna-5891626987</loc></url>
   <url><loc>https://fieldwatt.com/jobs/level-1-p-c-relay-technician--adzuna-5891363723</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/wind-technician-1--adzuna-5891647581</loc></url>
   <url><loc>https://fieldwatt.com/jobs/millwright-superintendent-power--adzuna-5891644359</loc></url>
   <url><loc>https://fieldwatt.com/jobs/millwright-superintendent-power--adzuna-5891634799</loc></url>
   <url><loc>https://fieldwatt.com/jobs/millwright-superintendent-power--adzuna-5891634852</loc></url>
   <url><loc>https://fieldwatt.com/jobs/millwright-superintendent-power--adzuna-5891631587</loc></url>
   <url><loc>https://fieldwatt.com/jobs/construction-laborer-solar--adzuna-5891400210</loc></url>
   <url><loc>https://fieldwatt.com/jobs/wind-turbine-technician-tech-one-program--adzuna-5890685569</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/wind-turbine-technician-ii-glenns-ferry-id--adzuna-5890564419</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/wind-hub-technician-mdc-great-falls-mt--adzuna-5891235139</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/senior-wind-hub-technician-mdc-great-falls-montana--adzuna-5891235120</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/wind-hub-technician-tx3-midland-odessa-tx--adzuna-5890746234</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/pv-solar-field-technician-intermediate-level-rush-springs-ii-duncan-ok--adzuna-5890402017</loc></url>
   <url><loc>https://fieldwatt.com/jobs/wind-field-blade-repair-tech-ii-wold-ridge-muenster-tx--adzuna-5890402019</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/wind-technician-ii-intermediate-level-at-white-mesa-wind-in-ozona-tx--adzuna-5890401971</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/wind-tech-illinois--adzuna-5890229808</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/tiger-team-technician-wind-tech-multiple-locations-il-in-tx--adzuna-5890229814</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/wind-tech-ii-windfall-in--adzuna-5890229791</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/vertical-wind-tunnel-vwt-maintenance-technician-with-security-clearance--adzuna-5890186870</loc></url>
   <url><loc>https://fieldwatt.com/jobs/rotor-blade-repair-and-manufacturing-technician--adzuna-5890243997</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/solar-field-service-technician-kirtland-nm--adzuna-5890668105</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/advanced-solar-field-service-technician-operations-and-maintenance--adzuna-5890646751</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/solar-technician-plano-texas--adzuna-5890516967</loc></url>
   <url><loc>https://fieldwatt.com/jobs/solar-installer-i--adzuna-5890647117</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/solar-worker--adzuna-5890233546</loc></url>
   <url><loc>https://fieldwatt.com/jobs/solar-tech-ii-tonopah-az--adzuna-5890229822</loc></url>
   <url><loc>https://fieldwatt.com/jobs/solar-tech-ii-boulder-city-nv--adzuna-5890229779</loc></url>
   <url><loc>https://fieldwatt.com/jobs/solar-tech-ii-morris-il--adzuna-5890229784</loc></url>
   <url><loc>https://fieldwatt.com/jobs/journeyman-electrician--adzuna-5891317917</loc></url>
   <url><loc>https://fieldwatt.com/jobs/field-electrician-solar-and-tesla-powerwall-installation-specialist--adzuna-5890332495</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/solar-field-service-technician-kirtland-nm--adzuna-5890668105</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/advanced-solar-field-service-technician-operations-and-maintenance--adzuna-5890646751</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/pv-solar-field-technician-intermediate-level-rush-springs-ii-duncan-ok--adzuna-5890402017</loc></url>
   <url><loc>https://fieldwatt.com/jobs/solar-field-service-technician-i-operations-and-maintenance--adzuna-5890287975</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/advanced-bess-technician--adzuna-5890871421</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/traveling-electrical-technician-solar-energy-storage--adzuna-5890231687</loc></url>
   <url><loc>https://fieldwatt.com/jobs/journeyman-lineman-troubleshooter--adzuna-5891005872</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/journeyman-lineman-troubleshooter--adzuna-5890652140</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/journeyman-lineman-troubleshooter--adzuna-5891004285</loc></url>
   <url><loc>https://fieldwatt.com/jobs/journeyman-lineman--adzuna-5890551037</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/journeyman-lineman--adzuna-5890551031</loc></url>
   <url><loc>https://fieldwatt.com/jobs/journeyman-lineman--adzuna-5890551053</loc></url>
   <url><loc>https://fieldwatt.com/jobs/journeyman-lineman--adzuna-5890551026</loc></url>
   <url><loc>https://fieldwatt.com/jobs/journeyman-lineman--adzuna-5890551027</loc></url>
   <url><loc>https://fieldwatt.com/jobs/journeyman-lineman--adzuna-5890551044</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/journeyman-lineman--adzuna-5890535469</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/journeyman-lineman--adzuna-5890535455</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/journeyman-lineman--adzuna-5890551031</loc></url>
   <url><loc>https://fieldwatt.com/jobs/journeyman-lineman--adzuna-5890535471</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/journeyman-lineman--adzuna-5890535455</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/journeyman-lineman--adzuna-5890535469</loc></url>
   <url><loc>https://fieldwatt.com/jobs/journeyman-lineman-troubleshooter--adzuna-5890218534</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/apprentice-lineman-b-apb-gpc--adzuna-5890644228</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/apprentice-lineman--adzuna-5890587462</loc></url>
   <url><loc>https://fieldwatt.com/jobs/substation-fiber-technician--adzuna-5890684704</loc></url>
   <url><loc>https://fieldwatt.com/jobs/substation-fiber-technician--adzuna-5890684703</loc></url>
   <url><loc>https://fieldwatt.com/jobs/sr-substation-commissioning-technician-central-region-job-details-black-veatch-f--adzuna-5890509591</loc></url>
@@ -808,8 +890,9 @@
   <url><loc>https://fieldwatt.com/jobs/sr-substation-commissioning-technician-central-region-job-details-black-veatch-f--adzuna-5890505793</loc></url>
   <url><loc>https://fieldwatt.com/jobs/lead-substation-commissioning-technician-central-region-job-details-black-veatch--adzuna-5890500906</loc></url>
   <url><loc>https://fieldwatt.com/jobs/sr-substation-commissioning-technician-central-region-job-details-black-veatch-f--adzuna-5890500905</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/sr-solar-tech-huron-ca--adzuna-5890229789</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/wind-technician-ii-intermediate-level-at-white-mesa-wind-in-ozona-tx--adzuna-5890401971</loc></url>
   <url><loc>https://fieldwatt.com/jobs/solar-tech-i-wynne-ar--adzuna-5890229790</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/sr-solar-tech-huron-ca--adzuna-5890229789</loc></url>
   <url><loc>https://fieldwatt.com/jobs/sr-solar-tech-cantua-creek-ca--adzuna-5890229788</loc></url>
   <url><loc>https://fieldwatt.com/jobs/pv-solar-technician--adzuna-5890200418</loc></url>
   <url><loc>https://fieldwatt.com/jobs/senior-technician--adzuna-5889659839</loc></url>
@@ -819,16 +902,15 @@
   <url><loc>https://fieldwatt.com/jobs/solar-installer-i--adzuna-5890117544</loc></url>
   <url><loc>https://fieldwatt.com/jobs/solar-installer-i--adzuna-5890117527</loc></url>
   <url><loc>https://fieldwatt.com/jobs/solar-service-technician-san-jose-ca--adzuna-5890116065</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/solar-worker--adzuna-5889656838</loc></url>
   <url><loc>https://fieldwatt.com/jobs/solar-installation-technician--adzuna-5889300862</loc></url>
   <url><loc>https://fieldwatt.com/jobs/traveling-skilled-trained-ca-certified-journeyman-electrician-commercial-solar--adzuna-5889194710</loc></url>
   <url><loc>https://fieldwatt.com/jobs/solar-electrical-technician--adzuna-5889069870</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/solar-pv-installation-training-facilitator--adzuna-5888753358</loc></url>
   <url><loc>https://fieldwatt.com/jobs/field-electrician-solar-and-tesla-powerwall-installation-specialist--adzuna-5890117561</loc></url>
   <url><loc>https://fieldwatt.com/jobs/field-electrician-solar-and-tesla-powerwall-installation-specialist--adzuna-5890117577</loc></url>
   <url><loc>https://fieldwatt.com/jobs/all-level-electrical-positions-marine-and-solar--adzuna-5890063557</loc></url>
   <url><loc>https://fieldwatt.com/jobs/solar-journey-electrician--adzuna-5888994453</loc></url>
   <url><loc>https://fieldwatt.com/jobs/solar-journeyman-electrician--adzuna-5888931353</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/solar-journey-electrician--adzuna-5888761652</loc></url>
   <url><loc>https://fieldwatt.com/jobs/solar-field-service-technician-coyanosa-tx-temp-to-hire--adzuna-5889293925</loc></url>
   <url><loc>https://fieldwatt.com/jobs/pv-solar-field-technician-intermediate-panhandle-solar-guymon-ok--adzuna-5889132752</loc></url>
   <url><loc>https://fieldwatt.com/jobs/solar-technician-el-paso-texas--adzuna-5889100006</loc></url>
@@ -846,6 +928,7 @@
   <url><loc>https://fieldwatt.com/jobs/civil-senior-engineering-technician-bess-job-details-black-veatch-family-of-comp--adzuna-5889097147</loc></url>
   <url><loc>https://fieldwatt.com/jobs/civil-senior-engineering-technician-bess-job-details-black-veatch-family-of-comp--adzuna-5889097144</loc></url>
   <url><loc>https://fieldwatt.com/jobs/civil-senior-engineering-technician-bess-job-details-black-veatch-family-of-comp--adzuna-5889087252</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/journeyman-lineman--adzuna-5889392938</loc></url>
   <url><loc>https://fieldwatt.com/jobs/street-light-technician--adzuna-5889016224</loc></url>
   <url><loc>https://fieldwatt.com/jobs/substation-foreman-travel-and-per-diem--adzuna-5889760967</loc></url>
   <url><loc>https://fieldwatt.com/jobs/substation-technician-b-gtc--adzuna-5889390718</loc></url>
@@ -859,44 +942,35 @@
   <url><loc>https://fieldwatt.com/jobs/relay-testing-professional--adzuna-5889124194</loc></url>
   <url><loc>https://fieldwatt.com/jobs/renewable-energy-technician-multiple-levels-on-site--adzuna-5889399923</loc></url>
   <url><loc>https://fieldwatt.com/jobs/renewable-energy-technician-solar-level-2-3--adzuna-5889399841</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/laborers--adzuna-5889655956</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/wind-technician-any-level-day-county-wind-conde-sd--adzuna-5889017345</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/wind-technician-iii-sac-county-wind-odebolt-iowa--adzuna-5889017319</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/wind-turbine-technician-tech-one-program--adzuna-5887750188</loc></url>
   <url><loc>https://fieldwatt.com/jobs/electrical-and-inspection-technician--adzuna-5888634475</loc></url>
   <url><loc>https://fieldwatt.com/jobs/solar-installer--adzuna-5887773749</loc></url>
   <url><loc>https://fieldwatt.com/jobs/journeyman-electrician-bozeman-mt--adzuna-5887676967</loc></url>
   <url><loc>https://fieldwatt.com/jobs/solar-field-technician--adzuna-5887498145</loc></url>
   <url><loc>https://fieldwatt.com/jobs/solar-field-technician-pittsburgh-pa--adzuna-5887275337</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/solar-pv-installer--adzuna-5887194285</loc></url>
   <url><loc>https://fieldwatt.com/jobs/pv-service-electrical-repair-technician--adzuna-5887387394</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/quality-inspector--adzuna-5888040465</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/advanced-bess-technician--adzuna-5887206347</loc></url>
   <url><loc>https://fieldwatt.com/jobs/apprentice-relay-technician-eau-claire-wi--adzuna-5887593358</loc></url>
   <url><loc>https://fieldwatt.com/jobs/journeyman-lineman-non-union--adzuna-5887581067</loc></url>
   <url><loc>https://fieldwatt.com/jobs/uge-lineman-c--adzuna-5887575193</loc></url>
   <url><loc>https://fieldwatt.com/jobs/lineman-c-tr--adzuna-5887507743</loc></url>
   <url><loc>https://fieldwatt.com/jobs/journeyman-lineman-serviceman--adzuna-5887183770</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/lineman-b-tr--adzuna-5887485804</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/apprentice-lineman-b-apb-ap-calera-al--adzuna-5887343736</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/class-c-lineman-chillicothe-oh--adzuna-5887278513</loc></url>
   <url><loc>https://fieldwatt.com/jobs/technician-substation--adzuna-5888296142</loc></url>
   <url><loc>https://fieldwatt.com/jobs/assistant-electrical-engineering-technician-substation-drafter--adzuna-5887684369</loc></url>
   <url><loc>https://fieldwatt.com/jobs/assistant-electrical-engineering-technician-substation-drafter-job-details-black--adzuna-5887550239</loc></url>
   <url><loc>https://fieldwatt.com/jobs/solar-technician--adzuna-5887319063</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/overhead-lineman-power-distribution--adzuna-5887196612</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/class-c-lineman-chillicothe-oh--adzuna-5887278513</loc></url>
   <url><loc>https://fieldwatt.com/jobs/relay-technician-i-sr--adzuna-5887574067</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/wind-hub-technician-ia1-petersburg-nebraska--adzuna-5887543816</loc></url>
   <url><loc>https://fieldwatt.com/jobs/wind-technician-i-or-ii-at-campbell-hill-wind-farm--adzuna-5886293395</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/solar-technician--adzuna-5886531654</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/lead-foreman-solar-energy-storage--adzuna-5886531064</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/commercial-electrical-technician--adzuna-5885942592</loc></url>
   <url><loc>https://fieldwatt.com/jobs/solar-laborer-operator-fort-stockton-tx--adzuna-5885784737</loc></url>
   <url><loc>https://fieldwatt.com/jobs/solar-bess-technician-ii--adzuna-5885610288</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/ma-ri-journeyman-solar-electrician--adzuna-5887097012</loc></url>
   <url><loc>https://fieldwatt.com/jobs/solar-battery-electrician--adzuna-5886535352</loc></url>
   <url><loc>https://fieldwatt.com/jobs/installer-2-solar-panel-installation--adzuna-5886015497</loc></url>
   <url><loc>https://fieldwatt.com/jobs/field-electrician-solar-and-tesla-powerwall-installation-specialist-contract--adzuna-5885938959</loc></url>
   <url><loc>https://fieldwatt.com/jobs/bess-technician-1--adzuna-5886837351</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/traveling-electrical-technician-solar-energy-storage--adzuna-5885674957</loc></url>
   <url><loc>https://fieldwatt.com/jobs/groundman--adzuna-5886726442</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/high-voltage-electrician-lineman--adzuna-5886521832</loc></url>
   <url><loc>https://fieldwatt.com/jobs/journeyman-lineman-non-union-ulcs--adzuna-5886072635</loc></url>
   <url><loc>https://fieldwatt.com/jobs/journeyman-lineman-non-union-ulcs--adzuna-5886054266</loc></url>
   <url><loc>https://fieldwatt.com/jobs/ohe-lineman-a--adzuna-5886034867</loc></url>
@@ -904,31 +978,23 @@
   <url><loc>https://fieldwatt.com/jobs/apprentice-1st-step-journeyman-lineman--adzuna-5886031034</loc></url>
   <url><loc>https://fieldwatt.com/jobs/journeyman-lineman--adzuna-5886015418</loc></url>
   <url><loc>https://fieldwatt.com/jobs/apprentice-relay-technician-eau-claire-wi--adzuna-5885741625</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/apprentice-lineman-b-apb-gpc--adzuna-5886250798</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/apprentice-lineman-a-apa-magnolia-electric--adzuna-5886125663</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/apprentice-lineman-a-apa-ap--adzuna-5885916079</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/apprentice-lineman-b-apb-gpc--adzuna-5885785235</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/apprentice-lineman-b-apb-ap--adzuna-5885687063</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/relay-protection-electrical-technician-ibew--adzuna-5886717529</loc></url>
   <url><loc>https://fieldwatt.com/jobs/substation-foreman--adzuna-5886128130</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/substation-design-technician--adzuna-5886074070</loc></url>
   <url><loc>https://fieldwatt.com/jobs/substation-foreman-gpc--adzuna-5885829912</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/journeyman-electrician-substation-controls-rigid-conduit-required--adzuna-5886526217</loc></url>
   <url><loc>https://fieldwatt.com/jobs/apprentice--adzuna-5886015482</loc></url>
   <url><loc>https://fieldwatt.com/jobs/apprentice--adzuna-5886015450</loc></url>
   <url><loc>https://fieldwatt.com/jobs/apprentice--adzuna-5886015473</loc></url>
   <url><loc>https://fieldwatt.com/jobs/renewable-energy-technician-1-on-site--adzuna-5886317724</loc></url>
   <url><loc>https://fieldwatt.com/jobs/solar-technician-i-ii-or-iii-idaho-region--adzuna-5885612028</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/wind-hub-technician--adzuna-5886367580</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/senior-wind-hub-technician-tx15--adzuna-5886367574</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/wind-hub-technician-tx-6-windthorst-tx-area--adzuna-5886367577</loc></url>
   <url><loc>https://fieldwatt.com/jobs/electrician--adzuna-5885116696</loc></url>
   <url><loc>https://fieldwatt.com/jobs/field-electrician-solar-and-tesla-powerwall-installation-specialist-contract--adzuna-5885560316</loc></url>
   <url><loc>https://fieldwatt.com/jobs/experienced-solar-installer--adzuna-5885116699</loc></url>
   <url><loc>https://fieldwatt.com/jobs/lead-solar-installer--adzuna-5885116709</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/journeyman-apprentice-electrician--adzuna-5884768970</loc></url>
   <url><loc>https://fieldwatt.com/jobs/ohe-lineman-b--adzuna-5884786537</loc></url>
   <url><loc>https://fieldwatt.com/jobs/substation-tech-journeyman-lineman--adzuna-5884550235</loc></url>
   <url><loc>https://fieldwatt.com/jobs/journeyman-lineman-denver-co--adzuna-5884549304</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/apprentice-b-lineman-apb-apc--adzuna-5884632972</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/apprentice-a-lineman-apa-apc--adzuna-5884329419</loc></url>
   <url><loc>https://fieldwatt.com/jobs/substation-technician-a-next-era--adzuna-5884650779</loc></url>
   <url><loc>https://fieldwatt.com/jobs/substation-technician-b-next-era--adzuna-5884445181</loc></url>
   <url><loc>https://fieldwatt.com/jobs/substation-technician-c-dominion--adzuna-5884390046</loc></url>
@@ -936,38 +1002,20 @@
   <url><loc>https://fieldwatt.com/jobs/foundation-technician-a--adzuna-5884341863</loc></url>
   <url><loc>https://fieldwatt.com/jobs/control-electrician-a-substation-gtc--adzuna-5884331829</loc></url>
   <url><loc>https://fieldwatt.com/jobs/solar-panel-installer--adzuna-5884258053</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/master-electrician--adzuna-5883712179</loc></url>
   <url><loc>https://fieldwatt.com/jobs/substation-tech-journeyman-lineman--adzuna-5883736576</loc></url>
   <url><loc>https://fieldwatt.com/jobs/apprentice-lineman-d--adzuna-5883500188</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/solar-general-laborer--adzuna-5883707721</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/solar-farm-technician-ii--adzuna-5883511303</loc></url>
   <url><loc>https://fieldwatt.com/jobs/wind-turbine-technician-tyrone-pennsylvania--adzuna-5882574982</loc></url>
   <url><loc>https://fieldwatt.com/jobs/4229-solar-technician--adzuna-5882508504</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/solar-electrical-technician-eastern-shore--adzuna-5882482837</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/field-service-technician--adzuna-5882367269</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/solar-crew-supervisor--adzuna-5882331811</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/solar-field-service-technician--adzuna-5882305320</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/solar-laborer-vero-beach-fl--adzuna-5882237733</loc></url>
   <url><loc>https://fieldwatt.com/jobs/solar-field-service-technician--adzuna-5882294681</loc></url>
   <url><loc>https://fieldwatt.com/jobs/solar-field-service-technician-ii--adzuna-5882647255</loc></url>
   <url><loc>https://fieldwatt.com/jobs/solar-field-service-technician-iii--adzuna-5882402749</loc></url>
   <url><loc>https://fieldwatt.com/jobs/solar-field-service-technician-iii--adzuna-5882325773</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/solar-field-service-technician--adzuna-5882305320</loc></url>
   <url><loc>https://fieldwatt.com/jobs/bess-field-technician-i-edinburg-tx--adzuna-5882649331</loc></url>
   <url><loc>https://fieldwatt.com/jobs/high-voltage-technician--adzuna-5882577450</loc></url>
   <url><loc>https://fieldwatt.com/jobs/overhead-foreman--adzuna-5882404588</loc></url>
   <url><loc>https://fieldwatt.com/jobs/lineman--adzuna-5882238001</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/lineman-b-streetlight--adzuna-5882327257</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/underground-lineman-apprentice-3-8-raleigh-north-carolina--adzuna-5882231053</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/overhead-apprentice-lineman--adzuna-5882198139</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/solar-farm-technician-associate--adzuna-5882522149</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/solar-farm-technician-ii--adzuna-5882522153</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/design-review-agent--adzuna-5880790392</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/solar-electrician--adzuna-5881160983</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/pv-solar-field-technician-iii-entry-level-at-romero-energy-center-in-tonopah-az--adzuna-5880911198</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/pv-solar-field-technician-i-advanced-level-at-romero-energy-center-in-tonopah-az--adzuna-5880911200</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/pv-solar-field-technician-ii-intermediate-level-at-romero-energy-center-in-tonop--adzuna-5880911196</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/pv-solar-field-technician-intermediate-level-flat-fork-solar-brinkley-ar--adzuna-5880897035</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/pv-solar-field-tech-leader-advanced-level-at-roswell-solar-in-roswell-nm--adzuna-5880894935</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/solar-electrical-technician-eastern-shore--adzuna-5882482837</loc></url>
   <url><loc>https://fieldwatt.com/jobs/gpc-solar-bess-ders-renewable-resiliency-technician--adzuna-5880956144</loc></url>
   <url><loc>https://fieldwatt.com/jobs/gpc-solar-bess-ders-i-c-technician--adzuna-5880956128</loc></url>
   <url><loc>https://fieldwatt.com/jobs/gpc-solar-bess-ders-renewable-resiliency-technician--adzuna-5880956139</loc></url>
@@ -984,10 +1032,10 @@
   <url><loc>https://fieldwatt.com/jobs/journeyman-lineman--adzuna-5881849329</loc></url>
   <url><loc>https://fieldwatt.com/jobs/lineman-c-oh--adzuna-5881011956</loc></url>
   <url><loc>https://fieldwatt.com/jobs/apprentice-4th-year-journeyman-lineman--adzuna-5880898470</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/distribution-lineman-a-georgia--adzuna-5880836345</loc></url>
   <url><loc>https://fieldwatt.com/jobs/electrical-testing-commissioning-technician-substation-relay-transformer--adzuna-5881047733</loc></url>
   <url><loc>https://fieldwatt.com/jobs/electrical-testing-commissioning-technician-substation-relay-transformer--adzuna-5881047751</loc></url>
   <url><loc>https://fieldwatt.com/jobs/contract-relay-technician--adzuna-5880827648</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/distribution-lineman-a-georgia--adzuna-5880836345</loc></url>
   <url><loc>https://fieldwatt.com/jobs/relay-technician--adzuna-5880910188</loc></url>
   <url><loc>https://fieldwatt.com/jobs/senior-lead-relay-technician--adzuna-5880815002</loc></url>
   <url><loc>https://fieldwatt.com/jobs/wind-turbine-technician-tech-one-program--adzuna-5879803638</loc></url>
@@ -998,85 +1046,46 @@
   <url><loc>https://fieldwatt.com/jobs/traveling-lead-composite-blade-technician-level-4-usa--adzuna-5879422526</loc></url>
   <url><loc>https://fieldwatt.com/jobs/traveling-lead-composite-blade-technician-level-4-usa--adzuna-5879422532</loc></url>
   <url><loc>https://fieldwatt.com/jobs/traveling-lead-composite-blade-technician-level-4-usa--adzuna-5879422527</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/solar-qc-inspector-journeyman-mulberry-florida--adzuna-5879564159</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/journeyman-electrician--adzuna-5879495791</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/field-service-technician--adzuna-5879422519</loc></url>
   <url><loc>https://fieldwatt.com/jobs/electrician-journeyman-solar-brewster-florida--adzuna-5879564155</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/pv-solar-field-technician-intermediate-level-duane-arnold-solar-cedar-rapids-ia--adzuna-5879605508</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/field-service-technician-ii-solar--adzuna-5879569398</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/field-service-technician-i-solar--adzuna-5879437458</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/solar-installer--adzuna-5879314878</loc></url>
   <url><loc>https://fieldwatt.com/jobs/journeyman-lineman-distribution-florida--adzuna-5879807619</loc></url>
   <url><loc>https://fieldwatt.com/jobs/distribution-journey-lineman-at-sec--adzuna-5879806883</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/transmission-line-inspector--adzuna-5879748848</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/substation-inspector--adzuna-5879382931</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/telecom-apprentice-lineman-g--adzuna-5879295642</loc></url>
   <url><loc>https://fieldwatt.com/jobs/relay-technician-ii--adzuna-5879791139</loc></url>
   <url><loc>https://fieldwatt.com/jobs/relay-technician--adzuna-5879303875</loc></url>
   <url><loc>https://fieldwatt.com/jobs/renewable-energy-technician-solar-multiple-levels-on-site--adzuna-5879821742</loc></url>
   <url><loc>https://fieldwatt.com/jobs/wind-technician-iii-entry-level-at-niyol-wind-in-fleming-co--adzuna-5879587600</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/wind-turbine-technician-tech-one-program--adzuna-5878521969</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/solar-worker--adzuna-5878001991</loc></url>
   <url><loc>https://fieldwatt.com/jobs/mn-master-electrician-commercial-ground-mount-solar--adzuna-5879218780</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/advanced-solar-field-service-technician-operations-and-maintenance--adzuna-5878441890</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/pv-solar-field-tech-leader-advanced-level-at-decatur-solar-in-climax-ga--adzuna-5878367252</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/advanced-solar-field-service-technician-operations-and-maintenance--adzuna-5878118214</loc></url>
   <url><loc>https://fieldwatt.com/jobs/field-service-technician-bess--adzuna-5878253712</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/journeyman-lineman-transmission-florida--adzuna-5878525976</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/journeyman-lineman--adzuna-5878330833</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/line-working-foreman--adzuna-5878000349</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/journeyman-lineman--adzuna-5878000348</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/journeyman-lineman--adzuna-5878000347</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/journeyman-lineman--adzuna-5878000345</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/journey-or-apprentice-lineworker--adzuna-5878245971</loc></url>
   <url><loc>https://fieldwatt.com/jobs/substation-technician-2--adzuna-5878926723</loc></url>
   <url><loc>https://fieldwatt.com/jobs/substation-technician--adzuna-5878162978</loc></url>
   <url><loc>https://fieldwatt.com/jobs/wind-turbine-technician-tech-one-program--adzuna-5877169109</loc></url>
   <url><loc>https://fieldwatt.com/jobs/wind-technician-iii-entry-level-at-white-mesa-wind-in-ozona-tx--adzuna-5877240410</loc></url>
   <url><loc>https://fieldwatt.com/jobs/4230-solar-foreman--adzuna-5876959987</loc></url>
   <url><loc>https://fieldwatt.com/jobs/solar-installer--adzuna-5876949989</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/solar-master-electrician-worcester-ma--adzuna-5877388721</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/licensed-solar-electrician--adzuna-5876652123</loc></url>
   <url><loc>https://fieldwatt.com/jobs/pgd-plant-technician-at-roadrunner-energy-storage-in-weatherford-tx--adzuna-5877240489</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/journeyman-lineman-pool--adzuna-5877944668</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/ohe-lineman-c--adzuna-5877025099</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/journeyman-lineman--adzuna-5876650642</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/lineman-electrician--adzuna-5877386558</loc></url>
   <url><loc>https://fieldwatt.com/jobs/substation-fiber-technician--adzuna-5877168107</loc></url>
   <url><loc>https://fieldwatt.com/jobs/substation-fiber-technician--adzuna-5877168108</loc></url>
   <url><loc>https://fieldwatt.com/jobs/substation-fiber-technician--adzuna-5877168106</loc></url>
   <url><loc>https://fieldwatt.com/jobs/substation-fiber-technician--adzuna-5877168105</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/licensed-electrician-solar-division--adzuna-5876582556</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/journeyman-lineman-pool--adzuna-5877944668</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/commercial-solar-electrician--adzuna-5875205393</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/traveling-electrical-technician-solar-energy-storage--adzuna-5875792222</loc></url>
   <url><loc>https://fieldwatt.com/jobs/wind-technician-heavy-lift-travel--adzuna-5875512051</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/experienced-solar-installer--adzuna-5873724605</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/solar-field-technician-mobile-territory-south-bay-peninsula--adzuna-5873719431</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/journeyman-linemen--adzuna-5873974072</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/apprentice-b-class-lineman--adzuna-5873705035</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/field-service-technician-iii--adzuna-5874156113</loc></url>
   <url><loc>https://fieldwatt.com/jobs/substation-technician-helper-fmi-bm--adzuna-5874043457</loc></url>
   <url><loc>https://fieldwatt.com/jobs/solar-electrician-peoria--adzuna-5872890885</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/solar-electrician--adzuna-5872739183</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/pv-solar-field-technician-advanced-level-panama-energy-center-hallam-ne--adzuna-5872969479</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/journeyman-electrician--adzuna-5872739176</loc></url>
   <url><loc>https://fieldwatt.com/jobs/bess-technician-arizona--adzuna-5872989267</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/ohe-lineman-b--adzuna-5872984180</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/journeyman-lineman--adzuna-5872723875</loc></url>
   <url><loc>https://fieldwatt.com/jobs/substation-apprentice--adzuna-5872969061</loc></url>
   <url><loc>https://fieldwatt.com/jobs/relay-technician-i-sr--adzuna-5872980194</loc></url>
   <url><loc>https://fieldwatt.com/jobs/wind-turbine-technician-tech-one-program--adzuna-5872037531</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/solar-field-service-technician-i--adzuna-5871677204</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/ohe-lineman-b--adzuna-5871920921</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/ohe-lineman-a--adzuna-5871855769</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/journeyman-lineman-greeley-co--adzuna-5871828145</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/journeyman-lineman-greeley-co--adzuna-5871762870</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/lineman-first-class-journey--adzuna-5871996264</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/line-mechanic-c-a-cols-ne--adzuna-5871801442</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/oh-apprentice-1-8--adzuna-5871604057</loc></url>
   <url><loc>https://fieldwatt.com/jobs/substation-technician--adzuna-5872092057</loc></url>
   <url><loc>https://fieldwatt.com/jobs/electrical-technician-l1-2-substation-ops-pst--adzuna-5871741173</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/experienced-journeyman-electrician-foreman--adzuna-5872001344</loc></url>
   <url><loc>https://fieldwatt.com/jobs/senior-pre-commissioning-professional--adzuna-5872104270</loc></url>
   <url><loc>https://fieldwatt.com/jobs/relay-technician-i-sr--adzuna-5871836415</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/mce-field-technician-2--adzuna-5870735552</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/renewable-energy-electrician-apprentice--adzuna-5870862574</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/solar-electrician-journeyman-foreman-commercial-construction--adzuna-5869984144</loc></url>
   <url><loc>https://fieldwatt.com/jobs/solar-bess-technician-ii--adzuna-5870117647</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/ohe-lineman-a--adzuna-5870551992</loc></url>
   <url><loc>https://fieldwatt.com/jobs/substation-electrician--adzuna-5870527356</loc></url>
   <url><loc>https://fieldwatt.com/jobs/wind-turbine-technician-power--adzuna-5868833561</loc></url>
   <url><loc>https://fieldwatt.com/jobs/solar-electrician--adzuna-5869542450</loc></url>
@@ -1088,30 +1097,22 @@
   <url><loc>https://fieldwatt.com/jobs/solar-electrician--adzuna-5868509179</loc></url>
   <url><loc>https://fieldwatt.com/jobs/renewable-energy-electrician-apprentice--adzuna-5868424588</loc></url>
   <url><loc>https://fieldwatt.com/jobs/experienced-electrician-for-solar-and-battery-back-up-systems-with-alternative-e--adzuna-5868418621</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/solar-field-service-technician-i--adzuna-5868886904</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/pv-solar-field-technician-ii-intermediate-level-at-dry-land-prairie-bess-in-chey--adzuna-5868718845</loc></url>
   <url><loc>https://fieldwatt.com/jobs/field-service-technician-bess--adzuna-5868596769</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/lineman-b-streetlight--adzuna-5869036382</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/telecom-lineman-apprentice--adzuna-5868877923</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/transmission-apprentice-lineman--adzuna-5868833883</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/lineman-b-oh--adzuna-5868762873</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/class-a-oh-distribution-lineman-chillicothe-oh--adzuna-5868517769</loc></url>
   <url><loc>https://fieldwatt.com/jobs/relay-technician-trainee--adzuna-5868338032</loc></url>
   <url><loc>https://fieldwatt.com/jobs/apprentice-or-journeyman-substation-electrician-dot-fmcsa--adzuna-5869958940</loc></url>
   <url><loc>https://fieldwatt.com/jobs/power-system-operator--adzuna-5869105470</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/electric-meter-serv-tech-union--adzuna-5868833658</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/class-a-oh-distribution-lineman-chillicothe-oh--adzuna-5868517769</loc></url>
   <url><loc>https://fieldwatt.com/jobs/renewable-energy-technician-1-or-2-on-site--adzuna-5869025527</loc></url>
   <url><loc>https://fieldwatt.com/jobs/wind-technician--adzuna-5866526536</loc></url>
   <url><loc>https://fieldwatt.com/jobs/commercial-electrician--adzuna-5867838613</loc></url>
   <url><loc>https://fieldwatt.com/jobs/electrician-foreman-cider--adzuna-5866654263</loc></url>
   <url><loc>https://fieldwatt.com/jobs/lead-field-service-technician-iii-solar--adzuna-5866631243</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/field-service-technician-ii-solar--adzuna-5867049593</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/solar-field-service-technician-level-2-tulia-tx--adzuna-5866689438</loc></url>
   <url><loc>https://fieldwatt.com/jobs/traveling-battery-storage-technician--adzuna-5867286254</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/relay-protection-electrical-technician-ibew--adzuna-5867672623</loc></url>
+  <url><loc>https://fieldwatt.com/jobs/relay-protection-electrical-technician-ibew--adzuna-5867672677</loc></url>
   <url><loc>https://fieldwatt.com/jobs/supv-relay-constr-and-maint--adzuna-5866651296</loc></url>
   <url><loc>https://fieldwatt.com/jobs/renewable-energy-technician-1-on-site--adzuna-5867185218</loc></url>
   <url><loc>https://fieldwatt.com/jobs/renewable-energy-solar-technician-3-on-site--adzuna-5867185216</loc></url>
-  <url><loc>https://fieldwatt.com/jobs/wind-turbine-technician-tech-one-program--adzuna-5864678939</loc></url>
   <url><loc>https://fieldwatt.com/jobs/experienced-solar-installer--adzuna-5865069870</loc></url>
   <url><loc>https://fieldwatt.com/jobs/substation-apprentice-technician--adzuna-5866296720</loc></url>
   <url><loc>https://fieldwatt.com/employers</loc></url>
@@ -1124,39 +1125,41 @@
   <url><loc>https://fieldwatt.com/employers/aec-solar-energy-corp</loc></url>
   <url><loc>https://fieldwatt.com/employers/aerotek</loc></url>
   <url><loc>https://fieldwatt.com/employers/aes-clean-energy</loc></url>
-  <url><loc>https://fieldwatt.com/employers/aes-us</loc></url>
+  <url><loc>https://fieldwatt.com/employers/all-about-electric</loc></url>
   <url><loc>https://fieldwatt.com/employers/all-energy-solar-inc</loc></url>
   <url><loc>https://fieldwatt.com/employers/alliant-energy</loc></url>
   <url><loc>https://fieldwatt.com/employers/ameren</loc></url>
   <url><loc>https://fieldwatt.com/employers/american-electric-power</loc></url>
   <url><loc>https://fieldwatt.com/employers/amtrak</loc></url>
-  <url><loc>https://fieldwatt.com/employers/apex-technology</loc></url>
   <url><loc>https://fieldwatt.com/employers/arena-staffing</loc></url>
   <url><loc>https://fieldwatt.com/employers/arizona-g-t-cooperatives</loc></url>
-  <url><loc>https://fieldwatt.com/employers/armada-staffing-group</loc></url>
-  <url><loc>https://fieldwatt.com/employers/association-house-of-chicago</loc></url>
+  <url><loc>https://fieldwatt.com/employers/arrowhead-line-llc</loc></url>
+  <url><loc>https://fieldwatt.com/employers/atx-solar</loc></url>
   <url><loc>https://fieldwatt.com/employers/aui-power</loc></url>
+  <url><loc>https://fieldwatt.com/employers/b-a-communications-llc</loc></url>
   <url><loc>https://fieldwatt.com/employers/basin-electric-power-cooperative</loc></url>
-  <url><loc>https://fieldwatt.com/employers/beitzel-corporation</loc></url>
   <url><loc>https://fieldwatt.com/employers/berkshire-hathaway-energy</loc></url>
   <url><loc>https://fieldwatt.com/employers/black-veatch</loc></url>
-  <url><loc>https://fieldwatt.com/employers/blackwater-solutions-llc</loc></url>
-  <url><loc>https://fieldwatt.com/employers/blue-origin</loc></url>
+  <url><loc>https://fieldwatt.com/employers/black-veatch-family-of-companies</loc></url>
+  <url><loc>https://fieldwatt.com/employers/bold-electric-llc</loc></url>
   <url><loc>https://fieldwatt.com/employers/boralex</loc></url>
   <url><loc>https://fieldwatt.com/employers/bountiful-city</loc></url>
-  <url><loc>https://fieldwatt.com/employers/brazos-electric-power-cooperative</loc></url>
-  <url><loc>https://fieldwatt.com/employers/brightsmith</loc></url>
+  <url><loc>https://fieldwatt.com/employers/braun-intertec-corporation</loc></url>
+  <url><loc>https://fieldwatt.com/employers/c-w-wright-construction-company</loc></url>
   <url><loc>https://fieldwatt.com/employers/carolina-solar-services</loc></url>
   <url><loc>https://fieldwatt.com/employers/cde-lightband</loc></url>
-  <url><loc>https://fieldwatt.com/employers/cedar-creek-energy</loc></url>
+  <url><loc>https://fieldwatt.com/employers/centerline-communications</loc></url>
   <url><loc>https://fieldwatt.com/employers/chain-electric-co</loc></url>
+  <url><loc>https://fieldwatt.com/employers/chain-electric-co-inc</loc></url>
+  <url><loc>https://fieldwatt.com/employers/charge-robotics</loc></url>
+  <url><loc>https://fieldwatt.com/employers/chugach-services</loc></url>
   <url><loc>https://fieldwatt.com/employers/cinterra</loc></url>
-  <url><loc>https://fieldwatt.com/employers/city-of-cleveland</loc></url>
   <url><loc>https://fieldwatt.com/employers/city-of-fort-morgan</loc></url>
+  <url><loc>https://fieldwatt.com/employers/city-of-garland</loc></url>
+  <url><loc>https://fieldwatt.com/employers/city-of-goldsboro</loc></url>
   <url><loc>https://fieldwatt.com/employers/city-of-palo-alto</loc></url>
   <url><loc>https://fieldwatt.com/employers/city-of-quincy</loc></url>
   <url><loc>https://fieldwatt.com/employers/civic-works</loc></url>
-  <url><loc>https://fieldwatt.com/employers/cleanleaf-energy</loc></url>
   <url><loc>https://fieldwatt.com/employers/clearway-energy</loc></url>
   <url><loc>https://fieldwatt.com/employers/cleco-power</loc></url>
   <url><loc>https://fieldwatt.com/employers/comcast</loc></url>
@@ -1171,84 +1174,66 @@
   <url><loc>https://fieldwatt.com/employers/duke-energy</loc></url>
   <url><loc>https://fieldwatt.com/employers/dynamic-slr</loc></url>
   <url><loc>https://fieldwatt.com/employers/dynetek-solutions</loc></url>
-  <url><loc>https://fieldwatt.com/employers/e-space</loc></url>
-  <url><loc>https://fieldwatt.com/employers/ecohouse</loc></url>
+  <url><loc>https://fieldwatt.com/employers/eastcomm-ltd</loc></url>
+  <url><loc>https://fieldwatt.com/employers/ecohouse-solar</loc></url>
   <url><loc>https://fieldwatt.com/employers/ecoplexus</loc></url>
   <url><loc>https://fieldwatt.com/employers/edf-power-solutions</loc></url>
   <url><loc>https://fieldwatt.com/employers/edm-international</loc></url>
-  <url><loc>https://fieldwatt.com/employers/edm-international-inc</loc></url>
   <url><loc>https://fieldwatt.com/employers/electric-power-systems</loc></url>
-  <url><loc>https://fieldwatt.com/employers/electricom</loc></url>
-  <url><loc>https://fieldwatt.com/employers/electricom-inc</loc></url>
+  <url><loc>https://fieldwatt.com/employers/empower-home-services</loc></url>
   <url><loc>https://fieldwatt.com/employers/enbridge</loc></url>
   <url><loc>https://fieldwatt.com/employers/entergy</loc></url>
-  <url><loc>https://fieldwatt.com/employers/envocore</loc></url>
   <url><loc>https://fieldwatt.com/employers/epic-solar-control</loc></url>
-  <url><loc>https://fieldwatt.com/employers/ethical-energy</loc></url>
-  <url><loc>https://fieldwatt.com/employers/ethical-energy-solar</loc></url>
+  <url><loc>https://fieldwatt.com/employers/essel</loc></url>
   <url><loc>https://fieldwatt.com/employers/evergy</loc></url>
   <url><loc>https://fieldwatt.com/employers/ewd-energy-solutions-llc</loc></url>
-  <url><loc>https://fieldwatt.com/employers/exact-solar</loc></url>
   <url><loc>https://fieldwatt.com/employers/fairwind</loc></url>
   <url><loc>https://fieldwatt.com/employers/first-solar</loc></url>
   <url><loc>https://fieldwatt.com/employers/firstenergy</loc></url>
   <url><loc>https://fieldwatt.com/employers/firstenergy-group</loc></url>
-  <url><loc>https://fieldwatt.com/employers/force-electrical-services</loc></url>
   <url><loc>https://fieldwatt.com/employers/fort-pierce-utilities-authority</loc></url>
   <url><loc>https://fieldwatt.com/employers/franklin-pud</loc></url>
   <url><loc>https://fieldwatt.com/employers/freedom-power</loc></url>
+  <url><loc>https://fieldwatt.com/employers/freeport-mcmoran</loc></url>
+  <url><loc>https://fieldwatt.com/employers/garber-electrical-contractors</loc></url>
   <url><loc>https://fieldwatt.com/employers/gardner-energy</loc></url>
   <url><loc>https://fieldwatt.com/employers/ge-vernova</loc></url>
+  <url><loc>https://fieldwatt.com/employers/geronimo-power-llc</loc></url>
   <url><loc>https://fieldwatt.com/employers/gev-wind-power</loc></url>
-  <url><loc>https://fieldwatt.com/employers/gft</loc></url>
   <url><loc>https://fieldwatt.com/employers/gpt-renewables</loc></url>
   <url><loc>https://fieldwatt.com/employers/grant-pud</loc></url>
   <url><loc>https://fieldwatt.com/employers/green-power-energy</loc></url>
-  <url><loc>https://fieldwatt.com/employers/green-rack-solar</loc></url>
-  <url><loc>https://fieldwatt.com/employers/grid-careers</loc></url>
+  <url><loc>https://fieldwatt.com/employers/greystar</loc></url>
   <url><loc>https://fieldwatt.com/employers/gridworks</loc></url>
-  <url><loc>https://fieldwatt.com/employers/harness-energy</loc></url>
+  <url><loc>https://fieldwatt.com/employers/hawaii-energy-connection</loc></url>
   <url><loc>https://fieldwatt.com/employers/haywood-emc</loc></url>
-  <url><loc>https://fieldwatt.com/employers/hct-renewable-energy-llc</loc></url>
-  <url><loc>https://fieldwatt.com/employers/hjw-executive-search-llc</loc></url>
+  <url><loc>https://fieldwatt.com/employers/homer-electric-association</loc></url>
   <url><loc>https://fieldwatt.com/employers/hunt-electric</loc></url>
   <url><loc>https://fieldwatt.com/employers/iberdrola</loc></url>
-  <url><loc>https://fieldwatt.com/employers/infinity-solar-usa</loc></url>
-  <url><loc>https://fieldwatt.com/employers/infratech-corporation</loc></url>
-  <url><loc>https://fieldwatt.com/employers/interstate-gas-supply</loc></url>
+  <url><loc>https://fieldwatt.com/employers/igs-energy</loc></url>
+  <url><loc>https://fieldwatt.com/employers/impulse-space</loc></url>
   <url><loc>https://fieldwatt.com/employers/invenergy</loc></url>
   <url><loc>https://fieldwatt.com/employers/ion-solar</loc></url>
   <url><loc>https://fieldwatt.com/employers/ipsun-solar</loc></url>
-  <url><loc>https://fieldwatt.com/employers/is-international-services</loc></url>
   <url><loc>https://fieldwatt.com/employers/itresource-hunter</loc></url>
   <url><loc>https://fieldwatt.com/employers/jobot</loc></url>
-  <url><loc>https://fieldwatt.com/employers/jones-onslow-electric-membership-corporation</loc></url>
+  <url><loc>https://fieldwatt.com/employers/kgi-utility-solutions</loc></url>
   <url><loc>https://fieldwatt.com/employers/knobelsdorff-enterprises</loc></url>
-  <url><loc>https://fieldwatt.com/employers/kvp-energy-services</loc></url>
   <url><loc>https://fieldwatt.com/employers/ladder</loc></url>
   <url><loc>https://fieldwatt.com/employers/lambert-s-cable-splicing-company-llc</loc></url>
   <url><loc>https://fieldwatt.com/employers/lecom-utility-contractors</loc></url>
-  <url><loc>https://fieldwatt.com/employers/lifetime-solar</loc></url>
+  <url><loc>https://fieldwatt.com/employers/lg-energy-solution-michigan-inc</loc></url>
   <url><loc>https://fieldwatt.com/employers/lumbee-river-emc</loc></url>
   <url><loc>https://fieldwatt.com/employers/mastec</loc></url>
   <url><loc>https://fieldwatt.com/employers/mastec-advanced-technologies</loc></url>
-  <url><loc>https://fieldwatt.com/employers/mastec-communications-group</loc></url>
-  <url><loc>https://fieldwatt.com/employers/meta-power-solutions-pga</loc></url>
   <url><loc>https://fieldwatt.com/employers/middle-river-power</loc></url>
-  <url><loc>https://fieldwatt.com/employers/military-spouse-corporate-career-network</loc></url>
   <url><loc>https://fieldwatt.com/employers/mn8-energy</loc></url>
   <url><loc>https://fieldwatt.com/employers/moss-associates</loc></url>
-  <url><loc>https://fieldwatt.com/employers/mountain-view-electric-association</loc></url>
-  <url><loc>https://fieldwatt.com/employers/mountainside-power</loc></url>
-  <url><loc>https://fieldwatt.com/employers/mp-nexlevel-llc</loc></url>
-  <url><loc>https://fieldwatt.com/employers/mve-group</loc></url>
-  <url><loc>https://fieldwatt.com/employers/mynt-systems-inc</loc></url>
   <url><loc>https://fieldwatt.com/employers/namaste-solar</loc></url>
   <url><loc>https://fieldwatt.com/employers/national-electrical-engineering-consultants</loc></url>
   <url><loc>https://fieldwatt.com/employers/national-electrical-engineering-consultants-llc</loc></url>
   <url><loc>https://fieldwatt.com/employers/ncw</loc></url>
   <url><loc>https://fieldwatt.com/employers/neil-kelly-company</loc></url>
-  <url><loc>https://fieldwatt.com/employers/neil-kelly-company-inc</loc></url>
   <url><loc>https://fieldwatt.com/employers/nes-fircroft</loc></url>
   <url><loc>https://fieldwatt.com/employers/nesc-staffing-llc</loc></url>
   <url><loc>https://fieldwatt.com/employers/new-energy-equity</loc></url>
@@ -1257,29 +1242,23 @@
   <url><loc>https://fieldwatt.com/employers/north-american-field-services</loc></url>
   <url><loc>https://fieldwatt.com/employers/novasource-power</loc></url>
   <url><loc>https://fieldwatt.com/employers/ny-state-solar</loc></url>
-  <url><loc>https://fieldwatt.com/employers/olympus-electric</loc></url>
-  <url><loc>https://fieldwatt.com/employers/one-source-solar</loc></url>
   <url><loc>https://fieldwatt.com/employers/onsite-partners</loc></url>
   <url><loc>https://fieldwatt.com/employers/optiv-energy-inc</loc></url>
-  <url><loc>https://fieldwatt.com/employers/orbital-energy</loc></url>
   <url><loc>https://fieldwatt.com/employers/origis-services</loc></url>
   <url><loc>https://fieldwatt.com/employers/osceola-energy</loc></url>
-  <url><loc>https://fieldwatt.com/employers/otovo</loc></url>
   <url><loc>https://fieldwatt.com/employers/our-world-energy</loc></url>
   <url><loc>https://fieldwatt.com/employers/overland-contracting</loc></url>
+  <url><loc>https://fieldwatt.com/employers/pacific-gas-and-electric-company</loc></url>
   <url><loc>https://fieldwatt.com/employers/pacificorp</loc></url>
   <url><loc>https://fieldwatt.com/employers/palmetto-clean-technology</loc></url>
   <url><loc>https://fieldwatt.com/employers/panelmatic</loc></url>
   <url><loc>https://fieldwatt.com/employers/pattern-energy-group</loc></url>
-  <url><loc>https://fieldwatt.com/employers/peace-river-electric-cooperative</loc></url>
   <url><loc>https://fieldwatt.com/employers/peak-utility-services-group</loc></url>
   <url><loc>https://fieldwatt.com/employers/pearce-services</loc></url>
   <url><loc>https://fieldwatt.com/employers/pedernales-electric-cooperative</loc></url>
-  <url><loc>https://fieldwatt.com/employers/people-technology-and-processes-llc</loc></url>
-  <url><loc>https://fieldwatt.com/employers/pfister-energy-inc</loc></url>
-  <url><loc>https://fieldwatt.com/employers/pg-e-corporation</loc></url>
   <url><loc>https://fieldwatt.com/employers/photon-brothers</loc></url>
   <url><loc>https://fieldwatt.com/employers/pike-corporation</loc></url>
+  <url><loc>https://fieldwatt.com/employers/portside-renewables-llc</loc></url>
   <url><loc>https://fieldwatt.com/employers/positive-energy-solar</loc></url>
   <url><loc>https://fieldwatt.com/employers/powergrid-services-external</loc></url>
   <url><loc>https://fieldwatt.com/employers/powerserve-technologies-inc</loc></url>
@@ -1289,12 +1268,13 @@
   <url><loc>https://fieldwatt.com/employers/primoris-t-d-services</loc></url>
   <url><loc>https://fieldwatt.com/employers/professional-staffing-ventures</loc></url>
   <url><loc>https://fieldwatt.com/employers/push</loc></url>
+  <url><loc>https://fieldwatt.com/employers/push-inc</loc></url>
   <url><loc>https://fieldwatt.com/employers/q3-contracting</loc></url>
   <url><loc>https://fieldwatt.com/employers/qe-solar</loc></url>
   <url><loc>https://fieldwatt.com/employers/qualus</loc></url>
   <url><loc>https://fieldwatt.com/employers/quanta-services</loc></url>
   <url><loc>https://fieldwatt.com/employers/rci-energy-services</loc></url>
-  <url><loc>https://fieldwatt.com/employers/renewable-concepts</loc></url>
+  <url><loc>https://fieldwatt.com/employers/remove-and-replace-solar</loc></url>
   <url><loc>https://fieldwatt.com/employers/renewable-energy-partners</loc></url>
   <url><loc>https://fieldwatt.com/employers/renewable-energy-solutions-llc</loc></url>
   <url><loc>https://fieldwatt.com/employers/rennickbarrett-recruiting</loc></url>
@@ -1302,82 +1282,72 @@
   <url><loc>https://fieldwatt.com/employers/res</loc></url>
   <url><loc>https://fieldwatt.com/employers/rise-technical-recruitment</loc></url>
   <url><loc>https://fieldwatt.com/employers/rnwbl</loc></url>
+  <url><loc>https://fieldwatt.com/employers/rocky-mountain-fiber-plus-llc</loc></url>
   <url><loc>https://fieldwatt.com/employers/rwe-americas</loc></url>
   <url><loc>https://fieldwatt.com/employers/s-o-t-a-electrical-services-llc</loc></url>
   <url><loc>https://fieldwatt.com/employers/sanders-industries-holdings</loc></url>
+  <url><loc>https://fieldwatt.com/employers/sawyer-services-inc</loc></url>
+  <url><loc>https://fieldwatt.com/employers/schweitzer-engineering-laboratories</loc></url>
   <url><loc>https://fieldwatt.com/employers/scout-clean-energy</loc></url>
-  <url><loc>https://fieldwatt.com/employers/seal-solar</loc></url>
   <url><loc>https://fieldwatt.com/employers/segers-aero-corporation</loc></url>
-  <url><loc>https://fieldwatt.com/employers/sertex</loc></url>
   <url><loc>https://fieldwatt.com/employers/service-robot-co</loc></url>
-  <url><loc>https://fieldwatt.com/employers/shelton-energy-solutions</loc></url>
   <url><loc>https://fieldwatt.com/employers/sher-contracting</loc></url>
-  <url><loc>https://fieldwatt.com/employers/shively-diversified-management-services</loc></url>
   <url><loc>https://fieldwatt.com/employers/siemens-energy</loc></url>
   <url><loc>https://fieldwatt.com/employers/sierra-pacific-home-and-comfort</loc></url>
   <url><loc>https://fieldwatt.com/employers/simply-solar</loc></url>
+  <url><loc>https://fieldwatt.com/employers/site-worker</loc></url>
   <url><loc>https://fieldwatt.com/employers/sky-climber</loc></url>
+  <url><loc>https://fieldwatt.com/employers/slg-services-inc</loc></url>
   <url><loc>https://fieldwatt.com/employers/snohomish-pud</loc></url>
   <url><loc>https://fieldwatt.com/employers/sol-up</loc></url>
   <url><loc>https://fieldwatt.com/employers/solar-champs-llc</loc></url>
+  <url><loc>https://fieldwatt.com/employers/solar-energy-solutions</loc></url>
   <url><loc>https://fieldwatt.com/employers/solar-impact-inc</loc></url>
   <url><loc>https://fieldwatt.com/employers/solar-maintenance-pros</loc></url>
   <url><loc>https://fieldwatt.com/employers/solar-works-energy</loc></url>
-  <url><loc>https://fieldwatt.com/employers/solarado-roofing-solar</loc></url>
-  <url><loc>https://fieldwatt.com/employers/solargaines</loc></url>
+  <url><loc>https://fieldwatt.com/employers/solarsimple</loc></url>
   <url><loc>https://fieldwatt.com/employers/solon-corporation</loc></url>
   <url><loc>https://fieldwatt.com/employers/solv-energy</loc></url>
-  <url><loc>https://fieldwatt.com/employers/solvenow-llc</loc></url>
   <url><loc>https://fieldwatt.com/employers/southern-company</loc></url>
   <url><loc>https://fieldwatt.com/employers/southern-staffing-group</loc></url>
-  <url><loc>https://fieldwatt.com/employers/sparklight-communications-llc</loc></url>
   <url><loc>https://fieldwatt.com/employers/spartanx</loc></url>
+  <url><loc>https://fieldwatt.com/employers/spear-c-i</loc></url>
   <url><loc>https://fieldwatt.com/employers/sst-direct</loc></url>
   <url><loc>https://fieldwatt.com/employers/staff-experts</loc></url>
-  <url><loc>https://fieldwatt.com/employers/staff-experts-llc</loc></url>
-  <url><loc>https://fieldwatt.com/employers/steven-douglas-corp</loc></url>
+  <url><loc>https://fieldwatt.com/employers/star-construction-llc</loc></url>
   <url><loc>https://fieldwatt.com/employers/strata-careers</loc></url>
-  <url><loc>https://fieldwatt.com/employers/sunaura-solar</loc></url>
+  <url><loc>https://fieldwatt.com/employers/sun-service-specialists-llc</loc></url>
   <url><loc>https://fieldwatt.com/employers/suncommon-ii</loc></url>
+  <url><loc>https://fieldwatt.com/employers/sunfire-construction-inc</loc></url>
   <url><loc>https://fieldwatt.com/employers/sunflower-electric-power-corporation</loc></url>
   <url><loc>https://fieldwatt.com/employers/sungrow-usa-corporation</loc></url>
   <url><loc>https://fieldwatt.com/employers/sunkeeper-solar</loc></url>
   <url><loc>https://fieldwatt.com/employers/sunpath-consulting</loc></url>
   <url><loc>https://fieldwatt.com/employers/sunrise-telecom</loc></url>
-  <url><loc>https://fieldwatt.com/employers/suntrail-energy</loc></url>
   <url><loc>https://fieldwatt.com/employers/synerfac-technical-staffing</loc></url>
   <url><loc>https://fieldwatt.com/employers/system-one</loc></url>
   <url><loc>https://fieldwatt.com/employers/takkion-ops-management</loc></url>
   <url><loc>https://fieldwatt.com/employers/taurus-industrial-group</loc></url>
-  <url><loc>https://fieldwatt.com/employers/td-i-cable-maintenance</loc></url>
-  <url><loc>https://fieldwatt.com/employers/tdx</loc></url>
   <url><loc>https://fieldwatt.com/employers/tel-staffing-hr</loc></url>
   <url><loc>https://fieldwatt.com/employers/telex-llc</loc></url>
+  <url><loc>https://fieldwatt.com/employers/terra-gen-operating-company-llc</loc></url>
   <url><loc>https://fieldwatt.com/employers/thayer-power-communications</loc></url>
   <url><loc>https://fieldwatt.com/employers/the-spear-group</loc></url>
   <url><loc>https://fieldwatt.com/employers/tic-the-industrial-company</loc></url>
-  <url><loc>https://fieldwatt.com/employers/town-of-huntersville</loc></url>
   <url><loc>https://fieldwatt.com/employers/tradesmen-international-llc</loc></url>
   <url><loc>https://fieldwatt.com/employers/tri-m-group</loc></url>
   <url><loc>https://fieldwatt.com/employers/uee-uns-electric</loc></url>
   <url><loc>https://fieldwatt.com/employers/united-cooperative-services</loc></url>
   <url><loc>https://fieldwatt.com/employers/utili-serve</loc></url>
+  <url><loc>https://fieldwatt.com/employers/utilities-one</loc></url>
   <url><loc>https://fieldwatt.com/employers/utilities-service-llc</loc></url>
-  <url><loc>https://fieldwatt.com/employers/utility-service-and-assistance-inc</loc></url>
-  <url><loc>https://fieldwatt.com/employers/utility-services</loc></url>
-  <url><loc>https://fieldwatt.com/employers/venda-search</loc></url>
   <url><loc>https://fieldwatt.com/employers/venture-home</loc></url>
-  <url><loc>https://fieldwatt.com/employers/verita-telecommunications</loc></url>
   <url><loc>https://fieldwatt.com/employers/vestas</loc></url>
-  <url><loc>https://fieldwatt.com/employers/watts-electric-company</loc></url>
-  <url><loc>https://fieldwatt.com/employers/westinghouse-electric-corporation</loc></url>
+  <url><loc>https://fieldwatt.com/employers/westinghouse-electric-usa</loc></url>
   <url><loc>https://fieldwatt.com/employers/wheatland-electric-cooperative-inc</loc></url>
   <url><loc>https://fieldwatt.com/employers/wheeler-machinery</loc></url>
-  <url><loc>https://fieldwatt.com/employers/wk-t</loc></url>
   <url><loc>https://fieldwatt.com/employers/xcel-energy</loc></url>
-  <url><loc>https://fieldwatt.com/employers/yampa-valley-electric-association</loc></url>
   <url><loc>https://fieldwatt.com/employers/young-management-consulting</loc></url>
-  <url><loc>https://fieldwatt.com/employers/zolon-tech</loc></url>
   <url><loc>https://fieldwatt.com/pay</loc></url>
   <url><loc>https://fieldwatt.com/about</loc></url>
   <url><loc>https://fieldwatt.com/faq</loc></url>

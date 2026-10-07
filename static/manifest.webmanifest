@@ -1,1 +1,16 @@
-{"name": "FieldWatt | Renewable-Energy Trades Jobs", "short_name": "FieldWatt", "description": "Every wind, solar, storage, and grid field job in one daily feed and a free Tuesday email.", "start_url": "/", "display": "standalone", "icons": [{"src": "/logo-light.png", "sizes": "400x400", "type": "image/png"}]}
+{
+ "name": "FieldWatt | Renewable-Energy Trades Jobs",
+ "short_name": "FieldWatt",
+ "description": "Every wind, solar, storage, and grid field job in one daily feed and a free Tuesday email.",
+ "start_url": "/",
+ "display": "standalone",
+ "icons": [
+  {
+   "src": "/logo-light.png",
+   "sizes": "400x400",
+   "type": "image/png"
+  }
+ ],
+ "theme_color": "#0f1a24",
+ "background_color": "#0f1a24"
+}

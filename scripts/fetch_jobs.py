@@ -88,7 +88,8 @@ OFF_TRADE = re.compile(r"""(?xi)
     |locksmith|pest\s+control|landscap|lawn\s+care|snow\s+removal|pool\s+clean
     |telecom\w*|fiber\s+(optic|splic|groundman|lineman|tech)|fiber\s*-\s*joint|joint\s+use|cable\s+splic|catv|broadband
     |communications?\s+(lineman|linemen|technician|tech|tower)
-    |window\s+(film|tint|install)|wind\s+tunnel)\b
+    |window\s+(film|tint|install)|wind\s+tunnel
+    |manufactur\w*|production\s+(line|operator|associate)|tube\s+mill)\b
 """)
 # Employers whose name says they are in another trade. "MasTec Communications
 # Group" posts aerial linemen, and they string fibre, not power.
@@ -186,7 +187,8 @@ OFFICE_ONLY = re.compile(r"""(?xi)
     |compliance|procurement|payroll|bookkeep
     |finance|financial|accountant|accounting|marketing|human\s+resources|legal|counsel
     |customer\s+(service|success|support)|dispatcher|drafter|drafting|cad
-    |originator|business\s+development|sales)\b
+    |originator|business\s+development|sales
+    |academic|program\s+manager|division\s+manager|tech(?:nical)?\s+support)\b
 """)
 
 # Roles that read as office work unless the title also names a trade.
@@ -232,6 +234,29 @@ def pay_too_low(pay, pay_listed):
     return bool(m) and int(m.group(1).replace(",", "")) < MIN_ANNUAL_SALARY
 
 
+def clean_description(text: str) -> str:
+    """Whitespace-collapsed, minus the boilerplate some boards prepend: a third
+    of listings opened "Job Description Job Description Benefits: ..."."""
+    s = re.sub(r"\s+", " ", text).strip()
+    s = re.sub(r"^(?:(?:job\s+)?description\s*:?\s*)+", "", s, flags=re.I)
+    return s.strip()
+
+
+def strip_location(title: str, city: str, state: str, state_name: str) -> str:
+    """Drop a trailing location the feed already carries separately, so the
+    title names the job ("Wind Technician II" not "Wind Technician II -
+    Lubbock, TX"). Google asks for exactly that in a JobPosting title. Only
+    the listing's own city or state is removed; anything else stays."""
+    if not state:
+        return title
+    places = [re.escape(p) for p in (city, state_name) if p]
+    place = "|".join(places + [re.escape(state)]) if places else re.escape(state)
+    loc = rf"(?:{place})(?:\s*,\s*(?:{re.escape(state)}|{re.escape(state_name)}))?"
+    t = re.sub(rf"\s+(?:in|at)\s+{loc}\s*$", "", title, flags=re.I)
+    t = re.sub(rf"(?:\s*[-–|,(]\s*|\s+){loc}\s*\)?\s*$", "", t, flags=re.I)
+    return t.strip(" -–|,") or title
+
+
 def slugify(s: str) -> str:
     s = re.sub(r"[^a-z0-9]+", "-", s.lower()).strip("-")
     return s[:80] or "job"
@@ -259,7 +284,7 @@ def api(query: str, page: int):
 def normalize(raw: dict):
     title = (raw.get("title") or "").strip()
     title = re.sub(r"</?strong>", "", title)
-    desc = re.sub(r"\s+", " ", raw.get("description") or "").strip()
+    desc = clean_description(raw.get("description") or "")
     if not title or EXCLUDE.search(title):
         return None
     fams = classify(title, desc)
@@ -293,10 +318,17 @@ def normalize(raw: dict):
     # default.
     employment = []
     time_ = {"full_time": "FULL_TIME", "part_time": "PART_TIME"}.get(raw.get("contract_time"))
+    if not time_:
+        # the listing's own words, when the feed field is blank
+        if re.search(r"\bfull[ -]time\b", desc, re.I) and not re.search(r"\bpart[ -]time\b", desc, re.I):
+            time_ = "FULL_TIME"
+        elif re.search(r"\bpart[ -]time\b", desc, re.I) and not re.search(r"\bfull[ -]time\b", desc, re.I):
+            time_ = "PART_TIME"
     if time_:
         employment.append(time_)
     if raw.get("contract_type") == "contract":
         employment.append("CONTRACTOR")
+    title = strip_location(title, city, state, state_name)
     return {
         "id": jid,
         "slug": f"{slugify(title)}--adzuna-{jid}",
@@ -349,14 +381,16 @@ def carry_over(jobs, previous, today):
 # "Solar Field Service Technician (Multiple Locations)" arrived as 100 copies.
 # A hundred identical pages is thin content to Google and a wall of the same
 # card to a reader. Keep a few per state so the state pages still show it.
-MAX_COPIES_PER_STATE = 2
+# Keyed on title, employer and state only: the copies differ in the city
+# named in the text, which is still the same job.
+MAX_COPIES_PER_STATE = 3
 
 
 def cap_duplicates(jobs):
     seen = collections.Counter()
     out, dropped = [], 0
     for j in jobs:
-        key = (j["title"].lower(), j["company_slug"], j["state"], j["description"][:300])
+        key = (j["title"].lower(), j["company_slug"], j["state"])
         seen[key] += 1
         if seen[key] > MAX_COPIES_PER_STATE:
             dropped += 1
@@ -365,6 +399,37 @@ def cap_duplicates(jobs):
     if dropped:
         print(f"  dropped {dropped} duplicate copies of syndicated postings")
     return out
+
+
+# Jobs that left the feed. Their pages used to vanish, so every link Google,
+# the Tuesday email or a job seeker's bookmark still held returned a 404 and
+# Search Console filled with "Not found" errors. For a few weeks after a
+# listing goes, its page says so instead and points at live work nearby.
+RETIRED_FILE = os.path.join(ROOT, "data", "retired.json")
+RETIRED_DAYS = 21
+RETIRED_KEYS = ("id", "slug", "title", "company", "company_slug", "state", "state_name", "families")
+
+
+def record_retired(previous, kept, today):
+    live = {j["id"] for j in kept}
+    cutoff = (today - timedelta(days=RETIRED_DAYS)).isoformat()
+    try:
+        with open(RETIRED_FILE, encoding="utf-8") as f:
+            retired = json.load(f)
+    except (OSError, ValueError):
+        retired = []
+    retired = [r for r in retired if r["id"] not in live and r["retired"] >= cutoff]
+    known = {r["id"] for r in retired}
+    added = 0
+    for j in previous:
+        if j["id"] not in live and j["id"] not in known:
+            r = {k: j.get(k) for k in RETIRED_KEYS}
+            r["retired"] = today.isoformat()
+            retired.append(r)
+            added += 1
+    with open(RETIRED_FILE, "w", encoding="utf-8") as f:
+        json.dump(retired, f, indent=1, ensure_ascii=False)
+    return added
 
 
 def main():
@@ -394,7 +459,14 @@ def main():
             if len(results) < 50:
                 break
             time.sleep(PAUSE)
-    carried = carry_over(jobs, load_previous(), datetime.now(timezone.utc).date())
+    today = datetime.now(timezone.utc).date()
+    previous = load_previous()
+    # A listing keeps the URL it was first published under, whatever the
+    # title cleaning does to it later; the slug only has to be stable.
+    prev_slug = {j["id"]: j["slug"] for j in previous}
+    for j in jobs.values():
+        j["slug"] = prev_slug.get(j["id"], j["slug"])
+    carried = carry_over(jobs, previous, today)
     print(f"  carried over {carried} listings not in this fetch but still inside {MAX_DAYS_OLD} days")
 
     # Vetting runs once over the whole batch, because whether an employer is a
@@ -412,6 +484,7 @@ def main():
         print(f"  vetting dropped {n}: {why}")
     print(f"  vetting kept {len(kept)} of {len(candidates)}")
     kept = cap_duplicates(kept)
+    print(f"  retired {record_retired(previous, kept, today)} listings that left the feed")
 
     out = {
         "updated": datetime.now(timezone.utc).isoformat(),

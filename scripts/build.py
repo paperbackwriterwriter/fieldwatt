@@ -181,7 +181,7 @@ def layout(title, desc, body, path, extra_head=""):
     canonical = DOMAIN + ("" if path == "/" else path)
     nav_links = "".join(f'<a class="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground" href="{h}">{t}</a>' for t, h in NAV)
     mobile_links = "".join(f'<a class="block py-2 text-sm font-medium text-muted-foreground hover:text-foreground" href="{h}">{t}</a>' for t, h in NAV)
-    return f'''<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="/style.css"/><title>{e(title)}</title><meta name="description" content="{e(desc)}"/><meta name="application-name" content="FieldWatt"/><link rel="manifest" href="/manifest.webmanifest"/><link rel="canonical" href="{canonical}"/><meta property="og:title" content="{e(title)}"/><meta property="og:description" content="{e(desc)}"/><meta property="og:url" content="{canonical}"/><meta property="og:site_name" content="FieldWatt"/><meta property="og:image" content="{DOMAIN}/logo-light.png"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary"/><link rel="icon" href="/logo-light.png" type="image/png"/><link rel="apple-touch-icon" href="/logo-light.png"/>{extra_head}</head><body class="__variable_5afde0 font-sans antialiased"><div class="flex min-h-screen flex-col"><header class="sticky top-0 z-40 w-full border-b border-border bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/80"><div class="mx-auto flex h-[4.5rem] max-w-7xl items-center justify-between px-4 sm:px-6 md:h-20 lg:px-8"><a class="flex shrink-0 items-center" aria-label="FieldWatt home" href="/">{LOGO.format(cls="h-12 w-auto max-w-[3.5rem] object-contain sm:h-14 sm:max-w-[4rem]")}</a><nav class="hidden items-center gap-6 lg:flex">{nav_links}<div class="flex items-center gap-2"><a class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium transition-colors bg-primary text-primary-foreground hover:bg-primary/90 h-9 px-3 rounded-none" href="/alerts">Get free job alerts</a></div></nav><button id="menu-btn" class="inline-flex items-center justify-center rounded-md p-2 text-muted-foreground transition-colors hover:bg-accent hover:text-foreground lg:hidden" aria-label="Toggle menu" aria-expanded="false">{ICON["menu"]}</button></div><nav id="mobile-menu" class="hidden border-t border-border px-4 py-3 lg:hidden" aria-label="Mobile navigation">{mobile_links}<a class="mt-2 inline-flex h-10 items-center bg-primary px-4 text-sm font-medium text-primary-foreground" href="/alerts">Get free job alerts</a></nav></header><main class="flex-1">{body}</main><footer class="border-t border-border bg-background"><div class="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8"><div class="grid gap-8 md:grid-cols-4"><div class="md:col-span-2"><a class="inline-flex items-center" aria-label="FieldWatt home" href="/">{LOGO.format(cls="h-14 w-auto max-w-[4.5rem] object-contain sm:h-16 sm:max-w-[5rem]")}</a><p class="mt-3 max-w-md text-sm text-muted-foreground">Every wind, solar, and grid job. One feed, every Tuesday.</p></div><div><p class="text-sm font-semibold text-foreground">Explore</p><nav class="mt-3 space-y-2"><a class="block text-sm text-muted-foreground transition-colors hover:text-foreground" href="/jobs">Browse jobs</a><a class="block text-sm text-muted-foreground transition-colors hover:text-foreground" href="/alerts">Free alerts</a><a class="block text-sm text-muted-foreground transition-colors hover:text-foreground" href="/employers">Employer directory</a><a class="block text-sm text-muted-foreground transition-colors hover:text-foreground" href="/pay">Pay snapshot</a><a class="block text-sm text-muted-foreground transition-colors hover:text-foreground" href="/about">About</a></nav></div><div><p class="text-sm font-semibold text-foreground">For partners</p><nav class="mt-3 space-y-2"><a class="block text-sm text-muted-foreground transition-colors hover:text-foreground" href="/hire">Feature a job</a><a class="block text-sm text-muted-foreground transition-colors hover:text-foreground" href="/training">List a program</a><a class="block text-sm text-muted-foreground transition-colors hover:text-foreground" href="/faq">FAQ</a><a class="block text-sm text-muted-foreground transition-colors hover:text-foreground" href="mailto:{CONTACT}">Contact</a></nav></div></div><div class="mt-8 border-t border-border pt-8 text-center"><p class="text-xs text-muted-foreground">© {datetime.now().year} FieldWatt. All rights reserved.</p><p class="mt-3 flex justify-center gap-4 text-xs text-muted-foreground"><a class="hover:text-foreground" href="/privacy">Privacy</a><a class="hover:text-foreground" href="/terms">Terms</a></p></div></div></footer></div><script src="/site.js" defer></script><script>window.va=window.va||function(){{(window.vaq=window.vaq||[]).push(arguments);}};</script><script defer src="/_vercel/insights/script.js"></script></body></html>'''
+    return f'''<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="/style.css"/><title>{e(title)}</title><meta name="description" content="{e(desc)}"/><meta name="application-name" content="FieldWatt"/><link rel="manifest" href="/manifest.webmanifest"/><link rel="canonical" href="{canonical}"/><meta property="og:title" content="{e(title)}"/><meta property="og:description" content="{e(desc)}"/><meta property="og:url" content="{canonical}"/><meta property="og:site_name" content="FieldWatt"/><meta property="og:image" content="{DOMAIN}/og.png"/><meta property="og:image:width" content="1200"/><meta property="og:image:height" content="630"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><link rel="icon" href="/logo-light.png" type="image/png"/><link rel="apple-touch-icon" href="/logo-light.png"/>{extra_head}</head><body class="__variable_5afde0 font-sans antialiased"><div class="flex min-h-screen flex-col"><header class="sticky top-0 z-40 w-full border-b border-border bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/80"><div class="mx-auto flex h-[4.5rem] max-w-7xl items-center justify-between px-4 sm:px-6 md:h-20 lg:px-8"><a class="flex shrink-0 items-center" aria-label="FieldWatt home" href="/">{LOGO.format(cls="h-12 w-auto max-w-[3.5rem] object-contain sm:h-14 sm:max-w-[4rem]")}</a><nav class="hidden items-center gap-6 lg:flex">{nav_links}<div class="flex items-center gap-2"><a class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium transition-colors bg-primary text-primary-foreground hover:bg-primary/90 h-9 px-3 rounded-none" href="/alerts">Get free job alerts</a></div></nav><button id="menu-btn" class="inline-flex items-center justify-center rounded-md p-2 text-muted-foreground transition-colors hover:bg-accent hover:text-foreground lg:hidden" aria-label="Toggle menu" aria-expanded="false">{ICON["menu"]}</button></div><nav id="mobile-menu" class="hidden border-t border-border px-4 py-3 lg:hidden" aria-label="Mobile navigation">{mobile_links}<a class="mt-2 inline-flex h-10 items-center bg-primary px-4 text-sm font-medium text-primary-foreground" href="/alerts">Get free job alerts</a></nav></header><main class="flex-1">{body}</main><footer class="border-t border-border bg-background"><div class="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8"><div class="grid gap-8 md:grid-cols-4"><div class="md:col-span-2"><a class="inline-flex items-center" aria-label="FieldWatt home" href="/">{LOGO.format(cls="h-14 w-auto max-w-[4.5rem] object-contain sm:h-16 sm:max-w-[5rem]")}</a><p class="mt-3 max-w-md text-sm text-muted-foreground">Every wind, solar, and grid job. One feed, every Tuesday.</p></div><div><p class="text-sm font-semibold text-foreground">Explore</p><nav class="mt-3 space-y-2"><a class="block text-sm text-muted-foreground transition-colors hover:text-foreground" href="/jobs">Browse jobs</a><a class="block text-sm text-muted-foreground transition-colors hover:text-foreground" href="/alerts">Free alerts</a><a class="block text-sm text-muted-foreground transition-colors hover:text-foreground" href="/employers">Employer directory</a><a class="block text-sm text-muted-foreground transition-colors hover:text-foreground" href="/pay">Pay snapshot</a><a class="block text-sm text-muted-foreground transition-colors hover:text-foreground" href="/about">About</a></nav></div><div><p class="text-sm font-semibold text-foreground">For partners</p><nav class="mt-3 space-y-2"><a class="block text-sm text-muted-foreground transition-colors hover:text-foreground" href="/hire">Feature a job</a><a class="block text-sm text-muted-foreground transition-colors hover:text-foreground" href="/training">List a program</a><a class="block text-sm text-muted-foreground transition-colors hover:text-foreground" href="/faq">FAQ</a><a class="block text-sm text-muted-foreground transition-colors hover:text-foreground" href="mailto:{CONTACT}">Contact</a></nav></div></div><div class="mt-8 border-t border-border pt-8 text-center"><p class="text-xs text-muted-foreground">© {datetime.now().year} FieldWatt. All rights reserved.</p><p class="mt-3 flex justify-center gap-4 text-xs text-muted-foreground"><a class="hover:text-foreground" href="/privacy">Privacy</a><a class="hover:text-foreground" href="/terms">Terms</a></p></div></div></footer></div><script src="/site.js" defer></script><script>window.va=window.va||function(){{(window.vaq=window.vaq||[]).push(arguments);}};</script><script defer src="/_vercel/insights/script.js"></script></body></html>'''
 
 
 # --------------------------------------------------------------------------- pieces
@@ -222,14 +222,48 @@ def filters(jobs, state_counts, fam_counts, current_state="", current_fam=""):
             f'<select id="family-select" class="h-11 border border-input bg-background px-3 text-sm" aria-label="Role family">{fopts}</select></div>')
 
 
+# A listing page renders this many cards. /jobs reached 2,100 listings and
+# 4.5 MB of HTML; past this the search box answers from jobs-index.json
+# instead of the page, so nothing is out of reach, it just isn't all inlined.
+MAX_LIST = 300
+
+
 def listing_page(title, h1, intro, jobs, all_jobs, state_counts, fam_counts, path, eyebrow="FieldWatt job feed", current_state="", current_fam="", extra=""):
     updated = UPDATED.strftime("%b %-d")
+    shown = jobs[:MAX_LIST]
+    if current_state == "midwest":
+        scope = " ".join(MIDWEST_HUB)
+    else:
+        scope = " ".join(c for c, n in STATES.items() if slugify(n) == current_state)
+    more = ""
+    if len(jobs) > len(shown):
+        more = (f'<p class="mt-6 text-sm text-muted-foreground" id="list-note">Showing the newest {len(shown)} of {len(jobs)}. '
+                f'Search above to find any listing on this page, or narrow by state and role.</p>')
     body = (f'<div class="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8"><p class="text-xs font-semibold uppercase tracking-[0.16em] text-muted-foreground">{eyebrow}</p>'
             f'<h1 class="mt-3 font-[family-name:var(--font-heading)] text-4xl font-bold">{h1}</h1><p class="mt-4 max-w-2xl leading-7 text-muted-foreground">{intro}</p>'
             f'<p class="mt-3 text-sm font-semibold text-muted-foreground">{len(jobs)} field jobs · {len({j["company_slug"] for j in jobs})} companies · updated {updated}</p>'
             f'<p class="mt-4 text-sm text-muted-foreground">Research a company before you apply in the <a class="font-semibold text-foreground underline decoration-primary decoration-2 underline-offset-4 hover:text-primary" href="/employers">company directory</a>.</p>'
-            f'{extra}<div class="mt-10">{filters(all_jobs, state_counts, fam_counts, current_state, current_fam)}{cards(jobs)}</div></div>')
+            f'{extra}<div class="mt-10" id="list-scope" data-states="{scope}" data-fam="{current_fam}" data-total="{len(jobs)}" data-shown="{len(shown)}">'
+            f'{filters(all_jobs, state_counts, fam_counts, current_state, current_fam)}{more}{cards(shown)}</div></div>')
     return layout(title, intro, body, path)
+
+
+def closed_page(r):
+    """A job that left the feed. Kept for a few weeks so old links say so
+    rather than 404, with no JobPosting markup and no place in the sitemap."""
+    fam = (r.get("families") or ["Wind"])[0]
+    state_slug = slugify(r.get("state_name") or "")
+    links = ""
+    if r.get("state_name"):
+        links += f'<a class="inline-flex h-11 items-center bg-primary px-5 text-sm font-bold text-primary-foreground hover:bg-primary/90" href="/jobs/{state_slug}">{e(r["state_name"])} jobs {ICON["arrow"]}</a>'
+    links += f'<a class="inline-flex h-11 items-center border border-border px-5 text-sm font-bold hover:border-primary" href="/jobs/{fam.lower()}">{fam} jobs</a>'
+    links += '<a class="inline-flex h-11 items-center border border-border px-5 text-sm font-bold hover:border-primary" href="/alerts">Get the Tuesday email</a>'
+    body = (f'<section class="mx-auto max-w-3xl px-4 py-20 sm:px-6 lg:px-8"><p class="text-xs font-semibold uppercase tracking-[0.16em] text-muted-foreground">Listing closed</p>'
+            f'<h1 class="mt-4 font-[family-name:var(--font-heading)] text-4xl font-bold sm:text-5xl">{e(r["title"])}</h1>'
+            f'<p class="mt-3 text-lg text-muted-foreground">{e(r["company"])}' + (f' · {e(r["state_name"])}' if r.get("state_name") else "") + '</p>'
+            f'<p class="mt-8 text-lg leading-8 text-muted-foreground">This listing is no longer in the feed. The employer has filled it, closed it, or moved it; FieldWatt removes a job the night it disappears from the source. The employer may have similar openings on their own careers page.</p>'
+            f'<div class="mt-10 flex flex-wrap gap-3">{links}</div></section>')
+    return layout(f'{r["title"]} at {r["company"]} (closed) | FieldWatt', "This listing has closed.", body, f'/jobs/{r["slug"]}', '<meta name="robots" content="noindex,follow"/>')
 
 
 # --------------------------------------------------------------------------- structured data
@@ -453,6 +487,12 @@ def main():
                                                  by_fam.get(fam, []), jobs, state_counts, fam_counts, f"/jobs/{fam.lower()}", current_fam=fam.lower()))
     for j in jobs:
         add(f"/jobs/{j['slug']}", job_page(j))
+    live_slugs = {j["slug"] for j in jobs}
+    retired_file = os.path.join(ROOT, "data", "retired.json")
+    retired = json.load(open(retired_file, encoding="utf-8")) if os.path.exists(retired_file) else []
+    for r in retired:
+        if r.get("slug") and r["slug"] not in live_slugs:
+            add(f"/jobs/{r['slug']}", closed_page(r), sitemap=False)
     add("/employers", employers_index(employers))
     for name, slug, n in employers:
         add(f"/employers/{slug}", employer_page(name, slug, by_emp[slug]))
@@ -495,7 +535,7 @@ def main():
     sm = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
     sm += "".join(f"  <url><loc>{DOMAIN}{'' if u == '/' else u}</loc></url>\n" for u in urls) + "</urlset>\n"
     write("sitemap.xml", sm)
-    print(f"built {len(urls)} pages ({len(jobs)} jobs, {len(employers)} employers) -> {SITE}")
+    print(f"built {len(urls)} pages ({len(jobs)} jobs, {len(employers)} employers, {len(retired)} closed) -> {SITE}")
 
 
 if __name__ == "__main__":

@@ -11,7 +11,7 @@ Static site generated nightly from the Adzuna API (same pattern as Firmwarely).
 - `.github/workflows/nightly.yml` — 3:15 AM Central: fetch → build → commit
 - `.github/workflows/tuesday-email.yml` — Tuesdays 7 AM Central (defaults to a test send to LEAD_TO)
 
-`data/jobs.json` currently holds a seed snapshot (125 jobs captured from the old site). The first nightly run replaces it with live Adzuna data.
+`data/jobs.json` is rewritten by the nightly run; `data/retired.json` lists jobs that left the feed in the last three weeks, so their pages can say "closed" instead of vanishing.
 
 ## Setup
 GitHub secrets: `ADZUNA_APP_ID`, `ADZUNA_APP_KEY`, `RESEND_API_KEY`, `RESEND_SEGMENT_ID`, `LEAD_TO`, `LEAD_FROM`.

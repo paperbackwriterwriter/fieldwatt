@@ -85,10 +85,72 @@
   if (famSel) famSel.addEventListener('change', go);
 
   var search = document.getElementById('job-search'), list = document.getElementById('job-list');
+
+  /* Long listing pages inline only their newest cards (see MAX_LIST in
+     build.py). Once someone types, the search runs over jobs-index.json,
+     every live listing, narrowed to the page's state and role family. */
+  var scope = document.getElementById('list-scope');
+  var indexed = scope && Number(scope.dataset.total) > Number(scope.dataset.shown);
+  var indexPromise = null, results = null;
+  function loadIndex() {
+    if (!indexPromise) indexPromise = fetch('/jobs-index.json').then(function (r) { return r.json(); });
+    return indexPromise;
+  }
+  function escapeHtml(s) {
+    return String(s).replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; });
+  }
+  function indexCard(j) {
+    var tags = j.f.map(function (f) { return '<span class="bg-primary px-2 py-1">' + f + '</span>'; }).join('');
+    var pay = j.p ? '<p class="font-semibold text-foreground">' + escapeHtml(j.p) + '</p>' : '<p class="text-sm text-muted-foreground">Pay not listed</p>';
+    return '<article class="grid gap-3 py-5 sm:grid-cols-[1fr_auto] sm:items-center"><div>' +
+      '<p class="flex flex-wrap gap-2 text-xs font-semibold uppercase tracking-[0.14em] text-primary-foreground">' + tags + '</p>' +
+      '<h3 class="mt-3 font-[family-name:var(--font-heading)] text-lg font-bold"><a class="hover:text-primary" href="' + escapeHtml(j.u) + '">' + escapeHtml(j.t) + '</a></h3>' +
+      '<p class="mt-1 text-sm text-muted-foreground">' + escapeHtml(j.c) + ' · ' + escapeHtml(j.l) + '</p></div>' +
+      '<div class="flex items-center gap-4 sm:flex-col sm:items-end">' + pay +
+      '<a class="inline-flex items-center gap-1 text-sm font-semibold text-foreground underline decoration-primary decoration-2 underline-offset-4" href="' + escapeHtml(j.u) + '">Job details →</a></div></article>';
+  }
+  function searchIndex(q, fam) {
+    var states = (scope.dataset.states || '').split(' ').filter(Boolean);
+    var pageFam = (scope.dataset.fam || '').toLowerCase();
+    loadIndex().then(function (all) {
+      if ((search ? search.value : '').trim().toLowerCase() !== q) return; // typed on
+      var hits = all.filter(function (j) {
+        if (states.length && states.indexOf(j.s) === -1) return false;
+        var fams = j.f.map(function (f) { return f.toLowerCase(); });
+        if (pageFam && fams.indexOf(pageFam) === -1) return false;
+        if (fam && fams.indexOf(fam) === -1) return false;
+        return (j.t + ' ' + j.c + ' ' + j.l).toLowerCase().indexOf(q) !== -1;
+      });
+      if (!results) {
+        results = document.createElement('div');
+        results.id = 'job-results';
+        results.className = 'divide-y divide-border border-y border-border';
+        list.parentNode.insertBefore(results, list);
+      }
+      var note = document.getElementById('list-note');
+      results.innerHTML = hits.slice(0, 200).map(indexCard).join('') ||
+        '<p class="py-10 text-sm text-muted-foreground">No listings match that search. Try fewer words or another state.</p>';
+      results.style.display = '';
+      list.style.display = 'none';
+      if (note) note.textContent = hits.length > 200
+        ? 'Showing 200 of ' + hits.length + ' matches. Add a word to narrow it.'
+        : hits.length + ' match' + (hits.length === 1 ? '' : 'es') + ' across all ' + scope.dataset.total + ' listings.';
+      var empty = document.getElementById('job-empty');
+      if (empty) empty.style.display = 'none';
+    });
+  }
+
   function applyFilter() {
     if (!list) return;
     var q = (search ? search.value : '').trim().toLowerCase();
     var params = new URLSearchParams(location.search), fam = (params.get('family') || '').toLowerCase();
+    if (indexed && q) { searchIndex(q, fam); return; }
+    if (results) {
+      results.style.display = 'none';
+      list.style.display = '';
+      var note0 = document.getElementById('list-note');
+      if (note0) note0.textContent = 'Showing the newest ' + scope.dataset.shown + ' of ' + scope.dataset.total + '. Search above to find any listing on this page, or narrow by state and role.';
+    }
     var shown = 0;
     list.querySelectorAll('[data-job]').forEach(function (art) {
       var ok = true;

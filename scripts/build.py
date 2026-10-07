@@ -151,6 +151,81 @@ def load_featured(jobs):
     return featured + company_jobs + others
 
 
+# --------------------------------------------------------------------------- training programs
+# data/programs.json: the Featured Program pages the training page offers.
+#
+#   [{"slug": "iowa-lakes-wind", "name": "Wind Energy & Turbine Technology",
+#     "school": "Iowa Lakes Community College", "city": "Estherville", "state": "IA",
+#     "url": "https://www.iowalakes.edu/...", "focus": ["Wind"],
+#     "length": "2-year AAS", "description": "...", "type": "partner"}]
+#
+# type is "partner" (the free founding-partner page) or "sponsored" (the
+# $199/month placement, which needs an "until" date and drops out after it).
+# focus uses the feed's families: Wind, Solar, Storage, Grid.
+PROGRAMS_FILE = os.path.join(ROOT, "data", "programs.json")
+
+
+def load_programs():
+    if not os.path.exists(PROGRAMS_FILE):
+        return []
+    out = []
+    for n, p in enumerate(json.load(open(PROGRAMS_FILE, encoding="utf-8")), 1):
+        for k in ("slug", "name", "school", "state", "url", "focus", "description", "type"):
+            if not p.get(k):
+                raise SystemExit(f"programs.json entry {n}: missing {k!r}")
+        if p["state"] not in STATES:
+            raise SystemExit(f"programs.json entry {n}: unknown state {p['state']!r}")
+        bad = [f for f in p["focus"] if f not in FAMILY_ORDER]
+        if bad:
+            raise SystemExit(f"programs.json entry {n}: unknown focus {bad[0]!r} (use {', '.join(FAMILY_ORDER)})")
+        if p["type"] not in ("partner", "sponsored"):
+            raise SystemExit(f"programs.json entry {n}: type must be partner or sponsored")
+        if p["type"] == "sponsored":
+            if not p.get("until"):
+                raise SystemExit(f"programs.json entry {n}: a sponsored program needs an 'until' date")
+            if p["until"] < UPDATED.date().isoformat():
+                continue
+        out.append(p)
+    return out
+
+
+def program_label(p):
+    return "Sponsored program" if p["type"] == "sponsored" else "Featured program"
+
+
+def program_card(p):
+    where = ", ".join(x for x in (p.get("city"), STATES[p["state"]]) if x)
+    focus = " · ".join(p["focus"])
+    return (f'<a class="group block border border-border bg-card p-5 transition-colors hover:border-primary" href="/training/{p["slug"]}">'
+            f'<p class="text-xs font-semibold uppercase tracking-[0.14em] text-primary">{program_label(p)}</p>'
+            f'<p class="mt-2 font-[family-name:var(--font-heading)] text-lg font-bold text-foreground group-hover:text-primary">{e(p["name"])}</p>'
+            f'<p class="mt-1 text-sm text-muted-foreground">{e(p["school"])} · {e(where)}</p>'
+            f'<p class="mt-3 text-xs font-semibold uppercase tracking-[0.14em] text-muted-foreground">{e(focus)}' + (f' · {e(p["length"])}' if p.get("length") else "") + '</p></a>')
+
+
+def programs_section(programs):
+    if not programs:
+        return ""
+    cards = "".join(program_card(p) for p in programs)
+    return (f'<section class="mt-14 border-t border-border pt-12" id="featured-programs"><p class="text-xs font-semibold uppercase tracking-[0.16em] text-muted-foreground">Featured programs</p>'
+            f'<h2 class="mt-3 font-[family-name:var(--font-heading)] text-3xl font-bold">Training that leads to the feed.</h2>'
+            f'<p class="mt-3 max-w-2xl leading-7 text-muted-foreground">Programs with a FieldWatt page. Featured partner pages are free under the founding offer; sponsored pages are paid, and both are labeled. FieldWatt does not vet program quality.</p>'
+            f'<div class="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">{cards}</div></section>')
+
+
+def program_page(p, jobs):
+    where = ", ".join(x for x in (p.get("city"), STATES[p["state"]]) if x)
+    state_slug = slugify(STATES[p["state"]])
+    # the work this training points at: live listings in the program's state and trades
+    related = [j for j in jobs if j["state"] == p["state"] and any(f in j["families"] for f in p["focus"])][:5]
+    fam_links = "".join(f'<a class="inline-flex h-10 items-center border border-border px-4 text-sm font-semibold hover:border-primary" href="/jobs/{state_slug}/{f.lower()}">{f} jobs in {e(STATES[p["state"]])}</a>' for f in p["focus"])
+    facts = "".join(f'<div class="bg-card p-5"><p class="text-xs font-semibold uppercase tracking-[0.14em] text-muted-foreground">{k}</p><p class="mt-2 font-semibold">{e(v)}</p></div>'
+                    for k, v in (("Location", where), ("Focus", " · ".join(p["focus"])), ("Length", p.get("length") or "See program site")))
+    body = f'''<section class="field-grid border-b border-border bg-secondary text-secondary-foreground"><div class="mx-auto max-w-7xl px-4 py-12 sm:px-6 sm:py-16 lg:px-8"><a class="text-xs font-semibold uppercase tracking-[0.16em] text-primary hover:text-secondary-foreground" href="/training">Training programs</a><div class="mt-6 grid gap-7 lg:grid-cols-[minmax(0,1fr)_260px] lg:items-end"><div><p class="inline-flex bg-primary px-2 py-1 text-xs font-semibold uppercase tracking-[0.16em] text-primary-foreground">{program_label(p)}</p><h1 class="mt-4 max-w-4xl font-[family-name:var(--font-heading)] text-4xl font-bold leading-tight sm:text-6xl">{e(p["name"])}</h1><p class="mt-5 text-lg text-secondary-foreground/80">{e(p["school"])} · {e(where)}</p></div><div><a href="{e(p["url"])}" target="_blank" rel="noopener" class="inline-flex min-h-12 w-full items-center justify-center gap-2 bg-primary px-5 py-3 text-sm font-bold text-primary-foreground hover:bg-primary/90">Program website {ICON["external"]}</a></div></div></div></section><section class="mx-auto grid max-w-7xl gap-10 px-4 py-12 sm:px-6 lg:grid-cols-[minmax(0,1fr)_300px] lg:px-8 lg:py-16"><article><div class="grid gap-px border border-border bg-border sm:grid-cols-3">{facts}</div><div class="mt-10"><p class="text-xs font-semibold uppercase tracking-[0.16em] text-primary">About the program</p><p class="mt-5 max-w-3xl text-lg leading-8 text-muted-foreground">{e(p["description"])}</p><p class="mt-4 text-sm text-muted-foreground">Details, costs and admission are on the program&#x27;s own site. Verify accreditation, licensing requirements and job-placement outcomes before enrolling; a FieldWatt page is visibility, not an endorsement.</p></div><div class="mt-10 border-t border-border pt-10"><p class="text-xs font-semibold uppercase tracking-[0.16em] text-primary">Where it leads</p><h2 class="mt-3 font-[family-name:var(--font-heading)] text-3xl font-bold">Live field work in {e(STATES[p["state"]])}.</h2><div class="mt-6 flex flex-wrap gap-3">{fam_links}</div>{cards(related) if related else ""}</div></article><aside class="space-y-6"><div class="border border-border bg-card p-6"><p class="text-sm font-semibold text-foreground">Students: get the Tuesday email</p><p class="mt-2 text-sm leading-6 text-muted-foreground">New {", ".join(p["focus"]).lower()} openings in {e(STATES[p["state"]])} and beyond, every week, free.</p><a class="mt-4 inline-flex h-10 items-center bg-primary px-4 text-sm font-medium text-primary-foreground" href="/alerts?role={p["focus"][0]}&amp;state={p["state"]}">Get free alerts</a></div><div class="border border-border bg-accent p-6"><p class="text-xs font-semibold uppercase tracking-[0.16em] text-muted-foreground">Run a program?</p><p class="mt-2 text-sm leading-6 text-muted-foreground">Midwest trade programs can get a page like this free. Others can place a labeled sponsored page.</p><a class="mt-3 inline-flex items-center gap-2 text-sm font-bold text-foreground underline decoration-primary decoration-2 underline-offset-4" href="/training#partner-application">Apply {ICON["arrow"]}</a></div></aside></section>'''
+    desc = f'{p["name"]} at {p["school"]}, {where}: {", ".join(p["focus"]).lower()} training with a direct line to live FieldWatt field jobs.'
+    return layout(f'{p["name"]} | {p["school"]} | FieldWatt Training', desc, body, f'/training/{p["slug"]}')
+
+
 def featured_badge(job, cls="bg-foreground text-background"):
     """The label every paid placement carries, on cards and the job page."""
     if not job.get("featured"):
@@ -510,8 +585,13 @@ def main():
                 corridor.append((f"{fam} jobs in {STATES[code]}", f"/jobs/{slugify(STATES[code])}/{fam.lower()}", n))
     corridor.sort(key=lambda t: -t[2])
     corridor_html = "".join(f'<a class="text-sm font-semibold text-foreground underline decoration-primary/70 underline-offset-4 hover:text-primary" href="{h}">{t} ({n})</a>' for t, h, n in corridor[:8])
+    programs = load_programs()
+    for prog in programs:
+        add(f"/training/{prog['slug']}", program_page(prog, jobs))
     for p in pages:
-        body = open(os.path.join(ROOT, "content", p["file"]), encoding="utf-8").read().replace("<!--CORRIDOR_LINKS-->", corridor_html)
+        body = (open(os.path.join(ROOT, "content", p["file"]), encoding="utf-8").read()
+                .replace("<!--CORRIDOR_LINKS-->", corridor_html)
+                .replace("<!--PROGRAMS-->", programs_section(programs)))
         # a page people only reach after paying has nothing to offer a searcher,
         # so it stays out of the index and out of the sitemap
         head = '<meta name="robots" content="noindex,follow"/>' if p.get("noindex") else ""
@@ -535,7 +615,7 @@ def main():
     sm = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
     sm += "".join(f"  <url><loc>{DOMAIN}{'' if u == '/' else u}</loc></url>\n" for u in urls) + "</urlset>\n"
     write("sitemap.xml", sm)
-    print(f"built {len(urls)} pages ({len(jobs)} jobs, {len(employers)} employers, {len(retired)} closed) -> {SITE}")
+    print(f"built {len(urls)} pages ({len(jobs)} jobs, {len(employers)} employers, {len(retired)} closed, {len(programs)} programs) -> {SITE}")
 
 
 if __name__ == "__main__":

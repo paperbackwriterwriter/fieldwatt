@@ -42,5 +42,20 @@ Stripe: paste Payment Links into `static/site.js` (`window.FIELDWATT_STRIPE`).
 
 After editing, commit to main and run the **nightly-feed** workflow by hand (Actions → nightly-feed → Run workflow, tick "skip fetch") to publish without waiting for the night. A mistake in the file fails the build with a message naming the entry rather than silently dropping the placement.
 
+## Training program pages
+`data/programs.json` holds the Featured Program pages the training page offers. Each entry builds `/training/<slug>` and a card in the "Featured programs" section of `/training` (the section is absent while the file is empty).
+
+```json
+[{"slug": "iowa-lakes-wind", "name": "Wind Energy & Turbine Technology",
+  "school": "Iowa Lakes Community College", "city": "Estherville", "state": "IA",
+  "url": "https://www.iowalakes.edu/...", "focus": ["Wind"], "length": "2-year AAS",
+  "description": "What the program covers, in the school's own words.", "type": "partner"}]
+```
+
+`type` is `partner` (the free founding-partner page) or `sponsored` (the $199/month placement, which also needs `"until": "YYYY-MM-DD"` and drops out after that date). `focus` uses the feed's families: Wind, Solar, Storage, Grid. The page links to live jobs in the program's state and trades. A bad entry fails the build naming it.
+
+## Google Indexing API
+`scripts/index_google.py` runs at the end of the nightly workflow and tells Google which job pages are new or have closed, so they are crawled within hours rather than whenever the 2,000-URL sitemap comes round. It needs the GitHub secret `GOOGLE_INDEXING_KEY`: the JSON key of a Google Cloud service account with the Indexing API enabled, added as an **Owner** of the fieldwatt.com property in Search Console. Without the secret the step prints a note and does nothing. Default quota is 200 notifications a day; newest listings go first and the rest wait for the next night. `data/indexing-state.json` records what has been sent. `python scripts/index_google.py --dry-run` shows what a run would send.
+
 ## Not carried over (yet)
 Candidate profiles / sign-in and the "Not a fit? Flag it" button — these needed the MadeThis backend.

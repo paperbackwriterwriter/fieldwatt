@@ -49,3 +49,18 @@ jobs:
             git pull --rebase
             git push
           fi
+
+      # After the push, so the pages exist by the time Google fetches them.
+      - name: Tell Google which job pages changed
+        env:
+          GOOGLE_INDEXING_KEY: ${{ secrets.GOOGLE_INDEXING_KEY }}
+        run: |
+          if [ -z "$GOOGLE_INDEXING_KEY" ]; then echo "GOOGLE_INDEXING_KEY not set; skipping"; exit 0; fi
+          pip install -q google-auth
+          python scripts/index_google.py
+          git add data/indexing-state.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Indexing state $(date -u +%Y-%m-%d)"
+            git pull --rebase
+            git push
+          fi

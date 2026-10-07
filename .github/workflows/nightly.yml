@@ -56,7 +56,7 @@ jobs:
           GOOGLE_INDEXING_KEY: ${{ secrets.GOOGLE_INDEXING_KEY }}
         run: |
           if [ -z "$GOOGLE_INDEXING_KEY" ]; then echo "GOOGLE_INDEXING_KEY not set; skipping"; exit 0; fi
-          pip install -q google-auth
+          pip install -q google-auth requests
           python scripts/index_google.py
           git add data/indexing-state.json
           if ! git diff --cached --quiet; then

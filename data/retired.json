@@ -9220,20 +9220,6 @@
   "retired": "2026-10-10"
  },
  {
-  "id": "5912308867",
-  "slug": "sr-field-performance-technician--adzuna-5912308867",
-  "title": "Sr. Field Performance Technician",
-  "company": "Sunrun",
-  "company_slug": "sunrun",
-  "state": "CA",
-  "state_name": "California",
-  "families": [
-   "Solar",
-   "Storage"
-  ],
-  "retired": "2026-10-10"
- },
- {
   "id": "5912307293",
   "slug": "residential-electrician-1-500-sign-on-bonus--adzuna-5912307293",
   "title": "Residential Electrician: $1,500 sign-on bonus",
@@ -9831,19 +9817,6 @@
   "company_slug": "aec-solar-energy-corp",
   "state": "NY",
   "state_name": "New York",
-  "families": [
-   "Solar"
-  ],
-  "retired": "2026-10-11"
- },
- {
-  "id": "5890229788",
-  "slug": "sr-solar-tech--adzuna-5890229788",
-  "title": "Sr Solar Tech",
-  "company": "System One",
-  "company_slug": "system-one",
-  "state": "CA",
-  "state_name": "California",
   "families": [
    "Solar"
   ],
@@ -10970,19 +10943,6 @@
   "retired": "2026-10-13"
  },
  {
-  "id": "5908553844",
-  "slug": "substation-technician--adzuna-5908553844",
-  "title": "Substation Technician",
-  "company": "BODEC, Inc.",
-  "company_slug": "bodec-inc",
-  "state": "TX",
-  "state_name": "Texas",
-  "families": [
-   "Grid"
-  ],
-  "retired": "2026-10-13"
- },
- {
   "id": "5906797316",
   "slug": "licensed-journeyman-electrician--adzuna-5906797316",
   "title": "Licensed Journeyman Electrician",
@@ -11524,20 +11484,6 @@
   "state_name": "Arizona",
   "families": [
    "Solar"
-  ],
-  "retired": "2026-10-14"
- },
- {
-  "id": "5921667744",
-  "slug": "certified-journeyman-electrician-talent-pool-future--adzuna-5921667744",
-  "title": "Certified Journeyman Electrician (Talent Pool, Future)",
-  "company": "Sunrun",
-  "company_slug": "sunrun",
-  "state": "HI",
-  "state_name": "Hawaii",
-  "families": [
-   "Solar",
-   "Storage"
   ],
   "retired": "2026-10-14"
  },
@@ -12089,20 +12035,6 @@
   "retired": "2026-10-14"
  },
  {
-  "id": "5892728128",
-  "slug": "field-operations-technician--adzuna-5892728128",
-  "title": "Field Operations Technician",
-  "company": "Sunrun",
-  "company_slug": "sunrun",
-  "state": "MD",
-  "state_name": "Maryland",
-  "families": [
-   "Solar",
-   "Storage"
-  ],
-  "retired": "2026-10-14"
- },
- {
   "id": "5891956297",
   "slug": "bess-technician-1--adzuna-5891956297",
   "title": "BESS Technician 1",
@@ -12414,5 +12346,544 @@
    "Grid"
   ],
   "retired": "2026-10-14"
+ },
+ {
+  "id": "5925830482",
+  "slug": "technician-ii--adzuna-5925830482",
+  "title": "Technician II",
+  "company": "Vestas",
+  "company_slug": "vestas",
+  "state": "IA",
+  "state_name": "Iowa",
+  "families": [
+   "Wind"
+  ],
+  "retired": "2026-10-15"
+ },
+ {
+  "id": "5925660878",
+  "slug": "journeyman-electrician--adzuna-5925660878",
+  "title": "Journeyman Electrician",
+  "company": "Aerotek",
+  "company_slug": "aerotek",
+  "state": "AZ",
+  "state_name": "Arizona",
+  "families": [
+   "Solar"
+  ],
+  "retired": "2026-10-15"
+ },
+ {
+  "id": "5925523954",
+  "slug": "certified-electrician-talent-pool-future--adzuna-5925523954",
+  "title": "Certified Electrician (Talent Pool, Future)",
+  "company": "Sunrun",
+  "company_slug": "sunrun",
+  "state": "HI",
+  "state_name": "Hawaii",
+  "families": [
+   "Solar",
+   "Storage"
+  ],
+  "retired": "2026-10-15"
+ },
+ {
+  "id": "5925663205",
+  "slug": "o-m-solar-technician-ii--adzuna-5925663205",
+  "title": "O&M Solar Technician II",
+  "company": "Aerotek",
+  "company_slug": "aerotek",
+  "state": "CO",
+  "state_name": "Colorado",
+  "families": [
+   "Solar"
+  ],
+  "retired": "2026-10-15"
+ },
+ {
+  "id": "5926336154",
+  "slug": "line-mechanic-c-a--adzuna-5926336154",
+  "title": "Line Mechanic C-A",
+  "company": "American Electric Power",
+  "company_slug": "american-electric-power",
+  "state": "OH",
+  "state_name": "Ohio",
+  "families": [
+   "Grid"
+  ],
+  "retired": "2026-10-15"
+ },
+ {
+  "id": "5926115549",
+  "slug": "aerial-lineman-local-work--adzuna-5926115549",
+  "title": "Aerial Lineman (Local Work)",
+  "company": "Push Inc",
+  "company_slug": "push-inc",
+  "state": "WI",
+  "state_name": "Wisconsin",
+  "families": [
+   "Grid"
+  ],
+  "retired": "2026-10-15"
+ },
+ {
+  "id": "5926112525",
+  "slug": "aerial-lineman-local-work--adzuna-5926112525",
+  "title": "Aerial Lineman (Local Work)",
+  "company": "Push Inc",
+  "company_slug": "push-inc",
+  "state": "WI",
+  "state_name": "Wisconsin",
+  "families": [
+   "Grid"
+  ],
+  "retired": "2026-10-15"
+ },
+ {
+  "id": "5925467037",
+  "slug": "aerial-lineman-local-work--adzuna-5925467037",
+  "title": "Aerial Lineman (Local Work)",
+  "company": "Push Inc",
+  "company_slug": "push-inc",
+  "state": "WI",
+  "state_name": "Wisconsin",
+  "families": [
+   "Grid"
+  ],
+  "retired": "2026-10-15"
+ },
+ {
+  "id": "5924232057",
+  "slug": "certified-journeyman-electrician-talent-pool-future--adzuna-5924232057",
+  "title": "Certified Journeyman Electrician (Talent Pool, Future)",
+  "company": "Sunrun",
+  "company_slug": "sunrun",
+  "state": "HI",
+  "state_name": "Hawaii",
+  "families": [
+   "Solar",
+   "Storage"
+  ],
+  "retired": "2026-10-15"
+ },
+ {
+  "id": "5922962007",
+  "slug": "solar-battery-foreman-south-bay--adzuna-5922962007",
+  "title": "Solar Battery Foreman (South Bay",
+  "company": "Simply Solar",
+  "company_slug": "simply-solar",
+  "state": "CA",
+  "state_name": "California",
+  "families": [
+   "Solar",
+   "Storage"
+  ],
+  "retired": "2026-10-15"
+ },
+ {
+  "id": "5922073628",
+  "slug": "solar-battery-foreman--adzuna-5922073628",
+  "title": "Solar Battery Foreman",
+  "company": "Simply Solar",
+  "company_slug": "simply-solar",
+  "state": "CA",
+  "state_name": "California",
+  "families": [
+   "Solar",
+   "Storage"
+  ],
+  "retired": "2026-10-15"
+ },
+ {
+  "id": "5922836164",
+  "slug": "solar-installer--adzuna-5922836164",
+  "title": "Solar Installer",
+  "company": "Staff Experts",
+  "company_slug": "staff-experts",
+  "state": "AZ",
+  "state_name": "Arizona",
+  "families": [
+   "Solar"
+  ],
+  "retired": "2026-10-15"
+ },
+ {
+  "id": "5922835726",
+  "slug": "lineman-electrician--adzuna-5922835726",
+  "title": "Lineman Electrician",
+  "company": "Staff Experts",
+  "company_slug": "staff-experts",
+  "state": "AZ",
+  "state_name": "Arizona",
+  "families": [
+   "Grid"
+  ],
+  "retired": "2026-10-15"
+ },
+ {
+  "id": "5921385798",
+  "slug": "solar-roof-lead-south-bay--adzuna-5921385798",
+  "title": "Solar Roof Lead (South Bay",
+  "company": "Simply Solar",
+  "company_slug": "simply-solar",
+  "state": "CA",
+  "state_name": "California",
+  "families": [
+   "Solar"
+  ],
+  "retired": "2026-10-15"
+ },
+ {
+  "id": "5920438217",
+  "slug": "o-m-solar-technician-ii--adzuna-5920438217",
+  "title": "O&M Solar Technician II",
+  "company": "Aerotek",
+  "company_slug": "aerotek",
+  "state": "CO",
+  "state_name": "Colorado",
+  "families": [
+   "Solar"
+  ],
+  "retired": "2026-10-15"
+ },
+ {
+  "id": "5920485072",
+  "slug": "sr-field-performance-technician--adzuna-5920485072",
+  "title": "Sr. Field Performance Technician",
+  "company": "Sunrun",
+  "company_slug": "sunrun",
+  "state": "CA",
+  "state_name": "California",
+  "families": [
+   "Solar",
+   "Storage"
+  ],
+  "retired": "2026-10-15"
+ },
+ {
+  "id": "5920548737",
+  "slug": "civil-substation-engineering-technician--adzuna-5920548737",
+  "title": "Civil Substation Engineering Technician",
+  "company": "System One",
+  "company_slug": "system-one",
+  "state": "MI",
+  "state_name": "Michigan",
+  "families": [
+   "Grid"
+  ],
+  "retired": "2026-10-15"
+ },
+ {
+  "id": "5920892950",
+  "slug": "solar-electrical-inspector--adzuna-5920892950",
+  "title": "Solar Electrical Inspector",
+  "company": "System One",
+  "company_slug": "system-one",
+  "state": "TX",
+  "state_name": "Texas",
+  "families": [
+   "Solar"
+  ],
+  "retired": "2026-10-15"
+ },
+ {
+  "id": "5921591629",
+  "slug": "solar-installer--adzuna-5921591629",
+  "title": "Solar Installer",
+  "company": "Staff Experts",
+  "company_slug": "staff-experts",
+  "state": "NV",
+  "state_name": "Nevada",
+  "families": [
+   "Solar"
+  ],
+  "retired": "2026-10-15"
+ },
+ {
+  "id": "5921589523",
+  "slug": "solar-installer--adzuna-5921589523",
+  "title": "Solar Installer",
+  "company": "Staff Experts",
+  "company_slug": "staff-experts",
+  "state": "CO",
+  "state_name": "Colorado",
+  "families": [
+   "Solar"
+  ],
+  "retired": "2026-10-15"
+ },
+ {
+  "id": "5918527543",
+  "slug": "wind-turbine-blade-repair-technician--adzuna-5918527543",
+  "title": "Wind Turbine Blade Repair Technician",
+  "company": "System One",
+  "company_slug": "system-one",
+  "state": "TX",
+  "state_name": "Texas",
+  "families": [
+   "Wind"
+  ],
+  "retired": "2026-10-15"
+ },
+ {
+  "id": "5916793989",
+  "slug": "technician-ii--adzuna-5916793989",
+  "title": "Technician II",
+  "company": "Vestas",
+  "company_slug": "vestas",
+  "state": "IA",
+  "state_name": "Iowa",
+  "families": [
+   "Wind"
+  ],
+  "retired": "2026-10-15"
+ },
+ {
+  "id": "5917040347",
+  "slug": "sr-substation-technician--adzuna-5917040347",
+  "title": "Sr Substation Technician",
+  "company": "Powerserve Technologies Inc",
+  "company_slug": "powerserve-technologies-inc",
+  "state": "FL",
+  "state_name": "Florida",
+  "families": [
+   "Grid"
+  ],
+  "retired": "2026-10-15"
+ },
+ {
+  "id": "5916706281",
+  "slug": "protection-and-control-relay-technician-p-c--adzuna-5916706281",
+  "title": "Protection and Control Relay Technician P&C",
+  "company": "Powerserve Technologies Inc",
+  "company_slug": "powerserve-technologies-inc",
+  "state": "FL",
+  "state_name": "Florida",
+  "families": [
+   "Grid"
+  ],
+  "retired": "2026-10-15"
+ },
+ {
+  "id": "5917781885",
+  "slug": "aerial-lineman-foreman-cdl-a-required--adzuna-5917781885",
+  "title": "Aerial Lineman Foreman (CDL-A Required)",
+  "company": "Distro",
+  "company_slug": "distro",
+  "state": "NY",
+  "state_name": "New York",
+  "families": [
+   "Grid"
+  ],
+  "retired": "2026-10-15"
+ },
+ {
+  "id": "5913442362",
+  "slug": "substation-electrician-tech-construction-epc--adzuna-5913442362",
+  "title": "Substation Electrician Tech Construction EPC",
+  "company": "Powerserve Technologies Inc",
+  "company_slug": "powerserve-technologies-inc",
+  "state": "FL",
+  "state_name": "Florida",
+  "families": [
+   "Grid"
+  ],
+  "retired": "2026-10-15"
+ },
+ {
+  "id": "5912365834",
+  "slug": "field-operations-technician--adzuna-5912365834",
+  "title": "Field Operations Technician",
+  "company": "Sunrun",
+  "company_slug": "sunrun",
+  "state": "MD",
+  "state_name": "Maryland",
+  "families": [
+   "Solar",
+   "Storage"
+  ],
+  "retired": "2026-10-15"
+ },
+ {
+  "id": "5909876252",
+  "slug": "lineman--adzuna-5909876252",
+  "title": "Lineman",
+  "company": "Entergy",
+  "company_slug": "entergy",
+  "state": "AR",
+  "state_name": "Arkansas",
+  "families": [
+   "Grid"
+  ],
+  "retired": "2026-10-15"
+ },
+ {
+  "id": "5910837838",
+  "slug": "relay-protection-electrical-technician-ibew--adzuna-5910837838",
+  "title": "Relay Protection Electrical Technician (IBEW)",
+  "company": "Pacific Gas And Electric Company",
+  "company_slug": "pacific-gas-and-electric-company",
+  "state": "CA",
+  "state_name": "California",
+  "families": [
+   "Grid"
+  ],
+  "retired": "2026-10-15"
+ },
+ {
+  "id": "5907788121",
+  "slug": "wind-site-technician-ii-pampa-tx--adzuna-5907788121",
+  "title": "Wind Site Technician II",
+  "company": "Vestas",
+  "company_slug": "vestas",
+  "state": "TX",
+  "state_name": "Texas",
+  "families": [
+   "Wind"
+  ],
+  "retired": "2026-10-15"
+ },
+ {
+  "id": "5908543153",
+  "slug": "substation-technician--adzuna-5908543153",
+  "title": "Substation Technician",
+  "company": "BODEC, Inc.",
+  "company_slug": "bodec-inc",
+  "state": "TX",
+  "state_name": "Texas",
+  "families": [
+   "Grid"
+  ],
+  "retired": "2026-10-15"
+ },
+ {
+  "id": "5905951576",
+  "slug": "substation-electrician--adzuna-5905951576",
+  "title": "Substation Electrician",
+  "company": "Aerotek",
+  "company_slug": "aerotek",
+  "state": "IN",
+  "state_name": "Indiana",
+  "families": [
+   "Grid"
+  ],
+  "retired": "2026-10-15"
+ },
+ {
+  "id": "5904790227",
+  "slug": "aerial-lineman--adzuna-5904790227",
+  "title": "Aerial Lineman",
+  "company": "Utilities One",
+  "company_slug": "utilities-one",
+  "state": "IN",
+  "state_name": "Indiana",
+  "families": [
+   "Grid"
+  ],
+  "retired": "2026-10-15"
+ },
+ {
+  "id": "5899608807",
+  "slug": "sr-solar-tech-cantua-creek-ca--adzuna-5899608807",
+  "title": "Sr Solar Tech",
+  "company": "System One",
+  "company_slug": "system-one",
+  "state": "CA",
+  "state_name": "California",
+  "families": [
+   "Solar"
+  ],
+  "retired": "2026-10-15"
+ },
+ {
+  "id": "5897145686",
+  "slug": "solar-installer--adzuna-5897145686",
+  "title": "Solar Installer",
+  "company": "OE Solar",
+  "company_slug": "oe-solar",
+  "state": "NM",
+  "state_name": "New Mexico",
+  "families": [
+   "Solar"
+  ],
+  "retired": "2026-10-15"
+ },
+ {
+  "id": "5883511303",
+  "slug": "solar-farm-technician-ii--adzuna-5883511303",
+  "title": "Solar Farm Technician II",
+  "company": "RWE Americas",
+  "company_slug": "rwe-americas",
+  "state": "CA",
+  "state_name": "California",
+  "families": [
+   "Solar"
+  ],
+  "retired": "2026-10-15"
+ },
+ {
+  "id": "5883712179",
+  "slug": "master-electrician--adzuna-5883712179",
+  "title": "Master Electrician",
+  "company": "Lifetime Solar",
+  "company_slug": "lifetime-solar",
+  "state": "GA",
+  "state_name": "Georgia",
+  "families": [
+   "Solar"
+  ],
+  "retired": "2026-10-15"
+ },
+ {
+  "id": "5883736576",
+  "slug": "substation-tech-journeyman-lineman--adzuna-5883736576",
+  "title": "Substation Tech-Journeyman Lineman",
+  "company": "Siemens Energy",
+  "company_slug": "siemens-energy",
+  "state": "TX",
+  "state_name": "Texas",
+  "families": [
+   "Grid"
+  ],
+  "retired": "2026-10-15"
+ },
+ {
+  "id": "5884258053",
+  "slug": "solar-panel-installer--adzuna-5884258053",
+  "title": "Solar Panel Installer",
+  "company": "DISCOVER GREEN RENEWABLE ENERGY LLC",
+  "company_slug": "discover-green-renewable-energy-llc",
+  "state": "NY",
+  "state_name": "New York",
+  "families": [
+   "Solar"
+  ],
+  "retired": "2026-10-15"
+ },
+ {
+  "id": "5883500188",
+  "slug": "apprentice-lineman-d--adzuna-5883500188",
+  "title": "Apprentice Lineman D",
+  "company": "MasTec Advanced Technologies",
+  "company_slug": "mastec-advanced-technologies",
+  "state": "CO",
+  "state_name": "Colorado",
+  "families": [
+   "Grid"
+  ],
+  "retired": "2026-10-15"
+ },
+ {
+  "id": "5883707721",
+  "slug": "solar-general-laborer--adzuna-5883707721",
+  "title": "Solar General Laborer",
+  "company": "Aerotek",
+  "company_slug": "aerotek",
+  "state": "TX",
+  "state_name": "Texas",
+  "families": [
+   "Solar"
+  ],
+  "retired": "2026-10-15"
  }
 ]

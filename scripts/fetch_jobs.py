@@ -89,7 +89,8 @@ OFF_TRADE = re.compile(r"""(?xi)
     |telecom\w*|fiber\s+(optic|splic|groundman|lineman|tech)|fiber\s*-\s*joint|joint\s+use|cable\s+splic|catv|broadband
     |communications?\s+(lineman|linemen|technician|tech|tower)
     |window\s+(film|tint|install)|wind\s+tunnel
-    |manufactur\w*|production\s+(line|operator|associate)|tube\s+mill)\b
+    |manufactur\w*|production\s+(line|operator|associate)|tube\s+mill
+    |cnc|r\s*&\s*d|prototyp\w*|characterization|laboratory|lab\s+tech\w*)\b
 """)
 # Employers whose name says they are in another trade. "MasTec Communications
 # Group" posts aerial linemen, and they string fibre, not power.
@@ -146,7 +147,10 @@ def trusted_companies(jobs, min_anchors=2):
         by_co[j.get("company_slug") or j["company"]].append(j)
     out = set()
     for slug, js in by_co.items():
-        if sum(1 for j in js if title_anchor(j["title"])) >= min_anchors:
+        # Only listings that pass vetting on their own count. A staffing
+        # agency's two rejected "Solar Project Manager" ads must not vouch
+        # for its "Data Scientist" or "General Laborer" ads.
+        if sum(1 for j in js if vet(j)[1] == "title") >= min_anchors:
             out.add(slug)
         elif renewable_employer(js[0].get("company", "")):
             out.add(slug)
@@ -188,7 +192,8 @@ OFFICE_ONLY = re.compile(r"""(?xi)
     |finance|financial|accountant|accounting|marketing|human\s+resources|legal|counsel
     |customer\s+(service|success|support)|dispatcher|drafter|drafting|cad
     |originator|business\s+development|sales
-    |academic|program\s+manager|division\s+manager|tech(?:nical)?\s+support)\b
+    |academic|program\s+manager|division\s+manager|tech(?:nical)?\s+support
+    |(?<!field\sservice\s)representative|market\s+development|account\s+manager|data\s+scientist|archaeolog\w*)\b
 """)
 
 # Roles that read as office work unless the title also names a trade.
@@ -386,7 +391,12 @@ def carry_over(jobs, previous, today):
 MAX_COPIES_PER_STATE = 3
 
 
-def cap_duplicates(jobs):
+def cap_duplicates(jobs, published=frozenset()):
+    """Keep MAX_COPIES_PER_STATE copies per (title, employer, state).
+    Copies already published last night win, then the lowest id, so the same
+    copies survive night after night instead of whichever Adzuna returned
+    first, which used to flip pages between live and "closed"."""
+    jobs = sorted(jobs, key=lambda j: (j["id"] not in published, str(j["id"])))
     seen = collections.Counter()
     out, dropped = [], 0
     for j in jobs:
@@ -483,8 +493,11 @@ def main():
     for why, n in rejected.most_common():
         print(f"  vetting dropped {n}: {why}")
     print(f"  vetting kept {len(kept)} of {len(candidates)}")
-    kept = cap_duplicates(kept)
-    print(f"  retired {record_retired(previous, kept, today)} listings that left the feed")
+    # Retired means gone from the source or failed vetting. A copy dropped
+    # only by the duplicate cap is still an open job, so it is not retired.
+    still_open = list(kept)
+    kept = cap_duplicates(kept, {j["id"] for j in previous})
+    print(f"  retired {record_retired(previous, still_open, today)} listings that left the feed")
 
     out = {
         "updated": datetime.now(timezone.utc).isoformat(),

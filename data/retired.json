@@ -13596,5 +13596,1031 @@
    "Solar"
   ],
   "retired": "2026-10-16"
+ },
+ {
+  "id": "5930149226",
+  "slug": "service-technician--adzuna-5930149226",
+  "title": "Service Technician",
+  "company": "SunVena",
+  "company_slug": "sunvena",
+  "state": "FL",
+  "state_name": "Florida",
+  "families": [
+   "Solar"
+  ],
+  "retired": "2026-10-17"
+ },
+ {
+  "id": "5928589475",
+  "slug": "appliance-repair-technician-gulf-coast--adzuna-5928589475",
+  "title": "Appliance Repair Technician (Gulf Coast)",
+  "company": "Solar Refrigeration and Appliance Service, Inc.",
+  "company_slug": "solar-refrigeration-and-appliance-service-inc",
+  "state": "MS",
+  "state_name": "Mississippi",
+  "families": [
+   "Solar"
+  ],
+  "retired": "2026-10-17"
+ },
+ {
+  "id": "5928590161",
+  "slug": "transmission-construction-representative--adzuna-5928590161",
+  "title": "Transmission Construction Representative",
+  "company": "Think Power Solutions LLC",
+  "company_slug": "think-power-solutions-llc",
+  "state": "AR",
+  "state_name": "Arkansas",
+  "families": [
+   "Grid"
+  ],
+  "retired": "2026-10-17"
+ },
+ {
+  "id": "5927930825",
+  "slug": "satellite-solar-cell-array-production-technician-littleton--adzuna-5927930825",
+  "title": "Satellite Solar Cell Array Production Technician (Littleton)",
+  "company": "Astro Digital",
+  "company_slug": "astro-digital",
+  "state": "CO",
+  "state_name": "Colorado",
+  "families": [
+   "Solar"
+  ],
+  "retired": "2026-10-17"
+ },
+ {
+  "id": "5928359798",
+  "slug": "employee-compensation-representative-iii-locations-in-oh-nj-md-wv-pa--adzuna-5928359798",
+  "title": "Employee Compensation Representative III - Locations in OH, NJ, MD, WV, PA",
+  "company": "FirstEnergy Group",
+  "company_slug": "firstenergy-group",
+  "state": "OH",
+  "state_name": "Ohio",
+  "families": [
+   "Grid"
+  ],
+  "retired": "2026-10-17"
+ },
+ {
+  "id": "5926975669",
+  "slug": "appliance-repair-technician-northshore--adzuna-5926975669",
+  "title": "Appliance Repair Technician - Northshore",
+  "company": "Solar Refrigeration and Appliance Service, Inc.",
+  "company_slug": "solar-refrigeration-and-appliance-service-inc",
+  "state": "LA",
+  "state_name": "Louisiana",
+  "families": [
+   "Solar"
+  ],
+  "retired": "2026-10-17"
+ },
+ {
+  "id": "5926160268",
+  "slug": "appliance-repair-technician-gulf-coast--adzuna-5926160268",
+  "title": "Appliance Repair Technician (Gulf Coast)",
+  "company": "Solar Refrigeration and Appliance Service, Inc.",
+  "company_slug": "solar-refrigeration-and-appliance-service-inc",
+  "state": "MS",
+  "state_name": "Mississippi",
+  "families": [
+   "Solar"
+  ],
+  "retired": "2026-10-17"
+ },
+ {
+  "id": "5926140556",
+  "slug": "appliance-repair-technician--adzuna-5926140556",
+  "title": "Appliance Repair Technician",
+  "company": "Solar Refrigeration and Appliance Service, Inc.",
+  "company_slug": "solar-refrigeration-and-appliance-service-inc",
+  "state": "LA",
+  "state_name": "Louisiana",
+  "families": [
+   "Solar"
+  ],
+  "retired": "2026-10-17"
+ },
+ {
+  "id": "5925632858",
+  "slug": "electrician-helper-east--adzuna-5925632858",
+  "title": "Electrician Helper - East",
+  "company": "Eversource Energy",
+  "company_slug": "eversource-energy",
+  "state": "MA",
+  "state_name": "Massachusetts",
+  "families": [
+   "Grid"
+  ],
+  "retired": "2026-10-17"
+ },
+ {
+  "id": "5925900575",
+  "slug": "safety-professional-transmission-line--adzuna-5925900575",
+  "title": "Safety Professional - Transmission Line",
+  "company": "Quanta Services",
+  "company_slug": "quanta-services",
+  "state": "LA",
+  "state_name": "Louisiana",
+  "families": [
+   "Grid"
+  ],
+  "retired": "2026-10-17"
+ },
+ {
+  "id": "5926779928",
+  "slug": "hv-administrative-assistant-remote--adzuna-5926779928",
+  "title": "HV Administrative Assistant (Remote)",
+  "company": "SOLV Energy",
+  "company_slug": "solv-energy",
+  "state": "ME",
+  "state_name": "Maine",
+  "families": [
+   "Solar",
+   "Storage",
+   "Grid"
+  ],
+  "retired": "2026-10-17"
+ },
+ {
+  "id": "5926347223",
+  "slug": "hv-administrative-assistant-remote--adzuna-5926347223",
+  "title": "HV Administrative Assistant (Remote)",
+  "company": "SOLV Energy",
+  "company_slug": "solv-energy",
+  "state": "KY",
+  "state_name": "Kentucky",
+  "families": [
+   "Solar",
+   "Storage",
+   "Grid"
+  ],
+  "retired": "2026-10-17"
+ },
+ {
+  "id": "5926261453",
+  "slug": "hv-administrative-assistant-remote--adzuna-5926261453",
+  "title": "HV Administrative Assistant (Remote)",
+  "company": "SOLV Energy",
+  "company_slug": "solv-energy",
+  "state": "CO",
+  "state_name": "Colorado",
+  "families": [
+   "Solar",
+   "Storage",
+   "Grid"
+  ],
+  "retired": "2026-10-17"
+ },
+ {
+  "id": "5926260003",
+  "slug": "hv-administrative-assistant-remote--adzuna-5926260003",
+  "title": "HV Administrative Assistant (Remote)",
+  "company": "SOLV Energy",
+  "company_slug": "solv-energy",
+  "state": "CA",
+  "state_name": "California",
+  "families": [
+   "Solar",
+   "Storage",
+   "Grid"
+  ],
+  "retired": "2026-10-17"
+ },
+ {
+  "id": "5926252548",
+  "slug": "hv-administrative-assistant-remote--adzuna-5926252548",
+  "title": "HV Administrative Assistant (Remote)",
+  "company": "SOLV Energy",
+  "company_slug": "solv-energy",
+  "state": "FL",
+  "state_name": "Florida",
+  "families": [
+   "Solar",
+   "Storage",
+   "Grid"
+  ],
+  "retired": "2026-10-17"
+ },
+ {
+  "id": "5926210860",
+  "slug": "hv-administrative-assistant-remote--adzuna-5926210860",
+  "title": "HV Administrative Assistant (Remote)",
+  "company": "SOLV Energy",
+  "company_slug": "solv-energy",
+  "state": "AL",
+  "state_name": "Alabama",
+  "families": [
+   "Solar",
+   "Storage",
+   "Grid"
+  ],
+  "retired": "2026-10-17"
+ },
+ {
+  "id": "5926209462",
+  "slug": "hv-administrative-assistant-remote--adzuna-5926209462",
+  "title": "HV Administrative Assistant (Remote)",
+  "company": "SOLV Energy",
+  "company_slug": "solv-energy",
+  "state": "AL",
+  "state_name": "Alabama",
+  "families": [
+   "Solar",
+   "Storage",
+   "Grid"
+  ],
+  "retired": "2026-10-17"
+ },
+ {
+  "id": "5926206151",
+  "slug": "hv-administrative-assistant-remote--adzuna-5926206151",
+  "title": "HV Administrative Assistant (Remote)",
+  "company": "SOLV Energy",
+  "company_slug": "solv-energy",
+  "state": "UT",
+  "state_name": "Utah",
+  "families": [
+   "Solar",
+   "Storage",
+   "Grid"
+  ],
+  "retired": "2026-10-17"
+ },
+ {
+  "id": "5926198521",
+  "slug": "hv-administrative-assistant-remote--adzuna-5926198521",
+  "title": "HV Administrative Assistant (Remote)",
+  "company": "SOLV Energy",
+  "company_slug": "solv-energy",
+  "state": "PA",
+  "state_name": "Pennsylvania",
+  "families": [
+   "Solar",
+   "Storage",
+   "Grid"
+  ],
+  "retired": "2026-10-17"
+ },
+ {
+  "id": "5924122548",
+  "slug": "staff-interconnection-representative-multifamily--adzuna-5924122548",
+  "title": "Staff Interconnection Representative, Multifamily",
+  "company": "Sunrun",
+  "company_slug": "sunrun",
+  "state": "CA",
+  "state_name": "California",
+  "families": [
+   "Solar",
+   "Storage"
+  ],
+  "retired": "2026-10-17"
+ },
+ {
+  "id": "5924777567",
+  "slug": "diamond-blade-production-support-technician--adzuna-5924777567",
+  "title": "Diamond Blade Production Support Technician",
+  "company": "Husqvarna Construction North America",
+  "company_slug": "husqvarna-construction-north-america",
+  "state": "SC",
+  "state_name": "South Carolina",
+  "families": [
+   "Wind"
+  ],
+  "retired": "2026-10-17"
+ },
+ {
+  "id": "5924856524",
+  "slug": "diamond-blade-production-support-technician--adzuna-5924856524",
+  "title": "Diamond Blade Production Support Technician",
+  "company": "Husqvarna Construction North America",
+  "company_slug": "husqvarna-construction-north-america",
+  "state": "SC",
+  "state_name": "South Carolina",
+  "families": [
+   "Wind"
+  ],
+  "retired": "2026-10-17"
+ },
+ {
+  "id": "5924878552",
+  "slug": "market-development-representative-re-power--adzuna-5924878552",
+  "title": "Market Development Representative (Re-Power)",
+  "company": "CENTRICA BUSINESS SOLUTIONS US INC",
+  "company_slug": "centrica-business-solutions-us-inc",
+  "state": "CA",
+  "state_name": "California",
+  "families": [
+   "Solar"
+  ],
+  "retired": "2026-10-17"
+ },
+ {
+  "id": "5924821672",
+  "slug": "market-development-representative-re-power--adzuna-5924821672",
+  "title": "Market Development Representative (Re-Power)",
+  "company": "CENTRICA BUSINESS SOLUTIONS US INC",
+  "company_slug": "centrica-business-solutions-us-inc",
+  "state": "CA",
+  "state_name": "California",
+  "families": [
+   "Solar"
+  ],
+  "retired": "2026-10-17"
+ },
+ {
+  "id": "5923152444",
+  "slug": "inventory-clerk-immediate-hiring-hiring-asapjoin-a-major-solar-construction-proj--adzuna-5923152444",
+  "title": "Inventory Clerk - IMMEDIATE HIRING - HIRING ASAPJoin A Major Solar Construction Project",
+  "company": "Aerotek",
+  "company_slug": "aerotek",
+  "state": "VA",
+  "state_name": "Virginia",
+  "families": [
+   "Solar"
+  ],
+  "retired": "2026-10-17"
+ },
+ {
+  "id": "5921965127",
+  "slug": "distribution-automation-technician--adzuna-5921965127",
+  "title": "Distribution Automation Technician",
+  "company": "CoServ Job Search",
+  "company_slug": "coserv-job-search",
+  "state": "TX",
+  "state_name": "Texas",
+  "families": [
+   "Grid"
+  ],
+  "retired": "2026-10-17"
+ },
+ {
+  "id": "5922265449",
+  "slug": "safety-professional-transmission-line--adzuna-5922265449",
+  "title": "Safety Professional - Transmission Line",
+  "company": "Quanta Services",
+  "company_slug": "quanta-services",
+  "state": "LA",
+  "state_name": "Louisiana",
+  "families": [
+   "Grid"
+  ],
+  "retired": "2026-10-17"
+ },
+ {
+  "id": "5922791199",
+  "slug": "scientist-environmental-services-environmental-services-oh-pa-wv-md-nj--adzuna-5922791199",
+  "title": "Scientist - Environmental Services - Environmental Services - OH, PA, WV, MD, NJ",
+  "company": "FirstEnergy Group",
+  "company_slug": "firstenergy-group",
+  "state": "PA",
+  "state_name": "Pennsylvania",
+  "families": [
+   "Grid"
+  ],
+  "retired": "2026-10-17"
+ },
+ {
+  "id": "5922791200",
+  "slug": "scientist-environmental-services-oh-pa-wv-md-nj--adzuna-5922791200",
+  "title": "Scientist - Environmental Services - OH, PA, WV, MD, NJ",
+  "company": "FirstEnergy Group",
+  "company_slug": "firstenergy-group",
+  "state": "PA",
+  "state_name": "Pennsylvania",
+  "families": [
+   "Grid"
+  ],
+  "retired": "2026-10-17"
+ },
+ {
+  "id": "5922291138",
+  "slug": "senior-construction-representative-transmission--adzuna-5922291138",
+  "title": "Senior Construction Representative, Transmission",
+  "company": "Eversource Energy",
+  "company_slug": "eversource-energy",
+  "state": "NH",
+  "state_name": "New Hampshire",
+  "families": [
+   "Grid"
+  ],
+  "retired": "2026-10-17"
+ },
+ {
+  "id": "5922291141",
+  "slug": "representative-construction--adzuna-5922291141",
+  "title": "Representative, Construction",
+  "company": "Eversource Energy",
+  "company_slug": "eversource-energy",
+  "state": "NH",
+  "state_name": "New Hampshire",
+  "families": [
+   "Grid"
+  ],
+  "retired": "2026-10-17"
+ },
+ {
+  "id": "5920467703",
+  "slug": "diamond-blade-production-support-technician--adzuna-5920467703",
+  "title": "Diamond Blade Production Support Technician",
+  "company": "Husqvarna Construction North America",
+  "company_slug": "husqvarna-construction-north-america",
+  "state": "SC",
+  "state_name": "South Carolina",
+  "families": [
+   "Wind"
+  ],
+  "retired": "2026-10-17"
+ },
+ {
+  "id": "5921381257",
+  "slug": "technicians-field-service-engineers--adzuna-5921381257",
+  "title": "Technicians & Field Service Engineers",
+  "company": "CXI Staffing",
+  "company_slug": "cxi-staffing",
+  "state": "NC",
+  "state_name": "North Carolina",
+  "families": [
+   "Grid"
+  ],
+  "retired": "2026-10-17"
+ },
+ {
+  "id": "5920201388",
+  "slug": "commercial-hvac-service-technician--adzuna-5920201388",
+  "title": "Commercial HVAC Service Technician",
+  "company": "Action Air Conditioning, Heating & Solar",
+  "company_slug": "action-air-conditioning-heating-solar",
+  "state": "CA",
+  "state_name": "California",
+  "families": [
+   "Solar"
+  ],
+  "retired": "2026-10-17"
+ },
+ {
+  "id": "5920699288",
+  "slug": "safety-professional-data-centers--adzuna-5920699288",
+  "title": "Safety Professional - Data Centers",
+  "company": "Quanta Services",
+  "company_slug": "quanta-services",
+  "state": "TX",
+  "state_name": "Texas",
+  "families": [
+   "Grid"
+  ],
+  "retired": "2026-10-17"
+ },
+ {
+  "id": "5920699289",
+  "slug": "safety-professional-data-centers--adzuna-5920699289",
+  "title": "Safety Professional - Data Centers",
+  "company": "Quanta Services",
+  "company_slug": "quanta-services",
+  "state": "TX",
+  "state_name": "Texas",
+  "families": [
+   "Grid"
+  ],
+  "retired": "2026-10-17"
+ },
+ {
+  "id": "5920699273",
+  "slug": "administrative-assistant-fleet--adzuna-5920699273",
+  "title": "Administrative Assistant - Fleet",
+  "company": "Quanta Services",
+  "company_slug": "quanta-services",
+  "state": "TX",
+  "state_name": "Texas",
+  "families": [
+   "Grid"
+  ],
+  "retired": "2026-10-17"
+ },
+ {
+  "id": "5920137140",
+  "slug": "construction-representative-transmission--adzuna-5920137140",
+  "title": "Construction Representative, Transmission",
+  "company": "Eversource Energy",
+  "company_slug": "eversource-energy",
+  "state": "CT",
+  "state_name": "Connecticut",
+  "families": [
+   "Grid"
+  ],
+  "retired": "2026-10-17"
+ },
+ {
+  "id": "5919105883",
+  "slug": "safetyman-in-louisiana-this-is-for-application-collection-for-southern-electric---adzuna-5919105883",
+  "title": "Safetyman in Louisiana (this is for application collection) for Southern Electric Corporation",
+  "company": "Quanta Services",
+  "company_slug": "quanta-services",
+  "state": "MS",
+  "state_name": "Mississippi",
+  "families": [
+   "Grid"
+  ],
+  "retired": "2026-10-17"
+ },
+ {
+  "id": "5918718303",
+  "slug": "administrative-assistant--adzuna-5918718303",
+  "title": "Administrative Assistant",
+  "company": "American Lineman College",
+  "company_slug": "american-lineman-college",
+  "state": "NC",
+  "state_name": "North Carolina",
+  "families": [
+   "Grid"
+  ],
+  "retired": "2026-10-17"
+ },
+ {
+  "id": "5919855704",
+  "slug": "gutter-installer--adzuna-5919855704",
+  "title": "Gutter Installer",
+  "company": "August Roofing and Solar",
+  "company_slug": "august-roofing-and-solar",
+  "state": "CA",
+  "state_name": "California",
+  "families": [
+   "Solar"
+  ],
+  "retired": "2026-10-17"
+ },
+ {
+  "id": "5918811802",
+  "slug": "home-damage-technician-drywall--adzuna-5918811802",
+  "title": "Home Damage Technician (Drywall)",
+  "company": "ION Solar",
+  "company_slug": "ion-solar",
+  "state": "VA",
+  "state_name": "Virginia",
+  "families": [
+   "Solar"
+  ],
+  "retired": "2026-10-17"
+ },
+ {
+  "id": "5918501364",
+  "slug": "administrative-assistant-services--adzuna-5918501364",
+  "title": "Administrative Assistant, Services",
+  "company": "SOLV Energy",
+  "company_slug": "solv-energy",
+  "state": "CO",
+  "state_name": "Colorado",
+  "families": [
+   "Solar",
+   "Storage",
+   "Grid"
+  ],
+  "retired": "2026-10-17"
+ },
+ {
+  "id": "5918528323",
+  "slug": "transmission-construction-representative--adzuna-5918528323",
+  "title": "Transmission Construction Representative",
+  "company": "Think Power Solutions LLC",
+  "company_slug": "think-power-solutions-llc",
+  "state": "OH",
+  "state_name": "Ohio",
+  "families": [
+   "Grid"
+  ],
+  "retired": "2026-10-17"
+ },
+ {
+  "id": "5918526074",
+  "slug": "transmission-construction-representative-transmission-line-and-substation--adzuna-5918526074",
+  "title": "Transmission Construction Representative - Transmission Line and Substation",
+  "company": "Think Power Solutions LLC",
+  "company_slug": "think-power-solutions-llc",
+  "state": "TX",
+  "state_name": "Texas",
+  "families": [
+   "Grid"
+  ],
+  "retired": "2026-10-17"
+ },
+ {
+  "id": "5915793332",
+  "slug": "journeyman-research-laboratory-mechanic-rlm-technician-8x6-9x15-wind-tunnels--adzuna-5915793332",
+  "title": "Journeyman Research Laboratory Mechanic (RLM) Technician - 8x6/9x15 Wind Tunnels",
+  "company": "Amentum",
+  "company_slug": "amentum",
+  "state": "OH",
+  "state_name": "Ohio",
+  "families": [
+   "Wind"
+  ],
+  "retired": "2026-10-17"
+ },
+ {
+  "id": "5916021568",
+  "slug": "transmission-technician-group-1-gmc-rivertown--adzuna-5916021568",
+  "title": "Transmission Technician - Group 1 GMC Rivertown",
+  "company": "Group 1 Automotive, Inc.",
+  "company_slug": "group-1-automotive-inc",
+  "state": "GA",
+  "state_name": "Georgia",
+  "families": [
+   "Grid"
+  ],
+  "retired": "2026-10-17"
+ },
+ {
+  "id": "5914093825",
+  "slug": "satellite-solar-cell-array-production-technician--adzuna-5914093825",
+  "title": "Satellite Solar Cell Array Production Technician",
+  "company": "Astro Digital",
+  "company_slug": "astro-digital",
+  "state": "CO",
+  "state_name": "Colorado",
+  "families": [
+   "Solar"
+  ],
+  "retired": "2026-10-17"
+ },
+ {
+  "id": "5913887291",
+  "slug": "facilities-maintenance-technician-solar-cells-starlink-day-shift--adzuna-5913887291",
+  "title": "Facilities Maintenance Technician, Solar Cells (Starlink) - Day Shift",
+  "company": "SpaceX",
+  "company_slug": "spacex",
+  "state": "TX",
+  "state_name": "Texas",
+  "families": [
+   "Solar"
+  ],
+  "retired": "2026-10-17"
+ },
+ {
+  "id": "5913856906",
+  "slug": "gas-chemical-technician-solar-cells-starlink-day-shift--adzuna-5913856906",
+  "title": "Gas & Chemical Technician, Solar Cells (Starlink) - Day Shift",
+  "company": "SpaceX",
+  "company_slug": "spacex",
+  "state": "TX",
+  "state_name": "Texas",
+  "families": [
+   "Solar"
+  ],
+  "retired": "2026-10-17"
+ },
+ {
+  "id": "5913633170",
+  "slug": "production-technician-solar-cells-starlink-day-shift--adzuna-5913633170",
+  "title": "Production Technician, Solar Cells (Starlink) - Day Shift",
+  "company": "SpaceX",
+  "company_slug": "spacex",
+  "state": "TX",
+  "state_name": "Texas",
+  "families": [
+   "Solar"
+  ],
+  "retired": "2026-10-17"
+ },
+ {
+  "id": "5913623642",
+  "slug": "instrumentation-controls-technician-solar-cells-starlink--adzuna-5913623642",
+  "title": "Instrumentation & Controls Technician, Solar Cells (Starlink)",
+  "company": "SpaceX",
+  "company_slug": "spacex",
+  "state": "TX",
+  "state_name": "Texas",
+  "families": [
+   "Solar"
+  ],
+  "retired": "2026-10-17"
+ },
+ {
+  "id": "5913509905",
+  "slug": "hvac-technician-solar-cells-starlink-day-shift--adzuna-5913509905",
+  "title": "HVAC Technician, Solar Cells (Starlink) - Day Shift",
+  "company": "SpaceX",
+  "company_slug": "spacex",
+  "state": "TX",
+  "state_name": "Texas",
+  "families": [
+   "Solar"
+  ],
+  "retired": "2026-10-17"
+ },
+ {
+  "id": "5913489060",
+  "slug": "materials-r-d-technician-solar-cell-characterization--adzuna-5913489060",
+  "title": "Materials R&D Technician, Solar Cell Characterization",
+  "company": "SpaceX",
+  "company_slug": "spacex",
+  "state": "TX",
+  "state_name": "Texas",
+  "families": [
+   "Solar"
+  ],
+  "retired": "2026-10-17"
+ },
+ {
+  "id": "5913384418",
+  "slug": "machine-maintenance-technician-solar-cells-starlink-day-shift--adzuna-5913384418",
+  "title": "Machine Maintenance Technician, Solar Cells (Starlink) - Day Shift",
+  "company": "SpaceX",
+  "company_slug": "spacex",
+  "state": "TX",
+  "state_name": "Texas",
+  "families": [
+   "Solar"
+  ],
+  "retired": "2026-10-17"
+ },
+ {
+  "id": "5913830668",
+  "slug": "electrician-solar-cells-starlink-day-shift--adzuna-5913830668",
+  "title": "Electrician, Solar Cells (Starlink) - Day Shift",
+  "company": "SpaceX",
+  "company_slug": "spacex",
+  "state": "TX",
+  "state_name": "Texas",
+  "families": [
+   "Solar"
+  ],
+  "retired": "2026-10-17"
+ },
+ {
+  "id": "5915006484",
+  "slug": "market-development-representative-re-power--adzuna-5915006484",
+  "title": "Market Development Representative (Re-Power)",
+  "company": "CENTRICA BUSINESS SOLUTIONS US INC",
+  "company_slug": "centrica-business-solutions-us-inc",
+  "state": "CA",
+  "state_name": "California",
+  "families": [
+   "Solar"
+  ],
+  "retired": "2026-10-17"
+ },
+ {
+  "id": "5914985796",
+  "slug": "appliance-repair-technician-gulf-coast--adzuna-5914985796",
+  "title": "Appliance Repair Technician (Gulf Coast)",
+  "company": "Solar Refrigeration and Appliance Service, Inc.",
+  "company_slug": "solar-refrigeration-and-appliance-service-inc",
+  "state": "MS",
+  "state_name": "Mississippi",
+  "families": [
+   "Solar"
+  ],
+  "retired": "2026-10-17"
+ },
+ {
+  "id": "5915286378",
+  "slug": "full-time-appointment-setters--adzuna-5915286378",
+  "title": "Full Time Appointment Setters",
+  "company": "Axguard LLC",
+  "company_slug": "axguard-llc",
+  "state": "IL",
+  "state_name": "Illinois",
+  "families": [
+   "Solar"
+  ],
+  "retired": "2026-10-17"
+ },
+ {
+  "id": "5915167680",
+  "slug": "full-time-appointment-setters--adzuna-5915167680",
+  "title": "Full Time Appointment Setters",
+  "company": "SUNFORCE SOLAR LLC",
+  "company_slug": "sunforce-solar-llc",
+  "state": "NM",
+  "state_name": "New Mexico",
+  "families": [
+   "Solar"
+  ],
+  "retired": "2026-10-17"
+ },
+ {
+  "id": "5914958801",
+  "slug": "market-development-representative-re-power--adzuna-5914958801",
+  "title": "Market Development Representative (Re-Power)",
+  "company": "CENTRICA BUSINESS SOLUTIONS US INC",
+  "company_slug": "centrica-business-solutions-us-inc",
+  "state": "TX",
+  "state_name": "Texas",
+  "families": [
+   "Solar"
+  ],
+  "retired": "2026-10-17"
+ },
+ {
+  "id": "5913532118",
+  "slug": "satellite-solar-cell-array-production-technician--adzuna-5913532118",
+  "title": "Satellite Solar Cell Array Production Technician",
+  "company": "Astro Digital",
+  "company_slug": "astro-digital",
+  "state": "CO",
+  "state_name": "Colorado",
+  "families": [
+   "Solar"
+  ],
+  "retired": "2026-10-17"
+ },
+ {
+  "id": "5912415623",
+  "slug": "electrical-owners-representative--adzuna-5912415623",
+  "title": "Electrical Owners Representative",
+  "company": "Actalent",
+  "company_slug": "actalent",
+  "state": "WI",
+  "state_name": "Wisconsin",
+  "families": [
+   "Solar",
+   "Grid"
+  ],
+  "retired": "2026-10-17"
+ },
+ {
+  "id": "5912200269",
+  "slug": "transmission-construction-representative--adzuna-5912200269",
+  "title": "Transmission Construction Representative",
+  "company": "Think Power Solutions LLC",
+  "company_slug": "think-power-solutions-llc",
+  "state": "MI",
+  "state_name": "Michigan",
+  "families": [
+   "Grid"
+  ],
+  "retired": "2026-10-17"
+ },
+ {
+  "id": "5911646339",
+  "slug": "cnc-maintenance-technician--adzuna-5911646339",
+  "title": "CNC Maintenance Technician",
+  "company": "Aerotek",
+  "company_slug": "aerotek",
+  "state": "TX",
+  "state_name": "Texas",
+  "families": [
+   "Wind"
+  ],
+  "retired": "2026-10-17"
+ },
+ {
+  "id": "5911369068",
+  "slug": "power-quality-drone-pilot--adzuna-5911369068",
+  "title": "Power Quality Drone Pilot",
+  "company": "CoServ Job Search",
+  "company_slug": "coserv-job-search",
+  "state": "TX",
+  "state_name": "Texas",
+  "families": [
+   "Grid"
+  ],
+  "retired": "2026-10-17"
+ },
+ {
+  "id": "5911201913",
+  "slug": "senior-r-d-technician-space-pv-prototyping--adzuna-5911201913",
+  "title": "Senior R&D Technician, Space PV Prototyping",
+  "company": "Tandem PV",
+  "company_slug": "tandem-pv",
+  "state": "CA",
+  "state_name": "California",
+  "families": [
+   "Solar"
+  ],
+  "retired": "2026-10-17"
+ },
+ {
+  "id": "5911132739",
+  "slug": "pipefitter-pipeline-gas-division--adzuna-5911132739",
+  "title": "Pipefitter - Pipeline/ Gas Division",
+  "company": "Cinterra",
+  "company_slug": "cinterra",
+  "state": "NC",
+  "state_name": "North Carolina",
+  "families": [
+   "Solar",
+   "Grid"
+  ],
+  "retired": "2026-10-17"
+ },
+ {
+  "id": "5910957215",
+  "slug": "administrative-assistant--adzuna-5910957215",
+  "title": "Administrative Assistant",
+  "company": "American Lineman College",
+  "company_slug": "american-lineman-college",
+  "state": "NC",
+  "state_name": "North Carolina",
+  "families": [
+   "Grid"
+  ],
+  "retired": "2026-10-17"
+ },
+ {
+  "id": "5909412146",
+  "slug": "electrical-owners-representative--adzuna-5909412146",
+  "title": "Electrical Owners Representative",
+  "company": "Actalent",
+  "company_slug": "actalent",
+  "state": "WI",
+  "state_name": "Wisconsin",
+  "families": [
+   "Solar",
+   "Grid"
+  ],
+  "retired": "2026-10-17"
+ },
+ {
+  "id": "5908507378",
+  "slug": "electrical-owners-representative--adzuna-5908507378",
+  "title": "Electrical Owners Representative",
+  "company": "Actalent",
+  "company_slug": "actalent",
+  "state": "WI",
+  "state_name": "Wisconsin",
+  "families": [
+   "Solar",
+   "Grid"
+  ],
+  "retired": "2026-10-17"
+ },
+ {
+  "id": "5905952339",
+  "slug": "cnc-maintenance-technician--adzuna-5905952339",
+  "title": "CNC Maintenance Technician",
+  "company": "Aerotek",
+  "company_slug": "aerotek",
+  "state": "IL",
+  "state_name": "Illinois",
+  "families": [
+   "Wind"
+  ],
+  "retired": "2026-10-17"
+ },
+ {
+  "id": "5905183526",
+  "slug": "cnc-maintenance-technician--adzuna-5905183526",
+  "title": "CNC Maintenance Technician",
+  "company": "Aerotek",
+  "company_slug": "aerotek",
+  "state": "TX",
+  "state_name": "Texas",
+  "families": [
+   "Wind"
+  ],
+  "retired": "2026-10-17"
+ },
+ {
+  "id": "5902727642",
+  "slug": "r-d-technician--adzuna-5902727642",
+  "title": "R&d Technician",
+  "company": "Actalent",
+  "company_slug": "actalent",
+  "state": "CA",
+  "state_name": "California",
+  "families": [
+   "Storage"
+  ],
+  "retired": "2026-10-17"
+ },
+ {
+  "id": "5903045462",
+  "slug": "r-d-technician--adzuna-5903045462",
+  "title": "R&d Technician",
+  "company": "Actalent",
+  "company_slug": "actalent",
+  "state": "CA",
+  "state_name": "California",
+  "families": [
+   "Storage"
+  ],
+  "retired": "2026-10-17"
+ },
+ {
+  "id": "5902545093",
+  "slug": "extra-high-voltage-transmission-construction-representative--adzuna-5902545093",
+  "title": "Extra High Voltage Transmission Construction Representative",
+  "company": "Think Power Solutions",
+  "company_slug": "think-power-solutions",
+  "state": "VA",
+  "state_name": "Virginia",
+  "families": [
+   "Grid"
+  ],
+  "retired": "2026-10-17"
+ },
+ {
+  "id": "5902543722",
+  "slug": "transmission-construction-representative-electrical-utilities--adzuna-5902543722",
+  "title": "Transmission Construction Representative - Electrical Utilities",
+  "company": "Think Power Solutions LLC",
+  "company_slug": "think-power-solutions-llc",
+  "state": "TX",
+  "state_name": "Texas",
+  "families": [
+   "Grid"
+  ],
+  "retired": "2026-10-17"
  }
 ]

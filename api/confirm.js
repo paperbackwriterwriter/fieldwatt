@@ -77,20 +77,15 @@ function formBody(req) {
   return b && typeof b === "object" ? b : {};
 }
 
-module.exports = async (req, res) => {
-  const p = read(req);
-  if (!valid(p)) return fail(res);
-
-  // GET: ask. Nothing changes until a person presses the button.
-  if (req.method !== "POST") {
-    const action = "/api/confirm?" + new URLSearchParams({
+function ask(res, p, note) {
+  const action = "/api/confirm?" + new URLSearchParams({
       e: p.email, f: p.form, r: p.role, st: p.state, t: p.ts, s: p.sig,
     });
     return page(
       res,
       200,
       "Confirm your subscription",
-      "<h1>One more step</h1>" +
+      "<h1>One more step</h1>" + (note ? "<p><strong>" + note + "</strong></p>" : "") +
         "<p>Confirm that <strong>" + esc(p.email) + "</strong> should get FieldWatt's Tuesday job emails.</p>" +
         '<form method="post" action="' + esc(action) + '">' +
         '<input type="hidden" name="shown" value="' + Date.now() + '">' +
@@ -98,13 +93,21 @@ module.exports = async (req, res) => {
         "</form>" +
         "<p style=\"color:#666;font-size:.9rem\">Didn't sign up? Close this page and nothing happens.</p>"
     );
-  }
+}
+
+module.exports = async (req, res) => {
+  const p = read(req);
+  if (!valid(p)) return fail(res);
+
+  // GET: ask. Nothing changes until a person presses the button.
+  if (req.method !== "POST") return ask(res, p);
 
   // POST: the button was pressed.
   const shown = Number(formBody(req).shown);
   if (!(shown > 0) || Date.now() - shown < MIN_DWELL_MS) {
     console.warn("confirm rejected: no dwell", Date.now() - shown, "ms");
-    return fail(res);
+    // the link is still good; a person who clicked fast just presses again
+    return ask(res, p, "Please press the button once more.");
   }
 
   const key = process.env.RESEND_API_KEY;
@@ -115,6 +118,7 @@ module.exports = async (req, res) => {
 
   const segment =
     process.env.RESEND_SEGMENT_ID || process.env.RESEND_AUDIENCE_ID;
+  let added = false;
   if (segment) {
     try {
       const c = await fetch("https://api.resend.com/contacts", {
@@ -128,10 +132,23 @@ module.exports = async (req, res) => {
       });
       // Confirming twice lands here with the contact already present; that is
       // fine and still counts as confirmed.
-      if (!c.ok) console.error("contact add failed", c.status, await c.text());
+      const text = c.ok ? "" : await c.text();
+      added = c.ok || c.status === 409 || /already exists/i.test(text);
+      if (!added) console.error("contact add failed", c.status, text);
     } catch (e) {
       console.error("contact add failed", e);
     }
+  } else {
+    console.error("RESEND_SEGMENT_ID not set; cannot add", p.email);
+  }
+  if (!added) {
+    return page(
+      res,
+      503,
+      "Try again shortly",
+      "<h1>We couldn't add you just now.</h1>" +
+        "<p>Your link still works. Open it again in a few minutes, or email jobs@fieldwatt.com and we'll add you by hand.</p>"
+    );
   }
 
   const to = process.env.LEAD_TO;

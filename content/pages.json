@@ -27,7 +27,7 @@
   "path": "/alerts",
   "file": "alerts.html",
   "title": "Free Renewable Trades Job Alerts | FieldWatt",
-  "description": "Get free email alerts for newly listed wind, solar, storage, and grid field jobs by role and state."
+  "description": "A free Tuesday email of newly listed wind, solar, storage, and grid field jobs."
  },
  {
   "path": "/hire",
@@ -50,7 +50,7 @@
  {
   "path": "/from/hvac-mechanical",
   "file": "from-hvac-mechanical.html",
-  "title": "Renewable jobs for HVAC & mechanical | FieldWatt",
+  "title": "Renewable jobs for HVAC & mechanical techs | FieldWatt",
   "description": "Mechanical troubleshooting, maintenance routines, and field service experience can translate well to equipment-heavy renewable roles. Explore live renewable field roles that can fit your background."
  },
  {

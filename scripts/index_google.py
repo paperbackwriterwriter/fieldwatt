@@ -53,6 +53,8 @@ def notify(tok, url, kind):
             return r.status, ""
     except urllib.error.HTTPError as e:
         return e.code, e.read().decode("utf-8", "replace")[:200]
+    except (urllib.error.URLError, OSError) as e:
+        return 0, str(e)[:200]
 
 
 def main():
@@ -76,12 +78,36 @@ def main():
     # one that has been up three weeks and may have been crawled anyway
     new = [j["slug"] for j in sorted(jobs, key=lambda j: j["posted"], reverse=True) if j["slug"] not in notified]
     gone = [r["slug"] for r in retired if r["slug"] not in live and r["slug"] not in closed]
-    queue = [(s, "URL_UPDATED") for s in new] + [(s, "URL_UPDATED") for s in gone]
+    # New pages arrive faster than the quota allows, so closed pages get a
+    # fixed share up front or they would never be sent at all.
+    gone_share = min(len(gone), DAILY_LIMIT // 4)
+    queue = ([(s, "URL_UPDATED") for s in gone[:gone_share]]
+             + [(s, "URL_UPDATED") for s in new]
+             + [(s, "URL_UPDATED") for s in gone[gone_share:]])
     print(f"{len(new)} new pages and {len(gone)} closed pages to notify; sending up to {DAILY_LIMIT}")
 
     tok = None if DRY else token(key)
     today = datetime.now(timezone.utc).date().isoformat()
     retired_slugs = {r["slug"] for r in retired}
+    sent = 0
+    try:
+        sent = send(queue, tok, live, retired_slugs, notified, closed)
+    finally:
+        # forget pages that no longer exist on either list, so the file stays small
+        live_or_closed = live | retired_slugs
+        state = {
+            "notified": {s: d for s, d in notified.items() if s in live},
+            "deleted": {s: d for s, d in closed.items() if s in live_or_closed},
+            "last_run": today,
+        }
+        if not DRY:
+            with open(STATE, "w", encoding="utf-8") as f:
+                json.dump(state, f, indent=1)
+    print(f"sent {sent} notifications; {len(queue) - sent} still queued for later runs")
+
+
+def send(queue, tok, live, retired_slugs, notified, closed):
+    today = datetime.now(timezone.utc).date().isoformat()
     sent = 0
     for slug, kind in queue[:DAILY_LIMIT]:
         url = f"{SITE}/jobs/{slug}"
@@ -97,20 +123,9 @@ def main():
             break
         else:
             print(f"  ! {status} for {url}: {err}")
-            if status in (401, 403):
+            if status in (0, 401, 403):
                 break
-
-    # forget pages that no longer exist on either list, so the file stays small
-    live_or_closed = live | {r["slug"] for r in retired}
-    state = {
-        "notified": {s: d for s, d in notified.items() if s in live},
-        "deleted": {s: d for s, d in closed.items() if s in live_or_closed},
-        "last_run": today,
-    }
-    if not DRY:
-        with open(STATE, "w", encoding="utf-8") as f:
-            json.dump(state, f, indent=1)
-    print(f"sent {sent} notifications; {len(queue) - sent} still queued for later runs")
+    return sent
 
 
 if __name__ == "__main__":

@@ -93,7 +93,10 @@
   var indexed = scope && Number(scope.dataset.total) > Number(scope.dataset.shown);
   var indexPromise = null, results = null;
   function loadIndex() {
-    if (!indexPromise) indexPromise = fetch('/jobs-index.json').then(function (r) { return r.json(); });
+    if (!indexPromise) indexPromise = fetch('/jobs-index.json').then(function (r) {
+      if (!r.ok) throw new Error('index ' + r.status);
+      return r.json();
+    });
     return indexPromise;
   }
   function escapeHtml(s) {
@@ -119,7 +122,7 @@
         var fams = j.f.map(function (f) { return f.toLowerCase(); });
         if (pageFam && fams.indexOf(pageFam) === -1) return false;
         if (fam && fams.indexOf(fam) === -1) return false;
-        return (j.t + ' ' + j.c + ' ' + j.l).toLowerCase().indexOf(q) !== -1;
+        return (j.t + ' ' + j.c + ' ' + j.l + ' ' + j.f.join(' ') + ' ' + (j.p || '')).toLowerCase().indexOf(q) !== -1;
       });
       if (!results) {
         results = document.createElement('div');
@@ -137,6 +140,11 @@
         : hits.length + ' match' + (hits.length === 1 ? '' : 'es') + ' across all ' + scope.dataset.total + ' listings.';
       var empty = document.getElementById('job-empty');
       if (empty) empty.style.display = 'none';
+    }).catch(function () {
+      // try again on the next keystroke; meanwhile say why nothing changed
+      indexPromise = null;
+      var note = document.getElementById('list-note');
+      if (note) note.textContent = 'Search could not load. Check your connection and type again.';
     });
   }
 
@@ -190,6 +198,14 @@
   if (roleSel && p.get('role')) roleSel.value = p.get('role');
   if (stSel && p.get('state')) stSel.value = p.get('state');
 
+  /* prefill the hire form from a job page's "Feature this job" link */
+  var hire = document.querySelector('form[data-form="hire-inquiry"]');
+  if (hire && (p.get('company') || p.get('jobTitle'))) {
+    var co = hire.querySelector('[name="company"]'), det = hire.querySelector('[name="listingDetails"]');
+    if (co && p.get('company') && !co.value) co.value = p.get('company');
+    if (det && p.get('jobTitle') && !det.value) det.value = 'Feature this listing: ' + p.get('jobTitle') + '\n';
+  }
+
   /* Turnstile. Rendered from here rather than in the page markup so the
      widget and its script only exist once a site key is configured, and so
      the form pages stay free of provider-specific HTML. */
@@ -198,9 +214,16 @@
     document.querySelectorAll('form[data-form]').forEach(function (form) {
       if (widgets.has(form)) return;
       var holder = document.createElement('div');
-      holder.className = 'mt-5';
+      holder.className = 'mt-5 sm:col-span-2';
       var submit = form.querySelector('button[type="submit"]');
-      (submit && submit.parentNode ? submit.parentNode : form).insertBefore(holder, submit || null);
+      if (submit && submit.parentNode === form) form.insertBefore(holder, submit);
+      else if (submit) {
+        // the button shares a row with the email box (home page); put the
+        // check under that row rather than squeezing it into it
+        var row = submit;
+        while (row.parentNode !== form) row = row.parentNode;
+        form.insertBefore(holder, row.nextSibling);
+      } else form.appendChild(holder);
       widgets.set(form, window.turnstile.render(holder, {
         sitekey: window.FIELDWATT_TURNSTILE,
         theme: 'auto'
@@ -238,7 +261,7 @@
         if (!token) {
           if (status) status.textContent = turnstileFailed || !window.turnstile
             ? 'The verification check could not load, usually because of an ad blocker. Allow challenges.cloudflare.com and reload, or email jobs@fieldwatt.com.'
-            : 'Please complete the verification above and try again.';
+            : 'Please complete the verification check and try again.';
           return;
         }
         payload.turnstileToken = token;
@@ -257,18 +280,33 @@
       if (submit) submit.disabled = true;
       if (status) status.textContent = 'Sending…';
       fetch('/api/lead', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(payload) })
-        .then(function (r) { if (!r.ok) throw new Error('bad'); return r.json(); })
+        .then(function (r) {
+          if (r.ok) return r.json();
+          return r.json().catch(function () { return {}; }).then(function (out) {
+            throw new Error(out && out.error || 'bad');
+          });
+        })
         .then(function (out) {
           // subscriptions only count once the owner clicks the emailed link
           if (status) status.textContent = out && out.confirm
             ? 'Almost done. Check your inbox and click the link to confirm.'
             : 'Thanks — we received it and will follow up by email.';
           form.reset();
+        })
+        .catch(function (err) {
+          var msg = {
+            'Verification failed': 'The verification check expired or failed. Please complete it again and resend.',
+            'Invalid email': 'Please enter a valid email address.',
+            'Email required': 'Please enter your email address.'
+          }[err && err.message];
+          if (status) status.textContent = msg || 'Something went wrong. Please try again in a moment, or email jobs@fieldwatt.com.';
+        })
+        .then(function () {
+          if (submit) submit.disabled = false;
+          // a Turnstile token is good for one submission, success or not
           var wid = widgets.get(form);
           if (wid !== undefined && window.turnstile) window.turnstile.reset(wid);
-        })
-        .catch(function () { if (status) status.textContent = 'Something went wrong. Please try again in a moment.'; })
-        .then(function () { if (submit) submit.disabled = false; });
+        });
     });
   });
 })();

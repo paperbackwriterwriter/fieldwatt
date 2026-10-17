@@ -2,7 +2,7 @@ name: tuesday-email
 
 on:
   schedule:
-    - cron: "0 12 * * 2"   # Tuesdays 7:00 AM Central (12:00 UTC)
+    - cron: "0 12 * * 2"   # Tuesdays 12:00 UTC: 7 AM Central in summer, 6 AM in winter
   workflow_dispatch:
     inputs:
       test_only:
@@ -24,5 +24,7 @@ jobs:
           RESEND_SEGMENT_ID: ${{ secrets.RESEND_SEGMENT_ID }}
           LEAD_TO: ${{ secrets.LEAD_TO }}
           LEAD_FROM: ${{ secrets.LEAD_FROM }}
-          TEST_ONLY: ${{ inputs.test_only }}
+          # The Tuesday schedule sends the real broadcast; a manual run is a
+          # test unless the box is unticked.
+          TEST_ONLY: ${{ github.event_name == 'workflow_dispatch' && inputs.test_only || 'false' }}
         run: python scripts/tuesday_email.py

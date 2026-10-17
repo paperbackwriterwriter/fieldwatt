@@ -23,8 +23,9 @@
 //                       "FieldWatt <hello@fieldwatt.com>".
 //   RESEND_SEGMENT_ID - optional; the segment confirmed subscribers join.
 //                       RESEND_AUDIENCE_ID is still accepted as a fallback.
-//   TURNSTILE_SECRET_KEY - optional; when set, every submission must carry a
-//                       valid Cloudflare Turnstile token or it is rejected.
+//   TURNSTILE_SECRET_KEY - every submission must carry a valid Cloudflare
+//                       Turnstile token. Required in production: without it
+//                       production rejects every form rather than run open.
 //   SIGNUP_SECRET     - optional; signs confirmation links. Falls back to
 //                       RESEND_API_KEY, which is already secret and server-only.
 //   SITE_URL          - optional; base for confirmation links. Defaults to
@@ -74,7 +75,9 @@ function signupSig(parts) {
 
 async function turnstileOk(token, ip) {
   const secret = process.env.TURNSTILE_SECRET_KEY;
-  if (!secret) return "not configured";
+  // A missing key in production is a misconfiguration, not a reason to let
+  // every bot through; previews and local runs may go without.
+  if (!secret) return process.env.VERCEL_ENV === "production" ? false : "not configured";
   if (!token) return false;
   try {
     const form = new URLSearchParams({ secret, response: token });
@@ -92,6 +95,25 @@ async function turnstileOk(token, ip) {
     console.error("turnstile verify failed", e);
     return false;
   }
+}
+
+// Confirmation emails go to whatever address is typed in, so the subscribe
+// path is the one a bot could use to flood someone's inbox. With no database
+// this is per warm instance only, which still stops a burst from one source.
+const SENT = new Map();
+const PER_ADDRESS_MS = 10 * 60 * 1000;
+const PER_IP_HOUR = 5;
+
+function throttled(email, ip) {
+  const now = Date.now();
+  for (const [k, v] of SENT) if (now - v.at > 60 * 60 * 1000) SENT.delete(k);
+  const a = SENT.get("e:" + email);
+  if (a && now - a.at < PER_ADDRESS_MS) return true;
+  const i = ip && SENT.get("i:" + ip);
+  if (i && i.n >= PER_IP_HOUR) return true;
+  SENT.set("e:" + email, { at: now, n: 1 });
+  if (ip) SENT.set("i:" + ip, { at: i ? i.at : now, n: (i ? i.n : 0) + 1 });
+  return false;
 }
 
 async function sendEmail(headers, msg) {
@@ -173,13 +195,16 @@ module.exports = async (req, res) => {
   // Subscriptions: ask the address's owner, and tell no one else yet.
   if (SUBSCRIBE_FORMS.has(form)) {
     if (!email) return res.status(400).json({ error: "Email required" });
+    if (throttled(email.toLowerCase(), ip)) {
+      // the first confirmation is already on its way
+      return res.status(200).json({ ok: true, confirm: true });
+    }
     const role = String(body.role || "").slice(0, 40);
     const state = String(body.state || "").slice(0, 40);
     const ts = String(Date.now());
     const sig = signupSig([email.toLowerCase(), form, role, state, ts]);
-    const base = (process.env.SITE_URL || "https://fieldwatt.com").replace(/\/$/, "");
     const link =
-      base +
+      siteOrigin +
       "/api/confirm?" +
       new URLSearchParams({ e: email, f: form, r: role, st: state, t: ts, s: sig });
 

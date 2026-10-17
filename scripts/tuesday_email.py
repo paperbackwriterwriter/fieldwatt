@@ -68,7 +68,32 @@ def job_row(j):
     )
 
 
-def build_html(jobs, new):
+def sponsor_block():
+    """The paid Tuesday sponsor slot: a "sponsors" entry in data/featured.json,
+    {"from": "2026-10-20", "until": "2026-10-20", "name": "...",
+     "text": "...", "url": "https://..."}, shown on sends between its dates."""
+    path = os.path.join(ROOT, "data", "featured.json")
+    try:
+        spec = json.load(open(path, encoding="utf-8"))
+    except (OSError, ValueError):
+        return ""
+    today = datetime.now(timezone.utc).date().isoformat()
+    for sp in spec.get("sponsors", []):
+        if sp.get("from", "") <= today <= sp.get("until", ""):
+            return (
+                '<div style="border:1px solid #e5e5e5;border-left:4px solid #f5c518;'
+                'padding:12px 16px;margin:20px 0">'
+                '<p style="color:#777;font-size:11px;letter-spacing:.12em;'
+                'text-transform:uppercase;margin:0 0 4px">Sponsor</p>'
+                '<p style="margin:0"><a href="' + esc(sp["url"]) + '" '
+                'style="color:#111;font-weight:700">' + esc(sp["name"]) + "</a></p>"
+                '<p style="color:#555;font-size:14px;margin:4px 0 0">'
+                + esc(sp.get("text", "")) + "</p></div>"
+            )
+    return ""
+
+
+def build_html(jobs, new, fallback=False):
     sections = ""
     # Placements go first, labeled, whatever week they were posted.
     featured = [j for j in jobs if j.get("featured") == "job"]
@@ -81,9 +106,13 @@ def build_html(jobs, new):
             + "".join(job_row(j) for j in featured)
             + "</ul>"
         )
-        new = [j for j in new if not j.get("featured")]
+        # company placements are not in the block above, so they stay below
+        new = [j for j in new if j.get("featured") != "job"]
+    shown = set()
     for fam in ["Wind", "Solar", "Storage", "Grid"]:
-        fj = [j for j in new if fam in j["families"]][:10]
+        # a listing tagged with two families appears once, under the first
+        fj = [j for j in new if fam in j["families"] and j["slug"] not in shown][:10]
+        shown.update(j["slug"] for j in fj)
         if not fj:
             continue
         sections += (
@@ -100,13 +129,14 @@ def build_html(jobs, new):
         'text-transform:uppercase;color:#777;margin:0">'
         "FieldWatt · Tuesday job email</p>"
         '<h1 style="font-size:24px;margin:8px 0 4px">'
-        "New field work for " + date + "</h1>"
+        + ("Field work for " if fallback else "New field work for ") + date + "</h1>"
         '<p style="color:#555;margin:0 0 8px">'
-        + str(len(new)) + " new wind, solar, storage and grid listings "
-        "this week · " + str(len(jobs)) + " live in the feed.</p>"
+        + (("Recent wind, solar, storage and grid listings")
+           if fallback else (str(len(new)) + " new wind, solar, storage and grid listings this week"))
+        + " · " + str(len(jobs)) + " live in the feed.</p>"
         '<p style="margin:0 0 16px"><a href="' + SITE + '/jobs" '
         'style="color:#111;font-weight:700">Browse every job →</a></p>'
-        + sections +
+        + sponsor_block() + sections +
         '<hr style="border:0;border-top:1px solid #e5e5e5;margin:32px 0">'
         '<p style="color:#888;font-size:12px">'
         "FieldWatt links you to the employer's own listing; we never see "
@@ -116,8 +146,8 @@ def build_html(jobs, new):
         '<a href="' + UNSUB + '" style="color:#555">Unsubscribe</a></p>'
         "</div>"
     )
-    subject = ("FieldWatt: " + str(len(new))
-               + " new renewable field jobs (" + date + ")")
+    subject = ("FieldWatt: renewable field jobs (" + date + ")" if fallback
+               else "FieldWatt: " + str(len(new)) + " new renewable field jobs (" + date + ")")
     return subject, html
 
 
@@ -136,10 +166,11 @@ def main():
     cutoff = datetime.now(timezone.utc) - timedelta(days=7)
     week_ago = cutoff.strftime("%Y-%m-%d")
     new = [j for j in jobs if j.get("posted", "") >= week_ago]
-    if not new:
+    fallback = not new
+    if fallback:
         new = jobs[:40]
 
-    subject, html = build_html(jobs, new)
+    subject, html = build_html(jobs, new, fallback)
 
     # Broadcasts need a verified sending domain (LEAD_FROM). Until that is
     # set, every run just sends a test copy to LEAD_TO.

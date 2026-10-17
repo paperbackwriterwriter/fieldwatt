@@ -108,8 +108,8 @@ module.exports = async (req, res) => {
   // Only the site's own pages post here. A wildcard would let any page on
   // the web use this function to send mail.
   const origin = req.headers.origin || "";
-  const site = (process.env.SITE_URL || "https://fieldwatt.com").replace(/\/$/, "");
-  res.setHeader("Access-Control-Allow-Origin", origin === site || /^https:\/\/fieldwatt[-a-z0-9]*\.vercel\.app$/.test(origin) ? origin : site);
+  const siteOrigin = (process.env.SITE_URL || "https://fieldwatt.com").replace(/\/$/, "");
+  res.setHeader("Access-Control-Allow-Origin", origin === siteOrigin || /^https:\/\/fieldwatt[-a-z0-9]*\.vercel\.app$/.test(origin) ? origin : siteOrigin);
   res.setHeader("Access-Control-Allow-Methods", "POST, OPTIONS");
   res.setHeader("Access-Control-Allow-Headers", "Content-Type");
   if (req.method === "OPTIONS") return res.status(204).end();

@@ -64,3 +64,11 @@ jobs:
             git pull --rebase
             git push
           fi
+
+      # Last, so a broken form handler fails the run (and emails you) without
+      # holding up the feed. A syntax error here once took the forms down.
+      - name: Check the form handlers load
+        if: always()
+        run: |
+          for f in api/*.js; do node --check "$f"; done
+          node -e "require('./api/lead.js'); require('./api/confirm.js')"

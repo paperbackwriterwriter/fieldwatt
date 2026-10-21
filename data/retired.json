@@ -16286,5 +16286,461 @@
    "Solar"
   ],
   "retired": "2026-10-20"
+ },
+ {
+  "id": "5922341157",
+  "slug": "journeyman-electricians--adzuna-5922341157",
+  "title": "Journeyman Electricians",
+  "company": "NCW",
+  "company_slug": "ncw",
+  "state": "IL",
+  "state_name": "Illinois",
+  "families": [
+   "Solar"
+  ],
+  "retired": "2026-10-21"
+ },
+ {
+  "id": "5895485102",
+  "slug": "non-certified-electrician--adzuna-5895485102",
+  "title": "Non - Certified Electrician",
+  "company": "NCW",
+  "company_slug": "ncw",
+  "state": "IL",
+  "state_name": "Illinois",
+  "families": [
+   "Solar",
+   "Storage"
+  ],
+  "retired": "2026-10-21"
+ },
+ {
+  "id": "5891363723",
+  "slug": "level-1-p-c-relay-technician--adzuna-5891363723",
+  "title": "Level 1 P&C Relay Technician",
+  "company": "North American Field Services",
+  "company_slug": "north-american-field-services",
+  "state": "NJ",
+  "state_name": "New Jersey",
+  "families": [
+   "Grid"
+  ],
+  "retired": "2026-10-21"
+ },
+ {
+  "id": "5891400210",
+  "slug": "construction-laborer-solar--adzuna-5891400210",
+  "title": "Construction Laborer / Solar",
+  "company": "NCW",
+  "company_slug": "ncw",
+  "state": "NM",
+  "state_name": "New Mexico",
+  "families": [
+   "Solar"
+  ],
+  "retired": "2026-10-21"
+ },
+ {
+  "id": "5891444124",
+  "slug": "solar-o-m-technician--adzuna-5891444124",
+  "title": "Solar O&M Technician",
+  "company": "Ipsun Solar",
+  "company_slug": "ipsun-solar",
+  "state": "VA",
+  "state_name": "Virginia",
+  "families": [
+   "Solar"
+  ],
+  "retired": "2026-10-21"
+ },
+ {
+  "id": "5891444126",
+  "slug": "local-wind-technician-reading-reading-ks--adzuna-5891444126",
+  "title": "Local Wind Technician",
+  "company": "Takkion Ops Management",
+  "company_slug": "takkion-ops-management",
+  "state": "KS",
+  "state_name": "Kansas",
+  "families": [
+   "Wind"
+  ],
+  "retired": "2026-10-21"
+ },
+ {
+  "id": "5891444784",
+  "slug": "apprentice-3--adzuna-5891444784",
+  "title": "Apprentice 3",
+  "company": "Force Electrical Services",
+  "company_slug": "force-electrical-services",
+  "state": "OK",
+  "state_name": "Oklahoma",
+  "families": [
+   "Grid"
+  ],
+  "retired": "2026-10-21"
+ },
+ {
+  "id": "5891451472",
+  "slug": "solar-crew-lead-installer--adzuna-5891451472",
+  "title": "Solar Crew Lead Installer",
+  "company": "ION Solar",
+  "company_slug": "ion-solar",
+  "state": "OR",
+  "state_name": "Oregon",
+  "families": [
+   "Solar"
+  ],
+  "retired": "2026-10-21"
+ },
+ {
+  "id": "5891452314",
+  "slug": "solar-service-technician--adzuna-5891452314",
+  "title": "Solar Service Technician",
+  "company": "ION Solar",
+  "company_slug": "ion-solar",
+  "state": "VA",
+  "state_name": "Virginia",
+  "families": [
+   "Solar"
+  ],
+  "retired": "2026-10-21"
+ },
+ {
+  "id": "5891514066",
+  "slug": "solar-technician--adzuna-5891514066",
+  "title": "Solar Technician",
+  "company": "Clearway Energy",
+  "company_slug": "clearway-energy",
+  "state": "CA",
+  "state_name": "California",
+  "families": [
+   "Solar"
+  ],
+  "retired": "2026-10-21"
+ },
+ {
+  "id": "5891568636",
+  "slug": "licensed-wireman-or-journeyman-electrician-baltimore--adzuna-5891568636",
+  "title": "Licensed Wireman or Journeyman Electrician",
+  "company": "SpartanX",
+  "company_slug": "spartanx",
+  "state": "MD",
+  "state_name": "Maryland",
+  "families": [
+   "Solar"
+  ],
+  "retired": "2026-10-21"
+ },
+ {
+  "id": "5891601508",
+  "slug": "substation-commissioning-technician-minnesota-job-details-black-veatch-family-of--adzuna-5891601508",
+  "title": "Substation Commissioning Technician",
+  "company": "Black & Veatch",
+  "company_slug": "black-veatch",
+  "state": "MN",
+  "state_name": "Minnesota",
+  "families": [
+   "Grid"
+  ],
+  "retired": "2026-10-21"
+ },
+ {
+  "id": "5891611068",
+  "slug": "blade-lead-technician-1-larned-ks--adzuna-5891611068",
+  "title": "Blade Lead Technician-1",
+  "company": "GE Vernova",
+  "company_slug": "ge-vernova",
+  "state": "KS",
+  "state_name": "Kansas",
+  "families": [
+   "Wind"
+  ],
+  "retired": "2026-10-21"
+ },
+ {
+  "id": "5891623103",
+  "slug": "journeyman-lineman--adzuna-5891623103",
+  "title": "Journeyman Lineman",
+  "company": "Entergy",
+  "company_slug": "entergy",
+  "state": "MS",
+  "state_name": "Mississippi",
+  "families": [
+   "Grid"
+  ],
+  "retired": "2026-10-21"
+ },
+ {
+  "id": "5891623296",
+  "slug": "production-technician-iii-genesis-solar-blythe-ca--adzuna-5891623296",
+  "title": "Production Technician III - Genesis Solar - Blythe",
+  "company": "NextEra Energy",
+  "company_slug": "nextera-energy",
+  "state": "CA",
+  "state_name": "California",
+  "families": [
+   "Solar"
+  ],
+  "retired": "2026-10-21"
+ },
+ {
+  "id": "5891626987",
+  "slug": "lead-relay-field-technician--adzuna-5891626987",
+  "title": "Lead Relay Field Technician",
+  "company": "Qualus",
+  "company_slug": "qualus",
+  "state": "UT",
+  "state_name": "Utah",
+  "families": [
+   "Grid"
+  ],
+  "retired": "2026-10-21"
+ },
+ {
+  "id": "5891627004",
+  "slug": "senior-relay-field-technician--adzuna-5891627004",
+  "title": "Senior Relay Field Technician",
+  "company": "Qualus",
+  "company_slug": "qualus",
+  "state": "UT",
+  "state_name": "Utah",
+  "families": [
+   "Grid"
+  ],
+  "retired": "2026-10-21"
+ },
+ {
+  "id": "5891631587",
+  "slug": "millwright-superintendent-power--adzuna-5891631587",
+  "title": "Millwright Superintendent - Power",
+  "company": "TIC - The Industrial Company",
+  "company_slug": "tic-the-industrial-company",
+  "state": "KS",
+  "state_name": "Kansas",
+  "families": [
+   "Solar"
+  ],
+  "retired": "2026-10-21"
+ },
+ {
+  "id": "5891634799",
+  "slug": "millwright-superintendent-power--adzuna-5891634799",
+  "title": "Millwright Superintendent - Power",
+  "company": "TIC - The Industrial Company",
+  "company_slug": "tic-the-industrial-company",
+  "state": "MS",
+  "state_name": "Mississippi",
+  "families": [
+   "Solar"
+  ],
+  "retired": "2026-10-21"
+ },
+ {
+  "id": "5891634852",
+  "slug": "millwright-superintendent-power--adzuna-5891634852",
+  "title": "Millwright Superintendent - Power",
+  "company": "TIC - The Industrial Company",
+  "company_slug": "tic-the-industrial-company",
+  "state": "MS",
+  "state_name": "Mississippi",
+  "families": [
+   "Solar"
+  ],
+  "retired": "2026-10-21"
+ },
+ {
+  "id": "5891644023",
+  "slug": "pv-solar-field-technician-i-sonoran-solar-buckeye-az--adzuna-5891644023",
+  "title": "PV Solar Field Technician I - Sonoran Solar - Buckeye",
+  "company": "NextEra Energy",
+  "company_slug": "nextera-energy",
+  "state": "AZ",
+  "state_name": "Arizona",
+  "families": [
+   "Solar"
+  ],
+  "retired": "2026-10-21"
+ },
+ {
+  "id": "5891644359",
+  "slug": "millwright-superintendent-power--adzuna-5891644359",
+  "title": "Millwright Superintendent - Power",
+  "company": "TIC - The Industrial Company",
+  "company_slug": "tic-the-industrial-company",
+  "state": "LA",
+  "state_name": "Louisiana",
+  "families": [
+   "Solar"
+  ],
+  "retired": "2026-10-21"
+ },
+ {
+  "id": "5891647581",
+  "slug": "wind-technician-1--adzuna-5891647581",
+  "title": "Wind Technician 1",
+  "company": "OnSite Partners",
+  "company_slug": "onsite-partners",
+  "state": "OH",
+  "state_name": "Ohio",
+  "families": [
+   "Wind"
+  ],
+  "retired": "2026-10-21"
+ },
+ {
+  "id": "5891740441",
+  "slug": "electrical-helper-baltimore--adzuna-5891740441",
+  "title": "Electrical Helper",
+  "company": "SpartanX",
+  "company_slug": "spartanx",
+  "state": "MD",
+  "state_name": "Maryland",
+  "families": [
+   "Solar"
+  ],
+  "retired": "2026-10-21"
+ },
+ {
+  "id": "5891778076",
+  "slug": "technician-ii-wind--adzuna-5891778076",
+  "title": "Technician II - Wind",
+  "company": "OnSite Partners",
+  "company_slug": "onsite-partners",
+  "state": "OH",
+  "state_name": "Ohio",
+  "families": [
+   "Wind"
+  ],
+  "retired": "2026-10-21"
+ },
+ {
+  "id": "5891781954",
+  "slug": "new-construction-commercial-electrician--adzuna-5891781954",
+  "title": "New Construction Commercial Electrician",
+  "company": "Abstrakt Marketing Group",
+  "company_slug": "abstrakt-marketing-group",
+  "state": "CA",
+  "state_name": "California",
+  "families": [
+   "Solar"
+  ],
+  "retired": "2026-10-21"
+ },
+ {
+  "id": "5891789158",
+  "slug": "solar-technician--adzuna-5891789158",
+  "title": "Solar Technician",
+  "company": "Clearway Energy",
+  "company_slug": "clearway-energy",
+  "state": "HI",
+  "state_name": "Hawaii",
+  "families": [
+   "Solar"
+  ],
+  "retired": "2026-10-21"
+ },
+ {
+  "id": "5891789944",
+  "slug": "licensed-electrician-solar-division--adzuna-5891789944",
+  "title": "Licensed Electrician - Solar Division",
+  "company": "Neil Kelly Company",
+  "company_slug": "neil-kelly-company",
+  "state": "OR",
+  "state_name": "Oregon",
+  "families": [
+   "Solar"
+  ],
+  "retired": "2026-10-21"
+ },
+ {
+  "id": "5891792439",
+  "slug": "solar-electrician-urgent-need--adzuna-5891792439",
+  "title": "Solar Electrician",
+  "company": "Sol-Up",
+  "company_slug": "sol-up",
+  "state": "CA",
+  "state_name": "California",
+  "families": [
+   "Solar"
+  ],
+  "retired": "2026-10-21"
+ },
+ {
+  "id": "5891797022",
+  "slug": "electrician-non-driver-desert-pine-pv--adzuna-5891797022",
+  "title": "Electrician (Non Driver)- Desert Pine PV",
+  "company": "18 Primoris Renewable Energy",
+  "company_slug": "18-primoris-renewable-energy",
+  "state": "TX",
+  "state_name": "Texas",
+  "families": [
+   "Solar"
+  ],
+  "retired": "2026-10-21"
+ },
+ {
+  "id": "5891802839",
+  "slug": "solar-installer-urgent-need--adzuna-5891802839",
+  "title": "Solar Installer",
+  "company": "Sol-Up",
+  "company_slug": "sol-up",
+  "state": "CA",
+  "state_name": "California",
+  "families": [
+   "Solar"
+  ],
+  "retired": "2026-10-21"
+ },
+ {
+  "id": "5891811798",
+  "slug": "journeyman-lineman-troubleshooter--adzuna-5891811798",
+  "title": "Journeyman Lineman Troubleshooter",
+  "company": "PacifiCorp",
+  "company_slug": "pacificorp",
+  "state": "ID",
+  "state_name": "Idaho",
+  "families": [
+   "Grid"
+  ],
+  "retired": "2026-10-21"
+ },
+ {
+  "id": "5891837999",
+  "slug": "journeyman-electrician--adzuna-5891837999",
+  "title": "Journeyman Electrician",
+  "company": "All Energy Solar, Inc",
+  "company_slug": "all-energy-solar-inc",
+  "state": "WI",
+  "state_name": "Wisconsin",
+  "families": [
+   "Solar"
+  ],
+  "retired": "2026-10-21"
+ },
+ {
+  "id": "5891844851",
+  "slug": "laborer-el-patrimonio--adzuna-5891844851",
+  "title": "Laborer - El Patrimonio",
+  "company": "Aerotek",
+  "company_slug": "aerotek",
+  "state": "TX",
+  "state_name": "Texas",
+  "families": [
+   "Solar"
+  ],
+  "retired": "2026-10-21"
+ },
+ {
+  "id": "5892077417",
+  "slug": "solar-install-foreman--adzuna-5892077417",
+  "title": "Solar Install Foreman",
+  "company": "AEC Solar Energy Corp",
+  "company_slug": "aec-solar-energy-corp",
+  "state": "NY",
+  "state_name": "New York",
+  "families": [
+   "Solar"
+  ],
+  "retired": "2026-10-21"
  }
 ]

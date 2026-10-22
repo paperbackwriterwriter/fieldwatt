@@ -16742,5 +16742,215 @@
    "Solar"
   ],
   "retired": "2026-10-21"
+ },
+ {
+  "id": "5892376228",
+  "slug": "solar-installer-urgent-need--adzuna-5892376228",
+  "title": "Solar Installer",
+  "company": "Sol-Up",
+  "company_slug": "sol-up",
+  "state": "CA",
+  "state_name": "California",
+  "families": [
+   "Solar"
+  ],
+  "retired": "2026-10-22"
+ },
+ {
+  "id": "5892376676",
+  "slug": "solar-service-electrician--adzuna-5892376676",
+  "title": "Solar Service Electrician",
+  "company": "SOLAR ARTISANS LLC",
+  "company_slug": "solar-artisans-llc",
+  "state": "GA",
+  "state_name": "Georgia",
+  "families": [
+   "Solar"
+  ],
+  "retired": "2026-10-22"
+ },
+ {
+  "id": "5892378765",
+  "slug": "solar-technician--adzuna-5892378765",
+  "title": "Solar Technician",
+  "company": "Vallum",
+  "company_slug": "vallum",
+  "state": "NY",
+  "state_name": "New York",
+  "families": [
+   "Solar"
+  ],
+  "retired": "2026-10-22"
+ },
+ {
+  "id": "5892382334",
+  "slug": "solar-bess-operations-maintenance-o-m-technician--adzuna-5892382334",
+  "title": "Solar & BESS Operations & Maintenance O&M Technician",
+  "company": "RENEWABLE ENERGY PARTNERS",
+  "company_slug": "renewable-energy-partners",
+  "state": "CA",
+  "state_name": "California",
+  "families": [
+   "Solar",
+   "Storage"
+  ],
+  "retired": "2026-10-22"
+ },
+ {
+  "id": "5892653879",
+  "slug": "pv-solar-field-technician-ii-intermediate-level-at-yellow-pine-solar-in-e--adzuna-5892653879",
+  "title": "PV Solar Field Technician II (Intermediate Level) at Yellow Pine Solar in E",
+  "company": "NextEra",
+  "company_slug": "nextera",
+  "state": "NV",
+  "state_name": "Nevada",
+  "families": [
+   "Solar"
+  ],
+  "retired": "2026-10-22"
+ },
+ {
+  "id": "5892653883",
+  "slug": "pv-solar-field-technician-i-advanced-at-yellow-pine-solar-in-enterprise--adzuna-5892653883",
+  "title": "PV Solar Field Technician I (Advanced) at Yellow Pine Solar",
+  "company": "NextEra",
+  "company_slug": "nextera",
+  "state": "NV",
+  "state_name": "Nevada",
+  "families": [
+   "Solar"
+  ],
+  "retired": "2026-10-22"
+ },
+ {
+  "id": "5892716106",
+  "slug": "millwright-superintendent-power--adzuna-5892716106",
+  "title": "Millwright Superintendent - Power",
+  "company": "TIC - The Industrial Company",
+  "company_slug": "tic-the-industrial-company",
+  "state": "MS",
+  "state_name": "Mississippi",
+  "families": [
+   "Solar"
+  ],
+  "retired": "2026-10-22"
+ },
+ {
+  "id": "5892718172",
+  "slug": "overhead-distribution-lineman-5th-class--adzuna-5892718172",
+  "title": "Overhead Distribution - Lineman 5th Class",
+  "company": "Utilities Service, LLC",
+  "company_slug": "utilities-service-llc",
+  "state": "AR",
+  "state_name": "Arkansas",
+  "families": [
+   "Grid"
+  ],
+  "retired": "2026-10-22"
+ },
+ {
+  "id": "5892718175",
+  "slug": "overhead-distribution-c-lineman-apprentice--adzuna-5892718175",
+  "title": "Overhead Distribution - C Lineman Apprentice",
+  "company": "Utilities Service, LLC",
+  "company_slug": "utilities-service-llc",
+  "state": "AR",
+  "state_name": "Arkansas",
+  "families": [
+   "Grid"
+  ],
+  "retired": "2026-10-22"
+ },
+ {
+  "id": "5892718212",
+  "slug": "overhead-distribution-a-lineman-journeyman--adzuna-5892718212",
+  "title": "Overhead Distribution - A Lineman Journeyman",
+  "company": "Utilities Service, LLC",
+  "company_slug": "utilities-service-llc",
+  "state": "AR",
+  "state_name": "Arkansas",
+  "families": [
+   "Grid"
+  ],
+  "retired": "2026-10-22"
+ },
+ {
+  "id": "5892719307",
+  "slug": "substation-tech-a-b-or-trainee-danville--adzuna-5892719307",
+  "title": "Substation Tech A, B, or Trainee",
+  "company": "PPL Corporation",
+  "company_slug": "ppl-corporation",
+  "state": "KY",
+  "state_name": "Kentucky",
+  "families": [
+   "Grid"
+  ],
+  "retired": "2026-10-22"
+ },
+ {
+  "id": "5892719560",
+  "slug": "substation-technician-a-b-or-trainee-lexington--adzuna-5892719560",
+  "title": "Substation Technician A, B, or Trainee",
+  "company": "PPL Corporation",
+  "company_slug": "ppl-corporation",
+  "state": "KY",
+  "state_name": "Kentucky",
+  "families": [
+   "Grid"
+  ],
+  "retired": "2026-10-22"
+ },
+ {
+  "id": "5892728128",
+  "slug": "field-operations-technician--adzuna-5892728128",
+  "title": "Field Operations Technician",
+  "company": "Sunrun",
+  "company_slug": "sunrun",
+  "state": "MD",
+  "state_name": "Maryland",
+  "families": [
+   "Solar",
+   "Storage"
+  ],
+  "retired": "2026-10-22"
+ },
+ {
+  "id": "5892926219",
+  "slug": "journeyman-lineman--adzuna-5892926219",
+  "title": "Journeyman Lineman",
+  "company": "Entergy",
+  "company_slug": "entergy",
+  "state": "TX",
+  "state_name": "Texas",
+  "families": [
+   "Grid"
+  ],
+  "retired": "2026-10-22"
+ },
+ {
+  "id": "5892926221",
+  "slug": "journeyman-lineman--adzuna-5892926221",
+  "title": "Journeyman Lineman",
+  "company": "Entergy",
+  "company_slug": "entergy",
+  "state": "TX",
+  "state_name": "Texas",
+  "families": [
+   "Grid"
+  ],
+  "retired": "2026-10-22"
+ },
+ {
+  "id": "5893016341",
+  "slug": "journeyman-lineman-maintenance-electrical-worker--adzuna-5893016341",
+  "title": "JOURNEYMAN LINEMAN (MAINTENANCE ELECTRICAL WORKER)",
+  "company": "City Light & Power, Inc",
+  "company_slug": "city-light-power-inc",
+  "state": "MS",
+  "state_name": "Mississippi",
+  "families": [
+   "Grid"
+  ],
+  "retired": "2026-10-22"
  }
 ]

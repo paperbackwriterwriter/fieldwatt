@@ -518,29 +518,38 @@ def carry_over(jobs, previous, today):
 # "Solar Field Service Technician (Multiple Locations)" arrived as 100 copies.
 # A hundred identical pages is thin content to Google and a wall of the same
 # card to a reader. Keep a few per state so the state pages still show it.
-# Keyed on title, employer and state only: the copies differ in the city
-# named in the text, which is still the same job.
+# Copies in different cities of a state can each be what someone searching
+# that town needs, so up to three stay. Copies in the same city are the same
+# page twice; only one of those stays.
 MAX_COPIES_PER_STATE = 3
 
 
 def cap_duplicates(jobs, published=frozenset()):
-    """Keep MAX_COPIES_PER_STATE copies per (title, employer, state).
-    Copies already published last night win, then the lowest id, so the same
-    copies survive night after night instead of whichever Adzuna returned
-    first, which used to flip pages between live and "closed"."""
+    """Keep one copy per (title, employer, city) and at most
+    MAX_COPIES_PER_STATE per (title, employer, state). Copies already
+    published last night win, then the lowest id, so the same copies survive
+    night after night instead of whichever Adzuna returned first, which used
+    to flip pages between live and "closed".
+    Returns (kept, moved): moved maps each dropped id to the slug of the copy
+    that stays, so a dropped page can send people there."""
     jobs = sorted(jobs, key=lambda j: (j["id"] not in published, str(j["id"])))
-    seen = collections.Counter()
-    out, dropped = [], 0
+    per_state, per_city = {}, {}
+    out, moved = [], {}
     for j in jobs:
         key = (j["title"].lower(), j["company_slug"], j["state"])
-        seen[key] += 1
-        if seen[key] > MAX_COPIES_PER_STATE:
-            dropped += 1
+        city_key = key + ((j.get("city") or "").lower(),)
+        first = per_city.get(city_key)
+        if first is None and len(per_state.get(key, [])) >= MAX_COPIES_PER_STATE:
+            first = per_state[key][0]
+        if first is not None:
+            moved[j["id"]] = first["slug"]
             continue
+        per_city[city_key] = j
+        per_state.setdefault(key, []).append(j)
         out.append(j)
-    if dropped:
-        print(f"  dropped {dropped} duplicate copies of syndicated postings")
-    return out
+    if moved:
+        print(f"  dropped {len(moved)} duplicate copies of syndicated postings")
+    return out, moved
 
 
 # Jobs that left the feed. Their pages used to vanish, so every link Google,
@@ -560,17 +569,27 @@ def load_retired():
         return []
 
 
-def record_retired(previous, kept, today):
+def record_retired(previous, kept, today, moved=None):
+    """A dropped duplicate is still an open job, so its entry says where the
+    copy that stayed is (moved_to) and its page sends people there."""
+    moved = moved or {}
     live = {j["id"] for j in kept}
     cutoff = (today - timedelta(days=RETIRED_DAYS)).isoformat()
     retired = load_retired()
     retired = [r for r in retired if r["id"] not in live and r["retired"] >= cutoff]
+    for r in retired:
+        if r["id"] in moved:
+            r["moved_to"] = moved[r["id"]]
+        else:
+            r.pop("moved_to", None)
     known = {r["id"] for r in retired}
     added = 0
     for j in previous:
         if j["id"] not in live and j["id"] not in known:
             r = {k: j.get(k) for k in RETIRED_KEYS}
             r["retired"] = today.isoformat()
+            if j["id"] in moved:
+                r["moved_to"] = moved[j["id"]]
             retired.append(r)
             added += 1
     with open(RETIRED_FILE, "w", encoding="utf-8") as f:
@@ -636,11 +655,10 @@ def main():
     for why, n in rejected.most_common():
         print(f"  vetting dropped {n}: {why}")
     print(f"  vetting kept {len(kept)} of {len(candidates)}")
-    # Retired means gone from the source or failed vetting. A copy dropped
-    # only by the duplicate cap is still an open job, so it is not retired.
-    still_open = list(kept)
-    kept = cap_duplicates(kept, {j["id"] for j in previous})
-    print(f"  retired {record_retired(previous, still_open, today)} listings that left the feed")
+    # Retired means gone from the source, failed vetting, or a duplicate copy
+    # that was dropped; that last kind points at the copy that stayed.
+    kept, moved = cap_duplicates(kept, {j["id"] for j in previous})
+    print(f"  retired {record_retired(previous, kept, today, moved)} listings that left the feed")
 
     out = {
         "updated": datetime.now(timezone.utc).isoformat(),

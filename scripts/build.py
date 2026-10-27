@@ -13,6 +13,12 @@ DOMAIN = "https://fieldwatt.com"
 CONTACT = "jobs@fieldwatt.com"
 
 MIDWEST_HUB = ["IA", "IL", "KS", "OK", "MN"]  # /jobs/midwest and its filter option
+
+# Below these, a page still works for visitors but asks Google not to index it
+# and stays out of the sitemap. A new site gets a small share of Google's
+# attention, and it should go on pages with something of their own to show.
+MIN_INDEXED_LIST = 3      # jobs on a state + role page
+MIN_INDEXED_EMPLOYER = 2  # jobs on a company page
 FAMILY_ORDER = ["Wind", "Solar", "Storage", "Grid"]
 
 # How long a job page stays valid after the build that produced it. A listing
@@ -333,6 +339,19 @@ def listing_page(title, h1, intro, jobs, all_jobs, state_counts, fam_counts, pat
     return layout(title, intro, body, path, head)
 
 
+def moved_page(r):
+    """A duplicate copy that was dropped. The job is still open under the copy
+    that stayed, so the old address forwards there, and tells Google that
+    copy is the one to index."""
+    to = f'/jobs/{r["moved_to"]}'
+    body = (f'<section class="mx-auto max-w-3xl px-4 py-20 sm:px-6 lg:px-8"><p class="text-xs font-semibold uppercase tracking-[0.16em] text-muted-foreground">Listing moved</p>'
+            f'<h1 class="mt-4 font-[family-name:var(--font-heading)] text-4xl font-bold sm:text-5xl">{e(r["title"])}</h1>'
+            f'<p class="mt-8 text-lg leading-8 text-muted-foreground">This job is still open. It was posted more than once, and FieldWatt keeps one copy.</p>'
+            f'<div class="mt-10"><a class="inline-flex h-11 items-center bg-primary px-5 text-sm font-bold text-primary-foreground hover:bg-primary/90" href="{to}">Go to the listing {ICON["arrow"]}</a></div></section>')
+    head = f'<meta name="robots" content="noindex,follow"/><meta http-equiv="refresh" content="0; url={to}"/>'
+    return layout(f'{r["title"]} at {r["company"]} | FieldWatt', "This listing has moved.", body, to, head)
+
+
 def closed_page(r):
     """A job that left the feed. Kept for a few weeks so old links say so
     rather than 404, with no JobPosting markup and no place in the sitemap."""
@@ -479,9 +498,9 @@ def job_page(job):
     return layout(title, meta_description(job), body, f'/jobs/{job["slug"]}', job_ld(job))
 
 
-def employer_page(name, slug, jobs):
+def employer_page(name, slug, jobs, head=""):
     body = f'''<section class="field-grid border-b border-border bg-secondary text-secondary-foreground"><div class="mx-auto max-w-7xl px-4 py-12 sm:px-6 sm:py-16 lg:px-8"><a class="text-xs font-semibold uppercase tracking-[0.16em] text-primary hover:text-secondary-foreground" href="/employers">Employer directory</a>{'<p class="mt-4 inline-flex bg-primary px-2 py-1 text-xs font-semibold uppercase tracking-[0.16em] text-primary-foreground">Featured company</p>' if slug in FEATURED_COMPANIES else ""}<h1 class="mt-4 max-w-4xl font-[family-name:var(--font-heading)] text-4xl font-bold leading-tight sm:text-6xl">{e(name)}</h1><p class="mt-5 max-w-2xl text-lg leading-8 text-secondary-foreground/80">FieldWatt links applicants to the employer&#x27;s own application page. We do not take applications or represent employers in the hiring process.</p><p class="mt-4 text-sm font-semibold text-secondary-foreground/80">{len(jobs)} current relevant listing{"s" if len(jobs) != 1 else ""}</p></div></section><section class="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8"><h2 class="text-xs font-semibold uppercase tracking-[0.16em] text-muted-foreground">Jobs from this employer</h2>{cards(jobs)}<a class="mt-8 inline-flex items-center gap-2 text-sm font-bold underline decoration-primary decoration-2 underline-offset-4" href="/jobs">Browse all jobs {ICON["arrow"]}</a></section><section class="border-t border-border bg-muted/40"><div class="mx-auto grid max-w-7xl gap-8 px-4 py-12 sm:px-6 lg:grid-cols-2 lg:px-8"><div class="border border-border bg-card p-6"><p class="text-xs font-semibold uppercase tracking-[0.16em] text-primary">Free page claim</p><h2 class="mt-3 font-[family-name:var(--font-heading)] text-2xl font-bold">Is this your page?</h2><p class="mt-3 text-sm leading-6 text-muted-foreground">Verify control of a company work inbox to request this page. Verification does not automatically establish ownership; FieldWatt may review mismatches or abuse.</p><form class="mt-5 grid gap-3" data-form="employer-claim"><input type="hidden" name="company" value="{e(name)}"/><input type="hidden" name="website" value=""/><label class="text-sm font-semibold text-foreground">Work email<input class="mt-2 w-full border border-input bg-background px-3 py-2.5 text-sm text-foreground outline-none ring-ring focus:ring-2" type="email" name="email" required="" placeholder="you@company.com"/></label><button class="inline-flex h-10 items-center justify-center bg-primary px-4 text-sm font-medium text-primary-foreground hover:bg-primary/90" type="submit">Claim this page free</button><p class="text-xs text-muted-foreground" data-status aria-live="polite"></p></form></div><div class="border border-border bg-card p-6"><p class="text-xs font-semibold uppercase tracking-[0.16em] text-primary">Paid placement options</p><h2 class="mt-3 font-[family-name:var(--font-heading)] text-2xl font-bold">Feature active field work.</h2><p class="mt-3 text-sm leading-6 text-muted-foreground">Choose a labeled placement through self-serve checkout. These options are separate from claiming this free directory page.</p><div class="mt-5 flex flex-col gap-3 sm:flex-row"><a class="inline-flex h-10 items-center justify-center border border-border px-4 text-sm font-medium hover:border-primary" href="/hire#featured-job">Feature a job — $149</a><a class="inline-flex h-10 items-center justify-center border border-border px-4 text-sm font-medium hover:border-primary" href="/hire#featured-company">Featured Company — $299/month</a></div></div></div></section>'''
-    return layout(f"{name} Jobs | FieldWatt", f"Current renewable trades listings from {name}, with links to the employer's own application page.", body, f"/employers/{slug}")
+    return layout(f"{name} Jobs | FieldWatt", f"Current renewable trades listings from {name}, with links to the employer's own application page.", body, f"/employers/{slug}", head)
 
 
 def company_badge(slug):
@@ -581,10 +600,12 @@ def main():
                                        sj, jobs, state_counts, fam_counts, f"/jobs/{s}", current_state=s, head="" if sj else noindex), sitemap=bool(sj))
         for fam in FAMILY_ORDER:
             fj = [j for j in sj if fam in j["families"]]
+            # one or two listings is a page Google has little reason to read
+            thin = len(fj) < MIN_INDEXED_LIST
             add(f"/jobs/{s}/{fam.lower()}", listing_page(f"{fam} jobs in {name} | FieldWatt", f"{fam} jobs in {name}",
                                                          f"Current {fam.lower()} field roles in {name} from the FieldWatt feed.",
                                                          fj, jobs, state_counts, fam_counts, f"/jobs/{s}/{fam.lower()}", current_state=s, current_fam=fam.lower(),
-                                                         head="" if fj else noindex), sitemap=bool(fj))
+                                                         head=noindex if thin else ""), sitemap=not thin)
     for fam in FAMILY_ORDER:
         add(f"/jobs/{fam.lower()}", listing_page(f"{fam} jobs | FieldWatt", f"{fam} jobs across the feed",
                                                  f"Every current {fam.lower()} field role in the FieldWatt feed, updated nightly.",
@@ -596,10 +617,13 @@ def main():
     retired = json.load(open(retired_file, encoding="utf-8")) if os.path.exists(retired_file) else []
     for r in retired:
         if r.get("slug") and r["slug"] not in live_slugs:
-            add(f"/jobs/{r['slug']}", closed_page(r), sitemap=False)
+            page = moved_page(r) if r.get("moved_to") in live_slugs else closed_page(r)
+            add(f"/jobs/{r['slug']}", page, sitemap=False)
     add("/employers", employers_index(employers))
     for name, slug, n in employers:
-        add(f"/employers/{slug}", employer_page(name, slug, by_emp[slug]))
+        # a company page with one job only repeats that job's page
+        thin = n < MIN_INDEXED_EMPLOYER
+        add(f"/employers/{slug}", employer_page(name, slug, by_emp[slug], noindex if thin else ""), sitemap=not thin)
     add("/pay", pay_page(jobs))
 
     # static content pages

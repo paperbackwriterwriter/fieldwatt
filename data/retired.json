@@ -14402,22 +14402,7 @@
   "families": [
    "Solar"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "solar-install-foreman--adzuna-5905953376"
- },
- {
-  "id": "5941212141",
-  "slug": "traveling-lead-composite-blade-technician-level-4-usa--adzuna-5941212141",
-  "title": "Traveling Lead Composite Blade Technician Level 4 (USA)",
-  "company": "GEV Wind Power",
-  "company_slug": "gev-wind-power",
-  "state": "NM",
-  "state_name": "New Mexico",
-  "families": [
-   "Wind"
-  ],
-  "retired": "2026-10-27",
-  "moved_to": "traveling-lead-composite-blade-technician-level-4-usa--adzuna-5899393658"
+  "retired": "2026-10-27"
  },
  {
   "id": "5941267819",
@@ -14446,20 +14431,6 @@
   ],
   "retired": "2026-10-27",
   "moved_to": "lead-solar-installer--adzuna-5941137221"
- },
- {
-  "id": "5941305449",
-  "slug": "technician-ii-cheyenne-ridge--adzuna-5941305449",
-  "title": "Technician II - Cheyenne Ridge",
-  "company": "Vestas",
-  "company_slug": "vestas",
-  "state": "CO",
-  "state_name": "Colorado",
-  "families": [
-   "Wind"
-  ],
-  "retired": "2026-10-27",
-  "moved_to": "technician-ii-cheyenne-ridge-co--adzuna-5899527963"
  },
  {
   "id": "5941321640",
@@ -14514,8 +14485,7 @@
   "families": [
    "Grid"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "assembler--adzuna-5939147614"
+  "retired": "2026-10-27"
  },
  {
   "id": "5941418749",
@@ -14530,20 +14500,6 @@
   ],
   "retired": "2026-10-27",
   "moved_to": "wind-generation-tech--adzuna-5938976099"
- },
- {
-  "id": "5941305448",
-  "slug": "technician-ii--adzuna-5941305448",
-  "title": "Technician II",
-  "company": "Vestas",
-  "company_slug": "vestas",
-  "state": "WY",
-  "state_name": "Wyoming",
-  "families": [
-   "Wind"
-  ],
-  "retired": "2026-10-27",
-  "moved_to": "technician-ii-medicine-bow-wy--adzuna-5899527964"
  },
  {
   "id": "5941903860",
@@ -14570,8 +14526,7 @@
   "families": [
    "Grid"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "journeyman-lineman--adzuna-5917501583"
+  "retired": "2026-10-27"
  },
  {
   "id": "5941965449",
@@ -14584,8 +14539,7 @@
   "families": [
    "Grid"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "lineman-i-ii-iii-required-cdl-a--adzuna-5931049297"
+  "retired": "2026-10-27"
  },
  {
   "id": "5941966443",
@@ -14598,8 +14552,7 @@
   "families": [
    "Grid"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "equipment-mechanic-transmission-lines--adzuna-5924683505"
+  "retired": "2026-10-27"
  },
  {
   "id": "5941969588",
@@ -14640,8 +14593,7 @@
   "families": [
    "Solar"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "solar-site-technician--adzuna-5939610448"
+  "retired": "2026-10-27"
  },
  {
   "id": "5940190438",
@@ -14696,8 +14648,7 @@
   "families": [
    "Solar"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "pv-solar-installer--adzuna-5906292944"
+  "retired": "2026-10-27"
  },
  {
   "id": "5940340586",
@@ -14710,8 +14661,7 @@
   "families": [
    "Grid"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "line-mechanic-c-a--adzuna-5908820191"
+  "retired": "2026-10-27"
  },
  {
   "id": "5940353624",
@@ -14752,8 +14702,7 @@
   "families": [
    "Solar"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "solar-field-service-technician-lakeview-or-temp-to-hire--adzuna-5913894565"
+  "retired": "2026-10-27"
  },
  {
   "id": "5940586791",
@@ -14808,8 +14757,7 @@
   "families": [
    "Grid"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "electrical-and-electronic-maintenance-technician--adzuna-5938960049"
+  "retired": "2026-10-27"
  },
  {
   "id": "5941085092",
@@ -14822,8 +14770,7 @@
   "families": [
    "Grid"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "substation-technician--adzuna-5914501972"
+  "retired": "2026-10-27"
  },
  {
   "id": "5941085289",
@@ -14836,8 +14783,7 @@
   "families": [
    "Grid"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "substation-services-technician-remote-travel--adzuna-5935067248"
+  "retired": "2026-10-27"
  },
  {
   "id": "5938834771",
@@ -14922,8 +14868,7 @@
   "families": [
    "Grid"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "electrical-and-electronic-maintenance-technician--adzuna-5938960049"
+  "retired": "2026-10-27"
  },
  {
   "id": "5937421288",
@@ -14967,8 +14912,7 @@
   "families": [
    "Grid"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "lineman-berlin-ct--adzuna-5915591970"
+  "retired": "2026-10-27"
  },
  {
   "id": "5937719990",
@@ -14995,8 +14939,7 @@
   "families": [
    "Grid"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "groundman-dfw-tx-and-surrounding-areas-oncor-system--adzuna-5927269999"
+  "retired": "2026-10-27"
  },
  {
   "id": "5938041582",
@@ -15023,8 +14966,7 @@
   "families": [
    "Wind"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "wind-technician-iii-horse-hollow-wingate--adzuna-5938121468"
+  "retired": "2026-10-27"
  },
  {
   "id": "5938749478",
@@ -15038,8 +14980,7 @@
    "Storage",
    "Grid"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "hvac-o-m-technician-senior-level--adzuna-5914456261"
+  "retired": "2026-10-27"
  },
  {
   "id": "5938767800",
@@ -15052,8 +14993,7 @@
   "families": [
    "Grid"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "journeyman-lineman--adzuna-5904349059"
+  "retired": "2026-10-27"
  },
  {
   "id": "5938093052",
@@ -15066,8 +15006,7 @@
   "families": [
    "Solar"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "installer-1-hec--adzuna-5904789185"
+  "retired": "2026-10-27"
  },
  {
   "id": "5936298608",
@@ -15083,8 +15022,7 @@
    "Storage",
    "Grid"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "clean-energy-rotation-program-entry-level-princeton--adzuna-5931012550"
+  "retired": "2026-10-27"
  },
  {
   "id": "5936339796",
@@ -15098,8 +15036,7 @@
    "Solar",
    "Grid"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "land-surveyor-drone-pilot--adzuna-5915102371"
+  "retired": "2026-10-27"
  },
  {
   "id": "5936512618",
@@ -15126,8 +15063,7 @@
   "families": [
    "Solar"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "heavy-equipment-field-mechanic-traveling--adzuna-5912419408"
+  "retired": "2026-10-27"
  },
  {
   "id": "5936578954",
@@ -15140,8 +15076,7 @@
   "families": [
    "Solar"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "solar-construction-manager-general-foreman--adzuna-5901491291"
+  "retired": "2026-10-27"
  },
  {
   "id": "5936582427",
@@ -15154,8 +15089,7 @@
   "families": [
    "Solar"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "solar-installer-traveling--adzuna-5934704426"
+  "retired": "2026-10-27"
  },
  {
   "id": "5936631736",
@@ -15210,8 +15144,7 @@
   "families": [
    "Grid"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "a-lineman-overhead-duke--adzuna-5903625342"
+  "retired": "2026-10-27"
  },
  {
   "id": "5936779499",
@@ -15224,8 +15157,7 @@
   "families": [
    "Solar"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "solar-installer--adzuna-5919102036"
+  "retired": "2026-10-27"
  },
  {
   "id": "5936779504",
@@ -15238,8 +15170,7 @@
   "families": [
    "Solar"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "solar-technician--adzuna-5913889616"
+  "retired": "2026-10-27"
  },
  {
   "id": "5937262809",
@@ -15280,8 +15211,7 @@
   "families": [
    "Grid"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "utility-construction-lineman-positions-available--adzuna-5904813750"
+  "retired": "2026-10-27"
  },
  {
   "id": "5937348665",
@@ -15295,8 +15225,7 @@
    "Solar",
    "Grid"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "utility-solar-technician-ii--adzuna-5920149688"
+  "retired": "2026-10-27"
  },
  {
   "id": "5937350388",
@@ -15309,8 +15238,7 @@
   "families": [
    "Storage"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "special-projects-electrical-o-m-technician-level-2--adzuna-5915592194"
+  "retired": "2026-10-27"
  },
  {
   "id": "5937351440",
@@ -15323,8 +15251,7 @@
   "families": [
    "Wind"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "compressor-blade-technician--adzuna-5930151769"
+  "retired": "2026-10-27"
  },
  {
   "id": "5937359215",
@@ -15337,8 +15264,7 @@
   "families": [
    "Solar"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "solar-tech-ii-boulder-city-nv--adzuna-5904102655"
+  "retired": "2026-10-27"
  },
  {
   "id": "5937359669",
@@ -15365,8 +15291,7 @@
   "families": [
    "Grid"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "lineman-class-b-journey-level--adzuna-5903466547"
+  "retired": "2026-10-27"
  },
  {
   "id": "5937382515",
@@ -15379,8 +15304,7 @@
   "families": [
    "Grid"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "overhead-lineman-power-distribution--adzuna-5929954966"
+  "retired": "2026-10-27"
  },
  {
   "id": "5935257429",
@@ -15394,8 +15318,7 @@
    "Solar",
    "Storage"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "field-operations-technician--adzuna-5925531756"
+  "retired": "2026-10-27"
  },
  {
   "id": "5935271327",
@@ -15422,8 +15345,7 @@
   "families": [
    "Solar"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "solar-general-laborer--adzuna-5915506667"
+  "retired": "2026-10-27"
  },
  {
   "id": "5935510003",
@@ -15450,8 +15372,7 @@
   "families": [
    "Grid"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "electrician-journeyman-residential-and-commercial-at-southern-electric-corporati--adzuna-5912590277"
+  "retired": "2026-10-27"
  },
  {
   "id": "5935510005",
@@ -15492,8 +15413,7 @@
   "families": [
    "Grid"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "journeyman-electrician-residential-and-commercial-at-southern-electric-corporati--adzuna-5912590281"
+  "retired": "2026-10-27"
  },
  {
   "id": "5935510011",
@@ -15549,8 +15469,7 @@
   "families": [
    "Solar"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "solar-electrical-technician-eastern-shore--adzuna-5914682515"
+  "retired": "2026-10-27"
  },
  {
   "id": "5935531961",
@@ -15564,8 +15483,7 @@
    "Solar",
    "Grid"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "finish-racking-foreman-el-patrimonio--adzuna-5923412726"
+  "retired": "2026-10-27"
  },
  {
   "id": "5935777741",
@@ -15579,8 +15497,7 @@
    "Solar",
    "Storage"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "field-technician-pv-bess--adzuna-5934514937"
+  "retired": "2026-10-27"
  },
  {
   "id": "5935875265",
@@ -15593,8 +15510,7 @@
   "families": [
    "Solar"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "solar-installer-travel-team--adzuna-5917799878"
+  "retired": "2026-10-27"
  },
  {
   "id": "5935917692",
@@ -15621,8 +15537,7 @@
   "families": [
    "Solar"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "lift-operator-material-handler--adzuna-5934707010"
+  "retired": "2026-10-27"
  },
  {
   "id": "5936082150",
@@ -15650,8 +15565,7 @@
    "Solar",
    "Grid"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "qaqc-technician-data-center--adzuna-5934820243"
+  "retired": "2026-10-27"
  },
  {
   "id": "5936164976",
@@ -15664,8 +15578,7 @@
   "families": [
    "Solar"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "commercial-roofing-technician--adzuna-5933985192"
+  "retired": "2026-10-27"
  },
  {
   "id": "5936165322",
@@ -15678,8 +15591,7 @@
   "families": [
    "Grid"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "substation-services-technician-remote-travel--adzuna-5913428229"
+  "retired": "2026-10-27"
  },
  {
   "id": "5936170874",
@@ -15692,8 +15604,7 @@
   "families": [
    "Grid"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "experienced-1st-and-2nd-class-transmission-lineman--adzuna-5933045135"
+  "retired": "2026-10-27"
  },
  {
   "id": "5936179058",
@@ -15720,8 +15631,7 @@
   "families": [
    "Solar"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "electrical-technician--adzuna-5915366504"
+  "retired": "2026-10-27"
  },
  {
   "id": "5934332140",
@@ -15734,8 +15644,7 @@
   "families": [
    "Wind"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "traveling-wind-turbine-technician--adzuna-5928589433"
+  "retired": "2026-10-27"
  },
  {
   "id": "5934332442",
@@ -15748,8 +15657,7 @@
   "families": [
    "Grid"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "ius-overhead-journeyman-lineman--adzuna-5927945905"
+  "retired": "2026-10-27"
  },
  {
   "id": "5934335642",
@@ -15763,8 +15671,7 @@
    "Solar",
    "Grid"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "operator-yellow-viking--adzuna-5911646464"
+  "retired": "2026-10-27"
  },
  {
   "id": "5934582322",
@@ -15777,8 +15684,7 @@
   "families": [
    "Grid"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "journeyman-lineman--adzuna-5906401469"
+  "retired": "2026-10-27"
  },
  {
   "id": "5932926068",
@@ -15791,8 +15697,7 @@
   "families": [
    "Solar"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "lead-residential-electrician--adzuna-5922862490"
+  "retired": "2026-10-27"
  },
  {
   "id": "5932933755",
@@ -15805,8 +15710,7 @@
   "families": [
    "Solar"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "licensed-electrician-solar-division--adzuna-5912111967"
+  "retired": "2026-10-27"
  },
  {
   "id": "5932935950",
@@ -15819,8 +15723,7 @@
   "families": [
    "Solar"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "solar-worker--adzuna-5913325640"
+  "retired": "2026-10-27"
  },
  {
   "id": "5932967086",
@@ -15833,8 +15736,7 @@
   "families": [
    "Solar"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "electrical-helper--adzuna-5922916513"
+  "retired": "2026-10-27"
  },
  {
   "id": "5932977144",
@@ -15850,8 +15752,7 @@
    "Storage",
    "Grid"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "clean-energy-rotation-program-entry-level--adzuna-5927269896"
+  "retired": "2026-10-27"
  },
  {
   "id": "5932979653",
@@ -15881,8 +15782,7 @@
    "Storage",
    "Grid"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "clean-energy-rotation-program-entry-level-princeton--adzuna-5931012550"
+  "retired": "2026-10-27"
  },
  {
   "id": "5933035280",
@@ -15895,8 +15795,7 @@
   "families": [
    "Solar"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "assoc-engineering-technician-solar--adzuna-5913427257"
+  "retired": "2026-10-27"
  },
  {
   "id": "5933037684",
@@ -15909,8 +15808,7 @@
   "families": [
    "Storage"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "technician-ev-charging-field-service-weekend-coverage-schedule--adzuna-5916840066"
+  "retired": "2026-10-27"
  },
  {
   "id": "5933042293",
@@ -15924,8 +15822,7 @@
    "Solar",
    "Storage"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "pv-bess-o-m-technician-entry-level--adzuna-5914430326"
+  "retired": "2026-10-27"
  },
  {
   "id": "5933043224",
@@ -15938,8 +15835,7 @@
   "families": [
    "Wind"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "o-r-referral-from-current-previous-employee-traveling-wind-technician--adzuna-5914505293"
+  "retired": "2026-10-27"
  },
  {
   "id": "5933047948",
@@ -15966,8 +15862,7 @@
   "families": [
    "Grid"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "journeyman-lineman--adzuna-5906401469"
+  "retired": "2026-10-27"
  },
  {
   "id": "5933149781",
@@ -16008,8 +15903,7 @@
   "families": [
    "Grid"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "journeyman-lineman-line-foreman--adzuna-5914039505"
+  "retired": "2026-10-27"
  },
  {
   "id": "5933367893",
@@ -16022,8 +15916,7 @@
   "families": [
    "Solar"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "part-time-solar-site-surveyor--adzuna-5923029169"
+  "retired": "2026-10-27"
  },
  {
   "id": "5933421573",
@@ -16036,8 +15929,7 @@
   "families": [
    "Storage"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "technician-ev-charging-field-service--adzuna-5909166516"
+  "retired": "2026-10-27"
  },
  {
   "id": "5933429425",
@@ -16050,8 +15942,7 @@
   "families": [
    "Grid"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "working-foreman-line-transmission--adzuna-5909689370"
+  "retired": "2026-10-27"
  },
  {
   "id": "5933575174",
@@ -16064,8 +15955,7 @@
   "families": [
    "Solar"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "electrical-solar-technician--adzuna-5922952108"
+  "retired": "2026-10-27"
  },
  {
   "id": "5933575896",
@@ -16078,8 +15968,7 @@
   "families": [
    "Grid"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "protective-relay-testing-technician--adzuna-5905305922"
+  "retired": "2026-10-27"
  },
  {
   "id": "5933576240",
@@ -16092,8 +15981,7 @@
   "families": [
    "Grid"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "lineman-b-st--adzuna-5918254114"
+  "retired": "2026-10-27"
  },
  {
   "id": "5933577701",
@@ -16106,8 +15994,7 @@
   "families": [
    "Grid"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "overhead-distribution-journeyman-lineman--adzuna-5924547495"
+  "retired": "2026-10-27"
  },
  {
   "id": "5933655398",
@@ -16134,8 +16021,7 @@
   "families": [
    "Grid"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "line-crew-supervisor--adzuna-5913417604"
+  "retired": "2026-10-27"
  },
  {
   "id": "5931682664",
@@ -16176,8 +16062,7 @@
   "families": [
    "Solar"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "assoc-engineering-technician-solar--adzuna-5915200693"
+  "retired": "2026-10-27"
  },
  {
   "id": "5931786574",
@@ -16191,8 +16076,7 @@
    "Solar",
    "Grid"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "utility-scale-solar-journeyman-electrician-california-certified--adzuna-5928853056"
+  "retired": "2026-10-27"
  },
  {
   "id": "5931822815",
@@ -16205,8 +16089,7 @@
   "families": [
    "Grid"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "distribution-operator--adzuna-5930093676"
+  "retired": "2026-10-27"
  },
  {
   "id": "5931868275",
@@ -16247,8 +16130,7 @@
   "families": [
    "Solar"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "residential-solar-installer--adzuna-5909583022"
+  "retired": "2026-10-27"
  },
  {
   "id": "5931924844",
@@ -16275,8 +16157,7 @@
   "families": [
    "Solar"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "licensed-wireman-or-journeyman-electrician-dfw--adzuna-5922963831"
+  "retired": "2026-10-27"
  },
  {
   "id": "5931978306",
@@ -16289,8 +16170,7 @@
   "families": [
    "Wind"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "technician-level-ii-or-iii--adzuna-5914878270"
+  "retired": "2026-10-27"
  },
  {
   "id": "5932016926",
@@ -16317,8 +16197,7 @@
   "families": [
    "Solar"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "quality-control--adzuna-5929502237"
+  "retired": "2026-10-27"
  },
  {
   "id": "5932313040",
@@ -16331,8 +16210,7 @@
   "families": [
    "Solar"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "service-technician--adzuna-5930764508"
+  "retired": "2026-10-27"
  },
  {
   "id": "5932357824",
@@ -16359,8 +16237,7 @@
   "families": [
    "Solar"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "electrical-foreman--adzuna-5910972133"
+  "retired": "2026-10-27"
  },
  {
   "id": "5932537721",
@@ -16373,8 +16250,7 @@
   "families": [
    "Grid"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "journeyman-lineman-hendricks-power--adzuna-5928605456"
+  "retired": "2026-10-27"
  },
  {
   "id": "5932537963",
@@ -16388,8 +16264,7 @@
    "Solar",
    "Storage"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "experienced-residential-electrician--adzuna-5908540114"
+  "retired": "2026-10-27"
  },
  {
   "id": "5932542003",
@@ -16402,8 +16277,7 @@
   "families": [
    "Solar"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "solar-electrician--adzuna-5929124237"
+  "retired": "2026-10-27"
  },
  {
   "id": "5932543877",
@@ -16416,8 +16290,7 @@
   "families": [
    "Grid"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "shop-mechanic-power-delivery--adzuna-5912827550"
+  "retired": "2026-10-27"
  },
  {
   "id": "5932613359",
@@ -16430,8 +16303,7 @@
   "families": [
    "Solar"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "solar-qc-technician-per-diem--adzuna-5929468701"
+  "retired": "2026-10-27"
  },
  {
   "id": "5932786000",
@@ -16444,8 +16316,7 @@
   "families": [
    "Grid"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "journey-substation-electrician-uc-m-first-class--adzuna-5910870500"
+  "retired": "2026-10-27"
  },
  {
   "id": "5932786052",
@@ -16458,8 +16329,7 @@
   "families": [
    "Grid"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "distribution-technician-substation-iii-nj-operations-phillipsburg-nj-training-ct--adzuna-5922791193"
+  "retired": "2026-10-27"
  },
  {
   "id": "5932860664",
@@ -16472,8 +16342,7 @@
   "families": [
    "Solar"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "solar-field-technician-levels-1-3--adzuna-5926967660"
+  "retired": "2026-10-27"
  },
  {
   "id": "5929954100",
@@ -16486,8 +16355,7 @@
   "families": [
    "Solar"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "solar-worker--adzuna-5913327641"
+  "retired": "2026-10-27"
  },
  {
   "id": "5929955015",
@@ -16500,8 +16368,7 @@
   "families": [
    "Grid"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "aerial-lineman--adzuna-5904813453"
+  "retired": "2026-10-27"
  },
  {
   "id": "5930011054",
@@ -16514,8 +16381,7 @@
   "families": [
    "Solar"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "solar-laborer-site-safety--adzuna-5905947650"
+  "retired": "2026-10-27"
  },
  {
   "id": "5930075601",
@@ -16529,8 +16395,7 @@
    "Solar",
    "Storage"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "installer--adzuna-5909979104"
+  "retired": "2026-10-27"
  },
  {
   "id": "5930124567",
@@ -16543,8 +16408,7 @@
   "families": [
    "Solar"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "solar-canvasser-salaried--adzuna-5924683007"
+  "retired": "2026-10-27"
  },
  {
   "id": "5930130687",
@@ -16557,8 +16421,7 @@
   "families": [
    "Grid"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "apprentice-lineman--adzuna-5922665623"
+  "retired": "2026-10-27"
  },
  {
   "id": "5930134046",
@@ -16571,8 +16434,7 @@
   "families": [
    "Storage"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "lead-bess-technician--adzuna-5915988748"
+  "retired": "2026-10-27"
  },
  {
   "id": "5930136291",
@@ -16585,8 +16447,7 @@
   "families": [
    "Grid"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "electrical-power-distribution-technician-tampa-fl-statewide-travel--adzuna-5915675152"
+  "retired": "2026-10-27"
  },
  {
   "id": "5930145103",
@@ -16599,8 +16460,7 @@
   "families": [
    "Wind"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "wind-turbine-blade-repair-technician--adzuna-5922949104"
+  "retired": "2026-10-27"
  },
  {
   "id": "5930146697",
@@ -16613,8 +16473,7 @@
   "families": [
    "Solar"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "solar-panel-installer--adzuna-5925915569"
+  "retired": "2026-10-27"
  },
  {
   "id": "5930147744",
@@ -16627,8 +16486,7 @@
   "families": [
    "Solar"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "solar-tech-ii--adzuna-5921743395"
+  "retired": "2026-10-27"
  },
  {
   "id": "5930149923",
@@ -16641,8 +16499,7 @@
   "families": [
    "Grid"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "substation-technician--adzuna-5914501972"
+  "retired": "2026-10-27"
  },
  {
   "id": "5930151051",
@@ -16655,8 +16512,7 @@
   "families": [
    "Wind"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "wind-turbine-technician-o-m--adzuna-5917761246"
+  "retired": "2026-10-27"
  },
  {
   "id": "5930155336",
@@ -16669,8 +16525,7 @@
   "families": [
    "Solar"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "solar-tech-electrician--adzuna-5911135681"
+  "retired": "2026-10-27"
  },
  {
   "id": "5930155360",
@@ -16683,8 +16538,7 @@
   "families": [
    "Solar"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "solar-crew-lead--adzuna-5923329129"
+  "retired": "2026-10-27"
  },
  {
   "id": "5930157961",
@@ -16697,8 +16551,7 @@
   "families": [
    "Solar"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "solar-tech-ii-tonopah-az--adzuna-5899623756"
+  "retired": "2026-10-27"
  },
  {
   "id": "5930210380",
@@ -16739,8 +16592,7 @@
   "families": [
    "Grid"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "lineman-c-lineman-a--adzuna-5930313349"
+  "retired": "2026-10-27"
  },
  {
   "id": "5930409606",
@@ -16798,8 +16650,7 @@
    "Storage",
    "Grid"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "clean-energy-rotation-program-entry-level--adzuna-5927269896"
+  "retired": "2026-10-27"
  },
  {
   "id": "5930652875",
@@ -16815,8 +16666,7 @@
    "Storage",
    "Grid"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "clean-energy-rotation-program-entry-level--adzuna-5922108286"
+  "retired": "2026-10-27"
  },
  {
   "id": "5930665092",
@@ -16830,8 +16680,7 @@
    "Solar",
    "Storage"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "electrical-apprentice--adzuna-5906797256"
+  "retired": "2026-10-27"
  },
  {
   "id": "5930688643",
@@ -16872,8 +16721,7 @@
   "families": [
    "Solar"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "master-electrician-commercial-solar-energy-systems--adzuna-5907393249"
+  "retired": "2026-10-27"
  },
  {
   "id": "5931049163",
@@ -16886,8 +16734,7 @@
   "families": [
    "Grid"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "aerial-lineman-local-work--adzuna-5904798085"
+  "retired": "2026-10-27"
  },
  {
   "id": "5931058030",
@@ -16901,8 +16748,7 @@
    "Solar",
    "Storage"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "licensed-electrical-foreperson--adzuna-5930060573"
+  "retired": "2026-10-27"
  },
  {
   "id": "5931121992",
@@ -16943,8 +16789,7 @@
   "families": [
    "Solar"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "solar-installation-foreman--adzuna-5923975461"
+  "retired": "2026-10-27"
  },
  {
   "id": "5928588777",
@@ -16957,8 +16802,7 @@
   "families": [
    "Grid"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "aerial-lineman--adzuna-5924548785"
+  "retired": "2026-10-27"
  },
  {
   "id": "5928591617",
@@ -16971,8 +16815,7 @@
   "families": [
    "Solar"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "solar-electrical-inspector--adzuna-5922953360"
+  "retired": "2026-10-27"
  },
  {
   "id": "5928593508",
@@ -16985,8 +16828,7 @@
   "families": [
    "Solar"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "solar-service-electrician--adzuna-5901257351"
+  "retired": "2026-10-27"
  },
  {
   "id": "5928782384",
@@ -16999,8 +16841,7 @@
   "families": [
    "Wind"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "technician-ii--adzuna-5921955791"
+  "retired": "2026-10-27"
  },
  {
   "id": "5928871729",
@@ -17041,8 +16882,7 @@
   "families": [
    "Grid"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "journeyman-lineman-md-line-services-augusta-service-center--adzuna-5904260178"
+  "retired": "2026-10-27"
  },
  {
   "id": "5929174831",
@@ -17055,8 +16895,7 @@
   "families": [
    "Solar"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "development-engineer-technician-ii--adzuna-5926287102"
+  "retired": "2026-10-27"
  },
  {
   "id": "5929337330",
@@ -17069,8 +16908,7 @@
   "families": [
    "Solar"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "lead-solar-installer--adzuna-5910343119"
+  "retired": "2026-10-27"
  },
  {
   "id": "5929351875",
@@ -17097,8 +16935,7 @@
   "families": [
    "Grid"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "general-assembler--adzuna-5928084211"
+  "retired": "2026-10-27"
  },
  {
   "id": "5929489350",
@@ -17112,8 +16949,7 @@
    "Solar",
    "Grid"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "general-laborer--adzuna-5928079725"
+  "retired": "2026-10-27"
  },
  {
   "id": "5929495827",
@@ -17154,8 +16990,7 @@
   "families": [
    "Solar"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "solar-installer--adzuna-5926792821"
+  "retired": "2026-10-27"
  },
  {
   "id": "5929909706",
@@ -17168,8 +17003,7 @@
   "families": [
    "Grid"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "lineman-electrician--adzuna-5926793174"
+  "retired": "2026-10-27"
  },
  {
   "id": "5929910068",
@@ -17182,8 +17016,7 @@
   "families": [
    "Solar"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "solar-installer--adzuna-5926793534"
+  "retired": "2026-10-27"
  },
  {
   "id": "5929911153",
@@ -17196,8 +17029,7 @@
   "families": [
    "Solar"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "solar-installer--adzuna-5926794898"
+  "retired": "2026-10-27"
  },
  {
   "id": "5926937584",
@@ -17226,8 +17058,7 @@
    "Solar",
    "Storage"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "installer-talent-pool-future--adzuna-5912589785"
+  "retired": "2026-10-27"
  },
  {
   "id": "5926937728",
@@ -17256,8 +17087,7 @@
    "Solar",
    "Storage"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "installer--adzuna-5918976233"
+  "retired": "2026-10-27"
  },
  {
   "id": "5926937815",
@@ -17271,8 +17101,7 @@
    "Solar",
    "Storage"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "lead-installer--adzuna-5919972447"
+  "retired": "2026-10-27"
  },
  {
   "id": "5926937832",
@@ -17286,8 +17115,7 @@
    "Solar",
    "Storage"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "foreperson--adzuna-5918929960"
+  "retired": "2026-10-27"
  },
  {
   "id": "5926937844",
@@ -17301,8 +17129,7 @@
    "Solar",
    "Storage"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "electrical-foreperson--adzuna-5908473222"
+  "retired": "2026-10-27"
  },
  {
   "id": "5926937912",
@@ -17315,8 +17142,7 @@
   "families": [
    "Solar"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "solar-installer-talent-pool-future--adzuna-5912310853"
+  "retired": "2026-10-27"
  },
  {
   "id": "5926937939",
@@ -17330,8 +17156,7 @@
    "Solar",
    "Storage"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "lead-installer--adzuna-5912309786"
+  "retired": "2026-10-27"
  },
  {
   "id": "5926937953",
@@ -17345,8 +17170,7 @@
    "Solar",
    "Storage"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "certified-journeyman-electrician-talent-pool-future--adzuna-5921667744"
+  "retired": "2026-10-27"
  },
  {
   "id": "5926968448",
@@ -17374,8 +17198,7 @@
   "families": [
    "Grid"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "aerial-lineman--adzuna-5924548785"
+  "retired": "2026-10-27"
  },
  {
   "id": "5926974821",
@@ -17389,8 +17212,7 @@
    "Solar",
    "Storage"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "electrician-electrical-crew-lead--adzuna-5926820585"
+  "retired": "2026-10-27"
  },
  {
   "id": "5926975829",
@@ -17403,8 +17225,7 @@
   "families": [
    "Wind"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "technician-i-ge--adzuna-5914926148"
+  "retired": "2026-10-27"
  },
  {
   "id": "5926990485",
@@ -17432,8 +17253,7 @@
    "Solar",
    "Storage"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "pv-solar-field-technician-ii-troudale-solar--adzuna-5923172640"
+  "retired": "2026-10-27"
  },
  {
   "id": "5927273544",
@@ -17449,8 +17269,7 @@
    "Storage",
    "Grid"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "clean-energy-rotation-program-entry-level--adzuna-5922108286"
+  "retired": "2026-10-27"
  },
  {
   "id": "5927316197",
@@ -17505,8 +17324,7 @@
   "families": [
    "Grid"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "journeyman-lineman-advanced-step-5th-step-or-higher-apprentice-lineman-montevide--adzuna-5926832489"
+  "retired": "2026-10-27"
  },
  {
   "id": "5927559967",
@@ -17534,8 +17352,7 @@
    "Solar",
    "Storage"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "solar-battery-foreman-south-bay--adzuna-5922157988"
+  "retired": "2026-10-27"
  },
  {
   "id": "5927623043",
@@ -17563,8 +17380,7 @@
   "families": [
    "Solar"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "solar-installer--adzuna-5919102036"
+  "retired": "2026-10-27"
  },
  {
   "id": "5927633290",
@@ -17577,8 +17393,7 @@
   "families": [
    "Solar"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "solar-technician--adzuna-5913889616"
+  "retired": "2026-10-27"
  },
  {
   "id": "5927636807",
@@ -17593,8 +17408,7 @@
    "Storage",
    "Grid"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "pile-install-superintendent-sdi-services--adzuna-5926891769"
+  "retired": "2026-10-27"
  },
  {
   "id": "5927654616",
@@ -17607,8 +17421,7 @@
   "families": [
    "Solar"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "general-laborer-solar-construction--adzuna-5925928356"
+  "retired": "2026-10-27"
  },
  {
   "id": "5927662368",
@@ -17621,8 +17434,7 @@
   "families": [
    "Solar"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "civil-staff-engineering-technician-solar-job-details-black-veatch-family-of-comp--adzuna-5927662050"
+  "retired": "2026-10-27"
  },
  {
   "id": "5927871507",
@@ -17636,8 +17448,7 @@
    "Solar",
    "Storage"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "certified-electrician-talent-pool-future--adzuna-5925535311"
+  "retired": "2026-10-27"
  },
  {
   "id": "5928079103",
@@ -17650,8 +17461,7 @@
   "families": [
    "Solar"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "solar-general-laborer--adzuna-5915506667"
+  "retired": "2026-10-27"
  },
  {
   "id": "5928079558",
@@ -17664,8 +17474,7 @@
   "families": [
    "Solar"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "solar-electrician--adzuna-5925617366"
+  "retired": "2026-10-27"
  },
  {
   "id": "5928079704",
@@ -17678,8 +17487,7 @@
   "families": [
    "Solar"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "o-m-solar-technician-ii--adzuna-5928079550"
+  "retired": "2026-10-27"
  },
  {
   "id": "5928091451",
@@ -17692,8 +17500,7 @@
   "families": [
    "Solar"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "solar-installer--adzuna-5926792821"
+  "retired": "2026-10-27"
  },
  {
   "id": "5928091706",
@@ -17706,8 +17513,7 @@
   "families": [
    "Grid"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "lineman-electrician--adzuna-5926793174"
+  "retired": "2026-10-27"
  },
  {
   "id": "5928092309",
@@ -17720,8 +17526,7 @@
   "families": [
    "Solar"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "solar-installer--adzuna-5926793534"
+  "retired": "2026-10-27"
  },
  {
   "id": "5928094050",
@@ -17734,8 +17539,7 @@
   "families": [
    "Solar"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "solar-installer--adzuna-5926794898"
+  "retired": "2026-10-27"
  },
  {
   "id": "5928096006",
@@ -17748,8 +17552,7 @@
   "families": [
    "Solar"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "traveling-solar-technician--adzuna-5927283694"
+  "retired": "2026-10-27"
  },
  {
   "id": "5928131630",
@@ -17762,8 +17565,7 @@
   "families": [
    "Solar"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "solar-electrician--adzuna-5925486245"
+  "retired": "2026-10-27"
  },
  {
   "id": "5925434115",
@@ -17790,8 +17592,7 @@
   "families": [
    "Wind"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "blade-technician-2nd-shift--adzuna-5902249169"
+  "retired": "2026-10-27"
  },
  {
   "id": "5925472905",
@@ -17804,8 +17605,7 @@
   "families": [
    "Solar"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "staff-engineering-technician-solar--adzuna-5920199396"
+  "retired": "2026-10-27"
  },
  {
   "id": "5925473749",
@@ -17818,8 +17618,7 @@
   "families": [
    "Grid"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "lineman-i--adzuna-5903511079"
+  "retired": "2026-10-27"
  },
  {
   "id": "5925527102",
@@ -17833,8 +17632,7 @@
    "Solar",
    "Storage"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "certified-journeyman-electrician-talent-pool-future--adzuna-5921667744"
+  "retired": "2026-10-27"
  },
  {
   "id": "5925527651",
@@ -17848,8 +17646,7 @@
    "Solar",
    "Storage"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "field-operations-technician--adzuna-5909664954"
+  "retired": "2026-10-27"
  },
  {
   "id": "5925538266",
@@ -17863,8 +17660,7 @@
    "Solar",
    "Storage"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "certified-field-operations-technician-evergreen--adzuna-5924236605"
+  "retired": "2026-10-27"
  },
  {
   "id": "5925552616",
@@ -17878,8 +17674,7 @@
    "Solar",
    "Storage"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "electrical-apprentice--adzuna-5906797256"
+  "retired": "2026-10-27"
  },
  {
   "id": "5925661569",
@@ -17892,8 +17687,7 @@
   "families": [
    "Solar"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "solar-electrician--adzuna-5925617366"
+  "retired": "2026-10-27"
  },
  {
   "id": "5925682711",
@@ -17921,8 +17715,7 @@
   "families": [
    "Wind"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "associate-technician-ge-1-5--adzuna-5915971365"
+  "retired": "2026-10-27"
  },
  {
   "id": "5925716789",
@@ -17935,8 +17728,7 @@
   "families": [
    "Solar"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "solar-maintenance-technician-ii-field-operations-georgia-sites--adzuna-5921770115"
+  "retired": "2026-10-27"
  },
  {
   "id": "5925736250",
@@ -17949,8 +17741,7 @@
   "families": [
    "Grid"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "relay-technician--adzuna-5921311516"
+  "retired": "2026-10-27"
  },
  {
   "id": "5925784719",
@@ -17963,8 +17754,7 @@
   "families": [
    "Grid"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "senior-relay-technician-utility-services--adzuna-5922952863"
+  "retired": "2026-10-27"
  },
  {
   "id": "5925801505",
@@ -17977,8 +17767,7 @@
   "families": [
    "Wind"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "wind-technician-iii-entry-level-at-north-sky-river-in-tehachapi-ca--adzuna-5903698259"
+  "retired": "2026-10-27"
  },
  {
   "id": "5925872204",
@@ -17991,8 +17780,7 @@
   "families": [
    "Wind"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "technician-ii-mhi1000a--adzuna-5917859040"
+  "retired": "2026-10-27"
  },
  {
   "id": "5925873479",
@@ -18005,8 +17793,7 @@
   "families": [
    "Solar"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "staff-engineering-technician-solar--adzuna-5913440912"
+  "retired": "2026-10-27"
  },
  {
   "id": "5925889559",
@@ -18033,8 +17820,7 @@
   "families": [
    "Solar"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "site-survey-technician--adzuna-5913281623"
+  "retired": "2026-10-27"
  },
  {
   "id": "5925894966",
@@ -18047,8 +17833,7 @@
   "families": [
    "Grid"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "relay-technician-trainee--adzuna-5915578606"
+  "retired": "2026-10-27"
  },
  {
   "id": "5925907445",
@@ -18061,8 +17846,7 @@
   "families": [
    "Solar"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "solar-field-service-technician-tulia-tx-temp-to-hire--adzuna-5902412202"
+  "retired": "2026-10-27"
  },
  {
   "id": "5925976115",
@@ -18075,8 +17859,7 @@
   "families": [
    "Solar"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "staff-engineering-technician-solar--adzuna-5913440912"
+  "retired": "2026-10-27"
  },
  {
   "id": "5926090998",
@@ -18089,8 +17872,7 @@
   "families": [
    "Storage"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "bess-technician-1--adzuna-5915308121"
+  "retired": "2026-10-27"
  },
  {
   "id": "5926094178",
@@ -18103,8 +17885,7 @@
   "families": [
    "Solar"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "service-tech--adzuna-5905986172"
+  "retired": "2026-10-27"
  },
  {
   "id": "5926095476",
@@ -18117,8 +17898,7 @@
   "families": [
    "Grid"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "line-mechanic-d-a--adzuna-5923040355"
+  "retired": "2026-10-27"
  },
  {
   "id": "5926109343",
@@ -18131,8 +17911,7 @@
   "families": [
    "Solar"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "experienced-solar-electrician--adzuna-5917913621"
+  "retired": "2026-10-27"
  },
  {
   "id": "5926113178",
@@ -18145,8 +17924,7 @@
   "families": [
    "Storage"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "advanced-bess-technician--adzuna-5914516478"
+  "retired": "2026-10-27"
  },
  {
   "id": "5926113933",
@@ -18159,8 +17937,7 @@
   "families": [
    "Solar"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "field-service-engineer-residential-and-commercial-solar--adzuna-5911127483"
+  "retired": "2026-10-27"
  },
  {
   "id": "5926145963",
@@ -18173,8 +17950,7 @@
   "families": [
    "Grid"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "line-mechanic-d-a--adzuna-5923152369"
+  "retired": "2026-10-27"
  },
  {
   "id": "5926183072",
@@ -18187,8 +17963,7 @@
   "families": [
    "Grid"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "line-mechanic-d-a--adzuna-5923040355"
+  "retired": "2026-10-27"
  },
  {
   "id": "5926188087",
@@ -18201,8 +17976,7 @@
   "families": [
    "Wind"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "plant-technician-i-power--adzuna-5925822456"
+  "retired": "2026-10-27"
  },
  {
   "id": "5926191945",
@@ -18215,8 +17989,7 @@
   "families": [
    "Storage"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "electrical-senior-engineering-technician-bess--adzuna-5926138696"
+  "retired": "2026-10-27"
  },
  {
   "id": "5926198314",
@@ -18229,8 +18002,7 @@
   "families": [
    "Grid"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "substation-technician-i-ii-iii-iv-or-jl--adzuna-5907862306"
+  "retired": "2026-10-27"
  },
  {
   "id": "5926654166",
@@ -18243,8 +18015,7 @@
   "families": [
    "Grid"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "substation-electrician--adzuna-5909671710"
+  "retired": "2026-10-27"
  },
  {
   "id": "5926667839",
@@ -18257,8 +18028,7 @@
   "families": [
    "Grid"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "journeyman-lineman-md-line-services-augusta-service-center--adzuna-5903315887"
+  "retired": "2026-10-27"
  },
  {
   "id": "5926814304",
@@ -18271,8 +18041,7 @@
   "families": [
    "Solar"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "solar-electrician--adzuna-5925486245"
+  "retired": "2026-10-27"
  },
  {
   "id": "5923948215",
@@ -18285,8 +18054,7 @@
   "families": [
    "Grid"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "field-engineering-technician--adzuna-5918455906"
+  "retired": "2026-10-27"
  },
  {
   "id": "5923973745",
@@ -18299,8 +18067,7 @@
   "families": [
    "Solar"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "journeyman-electrician--adzuna-5899760519"
+  "retired": "2026-10-27"
  },
  {
   "id": "5923975204",
@@ -18313,8 +18080,7 @@
   "families": [
    "Solar"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "solar-electrical-inspector--adzuna-5922953360"
+  "retired": "2026-10-27"
  },
  {
   "id": "5923975274",
@@ -18327,8 +18093,7 @@
   "families": [
    "Wind"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "wind-turbine-blade-repair-technician--adzuna-5922949104"
+  "retired": "2026-10-27"
  },
  {
   "id": "5923975513",
@@ -18341,8 +18106,7 @@
   "families": [
    "Wind"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "wind-technician-level-ii--adzuna-5915625738"
+  "retired": "2026-10-27"
  },
  {
   "id": "5924005558",
@@ -18439,8 +18203,7 @@
   "families": [
    "Solar"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "solar-construction-manager-general-foreman--adzuna-5901491291"
+  "retired": "2026-10-27"
  },
  {
   "id": "5924223347",
@@ -18454,8 +18217,7 @@
    "Solar",
    "Storage"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "licensed-journeyman-electrician--adzuna-5911198466"
+  "retired": "2026-10-27"
  },
  {
   "id": "5924519631",
@@ -18468,8 +18230,7 @@
   "families": [
    "Wind"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "wind-field-blade-repair-tech-ii-wolf-ridge-muenster-tx--adzuna-5901454702"
+  "retired": "2026-10-27"
  },
  {
   "id": "5924539749",
@@ -18482,8 +18243,7 @@
   "families": [
    "Grid"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "aerial-lineman-w-coax-splicing-exp--adzuna-5904799073"
+  "retired": "2026-10-27"
  },
  {
   "id": "5924576968",
@@ -18496,8 +18256,7 @@
   "families": [
    "Solar"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "module-equipment-technician--adzuna-5914710172"
+  "retired": "2026-10-27"
  },
  {
   "id": "5924579947",
@@ -18510,8 +18269,7 @@
   "families": [
    "Grid"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "field-engineering-technician--adzuna-5913089799"
+  "retired": "2026-10-27"
  },
  {
   "id": "5924580730",
@@ -18525,8 +18283,7 @@
    "Storage",
    "Grid"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "renewable-energy-technician-swoose-site--adzuna-5915114795"
+  "retired": "2026-10-27"
  },
  {
   "id": "5924586703",
@@ -18539,8 +18296,7 @@
   "families": [
    "Solar"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "site-survey-technician--adzuna-5913281623"
+  "retired": "2026-10-27"
  },
  {
   "id": "5924587686",
@@ -18553,8 +18309,7 @@
   "families": [
    "Solar"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "pv-solar-field-tech-leader-advanced-level-at-roswell-solar--adzuna-5916793870"
+  "retired": "2026-10-27"
  },
  {
   "id": "5924589701",
@@ -18567,8 +18322,7 @@
   "families": [
    "Wind"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "wind-technician-iii-all-levels-high-lonesome-wind-willard-nm--adzuna-5903698213"
+  "retired": "2026-10-27"
  },
  {
   "id": "5924591443",
@@ -18581,8 +18335,7 @@
   "families": [
    "Wind"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "offshore-wind-technician--adzuna-5915999142"
+  "retired": "2026-10-27"
  },
  {
   "id": "5924651157",
@@ -18595,8 +18348,7 @@
   "families": [
    "Wind"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "technician-ii-cheyenne-wells-co--adzuna-5909919604"
+  "retired": "2026-10-27"
  },
  {
   "id": "5924655193",
@@ -18609,8 +18361,7 @@
   "families": [
    "Solar"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "commercial-solar-installer--adzuna-5923906592"
+  "retired": "2026-10-27"
  },
  {
   "id": "5924687479",
@@ -18623,8 +18374,7 @@
   "families": [
    "Grid"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "senior-relay-technician-utility-services--adzuna-5922952863"
+  "retired": "2026-10-27"
  },
  {
   "id": "5924771434",
@@ -18637,8 +18387,7 @@
   "families": [
    "Solar"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "solar-operations-maintenance-technician-iii--adzuna-5907392944"
+  "retired": "2026-10-27"
  },
  {
   "id": "5924899353",
@@ -18651,8 +18400,7 @@
   "families": [
    "Wind"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "wind-technician-iii-entry-level-at-carousel-wind-in-burlington-co--adzuna-5913639447"
+  "retired": "2026-10-27"
  },
  {
   "id": "5924915812",
@@ -18665,8 +18413,7 @@
   "families": [
    "Grid"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "electrical-power-distribution-technician-tampa-fl-statewide-travel--adzuna-5915675152"
+  "retired": "2026-10-27"
  },
  {
   "id": "5924917819",
@@ -18679,8 +18426,7 @@
   "families": [
    "Grid"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "relay-technician--adzuna-5919515763"
+  "retired": "2026-10-27"
  },
  {
   "id": "5924922309",
@@ -18693,8 +18439,7 @@
   "families": [
    "Wind"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "associate-technician-mhi-1000a--adzuna-5917947854"
+  "retired": "2026-10-27"
  },
  {
   "id": "5924924934",
@@ -18707,8 +18452,7 @@
   "families": [
    "Wind"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "wind-technician--adzuna-5904787138"
+  "retired": "2026-10-27"
  },
  {
   "id": "5925033465",
@@ -18721,8 +18465,7 @@
   "families": [
    "Solar"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "civil-associate-engineering-technician-solar--adzuna-5913678714"
+  "retired": "2026-10-27"
  },
  {
   "id": "5925184919",
@@ -18735,8 +18478,7 @@
   "families": [
    "Wind"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "wind-technician-iii-entry-level-roadrunner-wind-in-cisco-tx--adzuna-5903698252"
+  "retired": "2026-10-27"
  },
  {
   "id": "5925237426",
@@ -18750,8 +18492,7 @@
    "Solar",
    "Storage"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "solar-bess-operations-maintenance-o-m-technician--adzuna-5916700979"
+  "retired": "2026-10-27"
  },
  {
   "id": "5925328699",
@@ -18764,8 +18505,7 @@
   "families": [
    "Solar"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "solar-installer--adzuna-5917322885"
+  "retired": "2026-10-27"
  },
  {
   "id": "5922935560",
@@ -18778,8 +18518,7 @@
   "families": [
    "Grid"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "lineman-i-power--adzuna-5906401110"
+  "retired": "2026-10-27"
  },
  {
   "id": "5922949217",
@@ -18792,8 +18531,7 @@
   "families": [
    "Wind"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "senior-associate-wind-technician-assistant-facility-manager-bitter-ridge--adzuna-5917501295"
+  "retired": "2026-10-27"
  },
  {
   "id": "5922950613",
@@ -18807,8 +18545,7 @@
    "Storage",
    "Grid"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "renewable-energy-technician-st-gall-ii-site--adzuna-5915463372"
+  "retired": "2026-10-27"
  },
  {
   "id": "5922986504",
@@ -18836,8 +18573,7 @@
   "families": [
    "Grid"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "lineman-i-ii-iii-required-cdl-a--adzuna-5911072172"
+  "retired": "2026-10-27"
  },
  {
   "id": "5923060373",
@@ -18850,8 +18586,7 @@
   "families": [
    "Solar"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "development-engineering-technician-ii-c-crew-day-crew--adzuna-5920415798"
+  "retired": "2026-10-27"
  },
  {
   "id": "5923238018",
@@ -18864,8 +18599,7 @@
   "families": [
    "Grid"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "high-voltage-transmission-inspector--adzuna-5922065700"
+  "retired": "2026-10-27"
  },
  {
   "id": "5923283469",
@@ -18878,8 +18612,7 @@
   "families": [
    "Wind"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "wind-technician--adzuna-5899626698"
+  "retired": "2026-10-27"
  },
  {
   "id": "5923328829",
@@ -18892,8 +18625,7 @@
   "families": [
    "Solar"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "solar-install-manager-illinois--adzuna-5911287244"
+  "retired": "2026-10-27"
  },
  {
   "id": "5923341266",
@@ -18920,8 +18652,7 @@
   "families": [
    "Grid"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "journeyman-lineman--adzuna-5920515802"
+  "retired": "2026-10-27"
  },
  {
   "id": "5923412805",
@@ -18934,8 +18665,7 @@
   "families": [
    "Solar"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "construction-laborer--adzuna-5901674072"
+  "retired": "2026-10-27"
  },
  {
   "id": "5923412853",
@@ -18948,8 +18678,7 @@
   "families": [
    "Solar"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "solar-construction-manager-general-foreman--adzuna-5901674056"
+  "retired": "2026-10-27"
  },
  {
   "id": "5923412870",
@@ -18962,8 +18691,7 @@
   "families": [
    "Solar"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "heavy-equipment-field-mechanic-traveling--adzuna-5901674031"
+  "retired": "2026-10-27"
  },
  {
   "id": "5923565182",
@@ -18976,8 +18704,7 @@
   "families": [
    "Grid"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "senior-p-c-relay-technician--adzuna-5914471225"
+  "retired": "2026-10-27"
  },
  {
   "id": "5923568028",
@@ -18990,8 +18717,7 @@
   "families": [
    "Solar"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "solar-roof-installer--adzuna-5919838811"
+  "retired": "2026-10-27"
  },
  {
   "id": "5923569047",
@@ -19004,8 +18730,7 @@
   "families": [
    "Solar"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "staff-engineering-technician-solar--adzuna-5907385536"
+  "retired": "2026-10-27"
  },
  {
   "id": "5923628236",
@@ -19018,8 +18743,7 @@
   "families": [
    "Grid"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "aerial-lineman--adzuna-5907052407"
+  "retired": "2026-10-27"
  },
  {
   "id": "5921685670",
@@ -19033,8 +18757,7 @@
    "Solar",
    "Storage"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "lead-installer--adzuna-5908006196"
+  "retired": "2026-10-27"
  },
  {
   "id": "5921752896",
@@ -19047,8 +18770,7 @@
   "families": [
    "Solar"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "solar-worker--adzuna-5913325640"
+  "retired": "2026-10-27"
  },
  {
   "id": "5921761191",
@@ -19061,8 +18783,7 @@
   "families": [
    "Wind"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "technician-ii-vestas--adzuna-5911138918"
+  "retired": "2026-10-27"
  },
  {
   "id": "5921772770",
@@ -19075,64 +18796,7 @@
   "families": [
    "Solar"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "roofer--adzuna-5917501496"
- },
- {
-  "id": "5921892183",
-  "slug": "traveling-lead-composite-blade-technician-level-4-usa--adzuna-5921892183",
-  "title": "Traveling Lead Composite Blade Technician Level 4 (USA)",
-  "company": "GEV Wind Power",
-  "company_slug": "gev-wind-power",
-  "state": "PA",
-  "state_name": "Pennsylvania",
-  "families": [
-   "Wind"
-  ],
-  "retired": "2026-10-27",
-  "moved_to": "traveling-lead-composite-blade-technician-level-4-usa--adzuna-5899393656"
- },
- {
-  "id": "5921892185",
-  "slug": "traveling-lead-composite-blade-technician-level-4-usa--adzuna-5921892185",
-  "title": "Traveling Lead Composite Blade Technician Level 4 (USA)",
-  "company": "GEV Wind Power",
-  "company_slug": "gev-wind-power",
-  "state": "TX",
-  "state_name": "Texas",
-  "families": [
-   "Wind"
-  ],
-  "retired": "2026-10-27",
-  "moved_to": "traveling-lead-composite-blade-technician-level-4-usa--adzuna-5899393662"
- },
- {
-  "id": "5921892190",
-  "slug": "traveling-lead-composite-blade-technician-level-4-usa--adzuna-5921892190",
-  "title": "Traveling Lead Composite Blade Technician Level 4 (USA)",
-  "company": "GEV Wind Power",
-  "company_slug": "gev-wind-power",
-  "state": "OR",
-  "state_name": "Oregon",
-  "families": [
-   "Wind"
-  ],
-  "retired": "2026-10-27",
-  "moved_to": "traveling-lead-composite-blade-technician-level-4-usa--adzuna-5899393665"
- },
- {
-  "id": "5921892243",
-  "slug": "traveling-lead-composite-blade-technician-level-4-usa--adzuna-5921892243",
-  "title": "Traveling Lead Composite Blade Technician Level 4 (USA)",
-  "company": "GEV Wind Power",
-  "company_slug": "gev-wind-power",
-  "state": "KS",
-  "state_name": "Kansas",
-  "families": [
-   "Wind"
-  ],
-  "retired": "2026-10-27",
-  "moved_to": "traveling-lead-composite-blade-technician-level-4-usa--adzuna-5899393661"
+  "retired": "2026-10-27"
  },
  {
   "id": "5921955808",
@@ -19145,8 +18809,7 @@
   "families": [
    "Wind"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "technician-ii--adzuna-5911337674"
+  "retired": "2026-10-27"
  },
  {
   "id": "5922487086",
@@ -19159,8 +18822,7 @@
   "families": [
    "Grid"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "protective-relay-testing-technician--adzuna-5905305922"
+  "retired": "2026-10-27"
  },
  {
   "id": "5922603534",
@@ -19174,8 +18836,7 @@
    "Solar",
    "Storage"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "licensed-electrician-1-500-sign-on-bonus--adzuna-5912968236"
+  "retired": "2026-10-27"
  },
  {
   "id": "5922785975",
@@ -19203,8 +18864,7 @@
    "Solar",
    "Storage"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "multifamily-foreperson--adzuna-5912308040"
+  "retired": "2026-10-27"
  },
  {
   "id": "5920104575",
@@ -19217,8 +18877,7 @@
   "families": [
    "Solar"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "solar-installer--adzuna-5907319476"
+  "retired": "2026-10-27"
  },
  {
   "id": "5920104602",
@@ -19232,8 +18891,7 @@
    "Solar",
    "Storage"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "lead-installer--adzuna-5912365769"
+  "retired": "2026-10-27"
  },
  {
   "id": "5920104612",
@@ -19247,8 +18905,7 @@
    "Solar",
    "Storage"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "installer--adzuna-5909979104"
+  "retired": "2026-10-27"
  },
  {
   "id": "5920156763",
@@ -19275,8 +18932,7 @@
   "families": [
    "Solar"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "solar-installer--adzuna-5917851411"
+  "retired": "2026-10-27"
  },
  {
   "id": "5920236220",
@@ -19289,8 +18945,7 @@
   "families": [
    "Grid"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "lineman-i-ii-iii-required-cdl-a--adzuna-5915491854"
+  "retired": "2026-10-27"
  },
  {
   "id": "5920484978",
@@ -19334,8 +18989,7 @@
    "Solar",
    "Storage"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "installer--adzuna-5916176731"
+  "retired": "2026-10-27"
  },
  {
   "id": "5920683601",
@@ -19362,8 +19016,7 @@
   "families": [
    "Solar"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "solar-installer-travel-team--adzuna-5917799878"
+  "retired": "2026-10-27"
  },
  {
   "id": "5921101424",
@@ -19377,8 +19030,7 @@
    "Storage",
    "Grid"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "renewable-energy-technician-swoose-site--adzuna-5915114795"
+  "retired": "2026-10-27"
  },
  {
   "id": "5921516084",
@@ -19392,8 +19044,7 @@
    "Solar",
    "Storage"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "installer--adzuna-5918976233"
+  "retired": "2026-10-27"
  },
  {
   "id": "5921653623",
@@ -19406,8 +19057,7 @@
   "families": [
    "Solar"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "residential-electrician--adzuna-5900244162"
+  "retired": "2026-10-27"
  },
  {
   "id": "5918485199",
@@ -19435,8 +19085,7 @@
    "Solar",
    "Grid"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "electrical-inspector-utility-scale-solar-construction--adzuna-5913442764"
+  "retired": "2026-10-27"
  },
  {
   "id": "5918525394",
@@ -19449,8 +19098,7 @@
   "families": [
    "Wind"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "technician-i-mhi-1000a--adzuna-5914701559"
+  "retired": "2026-10-27"
  },
  {
   "id": "5918526684",
@@ -19463,8 +19111,7 @@
   "families": [
    "Solar"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "module-equipment-technician--adzuna-5914710172"
+  "retired": "2026-10-27"
  },
  {
   "id": "5918528991",
@@ -19477,8 +19124,7 @@
   "families": [
    "Wind"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "technician-ii-mhi1000a--adzuna-5917859040"
+  "retired": "2026-10-27"
  },
  {
   "id": "5918529036",
@@ -19491,8 +19137,7 @@
   "families": [
    "Storage"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "technician-ev-charging-field-service--adzuna-5915188384"
+  "retired": "2026-10-27"
  },
  {
   "id": "5918765897",
@@ -19505,8 +19150,7 @@
   "families": [
    "Wind"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "wind-technician-ii-fredonia-ny--adzuna-5905370611"
+  "retired": "2026-10-27"
  },
  {
   "id": "5918809904",
@@ -19519,8 +19163,7 @@
   "families": [
    "Grid"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "substation-electrician--adzuna-5914139837"
+  "retired": "2026-10-27"
  },
  {
   "id": "5918976956",
@@ -19533,8 +19176,7 @@
   "families": [
    "Solar"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "solar-installer-talent-pool-future--adzuna-5912310853"
+  "retired": "2026-10-27"
  },
  {
   "id": "5918978692",
@@ -19562,8 +19204,7 @@
    "Solar",
    "Storage"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "installer--adzuna-5912309558"
+  "retired": "2026-10-27"
  },
  {
   "id": "5919106846",
@@ -19576,8 +19217,7 @@
   "families": [
    "Grid"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "assistant-underground-cable-splicer--adzuna-5915578545"
+  "retired": "2026-10-27"
  },
  {
   "id": "5919516668",
@@ -19590,8 +19230,7 @@
   "families": [
    "Solar"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "assoc-engineering-technician-solar--adzuna-5913433573"
+  "retired": "2026-10-27"
  },
  {
   "id": "5919660904",
@@ -19604,8 +19243,7 @@
   "families": [
    "Grid"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "journeyman-station-meter-relay-technician--adzuna-5918978243"
+  "retired": "2026-10-27"
  },
  {
   "id": "5919663325",
@@ -19618,8 +19256,7 @@
   "families": [
    "Grid"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "journeyman-lineman--adzuna-5918978282"
+  "retired": "2026-10-27"
  },
  {
   "id": "5919798762",
@@ -19632,8 +19269,7 @@
   "families": [
    "Grid"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "journeyman-station-meter-relay-technician--adzuna-5918978243"
+  "retired": "2026-10-27"
  },
  {
   "id": "5915369591",
@@ -19646,8 +19282,7 @@
   "families": [
    "Solar"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "lead-solar-field-technician--adzuna-5907390972"
+  "retired": "2026-10-27"
  },
  {
   "id": "5915459429",
@@ -19660,8 +19295,7 @@
   "families": [
    "Wind"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "o-r-traveling-wind-technician-field-specialty-services--adzuna-5911047257"
+  "retired": "2026-10-27"
  },
  {
   "id": "5915459804",
@@ -19674,8 +19308,7 @@
   "families": [
    "Solar"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "solar-installer-solar-electrician-site-surveyor--adzuna-5912111864"
+  "retired": "2026-10-27"
  },
  {
   "id": "5915604877",
@@ -19688,8 +19321,7 @@
   "families": [
    "Grid"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "line-mechanic-d-a--adzuna-5914728212"
+  "retired": "2026-10-27"
  },
  {
   "id": "5915667834",
@@ -19702,8 +19334,7 @@
   "families": [
    "Solar"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "field-service-technician-pv--adzuna-5910074969"
+  "retired": "2026-10-27"
  },
  {
   "id": "5915760624",
@@ -19716,8 +19347,7 @@
   "families": [
    "Storage"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "renewable-energy-technician-callisto-site--adzuna-5915674223"
+  "retired": "2026-10-27"
  },
  {
   "id": "5915773227",
@@ -19730,8 +19360,7 @@
   "families": [
    "Solar"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "lead-solar-installer--adzuna-5904796510"
+  "retired": "2026-10-27"
  },
  {
   "id": "5915808109",
@@ -19746,8 +19375,7 @@
    "Storage",
    "Grid"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "acceptance-hv-mv-testing-technician-level-1-remote-travel-required--adzuna-5915808000"
+  "retired": "2026-10-27"
  },
  {
   "id": "5916588879",
@@ -19760,8 +19388,7 @@
   "families": [
    "Solar"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "solar-support-technician--adzuna-5914459967"
+  "retired": "2026-10-27"
  },
  {
   "id": "5916590521",
@@ -19774,8 +19401,7 @@
   "families": [
    "Grid"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "lineman-i-ii-iii-required-cdl-a--adzuna-5911072172"
+  "retired": "2026-10-27"
  },
  {
   "id": "5916669780",
@@ -19788,8 +19414,7 @@
   "families": [
    "Wind"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "602-blade-repair-technician-tech-2-full-time-wind-travel-techs--adzuna-5911135906"
+  "retired": "2026-10-27"
  },
  {
   "id": "5916790393",
@@ -19802,8 +19427,7 @@
   "families": [
    "Wind"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "wind-technician-ii-otter-creek-ransom-il--adzuna-5900513678"
+  "retired": "2026-10-27"
  },
  {
   "id": "5916847758",
@@ -19830,8 +19454,7 @@
   "families": [
    "Grid"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "line-mechanic-d-a--adzuna-5914728212"
+  "retired": "2026-10-27"
  },
  {
   "id": "5917023664",
@@ -19844,8 +19467,7 @@
   "families": [
    "Solar"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "maintenance-technician-for-solar-monitoring-system-in-montgomery-county-ny-train--adzuna-5909505630"
+  "retired": "2026-10-27"
  },
  {
   "id": "5917061491",
@@ -19860,8 +19482,7 @@
    "Storage",
    "Grid"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "acceptance-hv-mv-testing-technician-level-1-remote-travel-required--adzuna-5916926331"
+  "retired": "2026-10-27"
  },
  {
   "id": "5917092882",
@@ -19875,8 +19496,7 @@
    "Solar",
    "Storage"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "field-operations-technician--adzuna-5915424099"
+  "retired": "2026-10-27"
  },
  {
   "id": "5917124190",
@@ -19889,8 +19509,7 @@
   "families": [
    "Grid"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "assistant-underground-cable-splicer--adzuna-5915578545"
+  "retired": "2026-10-27"
  },
  {
   "id": "5917124192",
@@ -19903,8 +19522,7 @@
   "families": [
    "Grid"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "relay-technician-trainee--adzuna-5915578606"
+  "retired": "2026-10-27"
  },
  {
   "id": "5917135183",
@@ -19919,8 +19537,7 @@
    "Storage",
    "Grid"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "acceptance-hv-mv-testing-technician-level-1-remote-travel-required--adzuna-5916718140"
+  "retired": "2026-10-27"
  },
  {
   "id": "5917287581",
@@ -19934,8 +19551,7 @@
    "Solar",
    "Storage"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "journeyman-service-tech--adzuna-5915636997"
+  "retired": "2026-10-27"
  },
  {
   "id": "5917340855",
@@ -19948,8 +19564,7 @@
   "families": [
    "Grid"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "apprentice-2nd-step-apprentice-4th-step--adzuna-5914389417"
+  "retired": "2026-10-27"
  },
  {
   "id": "5917488920",
@@ -19962,8 +19577,7 @@
   "families": [
    "Solar"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "travel-team-solar-electrician--adzuna-5914322741"
+  "retired": "2026-10-27"
  },
  {
   "id": "5917489199",
@@ -19976,8 +19590,7 @@
   "families": [
    "Solar"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "experienced-solar-installer--adzuna-5910089922"
+  "retired": "2026-10-27"
  },
  {
   "id": "5917494693",
@@ -19990,8 +19603,7 @@
   "families": [
    "Solar"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "electrician--adzuna-5908794986"
+  "retired": "2026-10-27"
  },
  {
   "id": "5917785105",
@@ -20007,8 +19619,7 @@
    "Storage",
    "Grid"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "control-room-operator--adzuna-5915473101"
+  "retired": "2026-10-27"
  },
  {
   "id": "5917785910",
@@ -20021,8 +19632,7 @@
   "families": [
    "Grid"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "lineman-i--adzuna-5903511079"
+  "retired": "2026-10-27"
  },
  {
   "id": "5917800617",
@@ -20035,8 +19645,7 @@
   "families": [
    "Solar"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "travel-team-solar-electrician--adzuna-5914322741"
+  "retired": "2026-10-27"
  },
  {
   "id": "5917896898",
@@ -20049,8 +19658,7 @@
   "families": [
    "Solar"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "civil-associate-engineering-technician-solar--adzuna-5917790233"
+  "retired": "2026-10-27"
  },
  {
   "id": "5917908131",
@@ -20063,8 +19671,7 @@
   "families": [
    "Wind"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "wind-technician-any-level-clearwater-wind-east-miles-city-mt--adzuna-5909231106"
+  "retired": "2026-10-27"
  },
  {
   "id": "5917997939",
@@ -20077,8 +19684,7 @@
   "families": [
    "Solar"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "solar-farm-technician-ii--adzuna-5917992845"
+  "retired": "2026-10-27"
  },
  {
   "id": "5918113635",
@@ -20092,8 +19698,7 @@
    "Solar",
    "Storage"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "sr-field-performance-technician--adzuna-5916209332"
+  "retired": "2026-10-27"
  },
  {
   "id": "5913421059",
@@ -20107,8 +19712,7 @@
    "Solar",
    "Storage"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "solar-o-m-bess-technician-operations-and-maintenance--adzuna-5911540065"
+  "retired": "2026-10-27"
  },
  {
   "id": "5913422716",
@@ -20121,8 +19725,7 @@
   "families": [
    "Solar"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "assoc-engineering-technician-solar--adzuna-5907385959"
+  "retired": "2026-10-27"
  },
  {
   "id": "5913436352",
@@ -20135,8 +19738,7 @@
   "families": [
    "Storage"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "hvac-o-m-technician-entry-level--adzuna-5904787406"
+  "retired": "2026-10-27"
  },
  {
   "id": "5913442079",
@@ -20149,8 +19751,7 @@
   "families": [
    "Solar"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "equipment-operator-light-renewables-paloma-solar-site-tx--adzuna-5904789227"
+  "retired": "2026-10-27"
  },
  {
   "id": "5913446722",
@@ -20163,8 +19764,7 @@
   "families": [
    "Solar"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "solar-ac-electrical-foreman--adzuna-5905978609"
+  "retired": "2026-10-27"
  },
  {
   "id": "5913449283",
@@ -20177,8 +19777,7 @@
   "families": [
    "Storage"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "bess-technician-arizona--adzuna-5907396122"
+  "retired": "2026-10-27"
  },
  {
   "id": "5913533346",
@@ -20192,8 +19791,7 @@
    "Solar",
    "Storage"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "sr-field-performance-technician--adzuna-5906797309"
+  "retired": "2026-10-27"
  },
  {
   "id": "5913677095",
@@ -20206,8 +19804,7 @@
   "families": [
    "Solar"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "traveling-skilled-trained-ca-certified-journeyman-electrician-commercial-solar--adzuna-5902603637"
+  "retired": "2026-10-27"
  },
  {
   "id": "5914361853",
@@ -20220,8 +19817,7 @@
   "families": [
    "Wind"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "o-r-traveling-wind-technician-field-specialty-services--adzuna-5911047257"
+  "retired": "2026-10-27"
  },
  {
   "id": "5914522323",
@@ -20234,8 +19830,7 @@
   "families": [
    "Wind"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "local-wind-site-o-m-technician-hoffman-minnesota--adzuna-5909512315"
+  "retired": "2026-10-27"
  },
  {
   "id": "5914524634",
@@ -20248,8 +19843,7 @@
   "families": [
    "Wind"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "technician-ii-wind--adzuna-5912195444"
+  "retired": "2026-10-27"
  },
  {
   "id": "5914564373",
@@ -20262,8 +19856,7 @@
   "families": [
    "Wind"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "environmental-technician-nws-00947--adzuna-5907356718"
+  "retired": "2026-10-27"
  },
  {
   "id": "5914627932",
@@ -20276,8 +19869,7 @@
   "families": [
    "Solar"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "lead-solar-installer--adzuna-5910343119"
+  "retired": "2026-10-27"
  },
  {
   "id": "5914650006",
@@ -20290,8 +19882,7 @@
   "families": [
    "Grid"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "associate-technician-substation-design--adzuna-5905470293"
+  "retired": "2026-10-27"
  },
  {
   "id": "5914687037",
@@ -20304,8 +19895,7 @@
   "families": [
    "Wind"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "wind-technician-i-all-levels-at-monarch-creek-wind-in-haskell-tx--adzuna-5912318609"
+  "retired": "2026-10-27"
  },
  {
   "id": "5914788263",
@@ -20318,8 +19908,7 @@
   "families": [
    "Grid"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "apprentice-line-technician--adzuna-5913051517"
+  "retired": "2026-10-27"
  },
  {
   "id": "5914908050",
@@ -20332,8 +19921,7 @@
   "families": [
    "Grid"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "substation-electrician--adzuna-5913297618"
+  "retired": "2026-10-27"
  },
  {
   "id": "5914927755",
@@ -20346,8 +19934,7 @@
   "families": [
    "Wind"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "wind-technician--adzuna-5904787138"
+  "retired": "2026-10-27"
  },
  {
   "id": "5914928350",
@@ -20360,8 +19947,7 @@
   "families": [
    "Wind"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "general-technician-wind--adzuna-5911136374"
+  "retired": "2026-10-27"
  },
  {
   "id": "5914990506",
@@ -20374,8 +19960,7 @@
   "families": [
    "Solar"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "solar-site-technician--adzuna-5914700707"
+  "retired": "2026-10-27"
  },
  {
   "id": "5915095511",
@@ -20388,8 +19973,7 @@
   "families": [
    "Solar"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "solar-installer--adzuna-5906968184"
+  "retired": "2026-10-27"
  },
  {
   "id": "5915240143",
@@ -20403,8 +19987,7 @@
    "Storage",
    "Grid"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "integration-technician--adzuna-5904028954"
+  "retired": "2026-10-27"
  },
  {
   "id": "5915283081",
@@ -20417,8 +20000,7 @@
   "families": [
    "Wind"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "technician-ii-vestas--adzuna-5911138918"
+  "retired": "2026-10-27"
  },
  {
   "id": "5915296016",
@@ -20431,8 +20013,7 @@
   "families": [
    "Wind"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "local-wind-technician--adzuna-5914612636"
+  "retired": "2026-10-27"
  },
  {
   "id": "5912172540",
@@ -20445,8 +20026,7 @@
   "families": [
    "Grid"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "class-a-journeyman-lineman-energy-services--adzuna-5906041991"
+  "retired": "2026-10-27"
  },
  {
   "id": "5912173550",
@@ -20459,8 +20039,7 @@
   "families": [
    "Solar"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "service-technician-solar-test-and-inspection-machines--adzuna-5909664807"
+  "retired": "2026-10-27"
  },
  {
   "id": "5912193503",
@@ -20474,8 +20053,7 @@
    "Solar",
    "Grid"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "electrician--adzuna-5904806982"
+  "retired": "2026-10-27"
  },
  {
   "id": "5912307386",
@@ -20488,8 +20066,7 @@
   "families": [
    "Solar"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "solar-installer--adzuna-5907319476"
+  "retired": "2026-10-27"
  },
  {
   "id": "5912310474",
@@ -20503,8 +20080,7 @@
    "Solar",
    "Storage"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "certified-field-performance-technician-talent-pool-future-evergreen--adzuna-5907319643"
+  "retired": "2026-10-27"
  },
  {
   "id": "5912311447",
@@ -20518,8 +20094,7 @@
    "Solar",
    "Storage"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "field-operations-technician--adzuna-5909664954"
+  "retired": "2026-10-27"
  },
  {
   "id": "5912311751",
@@ -20533,8 +20108,7 @@
    "Solar",
    "Storage"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "lead-installer--adzuna-5908006196"
+  "retired": "2026-10-27"
  },
  {
   "id": "5912365856",
@@ -20548,8 +20122,7 @@
    "Solar",
    "Storage"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "multifamily-foreperson--adzuna-5912308040"
+  "retired": "2026-10-27"
  },
  {
   "id": "5912585654",
@@ -20563,8 +20136,7 @@
    "Solar",
    "Storage"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "lead-installer--adzuna-5912309786"
+  "retired": "2026-10-27"
  },
  {
   "id": "5912901155",
@@ -20577,8 +20149,7 @@
   "families": [
    "Grid"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "substation-electrician--adzuna-5909671710"
+  "retired": "2026-10-27"
  },
  {
   "id": "5912928987",
@@ -20605,8 +20176,7 @@
   "families": [
    "Solar"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "solar-electrician--adzuna-5909653615"
+  "retired": "2026-10-27"
  },
  {
   "id": "5911139640",
@@ -20619,8 +20189,7 @@
   "families": [
    "Solar"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "electrician--adzuna-5909542440"
+  "retired": "2026-10-27"
  },
  {
   "id": "5911257119",
@@ -20634,8 +20203,7 @@
    "Solar",
    "Storage"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "removal-and-reinstall-certified-electrician-foreperson--adzuna-5911010964"
+  "retired": "2026-10-27"
  },
  {
   "id": "5911260696",
@@ -20649,8 +20217,7 @@
    "Solar",
    "Storage"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "electrical-foreperson--adzuna-5908473222"
+  "retired": "2026-10-27"
  },
  {
   "id": "5911484153",
@@ -20663,8 +20230,7 @@
   "families": [
    "Grid"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "lineman-i-power--adzuna-5906401110"
+  "retired": "2026-10-27"
  },
  {
   "id": "5911493713",
@@ -20677,8 +20243,7 @@
   "families": [
    "Grid"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "substation-electrician--adzuna-5908800012"
+  "retired": "2026-10-27"
  },
  {
   "id": "5911542209",
@@ -20705,8 +20270,7 @@
   "families": [
    "Solar"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "general-laborer--adzuna-5911646379"
+  "retired": "2026-10-27"
  },
  {
   "id": "5911646475",
@@ -20719,8 +20283,7 @@
   "families": [
    "Solar"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "heavy-equipment-field-mechanic-traveling--adzuna-5901674031"
+  "retired": "2026-10-27"
  },
  {
   "id": "5911646478",
@@ -20733,8 +20296,7 @@
   "families": [
    "Solar"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "solar-construction-manager-general-foreman--adzuna-5901674056"
+  "retired": "2026-10-27"
  },
  {
   "id": "5911740606",
@@ -20747,8 +20309,7 @@
   "families": [
    "Solar"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "residential-solar-installer--adzuna-5909583022"
+  "retired": "2026-10-27"
  },
  {
   "id": "5911742998",
@@ -20761,8 +20322,7 @@
   "families": [
    "Solar"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "electrician--adzuna-5910929869"
+  "retired": "2026-10-27"
  },
  {
   "id": "5911917386",
@@ -20776,8 +20336,7 @@
    "Solar",
    "Storage"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "installer--adzuna-5907983799"
+  "retired": "2026-10-27"
  },
  {
   "id": "5909464271",
@@ -20790,8 +20349,7 @@
   "families": [
    "Wind"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "wind-technician-ii-bright-stalk-chenoa-il--adzuna-5905370695"
+  "retired": "2026-10-27"
  },
  {
   "id": "5909505908",
@@ -20804,8 +20362,7 @@
   "families": [
    "Solar"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "solar-tech-i-wynne-ar--adzuna-5899572699"
+  "retired": "2026-10-27"
  },
  {
   "id": "5909506039",
@@ -20818,8 +20375,7 @@
   "families": [
    "Solar"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "solar-technician-i--adzuna-5899370164"
+  "retired": "2026-10-27"
  },
  {
   "id": "5909509611",
@@ -20832,8 +20388,7 @@
   "families": [
    "Solar"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "senior-solar-technician--adzuna-5904767717"
+  "retired": "2026-10-27"
  },
  {
   "id": "5909547065",
@@ -20846,8 +20401,7 @@
   "families": [
    "Grid"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "line-mechanic-d-a--adzuna-5908820914"
+  "retired": "2026-10-27"
  },
  {
   "id": "5909662284",
@@ -20860,8 +20414,7 @@
   "families": [
    "Grid"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "substation-electrician--adzuna-5908800012"
+  "retired": "2026-10-27"
  },
  {
   "id": "5909681693",
@@ -20874,8 +20427,7 @@
   "families": [
    "Solar"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "solar-o-m-technician-nj--adzuna-5908594807"
+  "retired": "2026-10-27"
  },
  {
   "id": "5910039543",
@@ -20889,8 +20441,7 @@
    "Solar",
    "Storage"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "certified-field-performance-technician-talent-pool-future-evergreen--adzuna-5907319643"
+  "retired": "2026-10-27"
  },
  {
   "id": "5910052121",
@@ -20903,8 +20454,7 @@
   "families": [
    "Storage"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "technician-ev-charging-field-service--adzuna-5909166516"
+  "retired": "2026-10-27"
  },
  {
   "id": "5910471139",
@@ -20917,8 +20467,7 @@
   "families": [
    "Wind"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "wind-technician-ii-fredonia-ny--adzuna-5905370611"
+  "retired": "2026-10-27"
  },
  {
   "id": "5910816916",
@@ -20931,8 +20480,7 @@
   "families": [
    "Grid"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "substation-technician-2--adzuna-5908978151"
+  "retired": "2026-10-27"
  },
  {
   "id": "5910827359",
@@ -20945,8 +20493,7 @@
   "families": [
    "Solar"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "roofer--adzuna-5908983711"
+  "retired": "2026-10-27"
  },
  {
   "id": "5910834499",
@@ -20959,8 +20506,7 @@
   "families": [
    "Wind"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "wind-technician-ii-bridger-mt--adzuna-5905370787"
+  "retired": "2026-10-27"
  },
  {
   "id": "5910837962",
@@ -20973,8 +20519,7 @@
   "families": [
    "Wind"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "technician-ii-cheyenne-wells-co--adzuna-5909919604"
+  "retired": "2026-10-27"
  },
  {
   "id": "5910953270",
@@ -20987,8 +20532,7 @@
   "families": [
    "Solar"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "electrician--adzuna-5908794986"
+  "retired": "2026-10-27"
  },
  {
   "id": "5910978716",
@@ -21001,8 +20545,7 @@
   "families": [
    "Wind"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "wind-technician-ii-bridger-mt--adzuna-5905370787"
+  "retired": "2026-10-27"
  },
  {
   "id": "5907319323",
@@ -21016,8 +20559,7 @@
    "Solar",
    "Storage"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "sr-field-performance-technician--adzuna-5906797309"
+  "retired": "2026-10-27"
  },
  {
   "id": "5907319439",
@@ -21031,8 +20573,7 @@
    "Solar",
    "Storage"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "certified-field-performance-technician--adzuna-5906802194"
+  "retired": "2026-10-27"
  },
  {
   "id": "5907319535",
@@ -21046,8 +20587,7 @@
    "Solar",
    "Storage"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "sr-field-performance-technician-talent-pool-future--adzuna-5906781008"
+  "retired": "2026-10-27"
  },
  {
   "id": "5907387914",
@@ -21060,8 +20600,7 @@
   "families": [
    "Solar"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "electrician-or-journeyman-electrician--adzuna-5901913487"
+  "retired": "2026-10-27"
  },
  {
   "id": "5907407064",
@@ -21074,8 +20613,7 @@
   "families": [
    "Wind"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "wind-turbine-technician-power--adzuna-5907301645"
+  "retired": "2026-10-27"
  },
  {
   "id": "5907672903",
@@ -21088,8 +20626,7 @@
   "families": [
    "Solar"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "service-electrician--adzuna-5904093978"
+  "retired": "2026-10-27"
  },
  {
   "id": "5907841492",
@@ -21103,8 +20640,7 @@
    "Solar",
    "Storage"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "field-operations-technician--adzuna-5907319589"
+  "retired": "2026-10-27"
  },
  {
   "id": "5907842926",
@@ -21118,8 +20654,7 @@
    "Solar",
    "Storage"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "pv-solar-field-technician-iii-entry-level-at-dry-land-prairie-bess-in-cheyenne-w--adzuna-5904290043"
+  "retired": "2026-10-27"
  },
  {
   "id": "5908549320",
@@ -21132,8 +20667,7 @@
   "families": [
    "Grid"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "substation-foreman-electrical-construction-non-union--adzuna-5905965151"
+  "retired": "2026-10-27"
  },
  {
   "id": "5908799253",
@@ -21146,8 +20680,7 @@
   "families": [
    "Solar"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "new-homes-solar-crew-lead--adzuna-5908791869"
+  "retired": "2026-10-27"
  },
  {
   "id": "5908804596",
@@ -21160,8 +20693,7 @@
   "families": [
    "Wind"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "wind-technician-ii-shady-oaks-paw-paw-il--adzuna-5903845127"
+  "retired": "2026-10-27"
  },
  {
   "id": "5908810749",
@@ -21174,8 +20706,7 @@
   "families": [
    "Solar"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "solar-crew-supervisor--adzuna-5908618534"
+  "retired": "2026-10-27"
  },
  {
   "id": "5909042797",
@@ -21188,8 +20719,7 @@
   "families": [
    "Solar"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "solar-field-technician--adzuna-5905951733"
+  "retired": "2026-10-27"
  },
  {
   "id": "5909090902",
@@ -21202,8 +20732,7 @@
   "families": [
    "Wind"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "technician-ii-osagrove-flats-rutland-il--adzuna-5907788254"
+  "retired": "2026-10-27"
  },
  {
   "id": "5909098996",
@@ -21216,8 +20745,7 @@
   "families": [
    "Grid"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "transmission-line-mechanic-c-a--adzuna-5904552156"
+  "retired": "2026-10-27"
  },
  {
   "id": "5909230054",
@@ -21230,8 +20758,7 @@
   "families": [
    "Solar"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "solar-laborer-site-safety--adzuna-5905947650"
+  "retired": "2026-10-27"
  },
  {
   "id": "5904784259",
@@ -21244,8 +20771,7 @@
   "families": [
    "Solar"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "journeyman-electrician-commercial-solar-service-construction--adzuna-5902218999"
+  "retired": "2026-10-27"
  },
  {
   "id": "5904847838",
@@ -21258,8 +20784,7 @@
   "families": [
    "Grid"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "line-mechanic-d-a--adzuna-5904243650"
+  "retired": "2026-10-27"
  },
  {
   "id": "5905060096",
@@ -21272,8 +20797,7 @@
   "families": [
    "Solar"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "solar-field-service-technician-multiple-locations--adzuna-5905056810"
+  "retired": "2026-10-27"
  },
  {
   "id": "5905086939",
@@ -21286,8 +20810,7 @@
   "families": [
    "Solar"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "lead-solar-technician--adzuna-5904844420"
+  "retired": "2026-10-27"
  },
  {
   "id": "5905190201",
@@ -21300,8 +20823,7 @@
   "families": [
    "Solar"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "solar-field-service-technician-multiple-locations--adzuna-5904471980"
+  "retired": "2026-10-27"
  },
  {
   "id": "5905462534",
@@ -21314,8 +20836,7 @@
   "families": [
    "Solar"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "traveling-skilled-trained-ca-certified-journeyman-electrician-commercial-solar--adzuna-5902603637"
+  "retired": "2026-10-27"
  },
  {
   "id": "5905477797",
@@ -21328,8 +20849,7 @@
   "families": [
    "Grid"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "line-mechanic-d-a--adzuna-5905046537"
+  "retired": "2026-10-27"
  },
  {
   "id": "5905517192",
@@ -21342,8 +20862,7 @@
   "families": [
    "Grid"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "journeyman-lineman-la-crosse-wi--adzuna-5903881691"
+  "retired": "2026-10-27"
  },
  {
   "id": "5905938503",
@@ -21356,8 +20875,7 @@
   "families": [
    "Wind"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "rope-access-technician-wind-turbines--adzuna-5902600605"
+  "retired": "2026-10-27"
  },
  {
   "id": "5906447343",
@@ -21370,8 +20888,7 @@
   "families": [
    "Grid"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "journeyman-lineman--adzuna-5904304998"
+  "retired": "2026-10-27"
  },
  {
   "id": "5906718175",
@@ -21384,8 +20901,7 @@
   "families": [
    "Wind"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "wind-technician-iii-clearwater-wind-east-miles-city-mt--adzuna-5903698209"
+  "retired": "2026-10-27"
  },
  {
   "id": "5906724322",
@@ -21398,8 +20914,7 @@
   "families": [
    "Grid"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "class-a-journeyman-lineman-energy-services--adzuna-5906041991"
+  "retired": "2026-10-27"
  },
  {
   "id": "5907108900",
@@ -21412,8 +20927,7 @@
   "families": [
    "Solar"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "experienced-solar-pv-technician--adzuna-5905881767"
+  "retired": "2026-10-27"
  },
  {
   "id": "5904225572",
@@ -21426,8 +20940,7 @@
   "families": [
    "Wind"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "wind-technician-ii-panther-grove-ii-gridley-il--adzuna-5902699365"
+  "retired": "2026-10-27"
  },
  {
   "id": "5904225792",
@@ -21440,8 +20953,7 @@
   "families": [
    "Wind"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "technician-ii-horse-butte-id--adzuna-5902699442"
+  "retired": "2026-10-27"
  },
  {
   "id": "5904253282",
@@ -21454,8 +20966,7 @@
   "families": [
    "Wind"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "technician-wind-turbine-maintenance--adzuna-5903607942"
+  "retired": "2026-10-27"
  },
  {
   "id": "5904314596",
@@ -21468,8 +20979,7 @@
   "families": [
    "Grid"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "journeyman-lineman--adzuna-5904304998"
+  "retired": "2026-10-27"
  },
  {
   "id": "5904468192",
@@ -21482,8 +20992,7 @@
   "families": [
    "Wind"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "technician-ii--adzuna-5902699397"
+  "retired": "2026-10-27"
  },
  {
   "id": "5904570958",
@@ -21496,8 +21005,7 @@
   "families": [
    "Wind"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "wind-technician-i-advanced-to-senior-level-at-golden-hills-wind-in-livermore-ca--adzuna-5903794566"
+  "retired": "2026-10-27"
  },
  {
   "id": "5904585259",
@@ -21510,8 +21018,7 @@
   "families": [
    "Solar"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "solar-field-service-technician-multiple-locations--adzuna-5904585240"
+  "retired": "2026-10-27"
  },
  {
   "id": "5901681080",
@@ -21524,8 +21031,7 @@
   "families": [
    "Grid"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "journeyman-lineman-non-union-ulcs--adzuna-5901681077"
+  "retired": "2026-10-27"
  },
  {
   "id": "5902403301",
@@ -21539,8 +21045,7 @@
    "Wind",
    "Solar"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "traveling-construction-materials-testing-cmt-technician-renewables-remote-projec--adzuna-5902392470"
+  "retired": "2026-10-27"
  },
  {
   "id": "5900411300",
@@ -21553,8 +21058,7 @@
   "families": [
    "Solar"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "solar-installer-residential-rooftop-solar--adzuna-5900235531"
+  "retired": "2026-10-27"
  },
  {
   "id": "5900542879",
@@ -21567,7 +21071,792 @@
   "families": [
    "Grid"
   ],
-  "retired": "2026-10-27",
-  "moved_to": "associate-electrical-engineering-technician-substation--adzuna-5900126836"
+  "retired": "2026-10-27"
+ },
+ {
+  "id": "5921643945",
+  "slug": "electrician--adzuna-5921643945",
+  "title": "Electrician",
+  "company": "Absolute Energy LLC",
+  "company_slug": "absolute-energy-llc",
+  "state": "VA",
+  "state_name": "Virginia",
+  "families": [
+   "Solar",
+   "Storage"
+  ],
+  "retired": "2026-10-27"
+ },
+ {
+  "id": "5899267650",
+  "slug": "advanced-step-apprentice-3rd-step-or-above-journeyman-lineman-minot-nd--adzuna-5899267650",
+  "title": "Advanced Step Apprentice (3rd Step or above)/Journeyman Lineman-Minot",
+  "company": "Xcel Energy",
+  "company_slug": "xcel-energy",
+  "state": "ND",
+  "state_name": "North Dakota",
+  "families": [
+   "Grid"
+  ],
+  "retired": "2026-10-27"
+ },
+ {
+  "id": "5899275763",
+  "slug": "solar-photovoltaic-senior-service-technician--adzuna-5899275763",
+  "title": "Solar Photovoltaic Senior Service Technician",
+  "company": "Solar Maintenance Pros",
+  "company_slug": "solar-maintenance-pros",
+  "state": "CA",
+  "state_name": "California",
+  "families": [
+   "Solar"
+  ],
+  "retired": "2026-10-27"
+ },
+ {
+  "id": "5899329629",
+  "slug": "substation-technician--adzuna-5899329629",
+  "title": "Substation Technician",
+  "company": "CoServ Job Search",
+  "company_slug": "coserv-job-search",
+  "state": "TX",
+  "state_name": "Texas",
+  "families": [
+   "Grid"
+  ],
+  "retired": "2026-10-27"
+ },
+ {
+  "id": "5899337438",
+  "slug": "a-lineman-transmission-lcr--adzuna-5899337438",
+  "title": "A Lineman - Transmission (LCR)",
+  "company": "Pike Corporation",
+  "company_slug": "pike-corporation",
+  "state": "TX",
+  "state_name": "Texas",
+  "families": [
+   "Grid"
+  ],
+  "retired": "2026-10-27"
+ },
+ {
+  "id": "5899341363",
+  "slug": "general-laborer--adzuna-5899341363",
+  "title": "General Laborer",
+  "company": "Aerotek",
+  "company_slug": "aerotek",
+  "state": "CO",
+  "state_name": "Colorado",
+  "families": [
+   "Solar"
+  ],
+  "retired": "2026-10-27"
+ },
+ {
+  "id": "5899370164",
+  "slug": "solar-technician-i--adzuna-5899370164",
+  "title": "Solar Technician I",
+  "company": "Carolina Solar Services",
+  "company_slug": "carolina-solar-services",
+  "state": "SC",
+  "state_name": "South Carolina",
+  "families": [
+   "Solar"
+  ],
+  "retired": "2026-10-27"
+ },
+ {
+  "id": "5899373056",
+  "slug": "b-lineman-overhead-fpu--adzuna-5899373056",
+  "title": "B Lineman - Overhead (FPU)",
+  "company": "Pike Corporation",
+  "company_slug": "pike-corporation",
+  "state": "FL",
+  "state_name": "Florida",
+  "families": [
+   "Grid"
+  ],
+  "retired": "2026-10-27"
+ },
+ {
+  "id": "5899381346",
+  "slug": "solar-photovoltaic-service-technician--adzuna-5899381346",
+  "title": "Solar Photovoltaic Service Technician",
+  "company": "Solar Maintenance Pros",
+  "company_slug": "solar-maintenance-pros",
+  "state": "CA",
+  "state_name": "California",
+  "families": [
+   "Solar"
+  ],
+  "retired": "2026-10-27"
+ },
+ {
+  "id": "5899392440",
+  "slug": "foreman-transmission--adzuna-5899392440",
+  "title": "Foreman Transmission",
+  "company": "Peak Utility Services Group",
+  "company_slug": "peak-utility-services-group",
+  "state": "KY",
+  "state_name": "Kentucky",
+  "families": [
+   "Grid"
+  ],
+  "retired": "2026-10-27"
+ },
+ {
+  "id": "5899393040",
+  "slug": "substation-electrician-1-c-2-c-apprentice-acceptable--adzuna-5899393040",
+  "title": "Substation Electrician 1/C, 2/C, Apprentice acceptable",
+  "company": "Iberdrola",
+  "company_slug": "iberdrola",
+  "state": "NY",
+  "state_name": "New York",
+  "families": [
+   "Grid"
+  ],
+  "retired": "2026-10-27"
+ },
+ {
+  "id": "5899393656",
+  "slug": "traveling-lead-composite-blade-technician-level-4-usa--adzuna-5899393656",
+  "title": "Traveling Lead Composite Blade Technician Level 4 (USA)",
+  "company": "GEV Wind Power",
+  "company_slug": "gev-wind-power",
+  "state": "PA",
+  "state_name": "Pennsylvania",
+  "families": [
+   "Wind"
+  ],
+  "retired": "2026-10-27"
+ },
+ {
+  "id": "5899393658",
+  "slug": "traveling-lead-composite-blade-technician-level-4-usa--adzuna-5899393658",
+  "title": "Traveling Lead Composite Blade Technician Level 4 (USA)",
+  "company": "GEV Wind Power",
+  "company_slug": "gev-wind-power",
+  "state": "NM",
+  "state_name": "New Mexico",
+  "families": [
+   "Wind"
+  ],
+  "retired": "2026-10-27"
+ },
+ {
+  "id": "5899393661",
+  "slug": "traveling-lead-composite-blade-technician-level-4-usa--adzuna-5899393661",
+  "title": "Traveling Lead Composite Blade Technician Level 4 (USA)",
+  "company": "GEV Wind Power",
+  "company_slug": "gev-wind-power",
+  "state": "KS",
+  "state_name": "Kansas",
+  "families": [
+   "Wind"
+  ],
+  "retired": "2026-10-27"
+ },
+ {
+  "id": "5899393662",
+  "slug": "traveling-lead-composite-blade-technician-level-4-usa--adzuna-5899393662",
+  "title": "Traveling Lead Composite Blade Technician Level 4 (USA)",
+  "company": "GEV Wind Power",
+  "company_slug": "gev-wind-power",
+  "state": "TX",
+  "state_name": "Texas",
+  "families": [
+   "Wind"
+  ],
+  "retired": "2026-10-27"
+ },
+ {
+  "id": "5899393665",
+  "slug": "traveling-lead-composite-blade-technician-level-4-usa--adzuna-5899393665",
+  "title": "Traveling Lead Composite Blade Technician Level 4 (USA)",
+  "company": "GEV Wind Power",
+  "company_slug": "gev-wind-power",
+  "state": "OR",
+  "state_name": "Oregon",
+  "families": [
+   "Wind"
+  ],
+  "retired": "2026-10-27"
+ },
+ {
+  "id": "5899402471",
+  "slug": "substation-tech-east--adzuna-5899402471",
+  "title": "Substation Tech - East",
+  "company": "Utili-Serve",
+  "company_slug": "utili-serve",
+  "state": "NC",
+  "state_name": "North Carolina",
+  "families": [
+   "Grid"
+  ],
+  "retired": "2026-10-27"
+ },
+ {
+  "id": "5899404271",
+  "slug": "solar-technician-iii--adzuna-5899404271",
+  "title": "Solar Technician III",
+  "company": "Enbridge",
+  "company_slug": "enbridge",
+  "state": "TX",
+  "state_name": "Texas",
+  "families": [
+   "Solar"
+  ],
+  "retired": "2026-10-27"
+ },
+ {
+  "id": "5899486580",
+  "slug": "solar-smart-energy-installer-field-lead-trajectory--adzuna-5899486580",
+  "title": "Solar & Smart Energy Installer (Field Lead Trajectory)",
+  "company": "Dynamic SLR",
+  "company_slug": "dynamic-slr",
+  "state": "TX",
+  "state_name": "Texas",
+  "families": [
+   "Solar"
+  ],
+  "retired": "2026-10-27"
+ },
+ {
+  "id": "5899522827",
+  "slug": "solar-journeyman-electrician--adzuna-5899522827",
+  "title": "Solar Journeyman Electrician",
+  "company": "ACT Power Services",
+  "company_slug": "act-power-services",
+  "state": "MO",
+  "state_name": "Missouri",
+  "families": [
+   "Solar"
+  ],
+  "retired": "2026-10-27"
+ },
+ {
+  "id": "5899527963",
+  "slug": "technician-ii-cheyenne-ridge-co--adzuna-5899527963",
+  "title": "Technician II - Cheyenne Ridge",
+  "company": "Vestas",
+  "company_slug": "vestas",
+  "state": "CO",
+  "state_name": "Colorado",
+  "families": [
+   "Wind"
+  ],
+  "retired": "2026-10-27"
+ },
+ {
+  "id": "5899527964",
+  "slug": "technician-ii-medicine-bow-wy--adzuna-5899527964",
+  "title": "Technician II",
+  "company": "Vestas",
+  "company_slug": "vestas",
+  "state": "WY",
+  "state_name": "Wyoming",
+  "families": [
+   "Wind"
+  ],
+  "retired": "2026-10-27"
+ },
+ {
+  "id": "5899528885",
+  "slug": "certified-field-operations-technician--adzuna-5899528885",
+  "title": "Certified Field Operations Technician",
+  "company": "Sunrun",
+  "company_slug": "sunrun",
+  "state": "TX",
+  "state_name": "Texas",
+  "families": [
+   "Solar",
+   "Storage"
+  ],
+  "retired": "2026-10-27"
+ },
+ {
+  "id": "5899534810",
+  "slug": "subcontract-electrician-residential-solar-energy-storage--adzuna-5899534810",
+  "title": "Subcontract Electrician – Residential Solar & Energy Storage",
+  "company": "Dynamic SLR",
+  "company_slug": "dynamic-slr",
+  "state": "TX",
+  "state_name": "Texas",
+  "families": [
+   "Solar",
+   "Storage"
+  ],
+  "retired": "2026-10-27"
+ },
+ {
+  "id": "5899553508",
+  "slug": "substation-technician-west--adzuna-5899553508",
+  "title": "Substation Technician - West",
+  "company": "Utili-Serve",
+  "company_slug": "utili-serve",
+  "state": "NC",
+  "state_name": "North Carolina",
+  "families": [
+   "Grid"
+  ],
+  "retired": "2026-10-27"
+ },
+ {
+  "id": "5899564093",
+  "slug": "electrician-solar-journeyman-mulberry-florida--adzuna-5899564093",
+  "title": "Electrician, Solar Journeyman, Mulberry",
+  "company": "Overland Contracting",
+  "company_slug": "overland-contracting",
+  "state": "FL",
+  "state_name": "Florida",
+  "families": [
+   "Solar"
+  ],
+  "retired": "2026-10-27"
+ },
+ {
+  "id": "5899567747",
+  "slug": "3610-substation-helper-1--adzuna-5899567747",
+  "title": "3610 - Substation Helper 1",
+  "company": "Overland Contracting",
+  "company_slug": "overland-contracting",
+  "state": "MS",
+  "state_name": "Mississippi",
+  "families": [
+   "Grid"
+  ],
+  "retired": "2026-10-27"
+ },
+ {
+  "id": "5899568030",
+  "slug": "civil-engineering-technician--adzuna-5899568030",
+  "title": "Civil Engineering Technician",
+  "company": "Actalent",
+  "company_slug": "actalent",
+  "state": "MI",
+  "state_name": "Michigan",
+  "families": [
+   "Grid"
+  ],
+  "retired": "2026-10-27"
+ },
+ {
+  "id": "5899571511",
+  "slug": "civil-staff-engineering-technician-substation-job-details-black-veatch-family-of--adzuna-5899571511",
+  "title": "Civil - Staff Engineering Technician - Substation",
+  "company": "Black & Veatch",
+  "company_slug": "black-veatch",
+  "state": "MI",
+  "state_name": "Michigan",
+  "families": [
+   "Grid"
+  ],
+  "retired": "2026-10-27"
+ },
+ {
+  "id": "5899572699",
+  "slug": "solar-tech-i-wynne-ar--adzuna-5899572699",
+  "title": "Solar Tech I",
+  "company": "System One",
+  "company_slug": "system-one",
+  "state": "AR",
+  "state_name": "Arkansas",
+  "families": [
+   "Solar"
+  ],
+  "retired": "2026-10-27"
+ },
+ {
+  "id": "5899576804",
+  "slug": "line-mechanic-d-a--adzuna-5899576804",
+  "title": "Line Mechanic D - A",
+  "company": "American Electric Power",
+  "company_slug": "american-electric-power",
+  "state": "TN",
+  "state_name": "Tennessee",
+  "families": [
+   "Grid"
+  ],
+  "retired": "2026-10-27"
+ },
+ {
+  "id": "5899613428",
+  "slug": "uge-foreman--adzuna-5899613428",
+  "title": "UGE Foreman",
+  "company": "MasTec Advanced Technologies",
+  "company_slug": "mastec-advanced-technologies",
+  "state": "FL",
+  "state_name": "Florida",
+  "families": [
+   "Grid"
+  ],
+  "retired": "2026-10-27"
+ },
+ {
+  "id": "5899623756",
+  "slug": "solar-tech-ii-tonopah-az--adzuna-5899623756",
+  "title": "Solar Tech II",
+  "company": "System One",
+  "company_slug": "system-one",
+  "state": "AZ",
+  "state_name": "Arizona",
+  "families": [
+   "Solar"
+  ],
+  "retired": "2026-10-27"
+ },
+ {
+  "id": "5899626698",
+  "slug": "wind-technician--adzuna-5899626698",
+  "title": "Wind Technician",
+  "company": "Siemens Energy",
+  "company_slug": "siemens-energy",
+  "state": "PA",
+  "state_name": "Pennsylvania",
+  "families": [
+   "Wind"
+  ],
+  "retired": "2026-10-27"
+ },
+ {
+  "id": "5899629714",
+  "slug": "certified-field-operations-technician--adzuna-5899629714",
+  "title": "Certified Field Operations Technician",
+  "company": "Sunrun",
+  "company_slug": "sunrun",
+  "state": "MA",
+  "state_name": "Massachusetts",
+  "families": [
+   "Solar",
+   "Storage"
+  ],
+  "retired": "2026-10-27"
+ },
+ {
+  "id": "5899635956",
+  "slug": "solar-tech-ii-morris-il--adzuna-5899635956",
+  "title": "Solar Tech II",
+  "company": "System One",
+  "company_slug": "system-one",
+  "state": "IL",
+  "state_name": "Illinois",
+  "families": [
+   "Solar"
+  ],
+  "retired": "2026-10-27"
+ },
+ {
+  "id": "5899635960",
+  "slug": "wind-tech-illinois--adzuna-5899635960",
+  "title": "Wind Tech",
+  "company": "System One",
+  "company_slug": "system-one",
+  "state": "IL",
+  "state_name": "Illinois",
+  "families": [
+   "Wind"
+  ],
+  "retired": "2026-10-27"
+ },
+ {
+  "id": "5899641530",
+  "slug": "substation-relay-scada-technician--adzuna-5899641530",
+  "title": "Substation Relay SCADA Technician",
+  "company": "Fort Pierce Utilities Authority",
+  "company_slug": "fort-pierce-utilities-authority",
+  "state": "FL",
+  "state_name": "Florida",
+  "families": [
+   "Grid"
+  ],
+  "retired": "2026-10-27"
+ },
+ {
+  "id": "5899661227",
+  "slug": "apprentice-lineman--adzuna-5899661227",
+  "title": "Apprentice Lineman",
+  "company": "Hunt Electric",
+  "company_slug": "hunt-electric",
+  "state": "UT",
+  "state_name": "Utah",
+  "families": [
+   "Grid"
+  ],
+  "retired": "2026-10-27"
+ },
+ {
+  "id": "5899671746",
+  "slug": "aerial-lineman--adzuna-5899671746",
+  "title": "Aerial Lineman",
+  "company": "TD&I Cable Maintenance",
+  "company_slug": "td-i-cable-maintenance",
+  "state": "MN",
+  "state_name": "Minnesota",
+  "families": [
+   "Grid"
+  ],
+  "retired": "2026-10-27"
+ },
+ {
+  "id": "5899674327",
+  "slug": "substation-electrician-apprentice--adzuna-5899674327",
+  "title": "Substation Electrician Apprentice",
+  "company": "Berkshire Hathaway Energy",
+  "company_slug": "berkshire-hathaway-energy",
+  "state": "IA",
+  "state_name": "Iowa",
+  "families": [
+   "Grid"
+  ],
+  "retired": "2026-10-27"
+ },
+ {
+  "id": "5899707841",
+  "slug": "equipment-operator-transmission-lcr--adzuna-5899707841",
+  "title": "Equipment Operator - Transmission (LCR)",
+  "company": "Pike Corporation",
+  "company_slug": "pike-corporation",
+  "state": "TX",
+  "state_name": "Texas",
+  "families": [
+   "Grid"
+  ],
+  "retired": "2026-10-27"
+ },
+ {
+  "id": "5899725546",
+  "slug": "lineman-om26-22-b-operations-maintenance--adzuna-5899725546",
+  "title": "Lineman (OM26-22)b. (Operations Maintenance)",
+  "company": "Brazos Electric Power Cooperative",
+  "company_slug": "brazos-electric-power-cooperative",
+  "state": "TX",
+  "state_name": "Texas",
+  "families": [
+   "Grid"
+  ],
+  "retired": "2026-10-27"
+ },
+ {
+  "id": "5899746729",
+  "slug": "advanced-step-apprentice-3rd-step-or-above-journeyman-lineman-minot-nd--adzuna-5899746729",
+  "title": "Advanced Step Apprentice (3rd Step or above)/Journeyman Lineman",
+  "company": "Xcel Energy",
+  "company_slug": "xcel-energy",
+  "state": "ND",
+  "state_name": "North Dakota",
+  "families": [
+   "Grid"
+  ],
+  "retired": "2026-10-27"
+ },
+ {
+  "id": "5899754459",
+  "slug": "frmn-line-wkg--adzuna-5899754459",
+  "title": "Frmn, Line, Wkg",
+  "company": "Berkshire Hathaway Energy",
+  "company_slug": "berkshire-hathaway-energy",
+  "state": "NV",
+  "state_name": "Nevada",
+  "families": [
+   "Grid"
+  ],
+  "retired": "2026-10-27"
+ },
+ {
+  "id": "5899760519",
+  "slug": "journeyman-electrician--adzuna-5899760519",
+  "title": "Journeyman Electrician",
+  "company": "Ipsun Solar",
+  "company_slug": "ipsun-solar",
+  "state": "VA",
+  "state_name": "Virginia",
+  "families": [
+   "Solar"
+  ],
+  "retired": "2026-10-27"
+ },
+ {
+  "id": "5899761237",
+  "slug": "residential-electrician-solar-energy-storage-will-train-high-performers--adzuna-5899761237",
+  "title": "Residential Electrician — Solar & Energy Storage (Will Train High Performers)",
+  "company": "Dynamic SLR",
+  "company_slug": "dynamic-slr",
+  "state": "TX",
+  "state_name": "Texas",
+  "families": [
+   "Solar",
+   "Storage"
+  ],
+  "retired": "2026-10-27"
+ },
+ {
+  "id": "5899769582",
+  "slug": "sr-relay-technician--adzuna-5899769582",
+  "title": "Sr. Relay Technician",
+  "company": "Electric Power Systems",
+  "company_slug": "electric-power-systems",
+  "state": "MO",
+  "state_name": "Missouri",
+  "families": [
+   "Grid"
+  ],
+  "retired": "2026-10-27"
+ },
+ {
+  "id": "5899770759",
+  "slug": "wind-turbine-technician-tech-one-program--adzuna-5899770759",
+  "title": "Wind Turbine Technician - Tech One Program",
+  "company": "Sky Climber",
+  "company_slug": "sky-climber",
+  "state": "CA",
+  "state_name": "California",
+  "families": [
+   "Wind"
+  ],
+  "retired": "2026-10-27"
+ },
+ {
+  "id": "5899770760",
+  "slug": "wind-turbine-technician-tech-one-program--adzuna-5899770760",
+  "title": "Wind Turbine Technician - Tech One Program",
+  "company": "Sky Climber",
+  "company_slug": "sky-climber",
+  "state": "MS",
+  "state_name": "Mississippi",
+  "families": [
+   "Wind"
+  ],
+  "retired": "2026-10-27"
+ },
+ {
+  "id": "5899831430",
+  "slug": "wind-technician--adzuna-5899831430",
+  "title": "Wind Technician",
+  "company": "Siemens Energy",
+  "company_slug": "siemens-energy",
+  "state": "TX",
+  "state_name": "Texas",
+  "families": [
+   "Wind"
+  ],
+  "retired": "2026-10-27"
+ },
+ {
+  "id": "5899832260",
+  "slug": "certified-field-operations-technician--adzuna-5899832260",
+  "title": "Certified Field Operations Technician",
+  "company": "Sunrun",
+  "company_slug": "sunrun",
+  "state": "TX",
+  "state_name": "Texas",
+  "families": [
+   "Solar",
+   "Storage"
+  ],
+  "retired": "2026-10-27"
+ },
+ {
+  "id": "5900126836",
+  "slug": "associate-electrical-engineering-technician-substation--adzuna-5900126836",
+  "title": "Associate Electrical Engineering Technician - Substation",
+  "company": "Black & Veatch",
+  "company_slug": "black-veatch",
+  "state": "KS",
+  "state_name": "Kansas",
+  "families": [
+   "Grid"
+  ],
+  "retired": "2026-10-27"
+ },
+ {
+  "id": "5900188424",
+  "slug": "control-technician-class-c-b-or-a-local-2357--adzuna-5900188424",
+  "title": "Control Technician Class C, B, or A - Local 2357",
+  "company": "FirstEnergy Group",
+  "company_slug": "firstenergy-group",
+  "state": "WV",
+  "state_name": "West Virginia",
+  "families": [
+   "Grid"
+  ],
+  "retired": "2026-10-27"
+ },
+ {
+  "id": "5900235503",
+  "slug": "electrical-subcontractor-solar-installation-crew-partner-1099--adzuna-5900235503",
+  "title": "Electrical Subcontractor / Solar Installation Crew Partner (1099)",
+  "company": "Dynamic SLR",
+  "company_slug": "dynamic-slr",
+  "state": "TX",
+  "state_name": "Texas",
+  "families": [
+   "Solar"
+  ],
+  "retired": "2026-10-27"
+ },
+ {
+  "id": "5900235508",
+  "slug": "solar-site-survey-technician--adzuna-5900235508",
+  "title": "Solar Site Survey Technician",
+  "company": "Ethical Energy Solar",
+  "company_slug": "ethical-energy-solar",
+  "state": "PA",
+  "state_name": "Pennsylvania",
+  "families": [
+   "Solar"
+  ],
+  "retired": "2026-10-27"
+ },
+ {
+  "id": "5900235531",
+  "slug": "solar-installer-residential-rooftop-solar--adzuna-5900235531",
+  "title": "Solar Installer – Residential Rooftop Solar",
+  "company": "Dynamic SLR",
+  "company_slug": "dynamic-slr",
+  "state": "TX",
+  "state_name": "Texas",
+  "families": [
+   "Solar"
+  ],
+  "retired": "2026-10-27"
+ },
+ {
+  "id": "5900242687",
+  "slug": "electrician-commercial-solar-o-m--adzuna-5900242687",
+  "title": "Electrician (Commercial Solar O&M)",
+  "company": "Pfister Energy, Inc.",
+  "company_slug": "pfister-energy-inc",
+  "state": "NJ",
+  "state_name": "New Jersey",
+  "families": [
+   "Solar"
+  ],
+  "retired": "2026-10-27"
+ },
+ {
+  "id": "5900242951",
+  "slug": "solar-installer--adzuna-5900242951",
+  "title": "SOLAR INSTALLER",
+  "company": "RENEWABLE ENERGY SOLUTIONS LLC",
+  "company_slug": "renewable-energy-solutions-llc",
+  "state": "RI",
+  "state_name": "Rhode Island",
+  "families": [
+   "Solar"
+  ],
+  "retired": "2026-10-27"
+ },
+ {
+  "id": "5900244162",
+  "slug": "residential-electrician--adzuna-5900244162",
+  "title": "Residential Electrician",
+  "company": "Lumina Solar Inc",
+  "company_slug": "lumina-solar-inc",
+  "state": "MD",
+  "state_name": "Maryland",
+  "families": [
+   "Solar"
+  ],
+  "retired": "2026-10-27"
  }
 ]

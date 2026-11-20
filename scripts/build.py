@@ -538,6 +538,24 @@ def home_page(jobs, employers, state_counts):
 
 
 # --------------------------------------------------------------------------- main
+# Crawlers that send no job seekers but each read thousands of pages a
+# month. Every page they fetch is a billed CDN request, and together they made
+# about a third of the site's traffic in November 2026. Search engines,
+# Facebook's link previews and the AI search tools that cite and link to the
+# site (OAI-SearchBot, PerplexityBot, DuckAssistBot) are still welcome.
+NO_CRAWL = [
+    "AhrefsBot", "SemrushBot", "SERankingBacklinksBot", "SE-Ranking", "MJ12bot", "DotBot",
+    "BLEXBot", "DataForSeoBot", "Barkrowler",
+    "GPTBot", "ClaudeBot", "anthropic-ai", "CCBot", "Amazonbot", "meta-externalagent",
+    "Bytespider", "ShapBot", "ExaBot", "ExaSearchBot", "PetalBot", "ImagesiftBot",
+]
+
+
+def robots_txt():
+    blocked = "".join(f"User-agent: {b}\n" for b in NO_CRAWL)
+    return f"{blocked}Disallow: /\n\nUser-agent: *\nAllow: /\n\nSitemap: {DOMAIN}/sitemap.xml\n"
+
+
 def write(path, content):
     p = os.path.join(SITE, path.lstrip("/"))
     os.makedirs(os.path.dirname(p), exist_ok=True)
@@ -664,7 +682,7 @@ def main():
     shutil.copytree(os.path.join(ROOT, "static"), SITE, dirs_exist_ok=True)
     # search index for the in-page filter
     write("jobs-index.json", json.dumps([{"t": j["title"], "c": j["company"], "l": j["location"], "s": j["state"], "f": j["families"], "u": "/jobs/" + j["slug"], "p": j.get("pay")} for j in jobs], ensure_ascii=False))
-    write("robots.txt", f"User-agent: *\nAllow: /\nSitemap: {DOMAIN}/sitemap.xml\n")
+    write("robots.txt", robots_txt())
     sm = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
     sm += "".join(f"  <url><loc>{DOMAIN}{'' if u == '/' else u}</loc><lastmod>{d}</lastmod></url>\n" for u, d in urls) + "</urlset>\n"
     write("sitemap.xml", sm)

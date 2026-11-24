@@ -1,8 +1,7 @@
 name: tuesday-email
 
 on:
-  schedule:
-    - cron: "0 12 * * 2"   # Tuesdays 12:00 UTC: 7 AM Central in summer, 6 AM in winter
+  # Schedule removed 24 Nov 2026: the site is shut down (owner). Run by hand only.
   workflow_dispatch:
     inputs:
       test_only:

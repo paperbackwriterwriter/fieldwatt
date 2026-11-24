@@ -1,8 +1,7 @@
 name: nightly-feed
 
 on:
-  schedule:
-    - cron: "15 8 * * *"   # 8:15 UTC daily: 3:15 AM Central in summer, 2:15 AM in winter
+  # Schedule removed 24 Nov 2026: the site is shut down (owner). Run by hand only.
   workflow_dispatch:
     inputs:
       skip_fetch:
